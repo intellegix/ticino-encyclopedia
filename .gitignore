@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local testing files
+launch_encyclopedia.py
+INSTALL.bat
+INSTALL_COMPLETE.bat
+SIMPLE_INSTRUCTIONS.txt
+
+# Keep only web files
+!index.html
+!database/

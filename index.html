@@ -787,6 +787,16 @@
 
         /* Mobile Touch Target Optimization - Phase 1 */
         @media screen and (max-width: 768px) {
+            /* CRITICAL: Prevent any element from exceeding screen width */
+            * {
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+
+            /* Ensure viewport constraint */
+            body, html {
+                overflow-x: hidden;
+            }
             /* Critical Touch Interaction Fixes */
             .filter-btn,
             .recipe-tab,
@@ -928,6 +938,57 @@
                 font-size: clamp(1rem, 4vw, 1.1rem);
                 line-height: 1.7;
                 margin-bottom: var(--space-4);
+            }
+
+            /* CRITICAL FIX: Prevent text overflow on mobile */
+            .recipe-ingredient-item,
+            .recipe-instruction-step,
+            .vocabulary-item,
+            .story-text,
+            .example-ticinese,
+            .example-english {
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                word-break: break-word;
+                hyphens: auto;
+                max-width: 100%;
+            }
+
+            /* Fix ingredient names specifically */
+            .recipe-ingredient-name {
+                font-size: clamp(0.9rem, 3.5vw, 1rem);
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                hyphens: auto;
+                max-width: 100%;
+                display: block;
+            }
+
+            /* Fix long Ticinese words */
+            .word-ticinese,
+            .vocab-word {
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                word-break: break-word;
+                hyphens: auto;
+                max-width: 100%;
+            }
+
+            /* Ensure all containers respect screen width */
+            .recipe-tab-content,
+            .scenario-content,
+            .story-content {
+                max-width: 100%;
+                overflow: hidden;
+            }
+
+            /* Fix any fixed width elements */
+            .card,
+            .recipe-card,
+            .scenario-card {
+                max-width: 100%;
+                min-width: 0;
+                word-wrap: break-word;
             }
         }
 

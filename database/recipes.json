@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "1.0.0",
-    "total_recipes": 12,
+    "total_recipes": 20,
     "last_updated": "2026-01-12",
     "description": "Traditional Ticinese recipes for immersive language learning through culinary heritage (1850-1915)",
     "learning_methodology": "Natural Method - Cooking vocabulary acquisition through cultural context",
@@ -702,6 +702,3283 @@
         "Understand seasonal agricultural cycles and family organization",
         "Learn complex procedural language and timing expressions",
         "Experience traditional food security practices"
+      ]
+    },
+    {
+      "recipe_id": "RECIPE_005",
+      "ticinese_name": "Minestra di Castagne",
+      "english_name": "Chestnut Soup",
+      "category": "everyday_dishes",
+      "difficulty_level": "A1",
+      "cultural_significance": "Autumn forest foraging tradition, nourishing soup for cooler mountain evenings",
+      "historical_period": "1850-1915",
+      "region": "Valle di Blenio, Ticino",
+      "serves": "6 persone",
+      "preparation_time": "30 minuti",
+      "cooking_time": "45 minuti",
+      "season": "Autunno",
+      "ingredients": [
+        {
+          "ticinese": "castagne fresche",
+          "english": "fresh chestnuts",
+          "amount": "500g",
+          "vocabulary_id": "VOCAB_070",
+          "cultural_note": "Gathered from the mountain chestnut groves every October morning"
+        },
+        {
+          "ticinese": "latte fresco",
+          "english": "fresh milk",
+          "amount": "1 litro",
+          "vocabulary_id": "VOCAB_071",
+          "cultural_note": "From the family cow, still warm from morning milking"
+        },
+        {
+          "ticinese": "cipolla bianca",
+          "english": "white onion",
+          "amount": "1 piccola",
+          "vocabulary_id": "VOCAB_072",
+          "cultural_note": "Stored in braided bunches in the cool cantina"
+        },
+        {
+          "ticinese": "burro di montagna",
+          "english": "mountain butter",
+          "amount": "30g",
+          "vocabulary_id": "VOCAB_073",
+          "cultural_note": "Churned weekly from cream, stored in cool well water"
+        },
+        {
+          "ticinese": "sale fino",
+          "english": "fine salt",
+          "amount": "1 pizzico",
+          "vocabulary_id": "VOCAB_074",
+          "cultural_note": "Precious commodity traded with lowland merchants"
+        },
+        {
+          "ticinese": "pepe nero",
+          "english": "black pepper",
+          "amount": "1 pizzico",
+          "vocabulary_id": "VOCAB_075",
+          "cultural_note": "Expensive spice used sparingly for special warmth"
+        }
+      ],
+      "kitchen_tools": [
+        {
+          "ticinese": "coltello affilato",
+          "english": "sharp knife",
+          "cultural_note": "Essential for scoring chestnut shells before roasting"
+        },
+        {
+          "ticinese": "pentola media",
+          "english": "medium pot",
+          "cultural_note": "Heavy-bottomed pot to prevent milk from scorching"
+        },
+        {
+          "ticinese": "passaverdure",
+          "english": "food mill",
+          "cultural_note": "Hand-cranked device for smooth, creamy texture"
+        },
+        {
+          "ticinese": "mestolo di legno",
+          "english": "wooden spoon",
+          "cultural_note": "Gentle stirring prevents breaking delicate chestnuts"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "ticinese": "Fare un taglio a croce su ogni castagna con il coltello affilato.",
+          "english": "Make a cross cut on each chestnut with the sharp knife.",
+          "vocabulary_focus": ["fare", "taglio", "croce", "castagna", "coltello", "affilato"],
+          "cultural_note": "Children helped with this task, learning knife skills safely",
+          "technique_tip": "Cut deep enough to pierce the shell but not the nutmeat"
+        },
+        {
+          "step": 2,
+          "ticinese": "Cuocere le castagne in acqua bollente per 20 minuti.",
+          "english": "Cook the chestnuts in boiling water for 20 minutes.",
+          "vocabulary_focus": ["cuocere", "castagne", "acqua", "bollente", "minuti"],
+          "cultural_note": "The kitchen filled with the sweet, earthy aroma of cooking chestnuts",
+          "technique_tip": "They're ready when the shell peels away easily"
+        },
+        {
+          "step": 3,
+          "ticinese": "Pelare le castagne ancora calde e togliere la pellicina interna.",
+          "english": "Peel the chestnuts while still warm and remove the inner skin.",
+          "vocabulary_focus": ["pelare", "castagne", "ancora", "calde", "togliere", "pellicina"],
+          "cultural_note": "The whole family participated, sharing stories while peeling",
+          "technique_tip": "Work quickly while warm - cold chestnuts are harder to peel"
+        },
+        {
+          "step": 4,
+          "ticinese": "Tritare fine la cipolla e farla appassire nel burro.",
+          "english": "Finely chop the onion and sauté it in butter until soft.",
+          "vocabulary_focus": ["tritare", "fine", "cipolla", "appassire", "burro"],
+          "cultural_note": "The onion sweetens the earthy chestnuts perfectly",
+          "technique_tip": "Cook gently until translucent, not brown"
+        },
+        {
+          "step": 5,
+          "ticinese": "Aggiungere le castagne e il latte, portare a bollore dolce.",
+          "english": "Add the chestnuts and milk, bring to a gentle boil.",
+          "vocabulary_focus": ["aggiungere", "castagne", "latte", "portare", "bollore", "dolce"],
+          "cultural_note": "Gentle heat prevents the milk from curdling",
+          "technique_tip": "Watch carefully as milk can boil over quickly"
+        },
+        {
+          "step": 6,
+          "ticinese": "Cuocere a fuoco lento per 25 minuti, mescolando spesso.",
+          "english": "Cook on low heat for 25 minutes, stirring often.",
+          "vocabulary_focus": ["cuocere", "fuoco", "lento", "minuti", "mescolando", "spesso"],
+          "cultural_note": "This slow cooking develops the deep, nutty flavors",
+          "technique_tip": "Stir gently to avoid breaking the tender chestnuts"
+        },
+        {
+          "step": 7,
+          "ticinese": "Passare metà delle castagne al passaverdure per addensare.",
+          "english": "Pass half the chestnuts through the food mill to thicken.",
+          "vocabulary_focus": ["passare", "metà", "castagne", "passaverdure", "addensare"],
+          "cultural_note": "Leaving some whole chestnuts gives texture to the soup",
+          "technique_tip": "The soup should be creamy but not completely smooth"
+        },
+        {
+          "step": 8,
+          "ticinese": "Aggiustare di sale e pepe, servire ben caldo.",
+          "english": "Adjust salt and pepper, serve very hot.",
+          "vocabulary_focus": ["aggiustare", "sale", "pepe", "servire", "ben", "caldo"],
+          "cultural_note": "Served in deep bowls to keep warm on cold autumn evenings",
+          "technique_tip": "Taste and adjust seasoning just before serving"
+        }
+      ],
+      "family_story": "Nonna Giulia would wake us early in October to gather chestnuts before the squirrels took them all. She taught me to listen for the sound of ripe nuts falling in the morning mist, and to test each one by shaking it - a good chestnut doesn't rattle. This soup was our reward after hours in the forest, warming us as the mountain air grew crisp. She said the secret was using half the chestnuts for creaminess and leaving the other half whole, so every spoonful was a little surprise. Even now, when I smell chestnuts roasting, I think of her weathered hands teaching mine how to score them just right.",
+      "vocabulary_learning": {
+        "forest_foods": ["castagne", "raccogliere", "bosco", "autunno", "cadere"],
+        "cooking_verbs": ["fare", "cuocere", "pelare", "tritare", "aggiungere", "passare"],
+        "textures": ["cremoso", "liscio", "addensare", "spesso", "fine"],
+        "temperatures": ["caldo", "bollente", "fuoco lento", "ben caldo", "ancora calde"]
+      },
+      "comprehension_questions": [
+        {
+          "ticinese": "Perché si fa il taglio a croce sulle castagne?",
+          "english": "Why do you make a cross cut on the chestnuts?",
+          "answer": "Per facilitare la pelatura dopo la cottura"
+        },
+        {
+          "ticinese": "Quando è meglio pelare le castagne?",
+          "english": "When is it best to peel the chestnuts?",
+          "answer": "Quando sono ancora calde"
+        },
+        {
+          "ticinese": "Perché si passa solo metà delle castagne al passaverdure?",
+          "english": "Why do you only pass half the chestnuts through the food mill?",
+          "answer": "Per avere una minestra cremosa ma con dei pezzi interi"
+        }
+      ],
+      "cultural_context": {
+        "social_significance": "Autumn ritual connecting families with forest resources and seasonal cycles",
+        "economic_importance": "Free protein and carbohydrates from forest foraging supplemented diet",
+        "seasonal_relevance": "October harvest celebration marking transition to winter preparations",
+        "regional_variations": "Valle di Blenio families often added wild mushrooms when available"
+      },
+      "learning_objectives": [
+        "Learn forest and autumn vocabulary in practical context",
+        "Master basic cooking verbs and food preparation terms",
+        "Understand traditional foraging culture and seasonal eating",
+        "Practice giving and following step-by-step instructions"
+      ]
+    },
+    {
+      "recipe_id": "RECIPE_006",
+      "ticinese_name": "Carbonada Valdostana",
+      "english_name": "Beef and Red Wine Stew",
+      "category": "everyday_dishes",
+      "difficulty_level": "A2",
+      "cultural_significance": "Hearty mountain stew for harsh winter months when fresh food was scarce",
+      "historical_period": "1860-1915",
+      "region": "Valle Leventina, Ticino",
+      "serves": "8 persone",
+      "preparation_time": "40 minuti",
+      "cooking_time": "2.5 ore",
+      "season": "Inverno",
+      "ingredients": [
+        {
+          "ticinese": "manzo a pezzi",
+          "english": "beef chunks",
+          "amount": "1.5 kg",
+          "vocabulary_id": "VOCAB_076",
+          "cultural_note": "Cut from cattle that grazed summer pastures high in the mountains"
+        },
+        {
+          "ticinese": "vino rosso del Ticino",
+          "english": "Ticinese red wine",
+          "amount": "500ml",
+          "vocabulary_id": "VOCAB_077",
+          "cultural_note": "Local wine from family vineyards on south-facing slopes"
+        },
+        {
+          "ticinese": "lardo di maiale",
+          "english": "pork lard",
+          "amount": "100g",
+          "vocabulary_id": "VOCAB_078",
+          "cultural_note": "Rendered from the autumn pig slaughter, stored in the cantina"
+        },
+        {
+          "ticinese": "cipolle grosse",
+          "english": "large onions",
+          "amount": "3 medie",
+          "vocabulary_id": "VOCAB_079",
+          "cultural_note": "Yellow onions stored in woven baskets through winter"
+        },
+        {
+          "ticinese": "carote di campo",
+          "english": "field carrots",
+          "amount": "4 grosse",
+          "vocabulary_id": "VOCAB_080",
+          "cultural_note": "Orange carrots kept fresh in sand boxes in the cool cellar"
+        },
+        {
+          "ticinese": "patate gialle",
+          "english": "yellow potatoes",
+          "amount": "6 medie",
+          "vocabulary_id": "VOCAB_081",
+          "cultural_note": "Mountain potatoes with dense, flavorful flesh"
+        },
+        {
+          "ticinese": "brodo di manzo",
+          "english": "beef broth",
+          "amount": "1 litro",
+          "vocabulary_id": "VOCAB_082",
+          "cultural_note": "Made from bones and scraps, simmered all day Sunday"
+        }
+      ],
+      "kitchen_tools": [
+        {
+          "ticinese": "pentola di ferro",
+          "english": "iron pot",
+          "cultural_note": "Heavy cast-iron pot that retained heat for hours of slow cooking"
+        },
+        {
+          "ticinese": "cucchiaio di legno",
+          "english": "wooden spoon",
+          "cultural_note": "Long-handled spoon carved from mountain maple wood"
+        },
+        {
+          "ticinese": "coltello grande",
+          "english": "large knife",
+          "cultural_note": "Heavy blade for cutting tough mountain beef into chunks"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "ticinese": "Tagliare la carne a pezzi grossi e infarinarli leggermente.",
+          "english": "Cut the meat into large pieces and flour them lightly.",
+          "vocabulary_focus": ["tagliare", "carne", "pezzi", "grossi", "infarinare", "leggermente"],
+          "cultural_note": "Large pieces stay tender during long, slow cooking",
+          "technique_tip": "Pat the meat dry before flouring for better browning"
+        },
+        {
+          "step": 2,
+          "ticinese": "Sciogliere il lardo nella pentola di ferro a fuoco medio.",
+          "english": "Melt the lard in the iron pot over medium heat.",
+          "vocabulary_focus": ["sciogliere", "lardo", "pentola", "ferro", "fuoco", "medio"],
+          "cultural_note": "Lard was the primary cooking fat before olive oil became common",
+          "technique_tip": "Heat slowly to render the fat without burning"
+        },
+        {
+          "step": 3,
+          "ticinese": "Rosolare la carne su tutti i lati fino a doratura.",
+          "english": "Brown the meat on all sides until golden.",
+          "vocabulary_focus": ["rosolare", "carne", "tutti", "lati", "fino", "doratura"],
+          "cultural_note": "Good browning creates the deep flavors that define carbonada",
+          "technique_tip": "Don't crowd the pot - brown in batches if necessary"
+        },
+        {
+          "step": 4,
+          "ticinese": "Aggiungere le cipolle tagliate a fette e farle appassire.",
+          "english": "Add the sliced onions and let them wilt.",
+          "vocabulary_focus": ["aggiungere", "cipolle", "tagliate", "fette", "appassire"],
+          "cultural_note": "Onions add sweetness to balance the rich meat and wine",
+          "technique_tip": "Cook until translucent but not browned"
+        },
+        {
+          "step": 5,
+          "ticinese": "Versare il vino rosso e far evaporare l'alcool per 5 minuti.",
+          "english": "Pour in the red wine and let the alcohol evaporate for 5 minutes.",
+          "vocabulary_focus": ["versare", "vino", "rosso", "evaporare", "alcool", "minuti"],
+          "cultural_note": "Wine was never wasted - even cooking wine was treated with respect",
+          "technique_tip": "The wine should reduce by about half"
+        },
+        {
+          "step": 6,
+          "ticinese": "Aggiungere carote e patate tagliate a pezzi grandi.",
+          "english": "Add carrots and potatoes cut into large pieces.",
+          "vocabulary_focus": ["aggiungere", "carote", "patate", "tagliate", "pezzi", "grandi"],
+          "cultural_note": "Root vegetables were the only fresh vegetables available in winter",
+          "technique_tip": "Large pieces won't fall apart during long cooking"
+        },
+        {
+          "step": 7,
+          "ticinese": "Coprire con brodo caldo e portare a bollore lento.",
+          "english": "Cover with hot broth and bring to a gentle boil.",
+          "vocabulary_focus": ["coprire", "brodo", "caldo", "portare", "bollore", "lento"],
+          "cultural_note": "Hot broth prevents the temperature from dropping",
+          "technique_tip": "Just barely bubbling, not a rolling boil"
+        },
+        {
+          "step": 8,
+          "ticinese": "Cuocere coperto per 2 ore, mescolando ogni 30 minuti.",
+          "english": "Cook covered for 2 hours, stirring every 30 minutes.",
+          "vocabulary_focus": ["cuocere", "coperto", "ore", "mescolando", "ogni", "minuti"],
+          "cultural_note": "Long cooking breaks down tough mountain beef into tenderness",
+          "technique_tip": "Check liquid level and add more broth if needed"
+        },
+        {
+          "step": 9,
+          "ticinese": "Aggiustare di sale e pepe, servire fumante con polenta.",
+          "english": "Adjust salt and pepper, serve steaming with polenta.",
+          "vocabulary_focus": ["aggiustare", "sale", "pepe", "servire", "fumante", "polenta"],
+          "cultural_note": "Always served with polenta to soak up the rich sauce",
+          "technique_tip": "Taste and season just before serving"
+        }
+      ],
+      "family_story": "When the mountain passes closed with snow in November, this stew sustained our family through the long, dark winter months. Nonno Carlo learned it from the men who worked the San Gottardo pass, where they needed hearty food to survive the brutal cold. He would start cooking it before dawn on Sunday, and by afternoon the whole house was warm and fragrant. The secret, he said, was patience - never rush the browning, never hurry the simmering. When spring finally came and the pass reopened, we almost missed this warming stew that had become our winter companion.",
+      "vocabulary_learning": {
+        "winter_cooking": ["stufato", "bollore lento", "cuocere coperto", "fuoco medio", "fumante"],
+        "meat_preparation": ["tagliare", "pezzi", "rosolare", "doratura", "infarinare"],
+        "weather_words": ["inverno", "freddo", "neve", "caldo", "fumante"],
+        "time_expressions": ["ogni 30 minuti", "per 2 ore", "fino a", "prima", "dopo"]
+      },
+      "comprehension_questions": [
+        {
+          "ticinese": "Perché si infarinano i pezzi di carne?",
+          "english": "Why do you flour the pieces of meat?",
+          "answer": "Per favorire la doratura e addensare il sugo"
+        },
+        {
+          "ticinese": "Quanto tempo deve evaporare il vino?",
+          "english": "How long should the wine evaporate?",
+          "answer": "Per 5 minuti"
+        },
+        {
+          "ticinese": "Con che cosa si serve la carbonada?",
+          "english": "What do you serve carbonada with?",
+          "answer": "Con la polenta per assorbire il sugo"
+        }
+      ],
+      "cultural_context": {
+        "social_significance": "Winter survival food that brought families together during isolated months",
+        "economic_importance": "Used cheaper cuts of meat transformed into delicious meals",
+        "seasonal_relevance": "Essential winter dish when fresh ingredients were unavailable",
+        "regional_variations": "Some families added wild mushrooms preserved from autumn"
+      },
+      "learning_objectives": [
+        "Master winter food vocabulary and seasonal cooking terms",
+        "Learn meat cooking techniques and wine terminology",
+        "Understand mountain survival and food preservation concepts",
+        "Practice describing long cooking processes and timing"
+      ]
+    },
+    {
+      "recipe_id": "RECIPE_007",
+      "ticinese_name": "Gnocchi di Pane Raffermo",
+      "english_name": "Stale Bread Gnocchi",
+      "category": "everyday_dishes",
+      "difficulty_level": "A1",
+      "cultural_significance": "Zero-waste cooking tradition transforming old bread into comforting family meal",
+      "historical_period": "1850-1915",
+      "region": "Malcantone, Ticino",
+      "serves": "6 persone",
+      "preparation_time": "25 minuti",
+      "cooking_time": "15 minuti",
+      "ingredients": [
+        {
+          "ticinese": "pane raffermo",
+          "english": "stale bread",
+          "amount": "400g",
+          "vocabulary_id": "VOCAB_083",
+          "cultural_note": "Day-old bread was never thrown away, always transformed into new dishes"
+        },
+        {
+          "ticinese": "latte tiepido",
+          "english": "warm milk",
+          "amount": "250ml",
+          "vocabulary_id": "VOCAB_084",
+          "cultural_note": "Fresh from the cow, gently warmed by the kitchen fire"
+        },
+        {
+          "ticinese": "uova fresche",
+          "english": "fresh eggs",
+          "amount": "2 grosse",
+          "vocabulary_id": "VOCAB_085",
+          "cultural_note": "From the family chickens that pecked freely in the courtyard"
+        },
+        {
+          "ticinese": "farina bianca",
+          "english": "white flour",
+          "amount": "100g",
+          "vocabulary_id": "VOCAB_086",
+          "cultural_note": "Fine flour was precious, used sparingly for special preparations"
+        },
+        {
+          "ticinese": "formaggio grattugiato",
+          "english": "grated cheese",
+          "amount": "80g",
+          "vocabulary_id": "VOCAB_087",
+          "cultural_note": "Hard cheese aged in mountain caves, grated fresh for each meal"
+        },
+        {
+          "ticinese": "prezzemolo fresco",
+          "english": "fresh parsley",
+          "amount": "1 mazzetto",
+          "vocabulary_id": "VOCAB_088",
+          "cultural_note": "Grown in pots by the kitchen door, picked fresh daily"
+        },
+        {
+          "ticinese": "burro fresco",
+          "english": "fresh butter",
+          "amount": "60g",
+          "vocabulary_id": "VOCAB_089",
+          "cultural_note": "Churned in the wooden churn every Wednesday morning"
+        }
+      ],
+      "kitchen_tools": [
+        {
+          "ticinese": "scodella grande",
+          "english": "large bowl",
+          "cultural_note": "Deep ceramic bowl used for mixing and kneading dough"
+        },
+        {
+          "ticinese": "forchetta",
+          "english": "fork",
+          "cultural_note": "Used to mash the bread into a smooth paste"
+        },
+        {
+          "ticinese": "pentola larga",
+          "english": "wide pot",
+          "cultural_note": "Wide enough for gnocchi to float freely without crowding"
+        },
+        {
+          "ticinese": "mestolo forato",
+          "english": "slotted spoon",
+          "cultural_note": "Essential for lifting gnocchi from water without breaking them"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "ticinese": "Spezzettare il pane raffermo e metterlo nella scodella.",
+          "english": "Break the stale bread into pieces and put it in the bowl.",
+          "vocabulary_focus": ["spezzettare", "pane", "raffermo", "mettere", "scodella"],
+          "cultural_note": "Children helped break bread, learning not to waste even the hardest crusts",
+          "technique_tip": "Remove any very hard crusts that won't soften properly"
+        },
+        {
+          "step": 2,
+          "ticinese": "Versare il latte tiepido sul pane e lasciarlo ammorbidire.",
+          "english": "Pour the warm milk over the bread and let it soften.",
+          "vocabulary_focus": ["versare", "latte", "tiepido", "pane", "lasciare", "ammorbidire"],
+          "cultural_note": "The milk should be just warm enough to soften without cooking the bread",
+          "technique_tip": "Let it sit for 10 minutes until completely soft"
+        },
+        {
+          "step": 3,
+          "ticinese": "Schiacciare il pane con la forchetta fino ad ottenere una pasta.",
+          "english": "Mash the bread with a fork until you get a paste.",
+          "vocabulary_focus": ["schiacciare", "pane", "forchetta", "fino", "ottenere", "pasta"],
+          "cultural_note": "This mashing technique created the perfect texture for tender gnocchi",
+          "technique_tip": "Mash until smooth with no lumps remaining"
+        },
+        {
+          "step": 4,
+          "ticinese": "Aggiungere le uova, la farina e il formaggio grattugiato.",
+          "english": "Add the eggs, flour, and grated cheese.",
+          "vocabulary_focus": ["aggiungere", "uova", "farina", "formaggio", "grattugiato"],
+          "cultural_note": "Eggs bind the mixture while cheese adds flavor and richness",
+          "technique_tip": "Add ingredients one at a time, mixing well between each"
+        },
+        {
+          "step": 5,
+          "ticinese": "Tritare fine il prezzemolo e mescolarlo nell'impasto.",
+          "english": "Finely chop the parsley and mix it into the dough.",
+          "vocabulary_focus": ["tritare", "fine", "prezzemolo", "mescolare", "impasto"],
+          "cultural_note": "Fresh herbs added color and nutrition to the simple dish",
+          "technique_tip": "Chop parsley just before adding to preserve its fresh flavor"
+        },
+        {
+          "step": 6,
+          "ticinese": "Impastare tutto insieme fino ad avere un composto omogeneo.",
+          "english": "Knead everything together until you have a smooth mixture.",
+          "vocabulary_focus": ["impastare", "tutto", "insieme", "fino", "composto", "omogeneo"],
+          "cultural_note": "The kneading develops the texture and ensures even distribution",
+          "technique_tip": "The dough should be soft but hold together when shaped"
+        },
+        {
+          "step": 7,
+          "ticinese": "Formare piccole palline con le mani infarinate.",
+          "english": "Form small balls with floured hands.",
+          "vocabulary_focus": ["formare", "piccole", "palline", "mani", "infarinate"],
+          "cultural_note": "Each family member helped shape gnocchi, making it a social activity",
+          "technique_tip": "Keep hands lightly floured to prevent sticking"
+        },
+        {
+          "step": 8,
+          "ticinese": "Cuocere in acqua bollente salata per 3-4 minuti.",
+          "english": "Cook in boiling salted water for 3-4 minutes.",
+          "vocabulary_focus": ["cuocere", "acqua", "bollente", "salata", "minuti"],
+          "cultural_note": "Gnocchi float to the surface when perfectly cooked",
+          "technique_tip": "Don't overcook or they'll become heavy and tough"
+        },
+        {
+          "step": 9,
+          "ticinese": "Scolare con il mestolo forato e condire con burro e formaggio.",
+          "english": "Drain with a slotted spoon and dress with butter and cheese.",
+          "vocabulary_focus": ["scolare", "mestolo", "forato", "condire", "burro", "formaggio"],
+          "cultural_note": "Simple butter and cheese let the bread flavor shine through",
+          "technique_tip": "Dress immediately while gnocchi are still hot"
+        }
+      ],
+      "family_story": "Mamma always said 'Never throw away bread, it's a sin against God and the family.' When I was small, I watched her magic hands transform yesterday's hard loaf into tender, pillowy gnocchi. She taught me to feel the dough - it should be soft as a baby's cheek but not sticky. These gnocchi fed us when money was tight and the cupboard nearly bare. Each little dumpling was proof that with love and skill, nothing need be wasted. Even now, whenever I have stale bread, I hear her voice: 'Bread is life, child. Treat it with respect.'",
+      "vocabulary_learning": {
+        "bread_terms": ["pane", "raffermo", "fresco", "pasta", "impasto"],
+        "cooking_actions": ["spezzettare", "versare", "schiacciare", "aggiungere", "impastare", "formare"],
+        "textures": ["morbido", "liscio", "omogeneo", "cremoso", "tenero"],
+        "kitchen_basics": ["scodella", "forchetta", "pentola", "mestolo", "mani"]
+      },
+      "comprehension_questions": [
+        {
+          "ticinese": "Con che cosa si schiaccia il pane ammorbidito?",
+          "english": "What do you use to mash the softened bread?",
+          "answer": "Con la forchetta"
+        },
+        {
+          "ticinese": "Come devono essere le mani per formare le palline?",
+          "english": "How should the hands be to form the balls?",
+          "answer": "Infarinate"
+        },
+        {
+          "ticinese": "Come si capisce che i gnocchi sono cotti?",
+          "english": "How do you know when the gnocchi are cooked?",
+          "answer": "Vengono a galla nell'acqua bollente"
+        }
+      ],
+      "cultural_context": {
+        "social_significance": "Teaching children the value of food and the sin of waste",
+        "economic_importance": "Transforming leftovers into satisfying meals during hard times",
+        "seasonal_relevance": "Year-round dish that used readily available ingredients",
+        "regional_variations": "Some families added wild spinach or herbs from the garden"
+      },
+      "learning_objectives": [
+        "Learn basic bread and cooking vocabulary",
+        "Understand food waste prevention and resourcefulness",
+        "Master simple cooking techniques and measurements",
+        "Experience traditional family food values and kitchen wisdom"
+      ]
+    },
+    {
+      "recipe_id": "RECIPE_008",
+      "ticinese_name": "Pizzoccheri della Valtellina",
+      "english_name": "Buckwheat Pasta with Cabbage",
+      "category": "everyday_dishes",
+      "difficulty_level": "A2",
+      "cultural_significance": "Cross-border recipe adaptation from trading connections with Grisons valleys",
+      "historical_period": "1870-1915",
+      "region": "Val Poschiavo, Ticino (Grisons border influence)",
+      "serves": "6 persone",
+      "preparation_time": "45 minuti",
+      "cooking_time": "30 minuti",
+      "season": "Autunno-Inverno",
+      "ingredients": [
+        {
+          "ticinese": "farina di grano saraceno",
+          "english": "buckwheat flour",
+          "amount": "300g",
+          "vocabulary_id": "VOCAB_090",
+          "cultural_note": "Brought by traders from the Valtellina across mountain passes"
+        },
+        {
+          "ticinese": "farina bianca",
+          "english": "white flour",
+          "amount": "100g",
+          "vocabulary_id": "VOCAB_091",
+          "cultural_note": "Mixed with buckwheat to create the right texture for pasta"
+        },
+        {
+          "ticinese": "verza cappuccio",
+          "english": "savoy cabbage",
+          "amount": "1 media",
+          "vocabulary_id": "VOCAB_092",
+          "cultural_note": "Hardy cabbage that survived mountain frosts well into winter"
+        },
+        {
+          "ticinese": "patate di montagna",
+          "english": "mountain potatoes",
+          "amount": "4 medie",
+          "vocabulary_id": "VOCAB_093",
+          "cultural_note": "Small, flavorful potatoes from high-altitude gardens"
+        },
+        {
+          "ticinese": "formaggio Bitto",
+          "english": "Bitto cheese",
+          "amount": "200g",
+          "vocabulary_id": "VOCAB_094",
+          "cultural_note": "Alpine cheese from cattle grazed on mountain pastures"
+        },
+        {
+          "ticinese": "burro di malga",
+          "english": "alpine hut butter",
+          "amount": "100g",
+          "vocabulary_id": "VOCAB_095",
+          "cultural_note": "Rich butter made in summer alpine huts during pasture season"
+        },
+        {
+          "ticinese": "aglio selvatico",
+          "english": "wild garlic",
+          "amount": "2 spicchi",
+          "vocabulary_id": "VOCAB_096",
+          "cultural_note": "Foraged from forest edges, stronger than cultivated garlic"
+        },
+        {
+          "ticinese": "salvia fresca",
+          "english": "fresh sage",
+          "amount": "10 foglie",
+          "vocabulary_id": "VOCAB_097",
+          "cultural_note": "Grown in mountain herb gardens, prized for its intense aroma"
+        }
+      ],
+      "kitchen_tools": [
+        {
+          "ticinese": "spianatoia di legno",
+          "english": "wooden board",
+          "cultural_note": "Large wooden surface for rolling and cutting pasta"
+        },
+        {
+          "ticinese": "matterello",
+          "english": "rolling pin",
+          "cultural_note": "Heavy wooden pin for rolling pasta thin and even"
+        },
+        {
+          "ticinese": "coltello lungo",
+          "english": "long knife",
+          "cultural_note": "Sharp blade for cutting uniform pasta strips"
+        },
+        {
+          "ticinese": "pentola grande",
+          "english": "large pot",
+          "cultural_note": "Big enough to cook pasta and vegetables together"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "ticinese": "Impastare le farine con acqua tiepida fino ad avere una pasta liscia.",
+          "english": "Mix the flours with warm water until you have smooth dough.",
+          "vocabulary_focus": ["impastare", "farine", "acqua", "tiepida", "fino", "pasta", "liscia"],
+          "cultural_note": "Buckwheat dough requires more water than regular wheat pasta",
+          "technique_tip": "Knead for at least 10 minutes until the dough is elastic"
+        },
+        {
+          "step": 2,
+          "ticinese": "Lasciare riposare la pasta coperta per 30 minuti.",
+          "english": "Let the dough rest covered for 30 minutes.",
+          "vocabulary_focus": ["lasciare", "riposare", "pasta", "coperta", "minuti"],
+          "cultural_note": "Resting allows the buckwheat flour to fully hydrate",
+          "technique_tip": "Cover with a damp cloth to prevent drying"
+        },
+        {
+          "step": 3,
+          "ticinese": "Stendere la pasta sottile e tagliarla a strisce larghe.",
+          "english": "Roll out the dough thin and cut it into wide strips.",
+          "vocabulary_focus": ["stendere", "pasta", "sottile", "tagliare", "strisce", "larghe"],
+          "cultural_note": "Pizzoccheri should be about 1cm wide and 7cm long",
+          "technique_tip": "Work with small portions to keep dough from drying out"
+        },
+        {
+          "step": 4,
+          "ticinese": "Tagliare la verza a listarelle e le patate a cubetti.",
+          "english": "Cut the cabbage into thin strips and the potatoes into cubes.",
+          "vocabulary_focus": ["tagliare", "verza", "listarelle", "patate", "cubetti"],
+          "cultural_note": "Vegetables should cook in the same time as the pasta",
+          "technique_tip": "Cut potatoes small so they cook quickly with the pasta"
+        },
+        {
+          "step": 5,
+          "ticinese": "Bollire acqua salata e cuocere patate per 10 minuti.",
+          "english": "Boil salted water and cook potatoes for 10 minutes.",
+          "vocabulary_focus": ["bollire", "acqua", "salata", "cuocere", "patate", "minuti"],
+          "cultural_note": "Potatoes need a head start before adding pasta and cabbage",
+          "technique_tip": "Water should be well salted like sea water"
+        },
+        {
+          "step": 6,
+          "ticinese": "Aggiungere la verza e cuocere altri 5 minuti.",
+          "english": "Add the cabbage and cook for another 5 minutes.",
+          "vocabulary_focus": ["aggiungere", "verza", "cuocere", "altri", "minuti"],
+          "cultural_note": "Cabbage should be tender but still have some bite",
+          "technique_tip": "Don't overcook or cabbage becomes mushy and bitter"
+        },
+        {
+          "step": 7,
+          "ticinese": "Aggiungere i pizzoccheri e cuocere per 10-12 minuti.",
+          "english": "Add the pizzoccheri and cook for 10-12 minutes.",
+          "vocabulary_focus": ["aggiungere", "pizzoccheri", "cuocere", "minuti"],
+          "cultural_note": "Buckwheat pasta takes longer to cook than wheat pasta",
+          "technique_tip": "Taste test - pizzoccheri should be tender but not mushy"
+        },
+        {
+          "step": 8,
+          "ticinese": "Soffriggere aglio e salvia nel burro fino a profumare.",
+          "english": "Sauté garlic and sage in butter until fragrant.",
+          "vocabulary_focus": ["soffriggere", "aglio", "salvia", "burro", "fino", "profumare"],
+          "cultural_note": "This aromatic butter is the soul of the dish",
+          "technique_tip": "Keep heat low to prevent burning the garlic"
+        },
+        {
+          "step": 9,
+          "ticinese": "Scolare tutto e condire con burro profumato e formaggio.",
+          "english": "Drain everything and dress with fragrant butter and cheese.",
+          "vocabulary_focus": ["scolare", "tutto", "condire", "burro", "profumato", "formaggio"],
+          "cultural_note": "The cheese melts into the hot pasta creating a creamy coating",
+          "technique_tip": "Reserve some pasta water to help bind the sauce"
+        }
+      ],
+      "family_story": "Papà brought this recipe from his trading journeys to the Valtellina, where he exchanged our mountain cheese for their buckwheat flour. He said the people there lived on this pasta through the long winters, and it gave them strength for the hard mountain work. At first, Mamma was skeptical - buckwheat was animal feed, not human food. But when she tasted the earthy, nutty flavor, she understood why mountain people treasured it. This dish became our bridge between cultures, proving that good food has no borders, only traditions worth sharing.",
+      "vocabulary_learning": {
+        "pasta_making": ["impastare", "stendere", "tagliare", "strisce", "sottile"],
+        "cross_border_trade": ["commercio", "scambiare", "portare", "viaggio", "confine"],
+        "mountain_vegetables": ["verza", "patate", "cavolo", "ortaggi", "montagna"],
+        "cooking_techniques": ["bollire", "soffriggere", "scolare", "condire", "profumare"]
+      },
+      "comprehension_questions": [
+        {
+          "ticinese": "Perché la pasta deve riposare 30 minuti?",
+          "english": "Why does the dough need to rest 30 minutes?",
+          "answer": "Per far idratare bene la farina di grano saraceno"
+        },
+        {
+          "ticinese": "Cosa si aggiunge prima nell'acqua bollente?",
+          "english": "What do you add first to the boiling water?",
+          "answer": "Le patate"
+        },
+        {
+          "ticinese": "Con che cosa si profuma il burro?",
+          "english": "What do you flavor the butter with?",
+          "answer": "Con aglio e salvia"
+        }
+      ],
+      "cultural_context": {
+        "social_significance": "Symbol of cross-cultural exchange and mountain trading traditions",
+        "economic_importance": "Buckwheat provided essential nutrition in harsh mountain climates",
+        "seasonal_relevance": "Hearty autumn and winter dish using stored cabbage and potatoes",
+        "regional_variations": "Some families added wild mushrooms or mountain herbs"
+      },
+      "learning_objectives": [
+        "Learn pasta-making vocabulary and techniques",
+        "Understand cross-border cultural exchange through food",
+        "Master multi-step cooking processes and timing",
+        "Experience how trade influenced traditional mountain cuisine"
+      ]
+    },
+    {
+      "recipe_id": "RECIPE_009",
+      "ticinese_name": "Zuppa di Orzo e Fagioli",
+      "english_name": "Barley and Bean Soup",
+      "category": "everyday_dishes",
+      "difficulty_level": "A1",
+      "cultural_significance": "Peasant nutrition during lean months, combining grains and legumes for complete protein",
+      "historical_period": "1850-1915",
+      "region": "Mendrisiotto, Ticino",
+      "serves": "8 persone",
+      "preparation_time": "20 minuti + ammollo",
+      "cooking_time": "1.5 ore",
+      "season": "Tutto l'anno",
+      "ingredients": [
+        {
+          "ticinese": "orzo perlato",
+          "english": "pearl barley",
+          "amount": "200g",
+          "vocabulary_id": "VOCAB_098",
+          "cultural_note": "Hardy grain that grew well in mountain fields and stored through winter"
+        },
+        {
+          "ticinese": "fagioli borlotti secchi",
+          "english": "dried borlotti beans",
+          "amount": "300g",
+          "vocabulary_id": "VOCAB_099",
+          "cultural_note": "Beans dried from summer harvest, stored in sacks in the cantina"
+        },
+        {
+          "ticinese": "costine di maiale",
+          "english": "pork ribs",
+          "amount": "400g",
+          "vocabulary_id": "VOCAB_100",
+          "cultural_note": "Inexpensive cut that added flavor and some meat to the soup"
+        },
+        {
+          "ticinese": "sedano di campo",
+          "english": "field celery",
+          "amount": "2 coste",
+          "vocabulary_id": "VOCAB_101",
+          "cultural_note": "Wild celery with intense flavor, gathered from meadow edges"
+        },
+        {
+          "ticinese": "carota grande",
+          "english": "large carrot",
+          "amount": "1 grossa",
+          "vocabulary_id": "VOCAB_102",
+          "cultural_note": "Orange carrots stored in sand through winter months"
+        },
+        {
+          "ticinese": "cipolla gialla",
+          "english": "yellow onion",
+          "amount": "1 media",
+          "vocabulary_id": "VOCAB_103",
+          "cultural_note": "Sweet onions braided and hung from cantina rafters"
+        },
+        {
+          "ticinese": "pomodori secchi",
+          "english": "dried tomatoes",
+          "amount": "4 pezzi",
+          "vocabulary_id": "VOCAB_104",
+          "cultural_note": "Summer tomatoes dried in the sun for winter flavoring"
+        },
+        {
+          "ticinese": "alloro secco",
+          "english": "dried bay leaves",
+          "amount": "3 foglie",
+          "vocabulary_id": "VOCAB_105",
+          "cultural_note": "Wild bay leaves dried and stored for winter seasoning"
+        }
+      ],
+      "kitchen_tools": [
+        {
+          "ticinese": "pentola di coccio",
+          "english": "clay pot",
+          "cultural_note": "Clay pot retained heat and gave the soup better flavor"
+        },
+        {
+          "ticinese": "cucchiaio di legno",
+          "english": "wooden spoon",
+          "cultural_note": "Long-handled spoon for stirring thick soups"
+        },
+        {
+          "ticinese": "mestolo grande",
+          "english": "large ladle",
+          "cultural_note": "Deep ladle for serving generous portions to hungry families"
+        },
+        {
+          "ticinese": "setaccio",
+          "english": "strainer",
+          "cultural_note": "Used to strain beans and check for stones"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "ticinese": "Mettere i fagioli a bagno in acqua fredda per una notte.",
+          "english": "Soak the beans in cold water overnight.",
+          "vocabulary_focus": ["mettere", "fagioli", "bagno", "acqua", "fredda", "notte"],
+          "cultural_note": "Soaking was done the night before, planned ahead for the next day's meal",
+          "technique_tip": "Use plenty of water as beans will expand significantly"
+        },
+        {
+          "step": 2,
+          "ticinese": "Sciacquare i fagioli e metterli nella pentola con acqua fresca.",
+          "english": "Rinse the beans and put them in the pot with fresh water.",
+          "vocabulary_focus": ["sciacquare", "fagioli", "mettere", "pentola", "acqua", "fresca"],
+          "cultural_note": "Fresh water removes any impurities from the soaking water",
+          "technique_tip": "Cover beans with about 5cm of water above their level"
+        },
+        {
+          "step": 3,
+          "ticinese": "Aggiungere le costine e portare a bollore lento.",
+          "english": "Add the ribs and bring to a gentle boil.",
+          "vocabulary_focus": ["aggiungere", "costine", "portare", "bollore", "lento"],
+          "cultural_note": "Meat bones create rich broth that makes beans more nutritious",
+          "technique_tip": "Skim foam that rises to surface for clearer broth"
+        },
+        {
+          "step": 4,
+          "ticinese": "Cuocere coperto per 1 ora, mescolando di tanto in tanto.",
+          "english": "Cook covered for 1 hour, stirring from time to time.",
+          "vocabulary_focus": ["cuocere", "coperto", "ora", "mescolando", "tanto"],
+          "cultural_note": "Long, slow cooking breaks down tough bean skins",
+          "technique_tip": "Keep at gentle simmer to prevent beans from breaking apart"
+        },
+        {
+          "step": 5,
+          "ticinese": "Tagliare le verdure a pezzetti piccoli e aggiungerle.",
+          "english": "Cut the vegetables into small pieces and add them.",
+          "vocabulary_focus": ["tagliare", "verdure", "pezzetti", "piccoli", "aggiungere"],
+          "cultural_note": "Small pieces cook evenly and distribute flavor throughout",
+          "technique_tip": "Cut vegetables uniform size for even cooking"
+        },
+        {
+          "step": 6,
+          "ticinese": "Aggiungere orzo e pomodori secchi, mescolare bene.",
+          "english": "Add barley and dried tomatoes, stir well.",
+          "vocabulary_focus": ["aggiungere", "orzo", "pomodori", "secchi", "mescolare", "bene"],
+          "cultural_note": "Barley thickens the soup while tomatoes add acidity and color",
+          "technique_tip": "Barley will absorb liquid so add more water if needed"
+        },
+        {
+          "step": 7,
+          "ticinese": "Continuare la cottura per altri 30 minuti fino a cremosità.",
+          "english": "Continue cooking for another 30 minutes until creamy.",
+          "vocabulary_focus": ["continuare", "cottura", "altri", "minuti", "fino", "cremosità"],
+          "cultural_note": "The soup is ready when barley is tender and broth is thick",
+          "technique_tip": "Stir occasionally to prevent sticking on bottom"
+        },
+        {
+          "step": 8,
+          "ticinese": "Togliere le costine, sfilacciare la carne e rimetterla nella zuppa.",
+          "english": "Remove the ribs, shred the meat and return it to the soup.",
+          "vocabulary_focus": ["togliere", "costine", "sfilacciare", "carne", "rimettere", "zuppa"],
+          "cultural_note": "Every bit of meat was precious and carefully returned to the pot",
+          "technique_tip": "Remove any bones carefully to avoid leaving them in the soup"
+        },
+        {
+          "step": 9,
+          "ticinese": "Aggiustare di sale e servire ben caldo con pane.",
+          "english": "Adjust salt and serve very hot with bread.",
+          "vocabulary_focus": ["aggiustare", "sale", "servire", "ben", "caldo", "pane"],
+          "cultural_note": "Served with crusty bread to make a complete, filling meal",
+          "technique_tip": "Taste for seasoning just before serving"
+        }
+      ],
+      "family_story": "This soup sustained us through three harsh winters when the potato crop failed and money was scarce. Nonna Caterina would stretch one pot to feed the whole family for two days, adding water and maybe a crust of bread to make it last. She taught me that hunger makes the best seasoning, but love makes the best soup. The beans and barley together gave us strength when there was little else. She would say, 'This soup has everything we need - it fills the belly, warms the heart, and costs almost nothing.' Even now, when I smell barley cooking, I remember her hands stirring that pot, making abundance from scarcity.",
+      "vocabulary_learning": {
+        "survival_foods": ["orzo", "fagioli", "legumi", "cereali", "nutrire"],
+        "poverty_cooking": ["economico", "poco", "allungare", "bastare", "fame"],
+        "storage_methods": ["secco", "conservare", "cantina", "inverno", "ammollare"],
+        "cooking_times": ["una notte", "un'ora", "30 minuti", "tanto in tanto", "fino a"]
+      },
+      "comprehension_questions": [
+        {
+          "ticinese": "Quanto tempo devono stare a bagno i fagioli?",
+          "english": "How long should the beans soak?",
+          "answer": "Una notte intera"
+        },
+        {
+          "ticinese": "Perché si aggiungono le costine?",
+          "english": "Why do you add the ribs?",
+          "answer": "Per dare sapore e fare un brodo ricco"
+        },
+        {
+          "ticinese": "Come si serve questa zuppa?",
+          "english": "How do you serve this soup?",
+          "answer": "Ben calda con pane"
+        }
+      ],
+      "cultural_context": {
+        "social_significance": "Survival food that sustained families during economic hardship",
+        "economic_importance": "Inexpensive ingredients that provided complete nutrition",
+        "seasonal_relevance": "Year-round dish using stored dried ingredients",
+        "regional_variations": "Some families added wild greens or preserved vegetables"
+      },
+      "learning_objectives": [
+        "Learn survival food vocabulary and storage methods",
+        "Understand peasant cooking and resourcefulness",
+        "Master basic soup-making techniques and timing",
+        "Experience how families coped with economic hardship through food"
+      ]
+    },
+    {
+      "recipe_id": "RECIPE_010",
+      "ticinese_name": "Frittata con Erbe Selvatiche",
+      "english_name": "Wild Herb Omelet",
+      "category": "everyday_dishes",
+      "difficulty_level": "A2",
+      "cultural_significance": "Foraging knowledge passed through generations, connecting families with natural mountain bounty",
+      "historical_period": "1850-1915",
+      "region": "Centovalli, Ticino",
+      "serves": "4 persone",
+      "preparation_time": "35 minuti",
+      "cooking_time": "12 minuti",
+      "season": "Primavera-Estate",
+      "ingredients": [
+        {
+          "ticinese": "uova fresche",
+          "english": "fresh eggs",
+          "amount": "8 grosse",
+          "vocabulary_id": "VOCAB_106",
+          "cultural_note": "From free-range chickens that pecked insects and seeds around the farmyard"
+        },
+        {
+          "ticinese": "crescione selvatico",
+          "english": "wild watercress",
+          "amount": "100g",
+          "vocabulary_id": "VOCAB_107",
+          "cultural_note": "Gathered from mountain streams, rich in minerals and vitamins"
+        },
+        {
+          "ticinese": "ortiche tenere",
+          "english": "young nettles",
+          "amount": "80g",
+          "vocabulary_id": "VOCAB_108",
+          "cultural_note": "Picked with gloves from shady spots, prized for their iron content"
+        },
+        {
+          "ticinese": "spinaci di campo",
+          "english": "wild spinach",
+          "amount": "60g",
+          "vocabulary_id": "VOCAB_109",
+          "cultural_note": "Found in meadows and forest edges, more flavorful than garden varieties"
+        },
+        {
+          "ticinese": "acetosa fresca",
+          "english": "fresh sorrel",
+          "amount": "40g",
+          "vocabulary_id": "VOCAB_110",
+          "cultural_note": "Lemony-tart leaves that added bright flavor to simple dishes"
+        },
+        {
+          "ticinese": "prezzemolo montano",
+          "english": "mountain parsley",
+          "amount": "2 mazzi",
+          "vocabulary_id": "VOCAB_111",
+          "cultural_note": "Wild parsley with intense flavor, different from garden parsley"
+        },
+        {
+          "ticinese": "burro fresco",
+          "english": "fresh butter",
+          "amount": "40g",
+          "vocabulary_id": "VOCAB_112",
+          "cultural_note": "Yellow butter from grass-fed cows, churned that morning"
+        },
+        {
+          "ticinese": "formaggio tenero",
+          "english": "soft cheese",
+          "amount": "80g",
+          "vocabulary_id": "VOCAB_113",
+          "cultural_note": "Fresh goat cheese made from morning milk"
+        }
+      ],
+      "kitchen_tools": [
+        {
+          "ticinese": "padella di ferro",
+          "english": "iron pan",
+          "cultural_note": "Heavy cast-iron pan that distributed heat evenly"
+        },
+        {
+          "ticinese": "frusta",
+          "english": "whisk",
+          "cultural_note": "Wire whisk for beating eggs until light and fluffy"
+        },
+        {
+          "ticinese": "coltello da erbe",
+          "english": "herb knife",
+          "cultural_note": "Small, sharp knife specifically for chopping delicate herbs"
+        },
+        {
+          "ticinese": "cesta di vimini",
+          "english": "wicker basket",
+          "cultural_note": "Traditional foraging basket woven from local willow branches"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "ticinese": "Raccogliere le erbe al mattino presto quando sono fresche di rugiada.",
+          "english": "Gather the herbs early morning when fresh with dew.",
+          "vocabulary_focus": ["raccogliere", "erbe", "mattino", "presto", "fresche", "rugiada"],
+          "cultural_note": "Morning gathering preserved maximum nutrition and flavor",
+          "technique_tip": "Pick only young, tender leaves and avoid damaged or yellowed ones"
+        },
+        {
+          "step": 2,
+          "ticinese": "Lavare accuratamente le erbe in acqua corrente fredda.",
+          "english": "Wash the herbs thoroughly in cold running water.",
+          "vocabulary_focus": ["lavare", "accuratamente", "erbe", "acqua", "corrente", "fredda"],
+          "cultural_note": "Mountain stream water was considered the best for washing greens",
+          "technique_tip": "Rinse several times to remove all dirt and any insects"
+        },
+        {
+          "step": 3,
+          "ticinese": "Asciugare delicatamente le erbe con un canovaccio pulito.",
+          "english": "Gently dry the herbs with a clean cloth.",
+          "vocabulary_focus": ["asciugare", "delicatamente", "erbe", "canovaccio", "pulito"],
+          "cultural_note": "Gentle handling preserved the tender leaves from bruising",
+          "technique_tip": "Pat dry instead of rubbing to avoid damaging delicate leaves"
+        },
+        {
+          "step": 4,
+          "ticinese": "Tritare finemente tutte le erbe con il coltello affilato.",
+          "english": "Finely chop all the herbs with the sharp knife.",
+          "vocabulary_focus": ["tritare", "finemente", "tutte", "erbe", "coltello", "affilato"],
+          "cultural_note": "Fine chopping releases oils and distributes flavor evenly",
+          "technique_tip": "Use a rocking motion to chop herbs quickly and evenly"
+        },
+        {
+          "step": 5,
+          "ticinese": "Rompere le uova in una scodella e sbatterle energicamente.",
+          "english": "Break the eggs into a bowl and beat them vigorously.",
+          "vocabulary_focus": ["rompere", "uova", "scodella", "sbattere", "energicamente"],
+          "cultural_note": "Well-beaten eggs create a light, fluffy frittata texture",
+          "technique_tip": "Beat until eggs are pale yellow and slightly frothy"
+        },
+        {
+          "step": 6,
+          "ticinese": "Mescolare le erbe tritate nelle uova sbattute.",
+          "english": "Mix the chopped herbs into the beaten eggs.",
+          "vocabulary_focus": ["mescolare", "erbe", "tritate", "uova", "sbattute"],
+          "cultural_note": "The green herbs turned the eggs a beautiful spring color",
+          "technique_tip": "Mix gently to distribute herbs without deflating the eggs"
+        },
+        {
+          "step": 7,
+          "ticinese": "Scaldare il burro nella padella a fuoco medio-basso.",
+          "english": "Heat the butter in the pan over medium-low heat.",
+          "vocabulary_focus": ["scaldare", "burro", "padella", "fuoco", "medio-basso"],
+          "cultural_note": "Low heat prevents the delicate herbs from burning",
+          "technique_tip": "Butter should foam but not brown for perfect temperature"
+        },
+        {
+          "step": 8,
+          "ticinese": "Versare il composto e cuocere senza mescolare per 5 minuti.",
+          "english": "Pour in the mixture and cook without stirring for 5 minutes.",
+          "vocabulary_focus": ["versare", "composto", "cuocere", "senza", "mescolare", "minuti"],
+          "cultural_note": "Not stirring allows the bottom to set while keeping top creamy",
+          "technique_tip": "Shake pan gently to check if bottom is set but not stuck"
+        },
+        {
+          "step": 9,
+          "ticinese": "Aggiungere il formaggio a pezzetti sulla superficie.",
+          "english": "Add the cheese in small pieces on the surface.",
+          "vocabulary_focus": ["aggiungere", "formaggio", "pezzetti", "superficie"],
+          "cultural_note": "Fresh cheese melts into creamy pockets of richness",
+          "technique_tip": "Distribute cheese evenly for consistent flavor in every bite"
+        },
+        {
+          "step": 10,
+          "ticinese": "Finire la cottura nel forno per 3 minuti fino a doratura.",
+          "english": "Finish cooking in the oven for 3 minutes until golden.",
+          "vocabulary_focus": ["finire", "cottura", "forno", "minuti", "fino", "doratura"],
+          "cultural_note": "Oven finishing created the perfect texture - set but still creamy",
+          "technique_tip": "Top should be just set and lightly golden, not brown"
+        }
+      ],
+      "family_story": "Zia Maria knew every edible plant in these mountains like other women knew their recipes. She would wake us at dawn in spring, saying 'The mountains are calling us to breakfast!' With her wicker basket, we'd follow forest paths she learned as a child, gathering nettles from shaded spots, watercress from bubbling streams, and wild spinach from sunny meadows. She taught me which leaves to pick, when they tasted best, and how to thank the plants for their gift. This frittata was our reward - the taste of the mountains themselves, green and wild and free. 'Nature provides everything,' she would say, 'if you know how to listen.'",
+      "vocabulary_learning": {
+        "foraging_vocabulary": ["raccogliere", "selvatico", "erbe", "bosco", "rugiada"],
+        "plant_knowledge": ["crescione", "ortiche", "acetosa", "prezzemolo", "spinaci"],
+        "preparation_techniques": ["lavare", "asciugare", "tritare", "finemente", "delicatamente"],
+        "cooking_actions": ["rompere", "sbattere", "mescolare", "versare", "scaldare", "cuocere"]
+      },
+      "comprehension_questions": [
+        {
+          "ticinese": "Quando è meglio raccogliere le erbe selvatiche?",
+          "english": "When is it best to gather wild herbs?",
+          "answer": "Al mattino presto quando sono fresche di rugiada"
+        },
+        {
+          "ticinese": "Perché si cuoce a fuoco medio-basso?",
+          "english": "Why do you cook on medium-low heat?",
+          "answer": "Per non bruciare le erbe delicate"
+        },
+        {
+          "ticinese": "Come si finisce la cottura della frittata?",
+          "english": "How do you finish cooking the frittata?",
+          "answer": "Nel forno per 3 minuti fino a doratura"
+        }
+      ],
+      "cultural_context": {
+        "social_significance": "Teaching children to recognize and harvest nature's bounty safely",
+        "economic_importance": "Free, nutritious food supplemented expensive store-bought vegetables",
+        "seasonal_relevance": "Spring and summer foraging when wild plants were most tender",
+        "regional_variations": "Each valley had its own preferred combination of wild herbs"
+      },
+      "learning_objectives": [
+        "Learn foraging and wild food vocabulary",
+        "Understand traditional plant knowledge and seasonal eating",
+        "Master egg cooking techniques and herb preparation",
+        "Experience connection between nature and traditional cuisine"
+      ]
+    },
+    {
+      "recipe_id": "RECIPE_011",
+      "ticinese_name": "Cappuns",
+      "english_name": "Chard-Wrapped Dumplings",
+      "category": "everyday_dishes",
+      "difficulty_level": "B1",
+      "cultural_significance": "Cross-cultural recipe showing Graubünden influence on Ticinese cuisine through trade and migration",
+      "historical_period": "1880-1915",
+      "region": "Val Bregaglia, Ticino (Graubünden border influence)",
+      "serves": "6 persone",
+      "preparation_time": "60 minuti",
+      "cooking_time": "25 minuti",
+      "season": "Estate-Autunno",
+      "ingredients": [
+        {
+          "ticinese": "bietole grandi",
+          "english": "large Swiss chard",
+          "amount": "12 foglie",
+          "vocabulary_id": "VOCAB_114",
+          "cultural_note": "Large, perfect leaves for wrapping, grown in mountain vegetable gardens"
+        },
+        {
+          "ticinese": "pane raffermo grattugiato",
+          "english": "stale bread crumbs",
+          "amount": "200g",
+          "vocabulary_id": "VOCAB_115",
+          "cultural_note": "Day-old bread transformed into fine crumbs, nothing wasted"
+        },
+        {
+          "ticinese": "latte caldo",
+          "english": "hot milk",
+          "amount": "150ml",
+          "vocabulary_id": "VOCAB_116",
+          "cultural_note": "Warm milk from evening milking, still fragrant of hay"
+        },
+        {
+          "ticinese": "speck affumicato",
+          "english": "smoked speck",
+          "amount": "100g",
+          "vocabulary_id": "VOCAB_117",
+          "cultural_note": "Alpine smoked pork from Graubünden, traded across mountain passes"
+        },
+        {
+          "ticinese": "uova fresche",
+          "english": "fresh eggs",
+          "amount": "2 medie",
+          "vocabulary_id": "VOCAB_118",
+          "cultural_note": "Free-range eggs with deep yellow yolks from mountain-fed chickens"
+        },
+        {
+          "ticinese": "formaggio alpino",
+          "english": "alpine cheese",
+          "amount": "80g",
+          "vocabulary_id": "VOCAB_119",
+          "cultural_note": "Hard cheese aged in mountain caves during summer pasture season"
+        },
+        {
+          "ticinese": "cipolla dorata",
+          "english": "golden onion",
+          "amount": "1 piccola",
+          "vocabulary_id": "VOCAB_120",
+          "cultural_note": "Sweet onions that caramelized beautifully when cooked slowly"
+        },
+        {
+          "ticinese": "erbe miste",
+          "english": "mixed herbs",
+          "amount": "2 cucchiai",
+          "vocabulary_id": "VOCAB_121",
+          "cultural_note": "Parsley, chives, and marjoram from the kitchen herb garden"
+        },
+        {
+          "ticinese": "brodo vegetale",
+          "english": "vegetable broth",
+          "amount": "1 litro",
+          "vocabulary_id": "VOCAB_122",
+          "cultural_note": "Made from scraps of vegetables and herbs, flavored with love"
+        }
+      ],
+      "kitchen_tools": [
+        {
+          "ticinese": "pentola grande per lessare",
+          "english": "large pot for blanching",
+          "cultural_note": "Wide, deep pot essential for blanching large chard leaves"
+        },
+        {
+          "ticinese": "scodella per impasto",
+          "english": "mixing bowl",
+          "cultural_note": "Large ceramic bowl for combining all filling ingredients"
+        },
+        {
+          "ticinese": "coltello per tritare",
+          "english": "chopping knife",
+          "cultural_note": "Sharp blade for finely mincing speck and herbs"
+        },
+        {
+          "ticinese": "spago da cucina",
+          "english": "kitchen string",
+          "cultural_note": "Natural twine for tying delicate dumpling packages"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "ticinese": "Lessare le foglie di bietola in acqua bollente per 2 minuti.",
+          "english": "Blanch the chard leaves in boiling water for 2 minutes.",
+          "vocabulary_focus": ["lessare", "foglie", "bietola", "acqua", "bollente", "minuti"],
+          "cultural_note": "Brief blanching makes leaves pliable for wrapping without losing color",
+          "technique_tip": "Have ice water ready to stop cooking immediately"
+        },
+        {
+          "step": 2,
+          "ticinese": "Scolare e raffreddare le foglie in acqua ghiacciata immediatamente.",
+          "english": "Drain and cool the leaves in ice water immediately.",
+          "vocabulary_focus": ["scolare", "raffreddare", "foglie", "acqua", "ghiacciata", "immediatamente"],
+          "cultural_note": "Ice water preserves the bright green color and crisp texture",
+          "technique_tip": "Pat leaves completely dry before using to prevent soggy dumplings"
+        },
+        {
+          "step": 3,
+          "ticinese": "Ammorbidire il pane grattugiato con il latte caldo.",
+          "english": "Soften the bread crumbs with the hot milk.",
+          "vocabulary_focus": ["ammorbidire", "pane", "grattugiato", "latte", "caldo"],
+          "cultural_note": "Hot milk creates the perfect creamy base for the dumpling filling",
+          "technique_tip": "Let it rest for 10 minutes to fully absorb the milk"
+        },
+        {
+          "step": 4,
+          "ticinese": "Tritare finemente lo speck, la cipolla e le erbe insieme.",
+          "english": "Finely chop the speck, onion, and herbs together.",
+          "vocabulary_focus": ["tritare", "finemente", "speck", "cipolla", "erbe", "insieme"],
+          "cultural_note": "Fine chopping ensures even distribution of flavors throughout",
+          "technique_tip": "Chop speck when cold for cleaner, more precise cuts"
+        },
+        {
+          "step": 5,
+          "ticinese": "Mescolare il pane ammollato con le uova e il formaggio grattugiato.",
+          "english": "Mix the soaked bread with eggs and grated cheese.",
+          "vocabulary_focus": ["mescolare", "pane", "ammollato", "uova", "formaggio", "grattugiato"],
+          "cultural_note": "Eggs bind the mixture while cheese adds richness and flavor",
+          "technique_tip": "Mix gently to avoid making the filling too dense"
+        },
+        {
+          "step": 6,
+          "ticinese": "Aggiungere il trito di speck e erbe, impastare delicatamente.",
+          "english": "Add the chopped speck and herb mixture, knead gently.",
+          "vocabulary_focus": ["aggiungere", "trito", "speck", "erbe", "impastare", "delicatamente"],
+          "cultural_note": "Gentle handling preserves the light texture of mountain dumplings",
+          "technique_tip": "The filling should hold together but not be compact"
+        },
+        {
+          "step": 7,
+          "ticinese": "Stendere le foglie e mettere un cucchiaio di ripieno al centro.",
+          "english": "Spread out the leaves and put a spoonful of filling in the center.",
+          "vocabulary_focus": ["stendere", "foglie", "mettere", "cucchiaio", "ripieno", "centro"],
+          "cultural_note": "Each dumpling was lovingly hand-wrapped by family members",
+          "technique_tip": "Remove thick stems to make wrapping easier"
+        },
+        {
+          "step": 8,
+          "ticinese": "Avvolgere le foglie come pacchettini e legare con lo spago.",
+          "english": "Wrap the leaves like little packages and tie with string.",
+          "vocabulary_focus": ["avvolgere", "foglie", "pacchettini", "legare", "spago"],
+          "cultural_note": "The art of tying required skill to keep dumplings intact during cooking",
+          "technique_tip": "Tie firmly but not too tightly to allow for slight expansion"
+        },
+        {
+          "step": 9,
+          "ticinese": "Cuocere i cappuns nel brodo bollente per 20 minuti dolcemente.",
+          "english": "Cook the cappuns in gently boiling broth for 20 minutes.",
+          "vocabulary_focus": ["cuocere", "cappuns", "brodo", "bollente", "minuti", "dolcemente"],
+          "cultural_note": "Gentle simmering prevents the delicate packages from breaking apart",
+          "technique_tip": "They should float and feel firm but tender when done"
+        },
+        {
+          "step": 10,
+          "ticinese": "Servire caldi nel loro brodo con formaggio grattugiato fresco.",
+          "english": "Serve hot in their broth with fresh grated cheese.",
+          "vocabulary_focus": ["servire", "caldi", "loro", "brodo", "formaggio", "grattugiato", "fresco"],
+          "cultural_note": "Serving in the cooking broth preserved all the flavors and nutrients",
+          "technique_tip": "Remove strings carefully at the table for best presentation"
+        }
+      ],
+      "family_story": "This recipe came to our valley with Nonna Rosa when she married Nonno Pietro and crossed from Graubünden into Ticino. She brought with her a wooden spoon, a few coins, and the knowledge of how to wrap cappuns like tiny green presents. At first, the neighbors were suspicious - 'What are these strange dumplings wrapped in leaves?' But when they tasted them, floating in golden broth with the smoky flavor of speck, they understood that food is love that travels across borders. Nonna would say, 'A recipe that crosses three languages and two cultures must be very special indeed.' And it was - it brought two families, two valleys, and two traditions together in one perfect bite.",
+      "vocabulary_learning": {
+        "cross_border_cuisine": ["influenza", "confine", "tradizione", "scambiare", "portare"],
+        "wrapping_techniques": ["avvolgere", "legare", "pacchetto", "spago", "stendere"],
+        "advanced_cooking": ["lessare", "raffreddare", "ammorbidire", "impastare", "ripieno"],
+        "alpine_ingredients": ["speck", "bietole", "formaggio alpino", "erbe miste", "brodo"]
+      },
+      "comprehension_questions": [
+        {
+          "ticinese": "Perché si mettono le foglie di bietola in acqua ghiacciata?",
+          "english": "Why do you put the chard leaves in ice water?",
+          "answer": "Per fermare la cottura e mantenere il colore verde"
+        },
+        {
+          "ticinese": "Come si legano i cappuns?",
+          "english": "How do you tie the cappuns?",
+          "answer": "Con lo spago da cucina, come pacchettini"
+        },
+        {
+          "ticinese": "Da dove viene questa ricetta?",
+          "english": "Where does this recipe come from?",
+          "answer": "Dal Grigioni, portata attraverso il confine"
+        }
+      ],
+      "cultural_context": {
+        "social_significance": "Symbol of cultural blending and cross-border marriage traditions",
+        "economic_importance": "Combined local ingredients with imported alpine specialties like speck",
+        "seasonal_relevance": "Summer chard harvest combined with preserved winter ingredients",
+        "regional_variations": "Different valleys used different combinations of herbs and meats"
+      },
+      "learning_objectives": [
+        "Learn advanced cooking techniques and wrapping methods",
+        "Understand cultural exchange through food and marriage",
+        "Master complex recipe vocabulary and multi-step processes",
+        "Experience how food traditions cross linguistic and cultural boundaries"
+      ]
+    },
+    {
+      "recipe_id": "RECIPE_012",
+      "ticinese_name": "Pastasciutta con Noci",
+      "english_name": "Pasta with Walnut Sauce",
+      "category": "everyday_dishes",
+      "difficulty_level": "A2",
+      "cultural_significance": "Autumn harvest celebration using abundant walnut crop from family orchards",
+      "historical_period": "1860-1915",
+      "region": "Gambarogno, Ticino",
+      "serves": "6 persone",
+      "preparation_time": "40 minuti",
+      "cooking_time": "15 minuti",
+      "season": "Autunno",
+      "ingredients": [
+        {
+          "ticinese": "noci fresche sgusciate",
+          "english": "fresh shelled walnuts",
+          "amount": "300g",
+          "vocabulary_id": "VOCAB_123",
+          "cultural_note": "Harvested from ancient walnut trees that surrounded mountain homes"
+        },
+        {
+          "ticinese": "pane raffermo",
+          "english": "stale bread",
+          "amount": "100g",
+          "vocabulary_id": "VOCAB_124",
+          "cultural_note": "Day-old bread softened with milk to thicken the creamy sauce"
+        },
+        {
+          "ticinese": "latte fresco",
+          "english": "fresh milk",
+          "amount": "200ml",
+          "vocabulary_id": "VOCAB_125",
+          "cultural_note": "Rich milk from cows that grazed on autumn mountain pastures"
+        },
+        {
+          "ticinese": "aglio di montagna",
+          "english": "mountain garlic",
+          "amount": "2 spicchi",
+          "vocabulary_id": "VOCAB_126",
+          "cultural_note": "Small, intense garlic cloves braided and stored in the cantina"
+        },
+        {
+          "ticinese": "formaggio grana",
+          "english": "grana cheese",
+          "amount": "100g",
+          "vocabulary_id": "VOCAB_127",
+          "cultural_note": "Aged hard cheese, carefully rationed for special autumn dishes"
+        },
+        {
+          "ticinese": "prezzemolo fresco",
+          "english": "fresh parsley",
+          "amount": "1 mazzetto",
+          "vocabulary_id": "VOCAB_128",
+          "cultural_note": "Still green and fragrant from the autumn herb garden"
+        },
+        {
+          "ticinese": "olio d'oliva",
+          "english": "olive oil",
+          "amount": "4 cucchiai",
+          "vocabulary_id": "VOCAB_129",
+          "cultural_note": "Precious oil from the Lombardy plains, traded for mountain cheese"
+        },
+        {
+          "ticinese": "pasta lunga",
+          "english": "long pasta",
+          "amount": "500g",
+          "vocabulary_id": "VOCAB_130",
+          "cultural_note": "Fresh pasta made with mountain wheat and eggs from free-range hens"
+        },
+        {
+          "ticinese": "sale fino",
+          "english": "fine salt",
+          "amount": "1 pizzico",
+          "vocabulary_id": "VOCAB_131",
+          "cultural_note": "White salt from the trade routes, precious as gold in the mountains"
+        }
+      ],
+      "kitchen_tools": [
+        {
+          "ticinese": "mortaio di pietra",
+          "english": "stone mortar",
+          "cultural_note": "Heavy mortar carved from local stone for crushing walnuts"
+        },
+        {
+          "ticinese": "pestello di legno",
+          "english": "wooden pestle",
+          "cultural_note": "Smooth wooden pestle worn smooth by generations of use"
+        },
+        {
+          "ticinese": "pentola per pasta",
+          "english": "pasta pot",
+          "cultural_note": "Large copper pot exclusively used for cooking pasta"
+        },
+        {
+          "ticinese": "schiaccianoci",
+          "english": "nutcracker",
+          "cultural_note": "Iron nutcracker for cracking fresh walnuts without damaging meats"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "ticinese": "Raccogliere le noci mature cadute dagli alberi al mattino presto.",
+          "english": "Gather the ripe walnuts fallen from trees in the early morning.",
+          "vocabulary_focus": ["raccogliere", "noci", "mature", "cadute", "alberi", "mattino", "presto"],
+          "cultural_note": "Children helped gather walnuts, making it a family autumn tradition",
+          "technique_tip": "Fresh-fallen walnuts have the best flavor and moisture content"
+        },
+        {
+          "step": 2,
+          "ticinese": "Sgusciare le noci attentamente per ottenere gherigli interi.",
+          "english": "Shell the walnuts carefully to obtain whole kernels.",
+          "vocabulary_focus": ["sgusciare", "noci", "attentamente", "ottenere", "gherigli", "interi"],
+          "cultural_note": "Skill in cracking nuts without breaking them was prized in families",
+          "technique_tip": "Crack gently to keep kernels whole for better texture in sauce"
+        },
+        {
+          "step": 3,
+          "ticinese": "Ammollare il pane nel latte tiepido per 10 minuti.",
+          "english": "Soak the bread in warm milk for 10 minutes.",
+          "vocabulary_focus": ["ammollare", "pane", "latte", "tiepido", "minuti"],
+          "cultural_note": "Softened bread creates the creamy base for traditional walnut sauce",
+          "technique_tip": "Remove crusts for a smoother, more delicate sauce"
+        },
+        {
+          "step": 4,
+          "ticinese": "Pelare l'aglio e tritarlo finemente con il coltello.",
+          "english": "Peel the garlic and chop it finely with the knife.",
+          "vocabulary_focus": ["pelare", "aglio", "tritare", "finemente", "coltello"],
+          "cultural_note": "Garlic was used sparingly but added essential flavor depth",
+          "technique_tip": "Remove any green germ from garlic for milder flavor"
+        },
+        {
+          "step": 5,
+          "ticinese": "Mettere noci, pane ammollato e aglio nel mortaio di pietra.",
+          "english": "Put walnuts, soaked bread, and garlic in the stone mortar.",
+          "vocabulary_focus": ["mettere", "noci", "pane", "ammollato", "aglio", "mortaio", "pietra"],
+          "cultural_note": "The stone mortar was often the most valuable kitchen tool in the house",
+          "technique_tip": "Work with small batches for more even crushing"
+        },
+        {
+          "step": 6,
+          "ticinese": "Pestare energicamente fino ad ottenere una pasta cremosa.",
+          "english": "Pound vigorously until you obtain a creamy paste.",
+          "vocabulary_focus": ["pestare", "energicamente", "fino", "ottenere", "pasta", "cremosa"],
+          "cultural_note": "The rhythmic pounding was often accompanied by family conversation",
+          "technique_tip": "Add a few drops of milk if mixture becomes too thick"
+        },
+        {
+          "step": 7,
+          "ticinese": "Aggiungere olio, formaggio e prezzemolo, mescolare bene.",
+          "english": "Add oil, cheese, and parsley, mix well.",
+          "vocabulary_focus": ["aggiungere", "olio", "formaggio", "prezzemolo", "mescolare", "bene"],
+          "cultural_note": "The best olive oil was saved for special autumn dishes like this",
+          "technique_tip": "Add oil gradually to create proper emulsion"
+        },
+        {
+          "step": 8,
+          "ticinese": "Cuocere la pasta in abbondante acqua salata bollente.",
+          "english": "Cook the pasta in abundant boiling salted water.",
+          "vocabulary_focus": ["cuocere", "pasta", "abbondante", "acqua", "salata", "bollente"],
+          "cultural_note": "Fresh pasta required less cooking time than dried store-bought varieties",
+          "technique_tip": "Reserve some pasta water to thin sauce if needed"
+        },
+        {
+          "step": 9,
+          "ticinese": "Scolare la pasta al dente e mescolarla subito con la salsa.",
+          "english": "Drain the pasta al dente and immediately mix with the sauce.",
+          "vocabulary_focus": ["scolare", "pasta", "dente", "mescolare", "subito", "salsa"],
+          "cultural_note": "Quick mixing while pasta is hot helps sauce adhere perfectly",
+          "technique_tip": "Toss gently to coat every strand without breaking delicate sauce"
+        },
+        {
+          "step": 10,
+          "ticinese": "Servire immediatamente con formaggio grattugiato e noci tritate.",
+          "english": "Serve immediately with grated cheese and chopped walnuts.",
+          "vocabulary_focus": ["servire", "immediatamente", "formaggio", "grattugiato", "noci", "tritate"],
+          "cultural_note": "Extra walnuts and cheese allowed each family member to customize their portion",
+          "technique_tip": "Warm the serving bowls to keep pasta hot until everyone is served"
+        }
+      ],
+      "family_story": "Every October, the children would race to gather the walnuts that fell overnight from our ancient trees. Nonna Lucia taught us to crack them carefully by the kitchen fire, saving perfect halves for the walnut cake and using the pieces for this pasta. She said the secret was in the mortaio - the stone mortar passed down through four generations of women. 'Listen to the rhythm,' she would say as she pounded, 'it tells you when the sauce is ready.' The golden paste, rich with autumn flavors, made even the simplest pasta feel like a feast. When I taste this dish now, I hear the sound of walnuts falling on autumn leaves and feel her strong hands guiding mine on that old wooden pestle.",
+      "vocabulary_learning": {
+        "autumn_harvest": ["raccogliere", "cadute", "mature", "autunno", "alberi"],
+        "nut_processing": ["sgusciare", "gherigli", "pestare", "mortaio", "pestello"],
+        "pasta_techniques": ["cuocere", "scolare", "al dente", "mescolare", "subito"],
+        "family_traditions": ["tradizione", "generazioni", "insegnare", "tramandare", "famiglia"]
+      },
+      "comprehension_questions": [
+        {
+          "ticinese": "Quando si raccolgono le noci migliori?",
+          "english": "When do you gather the best walnuts?",
+          "answer": "Al mattino presto quando sono appena cadute"
+        },
+        {
+          "ticinese": "Cosa si usa per fare la salsa di noci?",
+          "english": "What do you use to make walnut sauce?",
+          "answer": "Il mortaio di pietra con il pestello"
+        },
+        {
+          "ticinese": "Perché si mescola la pasta subito con la salsa?",
+          "english": "Why do you mix the pasta immediately with the sauce?",
+          "answer": "Perché la pasta calda aiuta la salsa ad aderire bene"
+        }
+      ],
+      "cultural_context": {
+        "social_significance": "Family harvest celebration bringing multiple generations together",
+        "economic_importance": "Free, abundant protein and fat from family walnut trees",
+        "seasonal_relevance": "October harvest festival marking preparation for winter",
+        "regional_variations": "Some families added wild mushrooms or mountain herbs to the sauce"
+      },
+      "learning_objectives": [
+        "Learn autumn and harvest vocabulary in cultural context",
+        "Master traditional food preparation techniques using stone mortars",
+        "Understand pasta cooking vocabulary and timing expressions",
+        "Experience family traditions and generational knowledge transmission"
+      ]
+    },
+    {
+      "recipe_id": "RECIPE_013",
+      "ticinese_name": "Torta di Pane",
+      "english_name": "Bread Pudding Cake",
+      "category": "festival_foods",
+      "difficulty_level": "B1",
+      "cultural_significance": "Easter Sunday celebration dessert representing resurrection and renewal of life",
+      "historical_period": "1870-1915",
+      "region": "Lugano, Ticino",
+      "serves": "10-12 persone",
+      "preparation_time": "60 minuti + riposo",
+      "cooking_time": "50 minuti",
+      "season": "Pasqua",
+      "ingredients": [
+        {
+          "ticinese": "pane dolce raffermo",
+          "english": "stale sweet bread",
+          "amount": "500g",
+          "vocabulary_id": "VOCAB_132",
+          "cultural_note": "Made from pandolce saved from Christmas celebrations, given new life for Easter"
+        },
+        {
+          "ticinese": "latte intero",
+          "english": "whole milk",
+          "amount": "600ml",
+          "vocabulary_id": "VOCAB_133",
+          "cultural_note": "Rich spring milk from cows returned to green pastures after winter"
+        },
+        {
+          "ticinese": "uova pasquali",
+          "english": "Easter eggs",
+          "amount": "6 grosse",
+          "vocabulary_id": "VOCAB_134",
+          "cultural_note": "Special eggs saved from the week before Easter, symbols of new life"
+        },
+        {
+          "ticinese": "zucchero bianco",
+          "english": "white sugar",
+          "amount": "150g",
+          "vocabulary_id": "VOCAB_135",
+          "cultural_note": "Precious refined sugar, used sparingly and only for special celebrations"
+        },
+        {
+          "ticinese": "burro fresco",
+          "english": "fresh butter",
+          "amount": "80g",
+          "vocabulary_id": "VOCAB_136",
+          "cultural_note": "Churned on Good Friday, when dairy work resumed after Lenten fasting"
+        },
+        {
+          "ticinese": "uvetta sultanina",
+          "english": "golden raisins",
+          "amount": "100g",
+          "vocabulary_id": "VOCAB_137",
+          "cultural_note": "Sweet raisins imported from distant lands, symbols of abundance and joy"
+        },
+        {
+          "ticinese": "pinoli",
+          "english": "pine nuts",
+          "amount": "60g",
+          "vocabulary_id": "VOCAB_138",
+          "cultural_note": "Precious nuts from local pine cones, gathered by children in autumn"
+        },
+        {
+          "ticinese": "scorza di limone",
+          "english": "lemon zest",
+          "amount": "1 limone",
+          "vocabulary_id": "VOCAB_139",
+          "cultural_note": "Bright yellow zest symbolizing the light of resurrection"
+        },
+        {
+          "ticinese": "rum scuro",
+          "english": "dark rum",
+          "amount": "3 cucchiai",
+          "vocabulary_id": "VOCAB_140",
+          "cultural_note": "Special spirits reserved for religious celebrations and important occasions"
+        },
+        {
+          "ticinese": "vaniglia in polvere",
+          "english": "vanilla powder",
+          "amount": "1 cucchiaino",
+          "vocabulary_id": "VOCAB_141",
+          "cultural_note": "Exotic spice more precious than gold, used only for Easter feast"
+        }
+      ],
+      "kitchen_tools": [
+        {
+          "ticinese": "forma da torta",
+          "english": "cake mold",
+          "cultural_note": "Special ceramic mold used only for Easter and Christmas desserts"
+        },
+        {
+          "ticinese": "frusta a mano",
+          "english": "hand whisk",
+          "cultural_note": "Wire whisk for beating eggs to perfection by hand"
+        },
+        {
+          "ticinese": "setaccio fine",
+          "english": "fine sieve",
+          "cultural_note": "Essential for creating smooth, lump-free custard base"
+        },
+        {
+          "ticinese": "spazzola da dolci",
+          "english": "pastry brush",
+          "cultural_note": "For glazing the top to achieve golden Easter shine"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "ticinese": "Tagliare il pane a fette spesse e immergerle nel latte tiepido.",
+          "english": "Cut the bread into thick slices and soak them in warm milk.",
+          "vocabulary_focus": ["tagliare", "pane", "fette", "spesse", "immergere", "latte", "tiepido"],
+          "cultural_note": "The bread absorbs milk like the earth absorbs spring rain",
+          "technique_tip": "Let bread soak for at least 30 minutes until completely soft"
+        },
+        {
+          "step": 2,
+          "ticinese": "Ammollare l'uvetta nel rum per 20 minuti fino a rigonfiarla.",
+          "english": "Soak the raisins in rum for 20 minutes until they plump up.",
+          "vocabulary_focus": ["ammollare", "uvetta", "rum", "minuti", "fino", "rigonfiare"],
+          "cultural_note": "The raisins swell with joy like hearts filled with Easter hope",
+          "technique_tip": "Warm rum slightly to speed absorption and enhance flavor"
+        },
+        {
+          "step": 3,
+          "ticinese": "Separare i tuorli dagli albumi con grande attenzione.",
+          "english": "Separate egg yolks from whites with great care.",
+          "vocabulary_focus": ["separare", "tuorli", "albumi", "grande", "attenzione"],
+          "cultural_note": "Each egg was precious, requiring careful handling to avoid waste",
+          "technique_tip": "Use three bowls: one for yolks, one for whites, one for breaking"
+        },
+        {
+          "step": 4,
+          "ticinese": "Sbattere i tuorli con lo zucchero fino a diventare chiari e spumosi.",
+          "english": "Beat yolks with sugar until they become light and foamy.",
+          "vocabulary_focus": ["sbattere", "tuorli", "zucchero", "fino", "diventare", "chiari", "spumosi"],
+          "cultural_note": "The golden mixture represents the light of resurrection morning",
+          "technique_tip": "Beat vigorously for at least 10 minutes until pale yellow"
+        },
+        {
+          "step": 5,
+          "ticinese": "Schiacciare il pane ammollato con le mani fino a ridurlo in poltiglia.",
+          "english": "Mash the soaked bread with hands until it becomes a pulp.",
+          "vocabulary_focus": ["schiacciare", "pane", "ammollato", "mani", "fino", "ridurre", "poltiglia"],
+          "cultural_note": "Working with hands connects the cook to the sacred transformation",
+          "technique_tip": "Remove any lumps for smooth, uniform texture"
+        },
+        {
+          "step": 6,
+          "ticinese": "Mescolare la poltiglia di pane con tuorli, scorza di limone e vaniglia.",
+          "english": "Mix the bread pulp with yolks, lemon zest, and vanilla.",
+          "vocabulary_focus": ["mescolare", "poltiglia", "pane", "tuorli", "scorza", "limone", "vaniglia"],
+          "cultural_note": "The bright lemon zest adds the joy of Easter sunshine",
+          "technique_tip": "Fold gently to preserve the airy texture from beaten yolks"
+        },
+        {
+          "step": 7,
+          "ticinese": "Montare gli albumi a neve ferma con un pizzico di sale.",
+          "english": "Whip egg whites to stiff peaks with a pinch of salt.",
+          "vocabulary_focus": ["montare", "albumi", "neve", "ferma", "pizzico", "sale"],
+          "cultural_note": "Stiff whites represent the clouds that lifted on resurrection morning",
+          "technique_tip": "Clean bowl and whisk are essential - any fat will prevent proper whipping"
+        },
+        {
+          "step": 8,
+          "ticinese": "Incorporare delicatamente gli albumi, l'uvetta e i pinoli al composto.",
+          "english": "Gently fold in egg whites, raisins, and pine nuts to the mixture.",
+          "vocabulary_focus": ["incorporare", "delicatamente", "albumi", "uvetta", "pinoli", "composto"],
+          "cultural_note": "Gentle folding preserves the lightness that makes the cake heavenly",
+          "technique_tip": "Use upward folding motion to maintain air in the whites"
+        },
+        {
+          "step": 9,
+          "ticinese": "Versare nella forma imburrata e cuocere a forno moderato per 50 minuti.",
+          "english": "Pour into buttered mold and bake in moderate oven for 50 minutes.",
+          "vocabulary_focus": ["versare", "forma", "imburrata", "cuocere", "forno", "moderato", "minuti"],
+          "cultural_note": "The moderate heat allows the cake to rise slowly like faith growing",
+          "technique_tip": "Don't open oven door for first 40 minutes to prevent collapse"
+        },
+        {
+          "step": 10,
+          "ticinese": "Servire tiepido dopo il pranzo di Pasqua con un bicchiere di vino dolce.",
+          "english": "Serve warm after Easter lunch with a glass of sweet wine.",
+          "vocabulary_focus": ["servire", "tiepido", "dopo", "pranzo", "Pasqua", "bicchiere", "vino", "dolce"],
+          "cultural_note": "The perfect end to Easter feast, sweet wine blessing the celebration",
+          "technique_tip": "Let cool slightly but serve while still warm for best texture"
+        }
+      ],
+      "family_story": "For Easter, this cake blessed our table like sunshine after the long Lenten fast. Nonna Elena would begin preparing it on Saturday evening, saying 'Christ will rise, and so must our cake.' She taught me that each ingredient has meaning - the eggs for new life, the golden raisins for sweetness after suffering, the pine nuts for the tears of joy. When I beat those yolks until they gleamed like Easter morning light, I felt connected to every woman who had made this cake before me. The scent filling our kitchen on Easter morning was better than any church incense, and when we finally tasted it after lunch, it was like tasting heaven itself. 'Food made with prayer,' Nonna said, 'tastes different from food made with hunger.'",
+      "vocabulary_learning": {
+        "religious_celebrations": ["Pasqua", "resurrezione", "benedire", "festa", "preghiera"],
+        "baking_techniques": ["montare", "incorporare", "sbattere", "schiacciare", "versare"],
+        "texture_descriptions": ["spumoso", "chiaro", "neve ferma", "delicatamente", "tiepido"],
+        "celebration_foods": ["torta", "dolce", "festa", "pranzo", "celebrazione"]
+      },
+      "comprehension_questions": [
+        {
+          "ticinese": "Perché si usa il pane dolce raffermo?",
+          "english": "Why do you use stale sweet bread?",
+          "answer": "Per dare nuova vita al pane avanzato dal Natale"
+        },
+        {
+          "ticinese": "Come devono essere gli albumi?",
+          "english": "How should the egg whites be?",
+          "answer": "Montati a neve ferma"
+        },
+        {
+          "ticinese": "Quando si serve questa torta?",
+          "english": "When do you serve this cake?",
+          "answer": "Dopo il pranzo di Pasqua"
+        }
+      ],
+      "cultural_context": {
+        "social_significance": "Sacred dessert marking end of Lenten fasting and celebration of resurrection",
+        "economic_importance": "Transformed leftover Christmas bread into precious Easter treat",
+        "seasonal_relevance": "Spring celebration using first fresh dairy after winter scarcity",
+        "regional_variations": "Some families added candied citron or amaretto liqueur"
+      },
+      "learning_objectives": [
+        "Learn religious celebration vocabulary and Easter traditions",
+        "Master advanced baking techniques and timing expressions",
+        "Understand cultural symbolism in traditional religious foods",
+        "Experience connection between food and spiritual celebration"
+      ]
+    },
+    {
+      "recipe_id": "RECIPE_014",
+      "ticinese_name": "Amaretti di Saronno Style",
+      "english_name": "Almond Macaroons",
+      "category": "festival_foods",
+      "difficulty_level": "B1",
+      "cultural_significance": "Christmas and wedding confection symbolizing sweetness and prosperity in life",
+      "historical_period": "1880-1915",
+      "region": "Sottoceneri, Ticino (Lombard influence)",
+      "serves": "40-50 amaretti",
+      "preparation_time": "90 minuti + riposo",
+      "cooking_time": "20 minuti",
+      "season": "Natale-Matrimoni",
+      "ingredients": [
+        {
+          "ticinese": "mandorle dolci sgusciate",
+          "english": "sweet shelled almonds",
+          "amount": "300g",
+          "vocabulary_id": "VOCAB_142",
+          "cultural_note": "Premium almonds from southern valleys, blanched and skinned by hand"
+        },
+        {
+          "ticinese": "mandorle amare",
+          "english": "bitter almonds",
+          "amount": "30g",
+          "vocabulary_id": "VOCAB_143",
+          "cultural_note": "Essential for authentic flavor, carefully measured for perfect balance"
+        },
+        {
+          "ticinese": "zucchero a velo",
+          "english": "powdered sugar",
+          "amount": "350g",
+          "vocabulary_id": "VOCAB_144",
+          "cultural_note": "Finest powdered sugar, white as wedding dress and pure as mountain snow"
+        },
+        {
+          "ticinese": "albumi d'uovo",
+          "english": "egg whites",
+          "amount": "3 grossi",
+          "vocabulary_id": "VOCAB_145",
+          "cultural_note": "Fresh egg whites from prized hens, separated with utmost care"
+        },
+        {
+          "ticinese": "acqua di rose",
+          "english": "rose water",
+          "amount": "1 cucchiaio",
+          "vocabulary_id": "VOCAB_146",
+          "cultural_note": "Delicate essence distilled from mountain roses, symbol of love and purity"
+        },
+        {
+          "ticinese": "carta da forno",
+          "english": "parchment paper",
+          "amount": "fogli",
+          "vocabulary_id": "VOCAB_147",
+          "cultural_note": "Special paper for baking precious confections, preventing sticking"
+        },
+        {
+          "ticinese": "zucchero semolato",
+          "english": "granulated sugar",
+          "amount": "per spolverare",
+          "vocabulary_id": "VOCAB_148",
+          "cultural_note": "Coarse sugar for dusting, creating the traditional cracked surface"
+        }
+      ],
+      "kitchen_tools": [
+        {
+          "ticinese": "mortaio di marmo",
+          "english": "marble mortar",
+          "cultural_note": "Heavy marble mortar essential for grinding almonds to perfect fineness"
+        },
+        {
+          "ticinese": "setaccio finissimo",
+          "english": "very fine sieve",
+          "cultural_note": "Ultra-fine mesh for achieving powder-smooth almond flour"
+        },
+        {
+          "ticinese": "frusta di rame",
+          "english": "copper whisk",
+          "cultural_note": "Copper conducts heat away, helping achieve perfect egg white texture"
+        },
+        {
+          "ticinese": "sac à poche",
+          "english": "piping bag",
+          "cultural_note": "Cloth pastry bag for forming perfectly round macaroons"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "ticinese": "Scottare le mandorle in acqua bollente per eliminare la pellicina.",
+          "english": "Blanch almonds in boiling water to remove the skin.",
+          "vocabulary_focus": ["scottare", "mandorle", "acqua", "bollente", "eliminare", "pellicina"],
+          "cultural_note": "This step ensures the pure white color traditional in wedding confections",
+          "technique_tip": "Rub almonds in kitchen towel while warm for easy skin removal"
+        },
+        {
+          "step": 2,
+          "ticinese": "Asciugare perfettamente le mandorle e lasciarle raffreddare completamente.",
+          "english": "Dry the almonds perfectly and let them cool completely.",
+          "vocabulary_focus": ["asciugare", "perfettamente", "mandorle", "lasciare", "raffreddare", "completamente"],
+          "cultural_note": "Any moisture would create steam and ruin the delicate texture",
+          "technique_tip": "Spread on clean towels in warm, dry place for several hours"
+        },
+        {
+          "step": 3,
+          "ticinese": "Macinare finissimamente le mandorle nel mortaio di marmo.",
+          "english": "Grind the almonds very finely in the marble mortar.",
+          "vocabulary_focus": ["macinare", "finissimamente", "mandorle", "mortaio", "marmo"],
+          "cultural_note": "The slow grinding releases oils that give amaretti their characteristic flavor",
+          "technique_tip": "Work in small batches, grinding until powder-fine and slightly oily"
+        },
+        {
+          "step": 4,
+          "ticinese": "Setacciare la polvere di mandorle per ottenere una farina finissima.",
+          "english": "Sieve the almond powder to obtain very fine flour.",
+          "vocabulary_focus": ["setacciare", "polvere", "mandorle", "ottenere", "farina", "finissima"],
+          "cultural_note": "The finest texture creates the smooth surface prized in perfect amaretti",
+          "technique_tip": "Press through sieve with spoon back, regrind any remaining pieces"
+        },
+        {
+          "step": 5,
+          "ticinese": "Mescolare la farina di mandorle con lo zucchero a velo.",
+          "english": "Mix the almond flour with the powdered sugar.",
+          "vocabulary_focus": ["mescolare", "farina", "mandorle", "zucchero", "velo"],
+          "cultural_note": "This creates the sweet base that gives amaretti their heavenly texture",
+          "technique_tip": "Combine thoroughly to ensure even sweetness in every bite"
+        },
+        {
+          "step": 6,
+          "ticinese": "Montare gli albumi a neve non troppo ferma con l'acqua di rose.",
+          "english": "Whip egg whites to soft peaks with rose water.",
+          "vocabulary_focus": ["montare", "albumi", "neve", "troppo", "ferma", "acqua", "rose"],
+          "cultural_note": "Soft peaks allow better incorporation into the almond mixture",
+          "technique_tip": "Stop whipping when peaks hold but still look glossy and moist"
+        },
+        {
+          "step": 7,
+          "ticinese": "Incorporare delicatamente gli albumi alla miscela di mandorle.",
+          "english": "Gently fold egg whites into the almond mixture.",
+          "vocabulary_focus": ["incorporare", "delicatamente", "albumi", "miscela", "mandorle"],
+          "cultural_note": "Gentle folding preserves the air that makes amaretti light",
+          "technique_tip": "Use upward folding motion, stopping as soon as mixture is uniform"
+        },
+        {
+          "step": 8,
+          "ticinese": "Lasciar riposare l'impasto per 30 minuti per far assorbire l'umidità.",
+          "english": "Let the dough rest for 30 minutes to absorb moisture.",
+          "vocabulary_focus": ["lasciar", "riposare", "impasto", "minuti", "assorbire", "umidità"],
+          "cultural_note": "Resting allows ingredients to meld and creates proper piping consistency",
+          "technique_tip": "Cover with damp cloth to prevent surface from forming skin"
+        },
+        {
+          "step": 9,
+          "ticinese": "Formare palline con il sac à poche su carta da forno inumidita.",
+          "english": "Form balls with piping bag on dampened parchment paper.",
+          "vocabulary_focus": ["formare", "palline", "sac", "poche", "carta", "forno", "inumidita"],
+          "cultural_note": "Perfect rounds show the skill and care of the confectioner",
+          "technique_tip": "Dampen parchment lightly - this creates steam for signature cracks"
+        },
+        {
+          "step": 10,
+          "ticinese": "Spolverare con zucchero semolato e cuocere a forno moderato per 18 minuti.",
+          "english": "Dust with granulated sugar and bake in moderate oven for 18 minutes.",
+          "vocabulary_focus": ["spolverare", "zucchero", "semolato", "cuocere", "forno", "moderato", "minuti"],
+          "cultural_note": "The sugar creates the characteristic cracked surface that reveals inner softness",
+          "technique_tip": "Amaretti are done when cracked, golden, but still soft in center"
+        },
+        {
+          "step": 11,
+          "ticinese": "Lasciare raffreddare prima di staccare dalla carta e conservare in scatola.",
+          "english": "Let cool before removing from paper and store in tin.",
+          "vocabulary_focus": ["lasciare", "raffreddare", "prima", "staccare", "carta", "conservare", "scatola"],
+          "cultural_note": "Stored in tins, amaretti were precious gifts for special occasions",
+          "technique_tip": "Cool completely on paper - they'll release when ready"
+        }
+      ],
+      "family_story": "Nonna made these for every wedding in the village, each batch a prayer for sweetness in the new marriage. She learned the recipe from her mother, who brought it from Saronno when she married into our family. The secret, she said, was in grinding the almonds by moonlight - not because of magic, but because the cool night air kept the oils from separating. I remember helping her form perfect rounds with the cloth piping bag, each one uniform as a pearl. When they came from the oven with their cracked golden shells, she would say 'Like life - broken on the surface but sweet within.' At Christmas, she filled tins with these treasures, and every family in the valley knew that Nonna's amaretti were made with more love than sugar.",
+      "vocabulary_learning": {
+        "wedding_confections": ["matrimonio", "dolci", "confetti", "regalo", "sposa"],
+        "baking_precision": ["finissimamente", "perfettamente", "delicatamente", "uniformemente", "precisione"],
+        "texture_vocabulary": ["cremoso", "morbido", "croccante", "spumoso", "setoso"],
+        "celebration_terms": ["festa", "occasione", "tradizione", "benedizione", "gioia"]
+      },
+      "comprehension_questions": [
+        {
+          "ticinese": "Perché si scottano le mandorle?",
+          "english": "Why do you blanch the almonds?",
+          "answer": "Per eliminare la pellicina e ottenere il colore bianco"
+        },
+        {
+          "ticinese": "Come devono essere montati gli albumi?",
+          "english": "How should the egg whites be whipped?",
+          "answer": "A neve non troppo ferma"
+        },
+        {
+          "ticinese": "Cosa crea la superficie screpolata?",
+          "english": "What creates the cracked surface?",
+          "answer": "Lo zucchero semolato e la carta inumidita"
+        }
+      ],
+      "cultural_context": {
+        "social_significance": "Essential confection for weddings and Christmas, symbol of life's sweetness",
+        "economic_importance": "Valuable gift food that showed family prosperity and hospitality",
+        "seasonal_relevance": "Made for winter celebrations when almonds were at their best",
+        "regional_variations": "Each family guarded their own secret techniques and proportions"
+      },
+      "learning_objectives": [
+        "Learn confectionery vocabulary and precise baking techniques",
+        "Understand wedding and celebration food traditions",
+        "Master advanced pastry terminology and measurements",
+        "Experience the connection between food craftsmanship and love"
+      ]
+    },
+    {
+      "recipe_id": "RECIPE_015",
+      "ticinese_name": "Busecca",
+      "english_name": "Tripe Soup",
+      "category": "festival_foods",
+      "difficulty_level": "B2",
+      "cultural_significance": "New Year's Day tradition for prosperity, showing mastery of challenging ingredients",
+      "historical_period": "1860-1915",
+      "region": "Locarno, Ticino",
+      "serves": "8-10 persone",
+      "preparation_time": "3 ore + ammollo notturno",
+      "cooking_time": "2 ore",
+      "season": "Capodanno",
+      "ingredients": [
+        {
+          "ticinese": "trippa di vitello",
+          "english": "veal tripe",
+          "amount": "1.5 kg",
+          "vocabulary_id": "VOCAB_150",
+          "cultural_note": "Premium tripe from young calves, prepared by trusted butcher for New Year feast"
+        },
+        {
+          "ticinese": "fagioli cannellini secchi",
+          "english": "dried cannellini beans",
+          "amount": "400g",
+          "vocabulary_id": "VOCAB_151",
+          "cultural_note": "White beans symbolized prosperity and abundance for the coming year"
+        },
+        {
+          "ticinese": "sedano rapa",
+          "english": "celeriac",
+          "amount": "300g",
+          "vocabulary_id": "VOCAB_152",
+          "cultural_note": "Winter root vegetable stored in cellar sand, precious during cold months"
+        },
+        {
+          "ticinese": "carote del Mendrisiotto",
+          "english": "Mendrisiotto carrots",
+          "amount": "2 grosse",
+          "vocabulary_id": "VOCAB_153",
+          "cultural_note": "Sweet winter carrots from southern valleys, kept fresh in root cellars"
+        },
+        {
+          "ticinese": "cipolla dorata",
+          "english": "golden onion",
+          "amount": "2 medie",
+          "vocabulary_id": "VOCAB_154",
+          "cultural_note": "Golden onions braided and stored, essential base for prosperity soup"
+        },
+        {
+          "ticinese": "pomodori San Marzano",
+          "english": "San Marzano tomatoes",
+          "amount": "400g conserva",
+          "vocabulary_id": "VOCAB_155",
+          "cultural_note": "Precious canned tomatoes from south, saved for most important celebrations"
+        },
+        {
+          "ticinese": "brodo di manzo concentrato",
+          "english": "concentrated beef broth",
+          "amount": "2 litri",
+          "vocabulary_id": "VOCAB_156",
+          "cultural_note": "Rich broth made from Christmas feast bones, liquid gold for New Year"
+        },
+        {
+          "ticinese": "lardo di Colonnata",
+          "english": "Colonnata lard",
+          "amount": "100g",
+          "vocabulary_id": "VOCAB_157",
+          "cultural_note": "Marble-cured lard, luxury ingredient showing family prosperity"
+        },
+        {
+          "ticinese": "vino rosso Merlot",
+          "english": "Merlot red wine",
+          "amount": "2 bicchieri",
+          "vocabulary_id": "VOCAB_158",
+          "cultural_note": "Local Merlot from terraced hillside vineyards, toasting the new year"
+        }
+      ],
+      "kitchen_tools": [
+        {
+          "ticinese": "pentolone di ferro",
+          "english": "large iron pot",
+          "cultural_note": "Massive pot passed down generations, big enough for extended family feast"
+        },
+        {
+          "ticinese": "coltello per disossare",
+          "english": "boning knife",
+          "cultural_note": "Sharp knife essential for precise tripe preparation"
+        },
+        {
+          "ticinese": "schiumarola",
+          "english": "skimming spoon",
+          "cultural_note": "Perforated spoon for removing impurities and achieving clear broth"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "ticinese": "Ammollare i fagioli in acqua fredda per tutta la notte.",
+          "english": "Soak the beans in cold water all night.",
+          "vocabulary_focus": ["ammollare", "fagioli", "acqua", "fredda", "tutta", "notte"],
+          "cultural_note": "New Year preparation began the night before with soaking ritual",
+          "technique_tip": "Change water once if beans were very old to remove bitterness"
+        },
+        {
+          "step": 2,
+          "ticinese": "Pulire accuratamente la trippa, sciacquarla più volte e tagliarla a strisce.",
+          "english": "Clean the tripe thoroughly, rinse it multiple times and cut into strips.",
+          "vocabulary_focus": ["pulire", "accuratamente", "trippa", "sciacquare", "volte", "tagliare", "strisce"],
+          "cultural_note": "Tripe preparation showed culinary skill - only experienced cooks attempted busecca",
+          "technique_tip": "Final rinse with white wine removes any remaining strong flavors"
+        },
+        {
+          "step": 3,
+          "ticinese": "Bollire la trippa in acqua salata per 45 minuti, poi scolare.",
+          "english": "Boil the tripe in salted water for 45 minutes, then drain.",
+          "vocabulary_focus": ["bollire", "trippa", "acqua", "salata", "minuti", "scolare"],
+          "cultural_note": "First cooking removed impurities and began tenderizing process",
+          "technique_tip": "Water should be vigorously boiling throughout the process"
+        },
+        {
+          "step": 4,
+          "ticinese": "In pentolone, soffriggere dolcemente lardo tritato con cipolla.",
+          "english": "In large pot, gently sauté chopped lard with onion.",
+          "vocabulary_focus": ["pentolone", "soffriggere", "dolcemente", "lardo", "tritato", "cipolla"],
+          "cultural_note": "Lard provided richness that showed family could afford luxury ingredients",
+          "technique_tip": "Cook very slowly to render fat without browning the onion"
+        },
+        {
+          "step": 5,
+          "ticinese": "Aggiungere carote e sedano tagliati a dadini, far appassire.",
+          "english": "Add carrots and celery cut in small dice, let them wilt.",
+          "vocabulary_focus": ["aggiungere", "carote", "sedano", "tagliati", "dadini", "appassire"],
+          "cultural_note": "Uniform dice showed knife skills and attention to presentation",
+          "technique_tip": "Vegetables should be translucent but still hold their shape"
+        },
+        {
+          "step": 6,
+          "ticinese": "Versare vino rosso e far evaporare l'alcool completamente.",
+          "english": "Pour red wine and let the alcohol evaporate completely.",
+          "vocabulary_focus": ["versare", "vino", "rosso", "evaporare", "alcool", "completamente"],
+          "cultural_note": "Wine deglazing captured fond and added depth worthy of celebration",
+          "technique_tip": "Alcohol has evaporated when flames no longer appear if ignited"
+        },
+        {
+          "step": 7,
+          "ticinese": "Unire pomodori schiacciati, trippa e fagioli scolati.",
+          "english": "Add crushed tomatoes, tripe and drained beans.",
+          "vocabulary_focus": ["unire", "pomodori", "schiacciati", "trippa", "fagioli", "scolati"],
+          "cultural_note": "This moment united all prosperity symbols in one magnificent pot",
+          "technique_tip": "Crush tomatoes by hand to maintain rustic texture"
+        },
+        {
+          "step": 8,
+          "ticinese": "Coprire con brodo bollente e cuocere a fuoco lento per 90 minuti.",
+          "english": "Cover with boiling broth and cook on low heat for 90 minutes.",
+          "vocabulary_focus": ["coprire", "brodo", "bollente", "cuocere", "fuoco", "lento", "minuti"],
+          "cultural_note": "Long, slow cooking was meditation on patience needed for prosperous year",
+          "technique_tip": "Maintain gentle simmer - vigorous boiling toughens the tripe"
+        },
+        {
+          "step": 9,
+          "ticinese": "Aggiustare di sale, pepe e servire fumante con pane tostato.",
+          "english": "Adjust salt and pepper, serve steaming with toasted bread.",
+          "vocabulary_focus": ["aggiustare", "sale", "pepe", "servire", "fumante", "pane", "tostato"],
+          "cultural_note": "First spoonful at midnight brought good fortune for twelve months ahead",
+          "technique_tip": "Taste and season only at the very end when flavors have melded"
+        }
+      ],
+      "family_story": "Nonno Giacomo believed that eating busecca at the stroke of midnight on New Year's ensured prosperity for the entire year. The more challenging the ingredient, the greater the reward, he said. He learned this recipe from his mother-in-law, who made it every year from 1885 until her death at ninety-three. The whole family gathered around the great iron pot, sharing stories of the past year while the busecca simmered. When midnight approached, we stood with our bowls ready, and as the church bells rang twelve times, we took our first spoonful together. 'Each difficult bite makes us stronger,' Nonno would say, 'and teaches us that good things come to those who work hard.' The flavor was indeed challenging, but we learned to appreciate its complexity, just as we learned to face life's difficulties with courage.",
+      "vocabulary_learning": {
+        "prosperity_foods": ["abbondanza", "ricchezza", "fortuna", "benedizione", "prosperità"],
+        "challenging_techniques": ["difficile", "complesso", "pazienza", "maestria", "coraggio"],
+        "celebration_vocabulary": ["capodanno", "mezzanotte", "brindisi", "auguri", "tradizione"],
+        "advanced_cooking": ["soffriggere", "evaporare", "deglaçage", "schiumare", "addensare"]
+      },
+      "comprehension_questions": [
+        {
+          "ticinese": "Perché si ammollano i fagioli per tutta la notte?",
+          "english": "Why do you soak the beans all night?",
+          "answer": "Per ammorbidirli e ridurre i tempi di cottura"
+        },
+        {
+          "ticinese": "Come si prepara la trippa prima di cuocerla?",
+          "english": "How do you prepare the tripe before cooking it?",
+          "answer": "Si pulisce accuratamente, si sciacqua più volte e si taglia a strisce"
+        },
+        {
+          "ticinese": "Quando si mangia tradizionalmente la busecca?",
+          "english": "When is busecca traditionally eaten?",
+          "answer": "A mezzanotte del Capodanno per portare prosperità"
+        }
+      ],
+      "cultural_context": {
+        "social_significance": "Ultimate test of culinary skill and symbol of family prosperity",
+        "economic_importance": "Expensive ingredients showed ability to celebrate with abundance",
+        "seasonal_relevance": "New Year's feast marking transition and hopes for prosperous year",
+        "regional_variations": "Locarno version included local Merlot and lake region vegetables"
+      },
+      "learning_objectives": [
+        "Master advanced culinary vocabulary and challenging cooking techniques",
+        "Understand prosperity traditions and symbolic foods",
+        "Learn complex flavor development and long cooking processes",
+        "Experience the courage required for difficult but rewarding traditions"
+      ]
+    },
+    {
+      "recipe_id": "RECIPE_016",
+      "ticinese_name": "Torta di Rose",
+      "english_name": "Sweet Bread Roses",
+      "category": "festival_foods",
+      "difficulty_level": "B1",
+      "cultural_significance": "Saint's day celebration bread representing devotion and natural beauty",
+      "historical_period": "1870-1915",
+      "region": "Valle Maggia, Ticino",
+      "serves": "8-12 persone",
+      "preparation_time": "4 ore + lievitazione",
+      "cooking_time": "35 minuti",
+      "season": "Festa di Santa Maria",
+      "ingredients": [
+        {
+          "ticinese": "farina bianca tipo 00",
+          "english": "type 00 white flour",
+          "amount": "500g",
+          "vocabulary_id": "VOCAB_160",
+          "cultural_note": "Finest white flour reserved for holy day breads, symbol of purity"
+        },
+        {
+          "ticinese": "lievito madre attivo",
+          "english": "active sourdough starter",
+          "amount": "150g",
+          "vocabulary_id": "VOCAB_161",
+          "cultural_note": "Living starter passed through generations like family blessing"
+        },
+        {
+          "ticinese": "latte tiepido",
+          "english": "warm milk",
+          "amount": "200ml",
+          "vocabulary_id": "VOCAB_162",
+          "cultural_note": "Fresh morning milk from family cow, warmed with love and care"
+        },
+        {
+          "ticinese": "zucchero bianco fino",
+          "english": "fine white sugar",
+          "amount": "80g",
+          "vocabulary_id": "VOCAB_163",
+          "cultural_note": "Refined sugar for special occasions, sweet as prayers answered"
+        },
+        {
+          "ticinese": "burro fresco di malga",
+          "english": "fresh alpine butter",
+          "amount": "120g",
+          "vocabulary_id": "VOCAB_164",
+          "cultural_note": "Butter from high mountain pastures, yellow as summer sunshine"
+        },
+        {
+          "ticinese": "uova fresche di giornata",
+          "english": "day-fresh eggs",
+          "amount": "2 intere + 1 tuorlo",
+          "vocabulary_id": "VOCAB_165",
+          "cultural_note": "Golden eggs from free-roaming hens, symbols of life and renewal"
+        },
+        {
+          "ticinese": "acqua di fiori d'arancio",
+          "english": "orange blossom water",
+          "amount": "2 cucchiai",
+          "vocabulary_id": "VOCAB_166",
+          "cultural_note": "Delicate essence symbolizing the Virgin's purity and grace"
+        },
+        {
+          "ticinese": "sale marino fine",
+          "english": "fine sea salt",
+          "amount": "1 pizzico",
+          "vocabulary_id": "VOCAB_167",
+          "cultural_note": "Blessed salt from Mediterranean shores, pinch of earth's wisdom"
+        }
+      ],
+      "kitchen_tools": [
+        {
+          "ticinese": "teglia rotonda",
+          "english": "round baking pan",
+          "cultural_note": "Sacred circle shape representing eternal devotion and community"
+        },
+        {
+          "ticinese": "spianatoia di legno",
+          "english": "wooden pastry board",
+          "cultural_note": "Smooth board for rolling dough, blessed by years of bread making"
+        },
+        {
+          "ticinese": "pennello naturale",
+          "english": "natural pastry brush",
+          "cultural_note": "Made from boar bristles, for delicate egg wash application"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "ticinese": "Attivare il lievito madre in acqua tiepida con un cucchiaio di zucchero.",
+          "english": "Activate the sourdough starter in warm water with a spoon of sugar.",
+          "vocabulary_focus": ["attivare", "lievito", "madre", "acqua", "tiepida", "cucchiaio", "zucchero"],
+          "cultural_note": "Awakening the living starter was like calling on ancestral blessings",
+          "technique_tip": "Water should be body temperature - test on inside of wrist"
+        },
+        {
+          "step": 2,
+          "ticinese": "Setacciare la farina in una fontana e fare un cratere al centro.",
+          "english": "Sift the flour in a well and make a crater in the center.",
+          "vocabulary_focus": ["setacciare", "farina", "fontana", "fare", "cratere", "centro"],
+          "cultural_note": "The flour well represented mountain valleys cradling precious gifts",
+          "technique_tip": "Sift twice for lightest possible texture worthy of saints"
+        },
+        {
+          "step": 3,
+          "ticinese": "Versare nel cratere lievito, latte, uova e acqua di fiori d'arancio.",
+          "english": "Pour into crater the starter, milk, eggs and orange blossom water.",
+          "vocabulary_focus": ["versare", "cratere", "lievito", "latte", "uova", "acqua", "fiori", "arancio"],
+          "cultural_note": "Each ingredient blessed the dough with specific virtues and graces",
+          "technique_tip": "Add liquids gradually to prevent breaking the flour walls"
+        },
+        {
+          "step": 4,
+          "ticinese": "Impastare dolcemente incorporando burro morbido e sale.",
+          "english": "Knead gently incorporating soft butter and salt.",
+          "vocabulary_focus": ["impastare", "dolcemente", "incorporando", "burro", "morbido", "sale"],
+          "cultural_note": "Gentle kneading honored the sacredness of bread making ritual",
+          "technique_tip": "Knead with heel of hand, folding back on itself rhythmically"
+        },
+        {
+          "step": 5,
+          "ticinese": "Lavorare per 15 minuti fino a ottenere impasto liscio ed elastico.",
+          "english": "Work for 15 minutes until achieving smooth and elastic dough.",
+          "vocabulary_focus": ["lavorare", "minuti", "fino", "ottenere", "impasto", "liscio", "elastico"],
+          "cultural_note": "Patient kneading was meditation and prayer combined with labor",
+          "technique_tip": "Dough ready when it springs back from gentle finger poke"
+        },
+        {
+          "step": 6,
+          "ticinese": "Formare una palla e lasciar lievitare coperto per 2 ore.",
+          "english": "Form a ball and let rise covered for 2 hours.",
+          "vocabulary_focus": ["formare", "palla", "lasciar", "lievitare", "coperto", "ore"],
+          "cultural_note": "Rising dough symbolized prayers ascending to heaven on feast day",
+          "technique_tip": "Cover with damp cloth in warm, draft-free spot"
+        },
+        {
+          "step": 7,
+          "ticinese": "Dividere in 12 porzioni uguali e formare dei rotolini.",
+          "english": "Divide into 12 equal portions and form small logs.",
+          "vocabulary_focus": ["dividere", "porzioni", "uguali", "formare", "rotolini"],
+          "cultural_note": "Twelve portions honored the twelve apostles and sacred mysteries",
+          "technique_tip": "Use scale for perfectly equal portions - uniformity shows respect"
+        },
+        {
+          "step": 8,
+          "ticinese": "Arrotolare ogni pezzo a spirale per creare la forma di rosa.",
+          "english": "Roll each piece in spiral to create the rose shape.",
+          "vocabulary_focus": ["arrotolare", "ogni", "pezzo", "spirale", "creare", "forma", "rosa"],
+          "cultural_note": "Rose shape honored the Virgin Mary, Queen of Flowers and Heaven",
+          "technique_tip": "Start tight in center, loosening spiral toward outside"
+        },
+        {
+          "step": 9,
+          "ticinese": "Disporre le rose nella teglia unta, toccare appena tra loro.",
+          "english": "Arrange roses in greased pan, just touching each other.",
+          "vocabulary_focus": ["disporre", "rose", "teglia", "unta", "toccare", "appena", "loro"],
+          "cultural_note": "Touching roses represented community unity in faith and celebration",
+          "technique_tip": "Light touch allows expansion while maintaining connection"
+        },
+        {
+          "step": 10,
+          "ticinese": "Lievitare ancora 1 ora, poi spennellare con tuorlo sbattuto.",
+          "english": "Rise again for 1 hour, then brush with beaten egg yolk.",
+          "vocabulary_focus": ["lievitare", "ancora", "ora", "spennellare", "tuorlo", "sbattuto"],
+          "cultural_note": "Golden egg wash created luminous finish worthy of heavenly blessing",
+          "technique_tip": "Brush very gently to avoid deflating the risen dough"
+        },
+        {
+          "step": 11,
+          "ticinese": "Cuocere in forno a temperatura moderata per 30-35 minuti fino a doratura.",
+          "english": "Bake in moderate oven for 30-35 minutes until golden.",
+          "vocabulary_focus": ["cuocere", "forno", "temperatura", "moderata", "minuti", "fino", "doratura"],
+          "cultural_note": "Golden color represented divine light blessing the saint's day feast",
+          "technique_tip": "Internal temperature should reach 190°F for perfect doneness"
+        }
+      ],
+      "family_story": "Every year for the Feast of Santa Maria, Nonna Elena would wake before dawn to prepare these sacred roses. She learned the art from the convent sisters who taught that each rose must be shaped with prayer and gratitude. 'See how they bloom in the oven,' she would whisper as we watched through the glass door, 'just like our devotion growing stronger in faith.' The kitchen filled with the scent of orange blossoms, and neighbors would stop by just to breathe in the heavenly aroma. When the golden roses emerged, she would arrange them on her finest lace cloth and carry them to church for blessing. After mass, our family and neighbors would share the blessed bread in the church courtyard, each rose a symbol of the community's shared faith and the beauty that emerges when we work together with love and dedication.",
+      "vocabulary_learning": {
+        "religious_vocabulary": ["benedizione", "devozione", "fede", "preghiera", "sacro"],
+        "bread_making_terms": ["lievitazione", "impastare", "elastico", "doratura", "spirale"],
+        "sacred_shapes": ["rosa", "spirale", "corona", "cerchio", "forma"],
+        "celebration_words": ["festa", "comunità", "tradizione", "processione", "onore"]
+      },
+      "comprehension_questions": [
+        {
+          "ticinese": "Perché si fanno 12 porzioni di impasto?",
+          "english": "Why do you make 12 portions of dough?",
+          "answer": "Per onorare i dodici apostoli e i misteri sacri"
+        },
+        {
+          "ticinese": "Che forma si dà a ogni pezzo di pasta?",
+          "english": "What shape do you give each piece of dough?",
+          "answer": "La forma di una rosa a spirale"
+        },
+        {
+          "ticinese": "Quando si portano alla chiesa le torte?",
+          "english": "When do you take the cakes to church?",
+          "answer": "Per la benedizione durante la festa di Santa Maria"
+        }
+      ],
+      "cultural_context": {
+        "social_significance": "Sacred bread bringing community together in shared religious celebration",
+        "economic_importance": "Fine ingredients showed respect for saints and community prosperity",
+        "seasonal_relevance": "August feast day celebrating harvest blessings and community faith",
+        "regional_variations": "Valle Maggia version included local orange blossom water and mountain butter"
+      },
+      "learning_objectives": [
+        "Learn religious and celebration vocabulary through bread making",
+        "Understand the connection between food, faith and community",
+        "Master advanced bread shaping techniques and artistic presentation",
+        "Experience the sacred nature of traditional festival foods"
+      ]
+    },
+    {
+      "recipe_id": "RECIPE_017",
+      "ticinese_name": "Bresaola della Valtellina",
+      "english_name": "Air-Dried Beef",
+      "category": "preservation_techniques",
+      "difficulty_level": "B2",
+      "cultural_significance": "Winter protein preservation ensuring survival through months of mountain isolation",
+      "historical_period": "1860-1915",
+      "region": "Val Poschiavo, Ticino (Valtellina influence)",
+      "serves": "20-25 porzioni sottili",
+      "preparation_time": "2 giorni + 6-8 settimane stagionatura",
+      "cooking_time": "Nessuna cottura",
+      "season": "Autunno-Inverno",
+      "ingredients": [
+        {
+          "ticinese": "girello di manzo",
+          "english": "beef eye of round",
+          "amount": "2.5 kg",
+          "vocabulary_id": "VOCAB_170",
+          "cultural_note": "Lean cut from young cattle, slaughtered at first snow for winter preservation"
+        },
+        {
+          "ticinese": "sale grosso marino",
+          "english": "coarse sea salt",
+          "amount": "500g",
+          "vocabulary_id": "VOCAB_171",
+          "cultural_note": "Pure sea salt from Mediterranean, traded up mountain paths for preservation"
+        },
+        {
+          "ticinese": "pepe nero in grani",
+          "english": "whole black peppercorns",
+          "amount": "50g",
+          "vocabulary_id": "VOCAB_172",
+          "cultural_note": "Exotic spice from distant lands, precious for both flavor and preservation"
+        },
+        {
+          "ticinese": "bacche di ginepro",
+          "english": "juniper berries",
+          "amount": "30g",
+          "vocabulary_id": "VOCAB_173",
+          "cultural_note": "Wild mountain berries with antiseptic properties, gathered in summer"
+        },
+        {
+          "ticinese": "aglio rosso",
+          "english": "red garlic",
+          "amount": "6 spicchi",
+          "vocabulary_id": "VOCAB_174",
+          "cultural_note": "Hardy red garlic variety that stored well through winter months"
+        },
+        {
+          "ticinese": "rosmarino selvatico",
+          "english": "wild rosemary",
+          "amount": "4 rametti",
+          "vocabulary_id": "VOCAB_175",
+          "cultural_note": "Mountain rosemary, more intense than cultivated varieties"
+        },
+        {
+          "ticinese": "vino rosso invecchiato",
+          "english": "aged red wine",
+          "amount": "1 bicchiere",
+          "vocabulary_id": "VOCAB_176",
+          "cultural_note": "Family's best wine, aged in wooden casks in the cantina"
+        }
+      ],
+      "kitchen_tools": [
+        {
+          "ticinese": "cassetta di legno",
+          "english": "wooden box",
+          "cultural_note": "Cedar or chestnut box for salt curing, passed down through generations"
+        },
+        {
+          "ticinese": "mortaio di pietra",
+          "english": "stone mortar",
+          "cultural_note": "Heavy mortar for crushing spices and aromatics"
+        },
+        {
+          "ticinese": "ganci da soffitto",
+          "english": "ceiling hooks",
+          "cultural_note": "Iron hooks secured in attic rafters for hanging cured meats"
+        },
+        {
+          "ticinese": "garza fine",
+          "english": "fine cheesecloth",
+          "cultural_note": "Protective cloth wrapping against insects while allowing air circulation"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "ticinese": "Pareggiare la carne eliminando tutto il grasso e le membrane visibili.",
+          "english": "Trim the meat removing all visible fat and membranes.",
+          "vocabulary_focus": ["pareggiare", "carne", "eliminando", "tutto", "grasso", "membrane", "visibili"],
+          "cultural_note": "Perfect trimming prevented rancidity during long curing process",
+          "technique_tip": "Use sharp knife to remove every trace of fat - fat spoils, lean meat preserves"
+        },
+        {
+          "step": 2,
+          "ticinese": "Tritare finemente aglio, rosmarino e pestare le bacche di ginepro.",
+          "english": "Chop garlic and rosemary finely, crush the juniper berries.",
+          "vocabulary_focus": ["tritare", "finemente", "aglio", "rosmarino", "pestare", "bacche", "ginepro"],
+          "cultural_note": "Aromatic herbs added flavor and antimicrobial properties for preservation",
+          "technique_tip": "Crush spices just before use to release maximum essential oils"
+        },
+        {
+          "step": 3,
+          "ticinese": "Mescolare sale, pepe, spezie e massaggiare energicamente la carne.",
+          "english": "Mix salt, pepper, spices and massage the meat vigorously.",
+          "vocabulary_focus": ["mescolare", "sale", "pepe", "spezie", "massaggiare", "energicamente", "carne"],
+          "cultural_note": "Vigorous massage worked salt deep into muscle fibers for even curing",
+          "technique_tip": "Work salt mixture into every surface - uneven salting causes spoilage"
+        },
+        {
+          "step": 4,
+          "ticinese": "Avvolgere strettamente in garza e sistemare nella cassetta di legno.",
+          "english": "Wrap tightly in cheesecloth and place in wooden box.",
+          "vocabulary_focus": ["avvolgere", "strettamente", "garza", "sistemare", "cassetta", "legno"],
+          "cultural_note": "Cedar wood box provided natural antimicrobial environment for curing",
+          "technique_tip": "Wrap snugly but not too tight - meat needs slight movement during shrinkage"
+        },
+        {
+          "step": 5,
+          "ticinese": "Girare la carne ogni giorno per 15 giorni, asciugando i liquidi.",
+          "english": "Turn the meat daily for 15 days, wiping away liquids.",
+          "vocabulary_focus": ["girare", "carne", "ogni", "giorno", "giorni", "asciugando", "liquidi"],
+          "cultural_note": "Daily turning prevented uneven curing and bacterial growth in moisture pockets",
+          "technique_tip": "Remove all moisture immediately - dampness ruins the curing process"
+        },
+        {
+          "step": 6,
+          "ticinese": "Spennellare con vino rosso e appendere in cantina fresca e ventilata.",
+          "english": "Brush with red wine and hang in cool, ventilated cellar.",
+          "vocabulary_focus": ["spennellare", "vino", "rosso", "appendere", "cantina", "fresca", "ventilata"],
+          "cultural_note": "Wine coating prevented surface mold and added complexity to flavor",
+          "technique_tip": "Cellar should be 50-60°F with gentle air circulation"
+        },
+        {
+          "step": 7,
+          "ticinese": "Stagionare per 6-8 settimane controllando ogni settimana lo stato.",
+          "english": "Age for 6-8 weeks checking condition weekly.",
+          "vocabulary_focus": ["stagionare", "settimane", "controllando", "ogni", "settimana", "stato"],
+          "cultural_note": "Weekly inspection caught problems early - family's winter protein depended on success",
+          "technique_tip": "Surface should be firm and dark red, no soft spots or off odors"
+        },
+        {
+          "step": 8,
+          "ticinese": "Tagliare sottilissimo con coltello affilato servire con pane nero.",
+          "english": "Slice very thin with sharp knife, serve with dark bread.",
+          "vocabulary_focus": ["tagliare", "sottilissimo", "coltello", "affilato", "servire", "pane", "nero"],
+          "cultural_note": "Paper-thin slices maximized precious protein throughout winter months",
+          "technique_tip": "Always slice against grain for tender texture despite firm preservation"
+        }
+      ],
+      "family_story": "Every October, when the first snow dusted the peaks, Nonno Antonio would select the finest piece of beef for bresaola. He learned the art from Valtellina traders who came through our valley, carrying their precious dried meats like treasures. The whole family gathered for the ritual - children crushing spices, women preparing garze, men securing hooks in the cantina ceiling. 'This meat will feed us when the snow is deep and the passes are closed,' he would say, massaging the salt with reverent hands. For six weeks we checked on our hanging treasure, watching it transform from raw meat into deep red gold. When February winds howled and fresh food was just a memory, those translucent slices tasted like concentrated summer, each bite a victory over winter's hunger. Nonno always said, 'Patience turns simple meat into precious sustenance - this is how we survive the mountains.'",
+      "vocabulary_learning": {
+        "preservation_techniques": ["stagionatura", "essiccare", "salare", "affumicare", "conservare"],
+        "meat_preparation": ["pareggiare", "massaggiare", "avvolgere", "appendere", "controllare"],
+        "seasonal_timing": ["autunno", "inverno", "prima neve", "raccolta", "preparazione"],
+        "survival_vocabulary": ["sopravvivenza", "resistenza", "sostenimento", "riserve", "sicurezza"]
+      },
+      "comprehension_questions": [
+        {
+          "ticinese": "Perché si elimina tutto il grasso dalla carne?",
+          "english": "Why do you remove all fat from the meat?",
+          "answer": "Perché il grasso diventa rancido durante la stagionatura"
+        },
+        {
+          "ticinese": "Quanto tempo ci vuole per completare la bresaola?",
+          "english": "How long does it take to complete the bresaola?",
+          "answer": "15 giorni di salatura più 6-8 settimane di stagionatura"
+        },
+        {
+          "ticinese": "Perché si controlla ogni settimana durante la stagionatura?",
+          "english": "Why do you check weekly during aging?",
+          "answer": "Per prevenire problemi e assicurare una conservazione perfetta"
+        }
+      ],
+      "cultural_context": {
+        "social_significance": "Community effort ensuring family protein security through harsh winters",
+        "economic_importance": "Transformed perishable meat into valuable long-term food resource",
+        "seasonal_relevance": "Autumn preparation critical for winter survival in mountain isolation",
+        "regional_variations": "Val Poschiavo version influenced by Valtellina trading connections"
+      },
+      "learning_objectives": [
+        "Master advanced preservation vocabulary and food safety concepts",
+        "Understand seasonal timing and preparation for winter survival",
+        "Learn traditional meat curing techniques and patience required",
+        "Experience the critical importance of food preservation in alpine life"
+      ]
+    },
+    {
+      "recipe_id": "RECIPE_018",
+      "ticinese_name": "Formaggio all'Olio",
+      "english_name": "Oil-Preserved Cheese",
+      "category": "preservation_techniques",
+      "difficulty_level": "B1",
+      "cultural_significance": "Alpine cheesemaking preservation method for extending summer abundance into winter scarcity",
+      "historical_period": "1870-1915",
+      "region": "Verzasca Valley, Ticino",
+      "serves": "15-20 porzioni",
+      "preparation_time": "3 ore + 4 settimane maturazione",
+      "cooking_time": "Nessuna cottura",
+      "season": "Estate-Autunno",
+      "ingredients": [
+        {
+          "ticinese": "formaggio di capra fresco",
+          "english": "fresh goat cheese",
+          "amount": "1.5 kg",
+          "vocabulary_id": "VOCAB_180",
+          "cultural_note": "Made from summer mountain goats milk when pastures were richest"
+        },
+        {
+          "ticinese": "olio d'oliva extravergine",
+          "english": "extra virgin olive oil",
+          "amount": "800ml",
+          "vocabulary_id": "VOCAB_181",
+          "cultural_note": "Premium oil from Tessino valleys, precious liquid for preservation"
+        },
+        {
+          "ticinese": "peperoncini secchi",
+          "english": "dried hot peppers",
+          "amount": "6 piccoli",
+          "vocabulary_id": "VOCAB_182",
+          "cultural_note": "Fiery peppers dried in summer sun, natural preservative and flavor"
+        },
+        {
+          "ticinese": "alloro di montagna",
+          "english": "mountain bay leaves",
+          "amount": "12 foglie",
+          "vocabulary_id": "VOCAB_183",
+          "cultural_note": "Wild bay from mountain slopes, stronger and more aromatic than garden variety"
+        },
+        {
+          "ticinese": "pepe rosa in grani",
+          "english": "pink peppercorns",
+          "amount": "2 cucchiai",
+          "vocabulary_id": "VOCAB_184",
+          "cultural_note": "Delicate spice that complemented rather than overwhelmed cheese flavors"
+        },
+        {
+          "ticinese": "aglio novello",
+          "english": "young garlic",
+          "amount": "8 spicchi",
+          "vocabulary_id": "VOCAB_185",
+          "cultural_note": "Fresh summer garlic, mild and sweet before developing sharp bite"
+        },
+        {
+          "ticinese": "erbe di campo miste",
+          "english": "mixed wild herbs",
+          "amount": "1 mazzetto",
+          "vocabulary_id": "VOCAB_186",
+          "cultural_note": "Oregano, thyme, marjoram gathered from sunny mountain meadows"
+        }
+      ],
+      "kitchen_tools": [
+        {
+          "ticinese": "vasi di terracotta",
+          "english": "terracotta jars",
+          "cultural_note": "Porous clay allowed cheese to breathe while protecting from contamination"
+        },
+        {
+          "ticinese": "pesi di pietra",
+          "english": "stone weights",
+          "cultural_note": "Clean river stones used to keep cheese submerged under oil"
+        },
+        {
+          "ticinese": "colino di bambù",
+          "english": "bamboo strainer",
+          "cultural_note": "Basket for draining cheese whey without breaking delicate curds"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "ticinese": "Tagliare il formaggio fresco in cubetti di 3 centimetri.",
+          "english": "Cut the fresh cheese into 3-centimeter cubes.",
+          "vocabulary_focus": ["tagliare", "formaggio", "fresco", "cubetti", "centimetri"],
+          "cultural_note": "Uniform cubes ensured even oil penetration and preservation",
+          "technique_tip": "Use clean knife and cut decisively to avoid crumbling"
+        },
+        {
+          "step": 2,
+          "ticinese": "Stendere i cubetti su un canovaccio pulito per 2 ore.",
+          "english": "Spread the cubes on a clean cloth for 2 hours.",
+          "vocabulary_focus": ["stendere", "cubetti", "canovaccio", "pulito", "ore"],
+          "cultural_note": "Surface drying prevented oil from becoming cloudy with excess moisture",
+          "technique_tip": "Turn cubes once halfway through drying for even surface preparation"
+        },
+        {
+          "step": 3,
+          "ticinese": "Preparare l'olio riscaldandolo dolcemente con aglio e peperoncino.",
+          "english": "Prepare the oil by gently heating it with garlic and hot pepper.",
+          "vocabulary_focus": ["preparare", "olio", "riscaldando", "dolcemente", "aglio", "peperoncino"],
+          "cultural_note": "Gentle infusion captured flavors without cooking aromatics to bitterness",
+          "technique_tip": "Oil should be warm to touch, never hot enough to sizzle"
+        },
+        {
+          "step": 4,
+          "ticinese": "Aggiungere alloro, erbe e pepe rosa, lasciar raffreddare completamente.",
+          "english": "Add bay leaves, herbs and pink pepper, let cool completely.",
+          "vocabulary_focus": ["aggiungere", "alloro", "erbe", "pepe", "rosa", "lasciar", "raffreddare", "completamente"],
+          "cultural_note": "Complete cooling prevented condensation that could spoil preservation",
+          "technique_tip": "Stir herbs gently to distribute without bruising delicate leaves"
+        },
+        {
+          "step": 5,
+          "ticinese": "Disporre i cubetti di formaggio nei vasi alternando con spezie.",
+          "english": "Arrange cheese cubes in jars alternating with spices.",
+          "vocabulary_focus": ["disporre", "cubetti", "formaggio", "vasi", "alternando", "spezie"],
+          "cultural_note": "Layering created beautiful presentation and even flavor distribution",
+          "technique_tip": "Pack gently - cheese should touch but not be compressed"
+        },
+        {
+          "step": 6,
+          "ticinese": "Coprire completamente con olio aromatizzato lasciando 2 cm dal bordo.",
+          "english": "Cover completely with flavored oil leaving 2 cm from rim.",
+          "vocabulary_focus": ["coprire", "completamente", "olio", "aromatizzato", "lasciando", "bordo"],
+          "cultural_note": "Oil seal prevented air contact that would cause spoilage and mold",
+          "technique_tip": "Use clean spoon to release air bubbles around cheese pieces"
+        },
+        {
+          "step": 7,
+          "ticinese": "Posare un peso pulito per tenere il formaggio sotto l'olio.",
+          "english": "Place a clean weight to keep cheese under the oil.",
+          "vocabulary_focus": ["posare", "peso", "pulito", "tenere", "formaggio", "sotto", "olio"],
+          "cultural_note": "Weights kept cheese submerged - exposed cheese developed dangerous mold",
+          "technique_tip": "Boil river stones and cloth to sterilize before using as weights"
+        },
+        {
+          "step": 8,
+          "ticinese": "Conservare in cantina fresca per 4 settimane girando i vasi ogni settimana.",
+          "english": "Store in cool cellar for 4 weeks, turning jars weekly.",
+          "vocabulary_focus": ["conservare", "cantina", "fresca", "settimane", "girando", "vasi", "ogni", "settimana"],
+          "cultural_note": "Cool storage and rotation prevented separation and ensured even aging",
+          "technique_tip": "Gentle rotation redistributes oil and spices without disturbing cheese"
+        },
+        {
+          "step": 9,
+          "ticinese": "Servire a temperatura ambiente con pane casereccio e vino locale.",
+          "english": "Serve at room temperature with homemade bread and local wine.",
+          "vocabulary_focus": ["servire", "temperatura", "ambiente", "pane", "casereccio", "vino", "locale"],
+          "cultural_note": "Room temperature allowed full appreciation of developed flavors and textures",
+          "technique_tip": "Remove from oil 30 minutes before serving for optimal taste"
+        }
+      ],
+      "family_story": "In the Verzasca Valley, when summer goats gave their richest milk, Nonna Francesca would make wheels of fresh cheese knowing most would spoil before winter. Then she learned this preservation secret from an old woman who remembered the hungry years. 'Oil is life,' the woman told her, 'it gives and it preserves.' Each August, our kitchen became a workshop - cutting, drying, layering cheese in beautiful terracotta jars like jewels in treasure boxes. The oil, golden as summer sunshine, sealed away the abundance for dark winter days. When snow blocked our valley for months, we would open those jars to find perfect cheese, mellowed by herbs and oil, tasting of the mountain pastures where the goats had wandered free. Each bite brought back memories of summer warmth and proved that with knowledge and patience, we could capture any season.",
+      "vocabulary_learning": {
+        "cheese_making": ["cagliare", "stagionare", "maturare", "conservare", "affumicare"],
+        "preservation_methods": ["sigillare", "sommergere", "proteggere", "mantenere", "preservare"],
+        "container_vocabulary": ["vaso", "recipiente", "contenitore", "coperchio", "peso"],
+        "texture_descriptions": ["cremoso", "sodo", "morbido", "compatto", "delicato"]
+      },
+      "comprehension_questions": [
+        {
+          "ticinese": "Perché si fanno asciugare i cubetti di formaggio prima di metterli nell'olio?",
+          "english": "Why do you dry the cheese cubes before putting them in oil?",
+          "answer": "Per evitare che l'umidità renda l'olio torbido"
+        },
+        {
+          "ticinese": "A cosa serve il peso sopra il formaggio?",
+          "english": "What is the purpose of the weight on top of the cheese?",
+          "answer": "Per tenere il formaggio completamente sommerso nell'olio"
+        },
+        {
+          "ticinese": "Quanto tempo bisogna aspettare prima di mangiare il formaggio conservato?",
+          "english": "How long do you have to wait before eating the preserved cheese?",
+          "answer": "Quattro settimane per la maturazione completa"
+        }
+      ],
+      "cultural_context": {
+        "social_significance": "Preservation technique that transformed summer abundance into winter security",
+        "economic_importance": "Extended valuable protein source through months of food scarcity",
+        "seasonal_relevance": "Summer preservation using peak milk production from mountain pastures",
+        "regional_variations": "Verzasca version used local wild herbs and terracotta from valley clay"
+      },
+      "learning_objectives": [
+        "Learn cheese preservation vocabulary and traditional techniques",
+        "Understand seasonal food security and storage methods",
+        "Master layering and oil preservation processes",
+        "Experience transformation of fresh ingredients through patient preservation"
+      ]
+    },
+    {
+      "recipe_id": "RECIPE_019",
+      "ticinese_name": "Mostarda di Cremona",
+      "english_name": "Fruit and Mustard Preserve",
+      "category": "preservation_techniques",
+      "difficulty_level": "B1",
+      "cultural_significance": "Autumn fruit preservation combining sweet and sharp flavors for winter variety",
+      "historical_period": "1880-1915",
+      "region": "Mendrisiotto, Ticino (Lombard tradition)",
+      "serves": "30-40 porzioni",
+      "preparation_time": "4 ore + 3 giorni riposo",
+      "cooking_time": "2 ore",
+      "season": "Autunno",
+      "ingredients": [
+        {
+          "ticinese": "pere Kaiser mature",
+          "english": "ripe Kaiser pears",
+          "amount": "1 kg",
+          "vocabulary_id": "VOCAB_190",
+          "cultural_note": "Late autumn pears, firm enough to hold shape during long cooking"
+        },
+        {
+          "ticinese": "mele campanine",
+          "english": "Campanina apples",
+          "amount": "800g",
+          "vocabulary_id": "VOCAB_191",
+          "cultural_note": "Small sweet apples from family orchards, perfect size for whole preservation"
+        },
+        {
+          "ticinese": "zucche mantovane",
+          "english": "Mantova squash",
+          "amount": "600g",
+          "vocabulary_id": "VOCAB_192",
+          "cultural_note": "Dense orange squash from southern valleys, sweet and firm textured"
+        },
+        {
+          "ticinese": "fichi secchi",
+          "english": "dried figs",
+          "amount": "300g",
+          "vocabulary_id": "VOCAB_193",
+          "cultural_note": "Sun-dried figs from warm valley slopes, concentrated sweetness"
+        },
+        {
+          "ticinese": "zucchero di canna",
+          "english": "cane sugar",
+          "amount": "800g",
+          "vocabulary_id": "VOCAB_194",
+          "cultural_note": "Dark cane sugar imported from far lands, precious and flavorful"
+        },
+        {
+          "ticinese": "senape in polvere",
+          "english": "mustard powder",
+          "amount": "80g",
+          "vocabulary_id": "VOCAB_195",
+          "cultural_note": "Ground mustard seeds, the fiery heart that balanced fruit sweetness"
+        },
+        {
+          "ticinese": "aceto di vino bianco",
+          "english": "white wine vinegar",
+          "amount": "300ml",
+          "vocabulary_id": "VOCAB_196",
+          "cultural_note": "Acidic preservation agent made from family vineyard wine"
+        },
+        {
+          "ticinese": "essenza di senape",
+          "english": "mustard essence",
+          "amount": "3 gocce",
+          "vocabulary_id": "VOCAB_197",
+          "cultural_note": "Concentrated mustard oil, used sparingly for authentic sharp bite"
+        }
+      ],
+      "kitchen_tools": [
+        {
+          "ticinese": "pentola di rame stagnato",
+          "english": "tinned copper pot",
+          "cultural_note": "Copper conducted heat evenly for perfect sugar cooking without burning"
+        },
+        {
+          "ticinese": "mestolo di legno lungo",
+          "english": "long wooden spoon",
+          "cultural_note": "Long handle protected hands from hot syrup splashing during stirring"
+        },
+        {
+          "ticinese": "vasi di vetro spesso",
+          "english": "thick glass jars",
+          "cultural_note": "Heavy glass withstood temperature changes and showed beautiful colors"
+        },
+        {
+          "ticinese": "setaccio fine",
+          "english": "fine sieve",
+          "cultural_note": "Removed any lumps from mustard powder for smooth consistency"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "ticinese": "Sbucciare e tagliare tutta la frutta a pezzi uniformi.",
+          "english": "Peel and cut all fruit into uniform pieces.",
+          "vocabulary_focus": ["sbucciare", "tagliare", "tutta", "frutta", "pezzi", "uniformi"],
+          "cultural_note": "Uniform pieces ensured even cooking and beautiful presentation in jars",
+          "technique_tip": "Cut pieces large enough to maintain shape during long cooking process"
+        },
+        {
+          "step": 2,
+          "ticinese": "Disporre la frutta a strati con zucchero e lasciar riposare 24 ore.",
+          "english": "Layer the fruit with sugar and let rest 24 hours.",
+          "vocabulary_focus": ["disporre", "frutta", "strati", "zucchero", "lasciar", "riposare", "ore"],
+          "cultural_note": "Sugar draw out natural juices, beginning preservation process naturally",
+          "technique_tip": "Cover with cloth to protect from insects while juices develop"
+        },
+        {
+          "step": 3,
+          "ticinese": "Scolare i succhi e portarli a bollore in pentola di rame.",
+          "english": "Drain the juices and bring to boil in copper pot.",
+          "vocabulary_focus": ["scolare", "succhi", "portare", "bollore", "pentola", "rame"],
+          "cultural_note": "Copper pot prevented burning and created perfect syrup consistency",
+          "technique_tip": "Reserve fruit separately while cooking down concentrated syrup"
+        },
+        {
+          "step": 4,
+          "ticinese": "Cuocere lo sciroppo per 20 minuti fino a consistenza densa.",
+          "english": "Cook the syrup for 20 minutes until thick consistency.",
+          "vocabulary_focus": ["cuocere", "sciroppo", "minuti", "fino", "consistenza", "densa"],
+          "cultural_note": "Dense syrup coated fruit and prevented spoilage through concentration",
+          "technique_tip": "Test consistency by dropping syrup from spoon - should fall in thick ribbons"
+        },
+        {
+          "step": 5,
+          "ticinese": "Aggiungere la frutta e cuocere dolcemente per 45 minuti mescolando.",
+          "english": "Add fruit and cook gently for 45 minutes, stirring.",
+          "vocabulary_focus": ["aggiungere", "frutta", "cuocere", "dolcemente", "minuti", "mescolando"],
+          "cultural_note": "Gentle cooking preserved fruit shape while developing deep flavors",
+          "technique_tip": "Stir carefully from bottom to prevent sticking without breaking fruit"
+        },
+        {
+          "step": 6,
+          "ticinese": "Setacciare la senape in polvere e stemperarla con poco aceto.",
+          "english": "Sieve mustard powder and dilute with little vinegar.",
+          "vocabulary_focus": ["setacciare", "senape", "polvere", "stemperare", "poco", "aceto"],
+          "cultural_note": "Smooth mustard paste prevented lumps that would spoil texture",
+          "technique_tip": "Add vinegar gradually to create smooth paste without lumps"
+        },
+        {
+          "step": 7,
+          "ticinese": "Incorporare la senape negli ultimi 10 minuti con essenza.",
+          "english": "Incorporate mustard in last 10 minutes with essence.",
+          "vocabulary_focus": ["incorporare", "senape", "ultimi", "minuti", "essenza"],
+          "cultural_note": "Late addition preserved mustard's sharp bite while mellowing harsh edges",
+          "technique_tip": "Stir constantly after adding mustard to distribute evenly without burning"
+        },
+        {
+          "step": 8,
+          "ticinese": "Invasare bollente in vasi sterilizzati e sigillare ermeticamente.",
+          "english": "Jar hot into sterilized jars and seal hermetically.",
+          "vocabulary_focus": ["invasare", "bollente", "vasi", "sterilizzati", "sigillare", "ermeticamente"],
+          "cultural_note": "Hot packing and hermetic sealing ensured safe preservation through winter",
+          "technique_tip": "Fill jars leaving 1cm headspace, wipe rims clean before sealing"
+        },
+        {
+          "step": 9,
+          "ticinese": "Far riposare per 3 giorni prima di gustare con carni bollite.",
+          "english": "Let rest 3 days before enjoying with boiled meats.",
+          "vocabulary_focus": ["far", "riposare", "giorni", "prima", "gustare", "carni", "bollite"],
+          "cultural_note": "Resting allowed flavors to meld and mustard heat to mellow perfectly",
+          "technique_tip": "Store in cool, dark place - flavors continue developing for weeks"
+        }
+      ],
+      "family_story": "When autumn painted our valley in gold and red, Zia Carolina would gather the last fruits before frost. She learned mostarda making from Lombard traders who brought their sharp-sweet preserve to market. 'Sweet like life's joys, sharp like its challenges,' she would say, stirring the bubbling copper pot. The kitchen filled with steam carrying scents of caramelizing fruit and biting mustard - sweet comfort and fierce warmth combined. Each jar was like autumn sunshine captured in glass, the golden mostarda sparkling with fruit jewels. During winter's darkest days, when our meals were simple bread and preserved meats, a spoonful of mostarda transformed everything. The fruit reminded us of warm orchards, while the mustard's fire warmed us from within. 'Good food,' Zia said, 'should awaken all your senses and all your memories.'",
+      "vocabulary_learning": {
+        "fruit_preservation": ["conservare", "invasare", "sigillare", "sterilizzare", "concentrare"],
+        "cooking_processes": ["bollire", "addensare", "sciogliere", "mescolare", "incorporare"],
+        "flavor_balance": ["dolce", "piccante", "aspro", "equilibrato", "armonioso"],
+        "seasonal_activities": ["raccogliere", "selezionare", "preparare", "conservare", "immagazzinare"]
+      },
+      "comprehension_questions": [
+        {
+          "ticinese": "Perché si lascia riposare la frutta con lo zucchero per 24 ore?",
+          "english": "Why do you let fruit rest with sugar for 24 hours?",
+          "answer": "Per far uscire i succhi naturali e iniziare la conservazione"
+        },
+        {
+          "ticinese": "Quando si aggiunge la senape in polvere?",
+          "english": "When do you add the mustard powder?",
+          "answer": "Negli ultimi 10 minuti di cottura"
+        },
+        {
+          "ticinese": "Con cosa si serve tradizionalmente la mostarda?",
+          "english": "What is mostarda traditionally served with?",
+          "answer": "Con carni bollite e lessi"
+        }
+      ],
+      "cultural_context": {
+        "social_significance": "Sophisticated preserve that elevated simple winter meals with complex flavors",
+        "economic_importance": "Transformed surplus autumn fruit into valuable winter condiment",
+        "seasonal_relevance": "Final harvest preservation before winter frost destroyed fresh fruit",
+        "regional_variations": "Mendrisiotto version influenced by Lombard trading traditions"
+      },
+      "learning_objectives": [
+        "Learn complex preservation vocabulary and fruit cooking techniques",
+        "Understand flavor balance between sweet and sharp tastes",
+        "Master timing and temperature control in preserve making",
+        "Experience traditional methods for creating complex, sophisticated foods"
+      ]
+    },
+    {
+      "recipe_id": "RECIPE_020",
+      "ticinese_name": "Salsiccia Secca",
+      "english_name": "Dried Sausage",
+      "category": "preservation_techniques",
+      "difficulty_level": "B2",
+      "cultural_significance": "Ultimate pork preservation for mountain isolation, sustaining families through months of snow",
+      "historical_period": "1850-1915",
+      "region": "Valle Leventina, Ticino",
+      "serves": "40-50 fette sottili",
+      "preparation_time": "1 giorno + 6-10 settimane stagionatura",
+      "cooking_time": "Nessuna cottura",
+      "season": "Novembre",
+      "ingredients": [
+        {
+          "ticinese": "spalla di maiale magra",
+          "english": "lean pork shoulder",
+          "amount": "2 kg",
+          "vocabulary_id": "VOCAB_200",
+          "cultural_note": "Prime cut from pig slaughtered at first hard frost for best preservation"
+        },
+        {
+          "ticinese": "pancetta di maiale",
+          "english": "pork belly",
+          "amount": "500g",
+          "vocabulary_id": "VOCAB_201",
+          "cultural_note": "Fat necessary for moisture and flavor during long curing process"
+        },
+        {
+          "ticinese": "sale grosso alpino",
+          "english": "coarse alpine salt",
+          "amount": "60g",
+          "vocabulary_id": "VOCAB_202",
+          "cultural_note": "Pure mountain salt, essential for drawing moisture and preventing spoilage"
+        },
+        {
+          "ticinese": "pepe nero macinato grosso",
+          "english": "coarsely ground black pepper",
+          "amount": "15g",
+          "vocabulary_id": "VOCAB_203",
+          "cultural_note": "Freshly ground pepper provided preservation properties and sharp bite"
+        },
+        {
+          "ticinese": "vino rosso del Ticino",
+          "english": "Ticinese red wine",
+          "amount": "100ml",
+          "vocabulary_id": "VOCAB_204",
+          "cultural_note": "Local wine added depth and helped bind the mixture naturally"
+        },
+        {
+          "ticinese": "aglio di montagna",
+          "english": "mountain garlic",
+          "amount": "6 spicchi",
+          "vocabulary_id": "VOCAB_205",
+          "cultural_note": "Pungent mountain garlic, stronger than valley varieties, natural antimicrobial"
+        },
+        {
+          "ticinese": "finocchio selvatico",
+          "english": "wild fennel seeds",
+          "amount": "2 cucchiai",
+          "vocabulary_id": "VOCAB_206",
+          "cultural_note": "Aromatic seeds gathered from mountain slopes, aid digestion and add flavor"
+        },
+        {
+          "ticinese": "budella naturali",
+          "english": "natural casings",
+          "amount": "3 metri",
+          "vocabulary_id": "VOCAB_207",
+          "cultural_note": "Pig intestines cleaned and salted, traditional casing that breathes during curing"
+        }
+      ],
+      "kitchen_tools": [
+        {
+          "ticinese": "tritacarne manuale",
+          "english": "manual meat grinder",
+          "cultural_note": "Hand-cranked grinder for controlling texture and avoiding heating meat"
+        },
+        {
+          "ticinese": "insaccatrice",
+          "english": "sausage stuffer",
+          "cultural_note": "Wooden or metal funnel for filling casings without air pockets"
+        },
+        {
+          "ticinese": "ago da calza grosso",
+          "english": "large darning needle",
+          "cultural_note": "For pricking air bubbles and securing casings"
+        },
+        {
+          "ticinese": "corda da cucina",
+          "english": "kitchen twine",
+          "cultural_note": "Natural fiber string for tying sausage sections and hanging"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "ticinese": "Tagliare le carni a cubetti e macinarle grossolanamente a mano.",
+          "english": "Cut meats into cubes and grind coarsely by hand.",
+          "vocabulary_focus": ["tagliare", "carni", "cubetti", "macinare", "grossolanamente", "mano"],
+          "cultural_note": "Hand grinding kept meat cold and created rustic texture prized in mountain sausage",
+          "technique_tip": "Alternate lean and fat through grinder for even distribution"
+        },
+        {
+          "step": 2,
+          "ticinese": "Tritare finemente aglio e finocchio, mescolare con sale e pepe.",
+          "english": "Chop garlic and fennel finely, mix with salt and pepper.",
+          "vocabulary_focus": ["tritare", "finemente", "aglio", "finocchio", "mescolare", "sale", "pepe"],
+          "cultural_note": "Aromatics provided both flavor development and natural preservation properties",
+          "technique_tip": "Crush garlic with salt to release maximum oils and flavors"
+        },
+        {
+          "step": 3,
+          "ticinese": "Impastare la carne macinata con spezie e vino rosso energicamente.",
+          "english": "Knead ground meat with spices and red wine vigorously.",
+          "vocabulary_focus": ["impastare", "carne", "macinata", "spezie", "vino", "rosso", "energicamente"],
+          "cultural_note": "Vigorous mixing distributed seasonings and developed protein binding for firm texture",
+          "technique_tip": "Knead until mixture becomes sticky and holds together when squeezed"
+        },
+        {
+          "step": 4,
+          "ticinese": "Far riposare l'impasto coperto in luogo fresco per 12 ore.",
+          "english": "Let mixture rest covered in cool place for 12 hours.",
+          "vocabulary_focus": ["far", "riposare", "impasto", "coperto", "luogo", "fresco", "ore"],
+          "cultural_note": "Resting allowed flavors to meld and meat proteins to develop proper binding",
+          "technique_tip": "Cover with damp cloth to prevent surface from drying during rest"
+        },
+        {
+          "step": 5,
+          "ticinese": "Ammollare le budella in acqua tiepida e sciacquarle accuratamente.",
+          "english": "Soak casings in warm water and rinse thoroughly.",
+          "vocabulary_focus": ["ammollare", "budella", "acqua", "tiepida", "sciacquare", "accuratamente"],
+          "cultural_note": "Proper casing preparation was critical - any contamination would ruin entire batch",
+          "technique_tip": "Test casings by blowing air through to check for holes before stuffing"
+        },
+        {
+          "step": 6,
+          "ticinese": "Insaccare la carne stringendo bene e legando ogni 20 centimetri.",
+          "english": "Stuff the meat firmly and tie every 20 centimeters.",
+          "vocabulary_focus": ["insaccare", "carne", "stringendo", "bene", "legando", "ogni", "centimetri"],
+          "cultural_note": "Firm packing eliminated air pockets that would cause spoilage during curing",
+          "technique_tip": "Prick any air bubbles with needle immediately after stuffing"
+        },
+        {
+          "step": 7,
+          "ticinese": "Appendere in cantina fresca e ventilata per la prima settimana.",
+          "english": "Hang in cool, ventilated cellar for first week.",
+          "vocabulary_focus": ["appendere", "cantina", "fresca", "ventilata", "prima", "settimana"],
+          "cultural_note": "First week was critical - proper air circulation prevented surface spoilage",
+          "technique_tip": "Sausages should not touch each other or walls during initial drying"
+        },
+        {
+          "step": 8,
+          "ticinese": "Trasferire in luogo più secco e stagionare per 6-10 settimane.",
+          "english": "Transfer to drier place and age for 6-10 weeks.",
+          "vocabulary_focus": ["trasferire", "luogo", "più", "secco", "stagionare", "settimane"],
+          "cultural_note": "Gradual drying prevented case hardening while developing characteristic texture",
+          "technique_tip": "Sausages ready when firm throughout and showing white bloom on surface"
+        },
+        {
+          "step": 9,
+          "ticinese": "Tagliare sottile con coltello affilato, servire con pane nero.",
+          "english": "Slice thin with sharp knife, serve with dark bread.",
+          "vocabulary_focus": ["tagliare", "sottile", "coltello", "affilato", "servire", "pane", "nero"],
+          "cultural_note": "Thin slicing maximized precious protein that sustained families through winter",
+          "technique_tip": "Always slice at angle for larger surface area and easier chewing"
+        }
+      ],
+      "family_story": "Every November, when the first hard frost silvered our valley, came the day we had waited for all year - the making of salsiccia secca. This was the moment when our family pig, fattened through summer and autumn, would become our salvation through winter. Nonno Giuseppe would wake before dawn, sharpening his knives with the reverence of a priest preparing for mass. The whole family gathered - this was too important for any one person. We children cranked the grinder while adults seasoned and tasted, adjusted salt and wine until the mixture sang with perfect balance. When the sausages hung like rosaries from the cantina ceiling, Nonno would whisper a prayer of gratitude. 'This pig will feed us until spring,' he said, 'every slice a gift that keeps giving.' Through February's darkest days, when snow reached our windows and no fresh food existed, those thin slices of salsiccia were our lifeline - concentrated summer and autumn, preserved through skill and blessed with hope.",
+      "vocabulary_learning": {
+        "meat_processing": ["macellazione", "macinazione", "insaccamento", "stagionatura", "conservazione"],
+        "sausage_making": ["impastare", "insaccare", "legare", "appendere", "stagionare"],
+        "preservation_timing": ["novembre", "primo gelo", "raccolta", "preparazione", "stagione"],
+        "survival_vocabulary": ["sostentamento", "resistenza", "sopravvivenza", "sicurezza", "provvidenza"]
+      },
+      "comprehension_questions": [
+        {
+          "ticinese": "Quando si fa tradizionalmente la salsiccia secca?",
+          "english": "When is dried sausage traditionally made?",
+          "answer": "A novembre, dopo il primo gelo duro"
+        },
+        {
+          "ticinese": "Perché si fa riposare l'impasto per 12 ore?",
+          "english": "Why do you let the mixture rest for 12 hours?",
+          "answer": "Per far amalgamare i sapori e legare le proteine"
+        },
+        {
+          "ticinese": "Come si sa quando la salsiccia è pronta?",
+          "english": "How do you know when the sausage is ready?",
+          "answer": "Quando è soda e presenta una muffa bianca in superficie"
+        }
+      ],
+      "cultural_context": {
+        "social_significance": "Family ritual ensuring protein security through months of mountain isolation",
+        "economic_importance": "Transformed single pig into months of preserved meat sustenance",
+        "seasonal_relevance": "November slaughter timing critical for successful preservation in cold weather",
+        "regional_variations": "Valle Leventina version used local wild fennel and mountain wine"
+      },
+      "learning_objectives": [
+        "Master advanced meat preservation vocabulary and traditional techniques",
+        "Understand critical timing and seasonal requirements for food security",
+        "Learn complex multi-step processes requiring precision and patience",
+        "Experience the ultimate importance of successful food preservation for survival"
       ]
     }
   ],

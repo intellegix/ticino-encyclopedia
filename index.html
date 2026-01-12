@@ -763,18 +763,247 @@
             }
 
             .navigation {
-                flex-direction: column;
-                align-items: center;
+                flex-direction: row;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;  /* Smooth iOS scrolling */
+                scroll-snap-type: x mandatory;
+                padding: 0 var(--space-4);
+                gap: var(--space-2);
             }
 
             .nav-btn {
-                width: 100%;
-                max-width: 280px;
-                justify-content: center;
+                flex-shrink: 0;
+                scroll-snap-align: start;
+                white-space: nowrap;
+                min-width: auto;
+                max-width: none;
+                width: auto;
             }
 
             .story-card h3 {
                 font-size: var(--text-lg);
+            }
+        }
+
+        /* Mobile Touch Target Optimization - Phase 1 */
+        @media screen and (max-width: 768px) {
+            /* Critical Touch Interaction Fixes */
+            .filter-btn,
+            .recipe-tab,
+            .response-choice {
+                padding: 12px 16px;    /* Ensures 44px+ height */
+                min-height: 44px;      /* Explicit guarantee */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: var(--text-base);
+            }
+
+            /* Touch Feedback for Mobile Devices */
+            .filter-btn:active,
+            .recipe-tab:active,
+            .response-choice:active {
+                transform: scale(0.98);
+                transition: transform 0.1s ease-out;
+                background: var(--hover-color);
+            }
+
+            .response-choice:active {
+                background: var(--accent-gradient);
+            }
+
+            .recipe-tab:active {
+                background: rgba(44, 95, 45, 0.2);
+            }
+
+            /* Enhanced touch targets for navigation buttons */
+            .nav-btn {
+                min-height: 48px;  /* Slightly larger for main navigation */
+                padding: 14px 20px;
+            }
+
+            /* Phase 2: Responsive Table Design */
+            .pronoun-table-container {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                margin: var(--space-4) 0;
+            }
+
+            .pronoun-table {
+                font-size: var(--text-sm);
+                min-width: 600px;  /* Prevents crushing on mobile */
+            }
+
+            .pronoun-table th {
+                position: sticky;
+                left: 0;
+                background: var(--primary-color);
+                z-index: 10;
+            }
+
+            .pronoun-table th,
+            .pronoun-table td {
+                padding: 8px 12px;  /* Reduced from 10px for mobile */
+            }
+
+            /* Phase 2: Container Padding Optimization */
+            .scenario-interface,
+            .recipe-viewer,
+            #story-reader {
+                padding: var(--space-4);  /* 12px instead of 32px */
+            }
+
+            /* Phase 3: Mobile Modal/Viewer Positioning */
+            .back-to-stories,
+            .close-scenario-btn,
+            .close-recipe-btn {
+                position: fixed;
+                bottom: var(--space-4);
+                left: var(--space-4);
+                right: var(--space-4);
+                width: auto;
+                padding: var(--space-4) var(--space-6);
+                z-index: 1040;
+                background: var(--primary-color);
+                color: white;
+                border: none;
+                border-radius: var(--radius-lg);
+                font-size: var(--text-base);
+                font-weight: var(--font-weight-medium);
+                box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            .back-to-stories:hover,
+            .close-scenario-btn:hover,
+            .close-recipe-btn:hover {
+                background: var(--secondary-color);
+                transform: translateY(-1px);
+            }
+
+            /* Add bottom padding to viewers to accommodate fixed buttons */
+            #story-reader,
+            #scenario-player,
+            #recipe-viewer {
+                padding-bottom: 80px;  /* Space for fixed close button */
+            }
+
+            /* Phase 5: Typography & Reading Optimization */
+            .story-text {
+                font-size: clamp(1rem, 4vw, 1.2rem);
+                line-height: 1.8;
+                max-width: 100%;
+                text-align: left;
+                margin: var(--space-6) 0;
+            }
+
+            .search-input {
+                font-size: 16px;  /* Prevents zoom-on-focus on iOS */
+                padding: var(--space-3) var(--space-4);
+            }
+
+            .pronunciation {
+                font-size: var(--text-sm);
+                overflow-wrap: break-word;  /* Prevents IPA overflow */
+            }
+
+            .example-ticinese,
+            .example-english {
+                font-size: clamp(0.9rem, 3.5vw, 1rem);
+                line-height: 1.6;
+            }
+
+            /* Optimize card content spacing for mobile */
+            .card-body {
+                padding: var(--space-4);
+            }
+
+            .card-header {
+                padding: var(--space-4) var(--space-4) var(--space-2);
+            }
+
+            /* Recipe instruction readability */
+            .recipe-instruction {
+                font-size: clamp(1rem, 4vw, 1.1rem);
+                line-height: 1.7;
+                margin-bottom: var(--space-4);
+            }
+        }
+
+        /* Touch Device Specific Enhancements */
+        @media (hover: none) and (pointer: coarse) {
+            /* Remove hover transforms that don't work on touch */
+            .nav-btn, .card, .story-card {
+                transform: none !important;
+            }
+
+            /* Add touch-specific active states */
+            .nav-btn:active, .card:active, .story-card:active {
+                transform: scale(0.98);
+                transition: transform 0.1s ease-out;
+            }
+
+            /* Phase 3: Touch-Friendly Vocabulary Tooltips */
+            .touch-tooltip {
+                position: fixed;
+                bottom: var(--space-8);
+                left: var(--space-4);
+                right: var(--space-4);
+                background: var(--primary-color);
+                color: white;
+                padding: var(--space-4);
+                border-radius: var(--radius-lg);
+                z-index: 1050;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                animation: slideUpTooltip 0.3s ease-out;
+            }
+
+            .tooltip-content {
+                flex-grow: 1;
+            }
+
+            .tooltip-close {
+                background: none;
+                border: none;
+                color: white;
+                font-size: 1.2em;
+                padding: 0 8px;
+                cursor: pointer;
+                opacity: 0.8;
+            }
+
+            .tooltip-close:hover {
+                opacity: 1;
+            }
+
+            @keyframes slideUpTooltip {
+                from {
+                    transform: translateY(100%);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+
+            /* Enhanced vocabulary word styling for touch */
+            .vocab-word {
+                cursor: pointer;
+                padding: 4px 6px;
+                border-radius: 3px;
+                background: rgba(212, 175, 55, 0.2);
+                margin: 0 2px;
+                display: inline-block;
+                border-bottom: 2px solid var(--accent-color);
+            }
+
+            .vocab-word:active {
+                background: rgba(212, 175, 55, 0.4);
             }
         }
 
@@ -2502,41 +2731,48 @@
         let currentPronounFilter = 'all';
 
         // Load all database files
+        // Phase 4: Parallel Database Loading for Mobile Performance
         async function loadDatabases() {
             try {
-                // Load vocabulary (expanded version with 1,269 words)
-                const vocabResponse = await fetch('database/vocabulary_expanded.json');
-                const vocabJson = await vocabResponse.json();
+                console.log('📱 Starting parallel database loading...');
+                const startTime = performance.now();
+
+                // Load all databases in parallel instead of sequentially
+                const [vocabResponse, pronounsResponse, grammarResponse,
+                       storiesResponse, scenariosResponse, recipesResponse,
+                       historyResponse] = await Promise.all([
+                    fetch('database/vocabulary_expanded.json'),
+                    fetch('database/pronouns.json'),
+                    fetch('database/grammar_rules.json'),
+                    fetch('database/stories.json'),
+                    fetch('database/scenarios.json'),
+                    fetch('database/recipes.json'),
+                    fetch('database/history_culture.json')
+                ]);
+
+                // Process responses in parallel
+                const [vocabJson, pronounsJson, grammarJson, storiesJson,
+                       scenariosJson, recipesJson, historyJson] = await Promise.all([
+                    vocabResponse.json(),
+                    pronounsResponse.json(),
+                    grammarResponse.json(),
+                    storiesResponse.json(),
+                    scenariosResponse.json(),
+                    recipesResponse.json(),
+                    historyResponse.json()
+                ]);
+
+                // Assign data to global variables
                 vocabularyData = vocabJson.vocabulary;
-
-                // Load pronouns
-                const pronounsResponse = await fetch('database/pronouns.json');
-                const pronounsJson = await pronounsResponse.json();
                 pronounsData = pronounsJson.pronouns;
-
-                // Load grammar
-                const grammarResponse = await fetch('database/grammar_rules.json');
-                const grammarJson = await grammarResponse.json();
                 grammarData = grammarJson.grammar_rules;
-
-                // Load stories
-                const storiesResponse = await fetch('database/stories.json');
-                const storiesJson = await storiesResponse.json();
                 storiesData = storiesJson.stories;
-
-                // Load scenarios
-                const scenariosResponse = await fetch('database/scenarios.json');
-                const scenariosJson = await scenariosResponse.json();
                 scenariosData = scenariosJson.scenarios;
-
-                // Load recipes
-                const recipesResponse = await fetch('database/recipes.json');
-                const recipesJson = await recipesResponse.json();
                 recipesData = recipesJson.recipes;
+                historyCultureData = historyJson;
 
-                // Load history & culture
-                const historyResponse = await fetch('database/history_culture.json');
-                historyCultureData = await historyResponse.json();
+                const loadTime = performance.now() - startTime;
+                console.log(`🚀 Parallel loading completed in ${Math.round(loadTime)}ms`);
 
                 // Display data
                 displayVocabulary();
@@ -2549,12 +2785,403 @@
 
                 // Update stats
                 document.getElementById('vocab-count').textContent = vocabularyData.length;
+
+                console.log('✅ All content displayed successfully');
             } catch (error) {
-                console.error('Error loading databases:', error);
-                document.getElementById('vocabulary-grid').innerHTML =
-                    '<div class="no-results">Error loading database files. Please ensure all JSON files are in the database folder.</div>';
+                console.error('❌ Error loading databases:', error);
+                showOfflineMode();
             }
         }
+
+        // Offline fallback mode for mobile networks
+        function showOfflineMode() {
+            document.getElementById('vocabulary-grid').innerHTML = `
+                <div class="no-results">
+                    <h3>🔄 Loading Issue</h3>
+                    <p>Having trouble loading the database files.</p>
+                    <p>This may be due to a slow connection. Please:</p>
+                    <ul style="text-align: left; margin: 20px 0;">
+                        <li>Check your internet connection</li>
+                        <li>Refresh the page to try again</li>
+                        <li>Ensure you're viewing the site from the correct URL</li>
+                    </ul>
+                    <button onclick="location.reload()" class="filter-btn" style="margin-top: 20px;">
+                        🔄 Refresh Page
+                    </button>
+                </div>
+            `;
+        }
+
+        // Phase 4: Mobile Vocabulary Manager with Pagination
+        class MobileVocabularyManager {
+            constructor(words, pageSize = 24) {
+                this.allWords = words;
+                this.pageSize = pageSize;
+                this.currentPage = 0;
+                this.searchTerm = '';
+                this.activeFilter = 'all';
+                this.debounceTimer = null;
+                this.isLoading = false;
+                this.hasMorePages = true;
+            }
+
+            // Debounced search to prevent excessive filtering
+            debouncedSearch(term) {
+                clearTimeout(this.debounceTimer);
+                this.debounceTimer = setTimeout(() => {
+                    this.searchTerm = term.toLowerCase();
+                    this.currentPage = 0;
+                    this.hasMorePages = true;
+                    this.renderPage(true); // Clear existing content
+                }, 300);
+            }
+
+            // Set category filter
+            setFilter(filter) {
+                this.activeFilter = filter;
+                this.currentPage = 0;
+                this.hasMorePages = true;
+                this.renderPage(true); // Clear existing content
+            }
+
+            // Get filtered words based on search and category
+            getFilteredWords() {
+                let filtered = this.allWords;
+
+                // Apply category filter
+                if (this.activeFilter !== 'all') {
+                    filtered = filtered.filter(word => word.category === this.activeFilter);
+                }
+
+                // Apply search filter
+                if (this.searchTerm) {
+                    filtered = filtered.filter(word =>
+                        word.ticinese.toLowerCase().includes(this.searchTerm) ||
+                        word.english.toLowerCase().includes(this.searchTerm) ||
+                        word.italian_standard.toLowerCase().includes(this.searchTerm)
+                    );
+                }
+
+                return filtered;
+            }
+
+            // Render current page
+            renderPage(clearContent = false) {
+                const grid = document.getElementById('vocabulary-grid');
+                const filtered = this.getFilteredWords();
+
+                if (clearContent) {
+                    grid.innerHTML = '';
+                }
+
+                if (filtered.length === 0) {
+                    grid.innerHTML = '<div class="no-results">No words found matching your criteria.</div>';
+                    return;
+                }
+
+                const start = this.currentPage * this.pageSize;
+                const end = start + this.pageSize;
+                const pageWords = filtered.slice(start, end);
+
+                this.hasMorePages = end < filtered.length;
+
+                // Generate HTML for current page
+                const pageHTML = pageWords.map(word => this.generateWordCard(word)).join('');
+
+                if (clearContent) {
+                    grid.innerHTML = pageHTML + this.generateLoadMoreButton();
+                } else {
+                    // Append to existing content
+                    const loadMoreBtn = grid.querySelector('.load-more-btn');
+                    if (loadMoreBtn) {
+                        loadMoreBtn.remove();
+                    }
+                    grid.insertAdjacentHTML('beforeend', pageHTML + this.generateLoadMoreButton());
+                }
+            }
+
+            // Generate HTML for a single word card
+            generateWordCard(word) {
+                return `
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="word-ticinese" data-word-id="${word.word_id}">${word.ticinese}</div>
+                            <div class="word-english">${word.english}</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="pronunciation">
+                                <strong>Pronunciation:</strong> ${word.pronunciation_simple}<br>
+                                <strong>IPA:</strong> <span class="ipa">/${word.pronunciation_ipa}/</span>
+                            </div>
+
+                            <div class="field">
+                                <span class="field-label">Italian:</span>
+                                <span class="field-value">${word.italian_standard}</span>
+                            </div>
+
+                            <div class="field">
+                                <span class="field-label">Part of Speech:</span>
+                                <span class="tag">${word.part_of_speech}</span>
+                                ${word.gender !== 'n/a' ? `<span class="tag">${word.gender}</span>` : ''}
+                            </div>
+
+                            ${word.example_sentence ? `
+                                <div class="example">
+                                    <div class="example-ticinese">${word.example_sentence}</div>
+                                    <div class="example-english">${word.example_translation}</div>
+                                </div>
+                            ` : ''}
+
+                            ${word.etymology_latin ? `
+                                <div class="etymology">
+                                    <strong>Etymology:</strong> From Latin <em>${word.etymology_latin}</em><br>
+                                    ${word.etymology_notes}
+                                </div>
+                            ` : ''}
+
+                            ${word.regional_variants && word.regional_variants.length > 0 ? `
+                                <div class="field">
+                                    <span class="field-label">Variants:</span>
+                                    ${word.regional_variants.join(', ')}
+                                </div>
+                            ` : ''}
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Generate load more button
+            generateLoadMoreButton() {
+                if (!this.hasMorePages) {
+                    const totalFiltered = this.getFilteredWords().length;
+                    return `
+                        <div class="load-more-info">
+                            <p style="text-align: center; color: #666; margin: 20px 0;">
+                                📚 All ${totalFiltered} words loaded
+                            </p>
+                        </div>
+                    `;
+                }
+
+                return `
+                    <div class="load-more-container" style="text-align: center; margin: 20px 0;">
+                        <button class="load-more-btn filter-btn" onclick="vocabularyManager.loadMore()"
+                                style="padding: 12px 24px; font-size: 1rem;">
+                            📚 Load More Words (${this.getLoadMoreCount()} remaining)
+                        </button>
+                    </div>
+                `;
+            }
+
+            // Get count of remaining words
+            getLoadMoreCount() {
+                const filtered = this.getFilteredWords();
+                const currentlyShown = (this.currentPage + 1) * this.pageSize;
+                return Math.max(0, filtered.length - currentlyShown);
+            }
+
+            // Load next page
+            loadMore() {
+                if (this.isLoading || !this.hasMorePages) return;
+
+                this.isLoading = true;
+                this.currentPage++;
+
+                // Add loading state
+                const loadMoreBtn = document.querySelector('.load-more-btn');
+                if (loadMoreBtn) {
+                    loadMoreBtn.textContent = '⏳ Loading...';
+                    loadMoreBtn.disabled = true;
+                }
+
+                // Simulate slight delay for smooth UX on fast devices
+                setTimeout(() => {
+                    this.renderPage(false); // Append to existing content
+                    this.isLoading = false;
+                }, 100);
+            }
+        }
+
+        // Global vocabulary manager instance
+        let vocabularyManager;
+
+        // Phase 5: Swipe Navigation for Stories & Scenarios
+        class SwipeNavigation {
+            constructor(container, callbacks) {
+                this.container = container;
+                this.callbacks = callbacks;
+                this.startX = 0;
+                this.startY = 0;
+                this.isSwipeEnabled = true;
+                this.minSwipeDistance = 50;
+                this.maxVerticalDistance = 100;
+                this.init();
+            }
+
+            init() {
+                this.container.addEventListener('touchstart', (e) => {
+                    this.startX = e.touches[0].clientX;
+                    this.startY = e.touches[0].clientY;
+                });
+
+                this.container.addEventListener('touchend', (e) => {
+                    if (!this.isSwipeEnabled) return;
+
+                    const endX = e.changedTouches[0].clientX;
+                    const endY = e.changedTouches[0].clientY;
+
+                    const deltaX = this.startX - endX;
+                    const deltaY = Math.abs(this.startY - endY);
+
+                    // Only trigger if horizontal swipe is longer than vertical (not scrolling)
+                    if (Math.abs(deltaX) > this.minSwipeDistance && deltaY < this.maxVerticalDistance) {
+                        if (deltaX > 0 && this.callbacks.next) {
+                            this.callbacks.next();  // Swipe left = next
+                            this.showSwipeIndicator('next');
+                        } else if (deltaX < 0 && this.callbacks.previous) {
+                            this.callbacks.previous();  // Swipe right = previous
+                            this.showSwipeIndicator('previous');
+                        }
+                    }
+                });
+            }
+
+            showSwipeIndicator(direction) {
+                // Create visual feedback for swipe action
+                const indicator = document.createElement('div');
+                indicator.className = 'swipe-indicator';
+                indicator.innerHTML = direction === 'next' ? '→' : '←';
+                indicator.style.cssText = `
+                    position: fixed;
+                    top: 50%;
+                    ${direction === 'next' ? 'right: 20px' : 'left: 20px'};
+                    transform: translateY(-50%);
+                    background: var(--primary-color);
+                    color: white;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.2em;
+                    z-index: 1000;
+                    animation: swipeIndicator 0.5s ease-out forwards;
+                `;
+
+                document.body.appendChild(indicator);
+
+                // Add CSS animation if not already added
+                if (!document.getElementById('swipe-indicator-styles')) {
+                    const style = document.createElement('style');
+                    style.id = 'swipe-indicator-styles';
+                    style.textContent = `
+                        @keyframes swipeIndicator {
+                            0% { opacity: 0; transform: translateY(-50%) scale(0.8); }
+                            50% { opacity: 1; transform: translateY(-50%) scale(1.1); }
+                            100% { opacity: 0; transform: translateY(-50%) scale(1); }
+                        }
+                    `;
+                    document.head.appendChild(style);
+                }
+
+                // Remove indicator after animation
+                setTimeout(() => {
+                    if (indicator.parentNode) {
+                        indicator.remove();
+                    }
+                }, 500);
+            }
+
+            enable() {
+                this.isSwipeEnabled = true;
+            }
+
+            disable() {
+                this.isSwipeEnabled = false;
+            }
+        }
+
+        // Phase 5: Progressive Enhancement Features
+        const mobileEnhancements = {
+            hapticFeedback: function(type = 'light') {
+                if (navigator.vibrate) {
+                    const patterns = {
+                        light: [10],
+                        success: [20, 10, 20],
+                        error: [50],
+                        swipe: [15]
+                    };
+                    navigator.vibrate(patterns[type] || patterns.light);
+                }
+            },
+
+            preventZoom: function() {
+                document.addEventListener('touchstart', function(e) {
+                    if (e.touches.length > 1) {
+                        e.preventDefault();  // Prevent pinch-to-zoom
+                    }
+                }, { passive: false });
+            },
+
+            addScrollToTop: function() {
+                // Create back-to-top button
+                const backToTop = document.createElement('button');
+                backToTop.className = 'back-to-top';
+                backToTop.innerHTML = '↑';
+                backToTop.style.cssText = `
+                    position: fixed;
+                    bottom: 100px;
+                    right: 20px;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background: var(--accent-color);
+                    color: white;
+                    border: none;
+                    font-size: 1.2em;
+                    z-index: 1030;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                    cursor: pointer;
+                `;
+
+                // Show/hide based on scroll position
+                let isVisible = false;
+                window.addEventListener('scroll', () => {
+                    const shouldShow = window.scrollY > 200;
+                    if (shouldShow && !isVisible) {
+                        backToTop.style.opacity = '1';
+                        isVisible = true;
+                    } else if (!shouldShow && isVisible) {
+                        backToTop.style.opacity = '0';
+                        isVisible = false;
+                    }
+                });
+
+                // Scroll to top functionality
+                backToTop.onclick = () => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                    this.hapticFeedback('light');
+                };
+
+                document.body.appendChild(backToTop);
+            },
+
+            initializeAll: function() {
+                this.preventZoom();
+                this.addScrollToTop();
+                console.log('📱 Mobile enhancements initialized');
+            }
+        };
+
+        // Global swipe navigation instances
+        let storySwipeNav = null;
+        let scenarioSwipeNav = null;
 
         function showSection(sectionId) {
             // Hide all sections
@@ -2581,75 +3208,70 @@
             }
         }
 
+        // Phase 4: Mobile-Optimized Vocabulary Display with Pagination
         function displayVocabulary() {
-            const grid = document.getElementById('vocabulary-grid');
-
-            let filteredData = vocabularyData;
-            if (currentVocabFilter !== 'all') {
-                filteredData = vocabularyData.filter(word => word.category === currentVocabFilter);
+            // Initialize vocabulary manager if not already created
+            if (!vocabularyManager) {
+                vocabularyManager = new MobileVocabularyManager(vocabularyData, 24);
+                console.log('📱 Vocabulary pagination initialized - showing 24 of ' + vocabularyData.length + ' words');
             }
 
-            // Apply search filter
+            // Apply current filter and search
+            vocabularyManager.setFilter(currentVocabFilter);
             const searchTerm = document.getElementById('search-input').value.toLowerCase();
             if (searchTerm) {
-                filteredData = filteredData.filter(word =>
-                    word.ticinese.toLowerCase().includes(searchTerm) ||
-                    word.english.toLowerCase().includes(searchTerm) ||
-                    word.italian_standard.toLowerCase().includes(searchTerm)
-                );
+                vocabularyManager.debouncedSearch(searchTerm);
+            } else {
+                vocabularyManager.renderPage(true);
             }
+        }
 
-            if (filteredData.length === 0) {
-                grid.innerHTML = '<div class="no-results">No words found matching your criteria.</div>';
-                return;
+        // Phase 3: Touch-Friendly Vocabulary Tooltips
+        function initializeTouchTooltips() {
+            // Remove existing event listeners to prevent duplicates
+            document.querySelectorAll('.vocab-word').forEach(word => {
+                word.removeEventListener('click', handleVocabTouch);
+            });
+
+            // Add touch-friendly click handlers to all vocabulary words
+            document.querySelectorAll('.vocab-word').forEach(word => {
+                word.addEventListener('click', handleVocabTouch);
+            });
+        }
+
+        function handleVocabTouch(e) {
+            e.preventDefault();
+            const english = this.getAttribute('data-english');
+            const pronunciation = this.getAttribute('data-pronunciation') || '';
+
+            if (english) {
+                showTouchTooltip(this, {english, pronunciation});
             }
+        }
 
-            grid.innerHTML = filteredData.map(word => `
-                <div class="card">
-                    <div class="card-header">
-                        <div class="word-ticinese" data-word-id="${word.word_id}">${word.ticinese}</div>
-                        <div class="word-english">${word.english}</div>
-                    </div>
-                    <div class="card-body">
-                        <div class="pronunciation">
-                            <strong>Pronunciation:</strong> ${word.pronunciation_simple}<br>
-                            <strong>IPA:</strong> <span class="ipa">/${word.pronunciation_ipa}/</span>
-                        </div>
+        function showTouchTooltip(element, data) {
+            // Remove any existing tooltips
+            document.querySelectorAll('.touch-tooltip').forEach(el => el.remove());
 
-                        <div class="field">
-                            <span class="field-label">Italian:</span>
-                            <span class="field-value">${word.italian_standard}</span>
-                        </div>
-
-                        <div class="field">
-                            <span class="field-label">Part of Speech:</span>
-                            <span class="tag">${word.part_of_speech}</span>
-                            ${word.gender !== 'n/a' ? `<span class="tag">${word.gender}</span>` : ''}
-                        </div>
-
-                        ${word.example_sentence ? `
-                            <div class="example">
-                                <div class="example-ticinese">${word.example_sentence}</div>
-                                <div class="example-english">${word.example_translation}</div>
-                            </div>
-                        ` : ''}
-
-                        ${word.etymology_latin ? `
-                            <div class="etymology">
-                                <strong>Etymology:</strong> From Latin <em>${word.etymology_latin}</em><br>
-                                ${word.etymology_notes}
-                            </div>
-                        ` : ''}
-
-                        ${word.regional_variants && word.regional_variants.length > 0 ? `
-                            <div class="field">
-                                <span class="field-label">Variants:</span>
-                                ${word.regional_variants.join(', ')}
-                            </div>
-                        ` : ''}
-                    </div>
+            // Create mobile-optimized tooltip
+            const tooltip = document.createElement('div');
+            tooltip.className = 'touch-tooltip';
+            tooltip.innerHTML = `
+                <div class="tooltip-content">
+                    <strong>${data.english}</strong>
+                    ${data.pronunciation ? `<br><em>${data.pronunciation}</em>` : ''}
                 </div>
-            `).join('');
+                <button class="tooltip-close" onclick="this.parentNode.remove()">×</button>
+            `;
+
+            document.body.appendChild(tooltip);
+
+            // Auto-remove tooltip after 5 seconds
+            setTimeout(() => {
+                if (tooltip.parentNode) {
+                    tooltip.remove();
+                }
+            }, 5000);
         }
 
         function displayPronouns() {
@@ -2785,7 +3407,12 @@
             });
             event.target.classList.add('active');
 
-            displayVocabulary();
+            // Use vocabulary manager for optimized filtering and pagination
+            if (vocabularyManager) {
+                vocabularyManager.setFilter(category);
+            } else {
+                displayVocabulary();
+            }
         }
 
         function filterPronouns(type) {
@@ -2936,12 +3563,69 @@
 
             document.getElementById('story-list').style.display = 'none';
             reader.style.display = 'block';
+
+            // Reinitialize touch tooltips for newly created vocabulary words
+            initializeTouchTooltips();
+
+            // Phase 5: Initialize swipe navigation for stories
+            initializeStorySwipeNavigation();
+
             window.scrollTo(0, 0);
         }
 
         function closeStory() {
             document.getElementById('story-list').style.display = 'grid';
             document.getElementById('story-reader').style.display = 'none';
+
+            // Disable swipe navigation when closing story
+            if (storySwipeNav) {
+                storySwipeNav.disable();
+            }
+        }
+
+        // Phase 5: Story Swipe Navigation Functions
+        function initializeStorySwipeNavigation() {
+            const storyReader = document.getElementById('story-reader');
+            if (storyReader && currentStory) {
+                // Clean up existing swipe navigation
+                if (storySwipeNav) {
+                    storySwipeNav.disable();
+                }
+
+                // Initialize new swipe navigation
+                storySwipeNav = new SwipeNavigation(storyReader, {
+                    next: getNextStory,
+                    previous: getPreviousStory
+                });
+
+                storySwipeNav.enable();
+            }
+        }
+
+        function getNextStory() {
+            if (!currentStory) return;
+
+            const currentIndex = storiesData.findIndex(s => s.story_id === currentStory.story_id);
+            const nextIndex = (currentIndex + 1) % storiesData.length; // Loop to beginning
+            const nextStory = storiesData[nextIndex];
+
+            if (nextStory) {
+                mobileEnhancements.hapticFeedback('swipe');
+                openStory(nextStory.story_id);
+            }
+        }
+
+        function getPreviousStory() {
+            if (!currentStory) return;
+
+            const currentIndex = storiesData.findIndex(s => s.story_id === currentStory.story_id);
+            const prevIndex = currentIndex <= 0 ? storiesData.length - 1 : currentIndex - 1; // Loop to end
+            const prevStory = storiesData[prevIndex];
+
+            if (prevStory) {
+                mobileEnhancements.hapticFeedback('swipe');
+                openStory(prevStory.story_id);
+            }
         }
 
         // ========================================
@@ -3556,9 +4240,18 @@
             `).join('');
         }
 
-        // Search functionality
-        document.getElementById('search-input').addEventListener('input', () => {
-            displayVocabulary();
+        // Phase 4: Enhanced Search with Mobile Optimization
+        document.getElementById('search-input').addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+
+            // Use debounced search for vocabulary (mobile performance optimization)
+            if (vocabularyManager) {
+                vocabularyManager.debouncedSearch(searchTerm);
+            } else {
+                displayVocabulary();
+            }
+
+            // Keep immediate search for pronouns and grammar (smaller datasets)
             displayPronouns();
             displayGrammar();
         });
@@ -3567,7 +4260,11 @@
         window.addEventListener('DOMContentLoaded', () => {
             loadDatabases().then(() => {
                 initializeEnhancedLearning();
+                initializeTouchTooltips();
+                mobileEnhancements.initializeAll();
                 console.log('🎓 Enhanced learning system initialized successfully!');
+                console.log('📱 Touch tooltip system initialized!');
+                console.log('📱 Mobile enhancements activated!');
             });
         });
         // ========================================

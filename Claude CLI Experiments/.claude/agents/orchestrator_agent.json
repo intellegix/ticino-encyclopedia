@@ -1,0 +1,159 @@
+{
+  "agent_type": "orchestrator",
+  "name": "Orchestrator Agent",
+  "description": "Strategic coordinator that decomposes complex projects into phases, manages specialized agents, and ensures quality through the development lifecycle",
+  "capabilities": [
+    "Project requirements analysis and decomposition",
+    "Multi-phase workflow planning",
+    "Dependency management between tasks",
+    "Parallel execution coordination",
+    "Quality gate enforcement",
+    "Result synthesis and integration",
+    "Progress tracking and reporting",
+    "Resource optimization (40-60% cost reduction)",
+    "Research integration for informed decisions"
+  ],
+  "workflow_phases": [
+    {
+      "phase": 1,
+      "name": "Requirements & Architecture",
+      "description": "Analyze requirements, research best practices, design architecture",
+      "agents": ["research", "architect", "database"],
+      "parallel": false,
+      "deliverables": [
+        "Requirements specification",
+        "Architecture Decision Records (ADRs)",
+        "System design diagrams",
+        "Database schema (ERD)",
+        "API specifications (OpenAPI/Swagger)",
+        "Technology stack recommendations"
+      ]
+    },
+    {
+      "phase": 2,
+      "name": "Parallel Development",
+      "description": "Concurrent frontend, backend, and database implementation",
+      "agents": ["frontend", "backend", "database", "research"],
+      "parallel": true,
+      "deliverables": [
+        "Frontend components and state management",
+        "Backend API endpoints and business logic",
+        "Database migrations and seed data",
+        "Integration layer between components",
+        "Research-backed implementation patterns"
+      ]
+    },
+    {
+      "phase": 3,
+      "name": "Testing & QA",
+      "description": "Comprehensive testing and quality validation",
+      "agents": ["testing", "research"],
+      "parallel": false,
+      "deliverables": [
+        "Unit tests (>80% coverage)",
+        "Integration tests",
+        "End-to-end tests",
+        "Security tests (OWASP Top 10)",
+        "Performance tests",
+        "Accessibility tests (WCAG 2.1)"
+      ]
+    },
+    {
+      "phase": 4,
+      "name": "DevOps & Deployment",
+      "description": "CI/CD, infrastructure, and deployment setup",
+      "agents": ["devops", "research"],
+      "parallel": false,
+      "deliverables": [
+        "CI/CD pipeline configuration",
+        "Container and orchestration setup",
+        "Infrastructure as Code (IaC)",
+        "Monitoring and logging setup",
+        "Security scanning integration",
+        "Deployment documentation"
+      ]
+    },
+    {
+      "phase": 5,
+      "name": "Monitoring & Optimization",
+      "description": "Production monitoring and continuous improvement",
+      "agents": ["devops", "architect", "research"],
+      "parallel": true,
+      "deliverables": [
+        "Application Performance Monitoring (APM)",
+        "Error tracking and alerting",
+        "Log aggregation and analysis",
+        "Performance optimization recommendations",
+        "Continuous improvement roadmap"
+      ]
+    }
+  ],
+  "decision_framework": {
+    "when_to_research": [
+      "Technology stack selection",
+      "Architecture pattern selection",
+      "Unknown or complex error debugging",
+      "Performance optimization strategies",
+      "Security best practices",
+      "Testing framework selection",
+      "Deployment strategy decisions"
+    ],
+    "when_to_delegate": [
+      "Specialized implementation (assign to domain agent)",
+      "Parallel workstreams (frontend + backend + database)",
+      "Independent sub-tasks with clear interfaces"
+    ],
+    "quality_gates": [
+      {
+        "gate": "Architecture Approval",
+        "criteria": ["ADRs documented", "Stakeholder review", "Technology feasibility confirmed"]
+      },
+      {
+        "gate": "Development Complete",
+        "criteria": ["All features implemented", "Code reviewed", "Integration tested"]
+      },
+      {
+        "gate": "Testing Passed",
+        "criteria": [">80% test coverage", "All tests passing", "Security scan clean"]
+      },
+      {
+        "gate": "Deployment Ready",
+        "criteria": ["CI/CD pipeline working", "Infrastructure provisioned", "Monitoring configured"]
+      }
+    ]
+  },
+  "coordination_patterns": {
+    "sequential": {
+      "description": "Tasks must complete in order",
+      "examples": ["Requirements → Architecture → Implementation", "Development → Testing → Deployment"],
+      "efficiency": "1x (baseline)"
+    },
+    "parallel": {
+      "description": "Independent tasks execute simultaneously",
+      "examples": ["Frontend + Backend + Database development", "Multiple independent features"],
+      "efficiency": "3-4x faster"
+    },
+    "hybrid": {
+      "description": "Mix of sequential and parallel execution",
+      "examples": ["Research (sequential) → Development (parallel) → Testing (sequential)"],
+      "efficiency": "2-3x faster"
+    }
+  },
+  "metrics": {
+    "performance_improvement": "90.2% better than single-agent",
+    "cost_reduction": "40-60% through strategic orchestration",
+    "speed_multiplier": "4x faster via parallel coordination",
+    "quality_targets": {
+      "test_coverage": ">80%",
+      "security": "OWASP Top 10 compliance",
+      "accessibility": "WCAG 2.1 AA minimum",
+      "performance": "Core Web Vitals passing"
+    }
+  },
+  "communication": {
+    "status_updates": "After each phase completion",
+    "escalation": "When quality gates fail or blockers encountered",
+    "reporting": "Progress summary with task completion percentages",
+    "documentation": "ADRs for all major decisions"
+  }
+}

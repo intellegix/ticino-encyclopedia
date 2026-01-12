@@ -1,0 +1,147 @@
+===============================================
+  TICINESE ENCYCLOPEDIA
+  SUPER SIMPLE INSTRUCTIONS FOR GRANDMA
+===============================================
+
+Dear Nonna,
+
+Here's how to get the Ticinese Encyclopedia working on your computer!
+
+═══════════════════════════════════════════════
+
+STEP 1: DOWNLOAD THE FILE
+
+When you get my email, look for the attachment called:
+"TicineseEncyclopedia_ForGrandma.zip"
+
+Click "Download" or "Save"
+Save it to your Desktop or Downloads folder
+
+═══════════════════════════════════════════════
+
+STEP 2: EXTRACT (UNZIP) THE FILE
+
+Find the file you just downloaded
+Right-click on it
+Choose "Extract All..."
+Click "Extract"
+
+A new folder will open with files inside
+
+═══════════════════════════════════════════════
+
+STEP 3: RUN THE ONE-CLICK INSTALLER
+
+Inside the folder, you'll see a file called:
+"INSTALL_COMPLETE.bat"
+
+RIGHT-CLICK on it and choose "Run as administrator"
+
+IMPORTANT: You MUST right-click and choose "Run as administrator"
+(Don't just double-click it)
+
+A black window will appear with green text
+The installer will automatically:
+- Check if Python is installed
+- Download and install Python if needed (takes 2-5 minutes)
+- Create your desktop shortcut
+- Set everything up
+
+Just press any key when it asks, then wait!
+It does everything automatically!
+
+═══════════════════════════════════════════════
+
+STEP 4: FIND THE ICON ON YOUR DESKTOP
+
+Look on your desktop for a new icon:
+"Ticinese Encyclopedia"
+
+It will have a book icon
+
+═══════════════════════════════════════════════
+
+STEP 5: USE THE ENCYCLOPEDIA
+
+Double-click the "Ticinese Encyclopedia" icon
+
+Wait a few seconds...
+
+Your web browser will open automatically!
+
+You'll see the encyclopedia with:
+- Vocabulary (words)
+- Stories (hover your mouse over words to see meanings!)
+- History & Culture
+
+═══════════════════════════════════════════════
+
+WHEN YOU'RE DONE:
+
+Just close the browser window
+That's it!
+
+═══════════════════════════════════════════════
+
+NEED HELP?
+
+If anything doesn't work, call me!
+I'm happy to help you set it up.
+
+Or ask someone to help you with these steps.
+
+═══════════════════════════════════════════════
+
+TROUBLESHOOTING
+
+Problem: "Python is not installed"
+Solution: Call me and I'll help you install it
+(It's free and takes about 5 minutes)
+
+Problem: Nothing happens when I double-click the icon
+Solution: Right-click the icon instead
+          Choose "Run as administrator"
+
+Problem: I don't see the icon on my desktop
+Solution: Look in the folder where you extracted the files
+          Double-click "INSTALL.bat" again
+
+═══════════════════════════════════════════════
+
+WHAT YOU'LL SEE:
+
+The encyclopedia has 7 tabs at the top:
+
+1. Overview - Information about the project
+2. Vocabulary - 1,284 Ticinese words
+3. Pronouns - How to use pronouns
+4. Grammar Rules - How the language works
+5. Sample Story - An example story
+6. Stories (A1) - 10 easy stories with hover translations!
+7. History & Culture - Learn about Ticino heritage
+
+Click on any tab to explore!
+
+═══════════════════════════════════════════════
+
+SPECIAL FEATURE - HOVER TOOLTIPS!
+
+In the "Stories (A1)" section:
+1. Click on any story to read it
+2. Move your mouse over any word
+3. A box will pop up showing the English meaning!
+
+This makes it easy to learn without constantly
+looking up words in a dictionary.
+
+═══════════════════════════════════════════════
+
+HAVE FUN EXPLORING YOUR HERITAGE LANGUAGE!
+
+Love,
+Austin
+
+P.S. The encyclopedia works completely offline after
+installation. You don't need internet to use it!
+
+═══════════════════════════════════════════════

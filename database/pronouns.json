@@ -1,0 +1,476 @@
+{
+  "database_info": {
+    "name": "Ticinese Pronouns Database",
+    "language": "Ticinese (Western Lombard Alpine Dialect)",
+    "time_period": "1850-1915",
+    "region": "Canton Ticino, Switzerland and Northern Lombardy, Italy",
+    "version": "1.0",
+    "last_updated": "2025-11-04",
+    "source": "Perplexity Pro Research - Query #4 (13,428 characters)"
+  },
+  "pronouns": [
+    {
+      "pronoun_id": "PRON_001",
+      "type": "personal",
+      "subtype": "subject_strong",
+      "form": "mi",
+      "person": "first",
+      "number": "singular",
+      "gender": "n/a",
+      "case": "subject",
+      "english_equivalent": "I",
+      "usage_notes": "Strong (tonic) form, can be omitted. Weak clitic form optional for 1st person",
+      "examples": [
+        "Mi magni (I eat)",
+        "Mi parli (I speak)"
+      ],
+      "pronunciation_ipa": "mi",
+      "weak_clitic_required": false
+    },
+    {
+      "pronoun_id": "PRON_002",
+      "type": "personal",
+      "subtype": "subject_strong",
+      "form": "ti",
+      "person": "second",
+      "number": "singular",
+      "gender": "n/a",
+      "case": "subject",
+      "english_equivalent": "you (singular)",
+      "usage_notes": "Strong form. MUST be accompanied by weak clitic 'te'",
+      "examples": [
+        "Ti te magni (You eat)",
+        "Ti te parlet (You speak)"
+      ],
+      "pronunciation_ipa": "ti",
+      "weak_clitic_required": true,
+      "weak_clitic_form": "te"
+    },
+    {
+      "pronoun_id": "PRON_003",
+      "type": "personal",
+      "subtype": "subject_strong",
+      "form": "lù",
+      "person": "third",
+      "number": "singular",
+      "gender": "masculine",
+      "case": "subject",
+      "english_equivalent": "he",
+      "usage_notes": "Strong form. MUST be accompanied by weak clitic 'el' or 'l''",
+      "examples": [
+        "Lù el magna (He eats)",
+        "Lù el canta (He sings)"
+      ],
+      "pronunciation_ipa": "ly",
+      "weak_clitic_required": true,
+      "weak_clitic_form": "el/l'"
+    },
+    {
+      "pronoun_id": "PRON_004",
+      "type": "personal",
+      "subtype": "subject_strong",
+      "form": "lee",
+      "person": "third",
+      "number": "singular",
+      "gender": "feminine",
+      "case": "subject",
+      "english_equivalent": "she",
+      "usage_notes": "Strong form. MUST be accompanied by weak clitic 'la' or 'l''",
+      "examples": [
+        "Lee la magna (She eats)",
+        "Lee la canta (She sings)"
+      ],
+      "pronunciation_ipa": "le",
+      "weak_clitic_required": true,
+      "weak_clitic_form": "la/l'"
+    },
+    {
+      "pronoun_id": "PRON_005",
+      "type": "personal",
+      "subtype": "subject_strong",
+      "form": "nun",
+      "person": "first",
+      "number": "plural",
+      "gender": "n/a",
+      "case": "subject",
+      "english_equivalent": "we",
+      "usage_notes": "Strong form, weak clitic optional for 1st person plural",
+      "examples": [
+        "Nun magnòm (We eat)",
+        "Nun parlom (We speak)"
+      ],
+      "pronunciation_ipa": "nun",
+      "weak_clitic_required": false
+    },
+    {
+      "pronoun_id": "PRON_006",
+      "type": "personal",
+      "subtype": "subject_strong",
+      "form": "vun",
+      "person": "second",
+      "number": "plural",
+      "gender": "n/a",
+      "case": "subject",
+      "english_equivalent": "you (plural)",
+      "usage_notes": "Strong form, weak clitic optional for 2nd person plural. Also seen as 'voaltri'",
+      "examples": [
+        "Vun magnè (You all eat)",
+        "Vun parlè (You all speak)"
+      ],
+      "pronunciation_ipa": "vun",
+      "regional_variants": ["voaltri"],
+      "weak_clitic_required": false
+    },
+    {
+      "pronoun_id": "PRON_007",
+      "type": "personal",
+      "subtype": "subject_strong",
+      "form": "lor",
+      "person": "third",
+      "number": "plural",
+      "gender": "both",
+      "case": "subject",
+      "english_equivalent": "they",
+      "usage_notes": "Strong form. Requires weak clitic 'i' (mandatory for 3rd plural)",
+      "examples": [
+        "Lor i magnen (They eat)",
+        "Lor i canten (They sing)"
+      ],
+      "pronunciation_ipa": "lɔr",
+      "weak_clitic_required": true,
+      "weak_clitic_form": "i"
+    },
+    {
+      "pronoun_id": "PRON_008",
+      "type": "personal",
+      "subtype": "direct_object_proclitic",
+      "form": "me",
+      "person": "first",
+      "number": "singular",
+      "gender": "n/a",
+      "case": "direct_object",
+      "english_equivalent": "me",
+      "usage_notes": "Proclitic (before verb) direct object pronoun",
+      "examples": [
+        "El me ved (He sees me)",
+        "Ti te me ciami (You call me)"
+      ],
+      "pronunciation_ipa": "me",
+      "enclitic_form": "-m"
+    },
+    {
+      "pronoun_id": "PRON_009",
+      "type": "personal",
+      "subtype": "direct_object_proclitic",
+      "form": "te",
+      "person": "second",
+      "number": "singular",
+      "gender": "n/a",
+      "case": "direct_object",
+      "english_equivalent": "you",
+      "usage_notes": "Proclitic direct object pronoun",
+      "examples": [
+        "Mi te vedi (I see you)",
+        "El te ciama (He calls you)"
+      ],
+      "pronunciation_ipa": "te",
+      "enclitic_form": "-t"
+    },
+    {
+      "pronoun_id": "PRON_010",
+      "type": "personal",
+      "subtype": "direct_object_proclitic",
+      "form": "el/l'",
+      "person": "third",
+      "number": "singular",
+      "gender": "masculine",
+      "case": "direct_object",
+      "english_equivalent": "him/it",
+      "usage_notes": "Proclitic direct object pronoun. l' before vowels",
+      "examples": [
+        "Mi el vedi (I see him)",
+        "Ti te l'hee vedud (You have seen him)"
+      ],
+      "pronunciation_ipa": "el / l",
+      "enclitic_form": "-l"
+    },
+    {
+      "pronoun_id": "PRON_011",
+      "type": "personal",
+      "subtype": "direct_object_proclitic",
+      "form": "la/l'",
+      "person": "third",
+      "number": "singular",
+      "gender": "feminine",
+      "case": "direct_object",
+      "english_equivalent": "her/it",
+      "usage_notes": "Proclitic direct object pronoun. l' before vowels",
+      "examples": [
+        "Mi la vedi (I see her)",
+        "Ti te l'hee veduda (You have seen her)"
+      ],
+      "pronunciation_ipa": "la / l",
+      "enclitic_form": "-la"
+    },
+    {
+      "pronoun_id": "PRON_012",
+      "type": "personal",
+      "subtype": "direct_object_proclitic",
+      "form": "i",
+      "person": "third",
+      "number": "plural",
+      "gender": "both",
+      "case": "direct_object",
+      "english_equivalent": "them",
+      "usage_notes": "Proclitic direct object pronoun for plural",
+      "examples": [
+        "Mi i vedi (I see them)",
+        "Ti te i hee vedud (You have seen them)"
+      ],
+      "pronunciation_ipa": "i",
+      "enclitic_form": "-i"
+    },
+    {
+      "pronoun_id": "PRON_013",
+      "type": "personal",
+      "subtype": "indirect_object",
+      "form": "ghe",
+      "person": "all",
+      "number": "both",
+      "gender": "both",
+      "case": "indirect_object",
+      "english_equivalent": "to him/her/it/them",
+      "usage_notes": "Universal indirect object particle used across all persons. Very characteristic of Lombard",
+      "examples": [
+        "Ghe disi (I tell him/her)",
+        "El ghe l'ha dad (He gave it to him/her)",
+        "Lù el ghe m'ha imprestad un liber (He lent me a book)"
+      ],
+      "pronunciation_ipa": "ge",
+      "placement": "Between weak subject and verb, or between subject clitic and direct object"
+    },
+    {
+      "pronoun_id": "PRON_014",
+      "type": "possessive",
+      "subtype": "first_singular",
+      "form": "mé/mia",
+      "person": "first",
+      "number": "singular_possessor",
+      "gender": "masculine/feminine_possessed",
+      "case": "possessive",
+      "english_equivalent": "my/mine",
+      "usage_notes": "Archaic form (1850-1915): used WITHOUT article 'mé pader'. Modern: WITH article 'el mé pader'",
+      "examples": [
+        "Archaic: mé pader (my father)",
+        "Modern: el mé pader (my father)",
+        "mia mama (my mother)"
+      ],
+      "pronunciation_ipa": "me / mia",
+      "archaic_without_article": true
+    },
+    {
+      "pronoun_id": "PRON_015",
+      "type": "possessive",
+      "subtype": "second_singular",
+      "form": "to/toa",
+      "person": "second",
+      "number": "singular_possessor",
+      "gender": "masculine/feminine_possessed",
+      "case": "possessive",
+      "english_equivalent": "your/yours (singular)",
+      "usage_notes": "Masculine: to, Feminine: toa",
+      "examples": [
+        "to fradel (your brother)",
+        "toa sör (your sister)"
+      ],
+      "pronunciation_ipa": "tɔ / tɔa"
+    },
+    {
+      "pronoun_id": "PRON_016",
+      "type": "possessive",
+      "subtype": "third_singular",
+      "form": "so/soa",
+      "person": "third",
+      "number": "singular_possessor",
+      "gender": "masculine/feminine_possessed",
+      "case": "possessive",
+      "english_equivalent": "his/her/its",
+      "usage_notes": "Used for both masculine and feminine possessors. Adjective agrees with thing possessed",
+      "examples": [
+        "so pader (his/her father)",
+        "soa mama (his/her mother)"
+      ],
+      "pronunciation_ipa": "sɔ / sɔa"
+    },
+    {
+      "pronoun_id": "PRON_017",
+      "type": "possessive",
+      "subtype": "first_plural",
+      "form": "nòst/nòsta",
+      "person": "first",
+      "number": "plural_possessor",
+      "gender": "masculine/feminine_possessed",
+      "case": "possessive",
+      "english_equivalent": "our/ours",
+      "usage_notes": "Masculine: nòst, Feminine: nòsta",
+      "examples": [
+        "nòst pais (our village)",
+        "nòsta cà (our house)"
+      ],
+      "pronunciation_ipa": "nɔst / nɔsta"
+    },
+    {
+      "pronoun_id": "PRON_018",
+      "type": "possessive",
+      "subtype": "second_plural",
+      "form": "vòst/vòsta",
+      "person": "second",
+      "number": "plural_possessor",
+      "gender": "masculine/feminine_possessed",
+      "case": "possessive",
+      "english_equivalent": "your/yours (plural)",
+      "usage_notes": "Masculine: vòst, Feminine: vòsta",
+      "examples": [
+        "vòst liber (your book)",
+        "vòsta cà (your house)"
+      ],
+      "pronunciation_ipa": "vɔst / vɔsta"
+    },
+    {
+      "pronoun_id": "PRON_019",
+      "type": "possessive",
+      "subtype": "third_plural",
+      "form": "so/soa",
+      "person": "third",
+      "number": "plural_possessor",
+      "gender": "masculine/feminine_possessed",
+      "case": "possessive",
+      "english_equivalent": "their/theirs",
+      "usage_notes": "Same form as 3rd singular. Context disambiguates",
+      "examples": [
+        "so cà (their house)",
+        "soa lengua (their language)"
+      ],
+      "pronunciation_ipa": "sɔ / sɔa"
+    },
+    {
+      "pronoun_id": "PRON_020",
+      "type": "demonstrative",
+      "form": "chel/chell",
+      "number": "singular",
+      "gender": "masculine",
+      "english_equivalent": "this (near speaker)",
+      "usage_notes": "Near demonstrative, proximal",
+      "examples": [
+        "chel liber (this book)",
+        "chella cà (this house - feminine)"
+      ],
+      "pronunciation_ipa": "t͡ʃel / t͡ʃel",
+      "feminine_form": "chella"
+    },
+    {
+      "pronoun_id": "PRON_021",
+      "type": "demonstrative",
+      "form": "quel/quell",
+      "number": "singular",
+      "gender": "masculine",
+      "english_equivalent": "that (far from speaker)",
+      "usage_notes": "Far demonstrative, distal",
+      "examples": [
+        "quel oman (that man)",
+        "quella dona (that woman)",
+        "quella roba chì (that thing)"
+      ],
+      "pronunciation_ipa": "kwel / kwel",
+      "feminine_form": "quella"
+    },
+    {
+      "pronoun_id": "PRON_022",
+      "type": "interrogative",
+      "form": "chi",
+      "english_equivalent": "who",
+      "usage_notes": "Interrogative pronoun for persons. Fronted to beginning of question",
+      "examples": [
+        "Chi te amet? (Who do you love?)",
+        "Chi l'è? (Who is it?)"
+      ],
+      "pronunciation_ipa": "ki"
+    },
+    {
+      "pronoun_id": "PRON_023",
+      "type": "interrogative",
+      "form": "cossa/se/cossè",
+      "english_equivalent": "what",
+      "usage_notes": "Interrogative pronoun for things. Multiple forms",
+      "examples": [
+        "Cossa te see dree a fa? (What are you doing?)",
+        "Cossè quell? (What is that?)"
+      ],
+      "pronunciation_ipa": "kɔsa / se / kɔse",
+      "regional_variants": ["cossa", "se", "cossè"]
+    },
+    {
+      "pronoun_id": "PRON_024",
+      "type": "interrogative",
+      "form": "quant/quanta/quanti/quante",
+      "english_equivalent": "how much/how many",
+      "usage_notes": "Interrogative for quantity. Agrees in gender and number",
+      "examples": [
+        "Quanta carn te hee mangiad? (How much meat did you eat?)",
+        "Quanti liber te ghee? (How many books do you have?)"
+      ],
+      "pronunciation_ipa": "kwant / kwanta / kwanti / kwante"
+    },
+    {
+      "pronoun_id": "PRON_025",
+      "type": "interrogative",
+      "form": "indove",
+      "english_equivalent": "where",
+      "usage_notes": "Interrogative for location",
+      "examples": [
+        "Indove te seet? (Where are you?)",
+        "Indove te veet? (Where are you going?)"
+      ],
+      "pronunciation_ipa": "indɔve"
+    },
+    {
+      "pronoun_id": "PRON_026",
+      "type": "interrogative",
+      "form": "quandè",
+      "english_equivalent": "when",
+      "usage_notes": "Interrogative for time",
+      "examples": [
+        "Quandè te faree quella roba chì? (When will you do that?)",
+        "Quandè te see vegnud? (When did you come?)"
+      ],
+      "pronunciation_ipa": "kwande"
+    },
+    {
+      "pronoun_id": "PRON_027",
+      "type": "interrogative",
+      "form": "come/comè",
+      "english_equivalent": "how",
+      "usage_notes": "Interrogative for manner",
+      "examples": [
+        "Comè che t'hee fad? (How did you do it?)",
+        "Comè te steet? (How are you?)"
+      ],
+      "pronunciation_ipa": "kɔme / kɔme",
+      "regional_variants": ["come", "comè"]
+    },
+    {
+      "pronoun_id": "PRON_028",
+      "type": "impersonal",
+      "form": "a",
+      "english_equivalent": "(it) - existential",
+      "usage_notes": "Universal weak impersonal pronoun for existential statements. Obligatory in Ticinese",
+      "examples": [
+        "A gh'era on temporal de foeura (There was a storm outside)",
+        "A gh'è del pàn (There is some bread)",
+        "A piöf (It's raining)"
+      ],
+      "pronunciation_ipa": "a",
+      "grammatical_function": "Existential/weather constructions"
+    }
+  ]
+}

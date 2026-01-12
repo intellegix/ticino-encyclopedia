@@ -1,0 +1,548 @@
+<!-- ============================================== -->
+<!-- NEW SECTIONS TO ADD TO index.html -->
+<!-- Insert these BEFORE the closing </div> of container -->
+<!-- And AFTER the existing "story" section -->
+<!-- ============================================== -->
+
+<!-- STORIES SECTION (10 A1-Level Interactive Stories) -->
+<div id="stories" class="content-section">
+    <h2>📖 Interactive Stories (A1 Level)</h2>
+    <p class="section-description">10 beginner stories following Stephen Krashen's comprehensible input methodology. Hover over words to see English translations!</p>
+
+    <div class="story-selector" id="story-list">
+        <!-- Stories will be loaded here dynamically -->
+    </div>
+
+    <div id="story-reader" style="display:none;">
+        <!-- Individual story will be displayed here -->
+    </div>
+</div>
+
+<!-- HISTORY & CULTURE SECTION -->
+<div id="history" class="content-section">
+    <h2>🏛️ Language History & Cultural Facts</h2>
+    <p class="section-description">Discover the rich history and cultural context of the Ticinese dialect from 1000 CE to present.</p>
+
+    <!-- Timeline -->
+    <div class="history-section">
+        <h3>📅 Historical Timeline</h3>
+        <div id="timeline-container" class="timeline">
+            <!-- Timeline will be loaded here dynamically -->
+        </div>
+    </div>
+
+    <!-- Cultural Facts -->
+    <div class="history-section">
+        <h3>🎭 Cultural Facts & Traditions</h3>
+        <div id="cultural-facts-grid" class="cultural-grid">
+            <!-- Cultural facts will be loaded here dynamically -->
+        </div>
+    </div>
+
+    <!-- Linguistic Features -->
+    <div class="history-section">
+        <h3>🔤 Unique Linguistic Features</h3>
+        <div id="linguistic-features" class="features-container">
+            <!-- Linguistic features will be loaded here dynamically -->
+        </div>
+    </div>
+</div>
+
+<!-- ============================================== -->
+<!-- CSS STYLES TO ADD (inside <style> tag) -->
+<!-- ============================================== -->
+<style>
+/* Story Selector Grid */
+.story-selector {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.story-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid var(--border-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    border-color: var(--primary-color);
+}
+
+.story-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    font-size: 1.3em;
+}
+
+.story-title-english {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.story-meta {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.level-badge {
+    background: var(--accent-color);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.85em;
+    font-weight: bold;
+}
+
+.word-count {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.story-preview {
+    color: #555;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+.story-features {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Interactive Story Reader */
+#story-reader {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.story-text {
+    font-size: 1.2em;
+    line-height: 2;
+    margin: 30px 0;
+    white-space: pre-wrap;
+}
+
+.vocab-word {
+    cursor: help;
+    border-bottom: 2px dotted var(--accent-color);
+    position: relative;
+    padding: 2px 0;
+    transition: background-color 0.2s ease;
+}
+
+.vocab-word:hover {
+    background-color: rgba(212, 175, 55, 0.1);
+}
+
+.vocab-word:hover::after {
+    content: attr(data-english);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.9);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    white-space: nowrap;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    margin-bottom: 5px;
+    font-family: 'Arial', sans-serif;
+}
+
+.back-to-stories {
+    background: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.back-to-stories:hover {
+    background: #7a1a2f;
+}
+
+.vocab-list {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 30px 0;
+}
+
+.vocab-list h4 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.vocab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.vocab-item {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 3px solid var(--accent-color);
+}
+
+.vocab-item strong {
+    color: var(--primary-color);
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 20px;
+    margin: 20px 0;
+    background: white;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.timeline-period {
+    display: inline-block;
+    background: var(--accent-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.timeline-item h4 {
+    color: var(--primary-color);
+    margin: 10px 0;
+}
+
+.timeline-item p {
+    line-height: 1.8;
+    color: #555;
+}
+
+.timeline-significance {
+    margin-top: 15px;
+    padding: 15px;
+    background: #f0f8f0;
+    border-left: 3px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+.timeline-significance strong {
+    color: var(--secondary-color);
+}
+
+/* Cultural Facts Grid */
+.cultural-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.cultural-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    border-top: 4px solid var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.cultural-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.cultural-category {
+    display: inline-block;
+    background: var(--accent-color);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.85em;
+    margin-bottom: 10px;
+}
+
+.cultural-card h4 {
+    color: var(--primary-color);
+    margin: 15px 0;
+    font-size: 1.3em;
+}
+
+.cultural-card p {
+    line-height: 1.8;
+    color: #555;
+    margin: 15px 0;
+}
+
+.cultural-vocab {
+    margin-top: 15px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+.cultural-vocab strong {
+    color: var(--secondary-color);
+}
+
+/* Linguistic Features */
+.features-container {
+    margin: 30px 0;
+}
+
+.feature-card {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border-left: 5px solid var(--primary-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.feature-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.feature-example {
+    background: #f0f8f0;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+    font-family: 'Courier New', monospace;
+}
+
+.feature-example strong {
+    color: var(--secondary-color);
+}
+
+.history-section {
+    margin: 40px 0;
+}
+
+.history-section h3 {
+    color: var(--primary-color);
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--accent-color);
+    padding-bottom: 10px;
+}
+</style>
+
+<!-- ============================================== -->
+<!-- JAVASCRIPT TO ADD (inside existing <script> tag) -->
+<!-- ============================================== -->
+<script>
+// Add these global variables at the top of your script
+let storiesData = [];
+let historyCultureData = {};
+let currentStory = null;
+
+// Modify the loadDatabases function to include new files
+async function loadDatabases() {
+    try {
+        // Existing loads...
+        const vocabResponse = await fetch('database/vocabulary_expanded.json');
+        const vocabJson = await vocabResponse.json();
+        vocabularyData = vocabJson.vocabulary;
+
+        const pronounsResponse = await fetch('database/pronouns.json');
+        const pronounsJson = await pronounsResponse.json();
+        pronounsData = pronounsJson.pronouns;
+
+        const grammarResponse = await fetch('database/grammar_rules.json');
+        const grammarJson = await grammarResponse.json();
+        grammarData = grammarJson.grammar_rules;
+
+        // NEW: Load stories
+        const storiesResponse = await fetch('database/stories.json');
+        const storiesJson = await storiesResponse.json();
+        storiesData = storiesJson.stories;
+
+        // NEW: Load history & culture
+        const historyResponse = await fetch('database/history_culture.json');
+        historyCultureData = await historyResponse.json();
+
+        // Display data
+        displayVocabulary();
+        displayPronouns();
+        displayGrammar();
+        displayStoryList();        // NEW
+        displayHistoryCulture();   // NEW
+
+        // Update stats
+        document.getElementById('vocab-count').textContent = vocabularyData.length;
+    } catch (error) {
+        console.error('Error loading databases:', error);
+    }
+}
+
+// Display story list
+function displayStoryList() {
+    const storyList = document.getElementById('story-list');
+    storyList.innerHTML = storiesData.map(story => `
+        <div class="story-card" onclick="openStory('${story.story_id}')">
+            <h3>${story.title}</h3>
+            <p class="story-title-english">${story.title_english}</p>
+            <div class="story-meta">
+                <span class="level-badge">${story.level}</span>
+                <span class="word-count">${story.word_count} words</span>
+            </div>
+            <p class="story-preview">${story.text.substring(0, 100)}...</p>
+            <div class="story-features">
+                <span>📚 ${story.vocabulary_focus.length} vocab words</span>
+                <span>❓ ${story.comprehension_questions.length} questions</span>
+            </div>
+        </div>
+    `).join('');
+}
+
+// Open individual story with interactive vocabulary
+function openStory(storyId) {
+    const story = storiesData.find(s => s.story_id === storyId);
+    if (!story) return;
+
+    currentStory = story;
+
+    // Make text interactive
+    let interactiveText = story.text;
+    story.vocabulary_focus.forEach(word => {
+        const regex = new RegExp(`\\b${word.ticinese}\\b`, 'gi');
+        interactiveText = interactiveText.replace(regex,
+            `<span class="vocab-word" data-english="${word.english}">${word.ticinese}</span>`
+        );
+    });
+
+    const reader = document.getElementById('story-reader');
+    reader.innerHTML = `
+        <button class="back-to-stories" onclick="closeStory()">← Back to Stories</button>
+
+        <h2>${story.title}</h2>
+        <p style="font-style:italic; color:#666; font-size:1.2em;">${story.title_english}</p>
+
+        <div style="margin:20px 0;">
+            <span class="level-badge">${story.level}</span>
+            <span style="margin-left:15px; color:#666;">${story.word_count} words | ${story.vocabulary_focus.length} vocabulary items</span>
+        </div>
+
+        <div class="story-text">${interactiveText}</div>
+
+        <div style="background:#f0f8f0; padding:20px; border-radius:8px; margin:20px 0;">
+            <h4>📖 Translation</h4>
+            <p style="line-height:1.8; white-space:pre-wrap;">${story.translation}</p>
+        </div>
+
+        <div class="vocab-list">
+            <h4>📚 Vocabulary Focus (Hover over highlighted words in the story above!)</h4>
+            <div class="vocab-grid">
+                ${story.vocabulary_focus.map(v => `
+                    <div class="vocab-item">
+                        <strong>${v.ticinese}</strong> - ${v.english}
+                    </div>
+                `).join('')}
+            </div>
+        </div>
+
+        <div style="background:#fff9e6; padding:20px; border-radius:8px; margin:20px 0;">
+            <h4>🎭 Cultural Note</h4>
+            <p style="line-height:1.8;">${story.cultural_notes}</p>
+        </div>
+
+        <div style="background:#f0f0f0; padding:20px; border-radius:8px;">
+            <h4>❓ Comprehension Questions</h4>
+            <ol style="line-height:2;">
+                ${story.comprehension_questions.map(q => `<li>${q}</li>`).join('')}
+            </ol>
+        </div>
+    `;
+
+    document.getElementById('story-list').style.display = 'none';
+    reader.style.display = 'block';
+    window.scrollTo(0, 0);
+}
+
+function closeStory() {
+    document.getElementById('story-list').style.display = 'grid';
+    document.getElementById('story-reader').style.display = 'none';
+}
+
+// Display History & Culture
+function displayHistoryCulture() {
+    // Timeline
+    const timeline = document.getElementById('timeline-container');
+    timeline.innerHTML = historyCultureData.timeline.map(period => `
+        <div class="timeline-item">
+            <span class="timeline-period">${period.period}</span>
+            <h4>${period.title}</h4>
+            <p>${period.description}</p>
+            <div class="timeline-significance">
+                <strong>Significance:</strong> ${period.significance}
+            </div>
+        </div>
+    `).join('');
+
+    // Cultural Facts
+    const culturalGrid = document.getElementById('cultural-facts-grid');
+    culturalGrid.innerHTML = historyCultureData.cultural_facts.map(fact => `
+        <div class="cultural-card">
+            <span class="cultural-category">${fact.category}</span>
+            <h4>${fact.title}</h4>
+            <p>${fact.description}</p>
+            ${fact.vocabulary ? `
+                <div class="cultural-vocab">
+                    <strong>Vocabulary:</strong><br>
+                    ${fact.vocabulary.join(', ')}
+                </div>
+            ` : ''}
+        </div>
+    `).join('');
+
+    // Linguistic Features
+    const features = document.getElementById('linguistic-features');
+    features.innerHTML = historyCultureData.linguistic_features.map(feature => `
+        <div class="feature-card">
+            <h4>${feature.feature}</h4>
+            <p>${feature.description}</p>
+            <div class="feature-example">
+                <strong>Ticinese:</strong> ${feature.example_ticinese}<br>
+                <strong>English:</strong> ${feature.example_english}
+            </div>
+        </div>
+    `).join('');
+}
+
+// Make sure this is called on load
+window.addEventListener('DOMContentLoaded', loadDatabases);
+</script>

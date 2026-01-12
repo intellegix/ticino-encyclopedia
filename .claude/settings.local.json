@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.venvScriptspython.exe \"Claude CLI Experiments\\simple_research.py\" \"Ticinese dialect Western Lombard linguistic features grammar rules phonetics historical development 1850-1915 vocabulary differences from Standard Italian\" 150)",
+      "Bash(\".venv\\Scripts\\python.exe\" \"Claude CLI Experiments\\simple_research.py\" \"Ticinese dialect Western Lombard linguistic features grammar rules phonetics historical development 1850-1915 vocabulary differences from Standard Italian\" 150)",
+      "Bash(/c/Users/AustinKidwell/AppData/Local/Programs/Python/Python311/python:*)",
+      "Bash(\"/c/Users/AustinKidwell/ASR Dropbox/Austin Kidwell/02_DevelopmentProjects/Claude CLI Experiments/.venv/Scripts/python.exe\" .claude/simple_research.py \"Test query: What are the basic phonetic features of Ticinese dialect?\" 30)",
+      "Bash(\"/c/Users/AustinKidwell/ASR Dropbox/Austin Kidwell/02_DevelopmentProjects/Claude CLI Experiments/.venv/Scripts/python.exe\" .claude/simple_research.py \"Ticinese Western Lombard dialect grammar: complete verb conjugation patterns for regular and irregular verbs (present, past, future tenses), subject-verb agreement, use of articles (el, la, l''), pronouns (personal, possessive, demonstrative), prepositions, sentence structure, negation patterns, interrogative forms - provide examples from 1850-1915 period\" 150)",
+      "Bash(\"/c/Users/AustinKidwell/ASR Dropbox/Austin Kidwell/02_DevelopmentProjects/Claude CLI Experiments/.venv/Scripts/python.exe\":*)",
+      "Bash(\"/c/Users/AustinKidwell/ASR Dropbox/Austin Kidwell/02_DevelopmentProjects/Claude CLI Experiments/.venv/Scripts/python.exe\" .claude/simple_research.py \"Ticinese phonetics: complete vowel system (a, e, è, é, i, o, ò, ó, u), consonants, diphthongs, diacritical marks (à, ö, ü, söna), stress patterns, IPA transcription system, pronunciation rules for Western Lombard Alpine dialect 1850-1915\" 150)",
+      "Bash(\"/c/Users/AustinKidwell/ASR Dropbox/Austin Kidwell/02_DevelopmentProjects/Claude CLI Experiments/.venv/Scripts/python.exe\" .claude/simple_research.py \"Ticinese pronouns and function words: personal pronouns (mi, ti, lü, le, nun, vun, lor), possessive pronouns, demonstrative pronouns, articles (el, la, i, on, ona), prepositions (in, a, de, con, per, su), conjunctions - complete list with usage examples\" 150)",
+      "Bash(\"/c/Users/AustinKidwell/ASR Dropbox/Austin Kidwell/02_DevelopmentProjects/Claude CLI Experiments/.venv/Scripts/python.exe\" .claude/simple_research.py \"Ticinese common verbs: magna (eat), beve (drink), andà (go), vegni (come), fà (do/make), dì (say), vardà (look), sentì (hear/feel), dormì (sleep), cantà (sing), balà (dance), lavurà (work) - conjugations all tenses with pronunciation\" 150)",
+      "Bash(\"/c/Users/AustinKidwell/ASR Dropbox/Austin Kidwell/02_DevelopmentProjects/Claude CLI Experiments/.venv/Scripts/python.exe\" .claude/simple_research.py \"Ticinese numbers counting system: cardinals 1-100 (on, duu, tri, quater, cinch, ses, sett, ott, nöff, des), ordinals (prim, segond, terz), days of week (luni, marti, mercor), months, seasons, time expressions with IPA pronunciation and Latin etymologies\" 150)",
+      "Bash(\"/c/Users/AustinKidwell/ASR Dropbox/Austin Kidwell/02_DevelopmentProjects/Claude CLI Experiments/.venv/Scripts/python.exe\" .claude/simple_research.py \"Ticinese adjectives and adverbs: colors (ross, giald, verd, blöö, bianch, negher), descriptive (grand, picol, bell, brütt, bon, cativ), manner adverbs (ben, mal, fort, pian), spatial (chi, là, soura, sota) with usage examples and IPA\" 150)",
+      "Bash(\"/c/Users/AustinKidwell/ASR Dropbox/Austin Kidwell/02_DevelopmentProjects/Claude CLI Experiments/.venv/Scripts/python.exe\" -m http.server 8000)",
+      "Bash(\"/c/Users/AustinKidwell/ASR Dropbox/Austin Kidwell/02_DevelopmentProjects/Claude CLI Experiments/.venv/Scripts/python.exe\" .claude/convert_vocab_csv.py)",
+      "Bash(\"/c/Users/AustinKidwell/ASR Dropbox/Austin Kidwell/02_DevelopmentProjects/Claude CLI Experiments/.venv/Scripts/python.exe\" -c \"import json; vocab=json.load(open(''database/vocabulary.json'')); exp=json.load(open(''database/vocabulary_expanded.json'')); orig_words={v[''ticinese''] for v in vocab[''vocabulary'']}; exp_words={v[''ticinese''] for v in exp[''vocabulary'']}; missing=orig_words-exp_words; print(f''Original words: {len(orig_words)}''); print(f''Expanded words: {len(exp_words)}''); print(f''Missing from expanded: {missing if missing else \"\"None - all included!\"\"}'')\")",
+      "Bash(\"/c/Users/AustinKidwell/ASR Dropbox/Austin Kidwell/02_DevelopmentProjects/Claude CLI Experiments/.venv/Scripts/python.exe\" .claude/merge_vocabularies.py)",
+      "Bash(curl:*)",
+      "Bash(powershell -Command \"Compress-Archive -Path ''TicineseEncyclopedia_Package\\*'' -DestinationPath ''TicineseEncyclopedia_ForGrandma.zip'' -Force\")",
+      "Bash(gh repo list:*)",
+      "Bash(gh repo view:*)",
+      "Bash(gh api:*)",
+      "Bash(while read file)",
+      "Bash(do if [ ! -f \"../github-version/$file\" ])",
+      "Bash(then echo \"$file\")",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(copy index.html index_backup.html)",
+      "Bash(copy:*)",
+      "Bash(git init:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

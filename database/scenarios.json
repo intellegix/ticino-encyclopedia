@@ -1,0 +1,708 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "total_scenarios": 6,
+    "last_updated": "2026-01-12",
+    "description": "Interactive cultural scenarios for immersive Ticinese language learning through authentic village life experiences",
+    "learning_methodology": "Natural Method - Comprehensible Input with Cultural Context"
+  },
+  "scenarios": [
+    {
+      "scenario_id": "MARKET_001",
+      "title": "Mercato del Sabato Mattina",
+      "title_english": "Saturday Morning Market",
+      "category": "marketplace_interaction",
+      "difficulty_level": "A1-A2",
+      "cultural_period": "1900",
+      "estimated_duration": "10-15 minutes",
+      "setting": {
+        "location": "Piazza del mercato, Maggia",
+        "time": "Sabato mattina, ore 8:00",
+        "season": "Primavera",
+        "atmosphere": "Bustling market day with vendors calling out their wares",
+        "description": "The village square comes alive every Saturday morning as farmers and artisans from the surrounding valleys gather to sell their fresh produce, homemade cheeses, and crafts."
+      },
+      "characters": [
+        {
+          "name": "Nonna Isabella",
+          "age": "65 anni",
+          "role": "cheese_vendor",
+          "personality": "warm, traditional, loves to chat",
+          "background": "Makes cheese in her alpine hut, knows everyone in the village",
+          "speaking_style": "Uses endearing terms, speaks slowly and clearly"
+        },
+        {
+          "name": "Signor Marco",
+          "age": "45 anni",
+          "role": "bread_baker",
+          "personality": "friendly, proud of his craft",
+          "background": "Family bakery for three generations",
+          "speaking_style": "Enthusiastic about his products"
+        },
+        {
+          "name": "La Signora Lucia",
+          "age": "35 anni",
+          "role": "customer_neighbor",
+          "personality": "practical, knows good quality",
+          "background": "Local housewife shopping for her family",
+          "speaking_style": "Efficient but polite"
+        }
+      ],
+      "dialogue_tree": {
+        "opening": {
+          "speaker": "Nonna Isabella",
+          "text": "Buongiorno, caro! Formaggio fresco dalla mia malga!",
+          "translation": "Good morning, dear! Fresh cheese from my alpine hut!",
+          "responses": [
+            {
+              "choice": "Buongiorno, signora. Quanto costa il Groviera?",
+              "translation": "Good morning, madam. How much does the Gruyère cost?",
+              "next": "pricing_gruyere"
+            },
+            {
+              "choice": "Che tipo di formaggio ha oggi?",
+              "translation": "What types of cheese do you have today?",
+              "next": "cheese_varieties"
+            },
+            {
+              "choice": "È molto fresco?",
+              "translation": "Is it very fresh?",
+              "next": "freshness_discussion"
+            }
+          ]
+        },
+        "pricing_gruyere": {
+          "speaker": "Nonna Isabella",
+          "text": "Il Groviera costa due franchi al chilo. È stagionato sei mesi, perfetto per la polenta!",
+          "translation": "The Gruyère costs two francs per kilo. It's aged six months, perfect for polenta!",
+          "vocabulary_learned": ["costa", "franchi", "chilo", "stagionato", "mesi", "perfetto"],
+          "cultural_note": "Traditional aged cheeses were essential for mountain families during winter months.",
+          "responses": [
+            {
+              "choice": "Perfetto! Ne prendo un pezzo.",
+              "translation": "Perfect! I'll take a piece.",
+              "next": "purchase_gruyere"
+            },
+            {
+              "choice": "È un po' caro. Avete qualcosa di meno costoso?",
+              "translation": "It's a bit expensive. Do you have something less expensive?",
+              "next": "cheaper_options"
+            }
+          ]
+        },
+        "cheese_varieties": {
+          "speaker": "Nonna Isabella",
+          "text": "Oggi ho Groviera, Sbrinz, e un formaggio di capra molto delicato. Tutto fatto con il latte delle mie mucche e capre.",
+          "translation": "Today I have Gruyère, Sbrinz, and a very delicate goat cheese. All made with milk from my cows and goats.",
+          "vocabulary_learned": ["tipo", "Sbrinz", "capra", "delicato", "latte", "mucche"],
+          "cultural_note": "Swiss cheese varieties reflect centuries of alpine dairy traditions.",
+          "responses": [
+            {
+              "choice": "Il formaggio di capra mi interessa.",
+              "translation": "The goat cheese interests me.",
+              "next": "goat_cheese_discussion"
+            },
+            {
+              "choice": "Quanto costa lo Sbrinz?",
+              "translation": "How much does the Sbrinz cost?",
+              "next": "sbrinz_pricing"
+            }
+          ]
+        },
+        "purchase_gruyere": {
+          "speaker": "Nonna Isabella",
+          "text": "Bravissimo! Ecco un bel pezzo. Sono due franchi e cinquanta centesimi. Lo avvolgo nella carta.",
+          "translation": "Excellent! Here's a nice piece. That's two francs and fifty centimes. I'll wrap it in paper.",
+          "vocabulary_learned": ["bravissimo", "pezzo", "cinquanta", "centesimi", "avvolgo", "carta"],
+          "cultural_learning": ["traditional_wrapping", "market_customs", "currency_system"],
+          "completion_note": "Scenario completed successfully! You've learned market vocabulary and cultural customs."
+        }
+      },
+      "vocabulary_focus": [
+        "market_items", "prices", "greetings", "food_quality", "quantity_measures", "currency"
+      ],
+      "cultural_learning": [
+        "market_traditions", "vendor_relationships", "bartering_customs", "alpine_dairy_culture", "community_interactions"
+      ],
+      "learning_objectives": [
+        "Practice polite market interactions",
+        "Learn food and price vocabulary",
+        "Understand traditional commerce customs",
+        "Experience authentic village social dynamics"
+      ]
+    },
+    {
+      "scenario_id": "KITCHEN_001",
+      "title": "Cucinare con la Nonna",
+      "title_english": "Cooking with Grandmother",
+      "category": "family_traditions",
+      "difficulty_level": "A1-B1",
+      "cultural_period": "1905",
+      "estimated_duration": "15-20 minutes",
+      "setting": {
+        "location": "Cucina della casa Lombardi, Valle Maggia",
+        "time": "Domenica pomeriggio, ore 14:00",
+        "season": "Autunno",
+        "atmosphere": "Warm kitchen filled with aromas, family gathering",
+        "description": "The family kitchen on Sunday afternoon, where three generations come together to prepare the traditional Sunday meal. The wood-burning stove radiates warmth while copper pots gleam on wooden shelves."
+      },
+      "characters": [
+        {
+          "name": "Nonna Maria Lombardi",
+          "age": "68 anni",
+          "role": "grandmother_cook",
+          "personality": "patient, wise, traditional keeper",
+          "background": "Matriarch who learned recipes from her mother, preserves family traditions",
+          "speaking_style": "Uses traditional expressions, speaks with gentle authority"
+        },
+        {
+          "name": "Elena",
+          "age": "16 anni",
+          "role": "granddaughter_apprentice",
+          "personality": "eager to learn, sometimes impatient",
+          "background": "Wants to learn family recipes before potential emigration",
+          "speaking_style": "Respectful but curious, asks many questions"
+        },
+        {
+          "name": "Carlo",
+          "age": "12 anni",
+          "role": "grandson_helper",
+          "personality": "playful, easily distracted",
+          "background": "Youngest grandson who helps with simple tasks",
+          "speaking_style": "Energetic, sometimes gets corrected"
+        }
+      ],
+      "dialogue_tree": {
+        "opening": {
+          "speaker": "Nonna Maria",
+          "text": "Elena, vieni qua. Oggi imparerai a fare la polenta concia come faceva la mia nonna.",
+          "translation": "Elena, come here. Today you'll learn to make polenta concia like my grandmother did.",
+          "responses": [
+            {
+              "choice": "Sì, Nonna. Di che cosa abbiamo bisogno?",
+              "translation": "Yes, Grandmother. What do we need?",
+              "next": "ingredients_discussion"
+            },
+            {
+              "choice": "È difficile da fare?",
+              "translation": "Is it difficult to make?",
+              "next": "difficulty_explanation"
+            },
+            {
+              "choice": "Perché si chiama 'concia'?",
+              "translation": "Why is it called 'concia'?",
+              "next": "name_explanation"
+            }
+          ]
+        },
+        "ingredients_discussion": {
+          "speaker": "Nonna Maria",
+          "text": "Ci servono farina gialla, acqua, sale, burro, e il nostro formaggio Groviera. Carlo, prendi la pentola di rame.",
+          "translation": "We need cornmeal, water, salt, butter, and our Gruyère cheese. Carlo, get the copper pot.",
+          "vocabulary_learned": ["farina", "gialla", "acqua", "sale", "burro", "pentola", "rame"],
+          "cultural_note": "Copper pots were traditional for making polenta because they conduct heat evenly.",
+          "responses": [
+            {
+              "choice": "Quanta farina usiamo?",
+              "translation": "How much flour do we use?",
+              "next": "measurements_lesson"
+            },
+            {
+              "choice": "Posso mescolare io?",
+              "translation": "Can I stir?",
+              "next": "stirring_technique"
+            }
+          ]
+        },
+        "stirring_technique": {
+          "speaker": "Nonna Maria",
+          "text": "Sì, ma ricorda - sempre nella stessa direzione, come le lancette dell'orologio. E non fermarti mai, o si formano i grumi!",
+          "translation": "Yes, but remember - always in the same direction, like clock hands. And never stop, or lumps will form!",
+          "vocabulary_learned": ["mescolare", "direzione", "lancette", "orologio", "fermarti", "grumi"],
+          "cultural_learning": ["cooking_techniques", "kitchen_wisdom", "traditional_methods"],
+          "completion_note": "You've learned the sacred art of polenta making - a skill passed down through generations!"
+        }
+      },
+      "vocabulary_focus": [
+        "cooking_verbs", "kitchen_tools", "ingredients", "measurements", "family_terms", "time_expressions"
+      ],
+      "cultural_learning": [
+        "family_cooking_traditions", "intergenerational_knowledge_transfer", "traditional_kitchen_tools", "sunday_meal_customs"
+      ],
+      "learning_objectives": [
+        "Learn cooking vocabulary and techniques",
+        "Understand family hierarchy and respect",
+        "Experience traditional knowledge transfer",
+        "Practice imperative and instruction language"
+      ]
+    },
+    {
+      "scenario_id": "FESTIVAL_001",
+      "title": "La Festa del Paese",
+      "title_english": "The Village Festival",
+      "category": "community_events",
+      "difficulty_level": "B1-B2",
+      "cultural_period": "1908",
+      "estimated_duration": "20-25 minutes",
+      "setting": {
+        "location": "Piazza del paese durante la festa patronale",
+        "time": "Sera di sabato, ore 19:00",
+        "season": "Estate",
+        "atmosphere": "Festive evening with music, dancing, and community celebration",
+        "description": "The annual patron saint festival transforms the village square into a celebration of community spirit. String lights illuminate dancing couples while the aroma of roasted chestnuts fills the air."
+      },
+      "characters": [
+        {
+          "name": "Don Antonio",
+          "age": "52 anni",
+          "role": "village_priest",
+          "personality": "jovial, community-minded, storyteller",
+          "background": "Local priest who organizes community events and knows everyone's stories",
+          "speaking_style": "Formal but warm, uses religious expressions naturally"
+        },
+        {
+          "name": "Signor Benedetto",
+          "age": "40 anni",
+          "role": "festival_organizer",
+          "personality": "enthusiastic, detail-oriented, proud",
+          "background": "Village leader who coordinates annual celebrations",
+          "speaking_style": "Energetic, speaks with civic pride"
+        },
+        {
+          "name": "Giulia",
+          "age": "22 anni",
+          "role": "young_villager",
+          "personality": "social, curious about traditions",
+          "background": "Young woman participating in traditional dances",
+          "speaking_style": "Modern for the era but respectful of traditions"
+        }
+      ],
+      "dialogue_tree": {
+        "opening": {
+          "speaker": "Don Antonio",
+          "text": "Benvenuti alla festa di San Giuseppe! Stasera celebriamo non solo il nostro santo protettore, ma anche lo spirito della nostra comunità.",
+          "translation": "Welcome to the feast of Saint Joseph! Tonight we celebrate not only our patron saint, but also the spirit of our community.",
+          "responses": [
+            {
+              "choice": "Questa festa è molto antica?",
+              "translation": "Is this festival very ancient?",
+              "next": "festival_history"
+            },
+            {
+              "choice": "Che programma c'è stasera?",
+              "translation": "What's the program tonight?",
+              "next": "evening_schedule"
+            },
+            {
+              "choice": "Posso partecipare al ballo tradizionale?",
+              "translation": "Can I participate in the traditional dance?",
+              "next": "dance_participation"
+            }
+          ]
+        },
+        "festival_history": {
+          "speaker": "Don Antonio",
+          "text": "Oh sì! I nostri antenati celebravano qui già nel 1650. Ogni generazione aggiunge qualcosa di nuovo, ma manteniamo sempre le tradizioni principali.",
+          "translation": "Oh yes! Our ancestors celebrated here already in 1650. Each generation adds something new, but we always maintain the main traditions.",
+          "vocabulary_learned": ["antenati", "celebravano", "generazione", "aggiunge", "manteniamo", "tradizioni"],
+          "cultural_note": "Village festivals were central to community identity and continuity across generations.",
+          "responses": [
+            {
+              "choice": "Quali sono le tradizioni più importanti?",
+              "translation": "What are the most important traditions?",
+              "next": "important_traditions"
+            },
+            {
+              "choice": "La mia famiglia partecipava anche?",
+              "translation": "Did my family participate too?",
+              "next": "family_participation_history"
+            }
+          ]
+        },
+        "dance_participation": {
+          "speaker": "Giulia",
+          "text": "Certo! Il ballo della monferrina è facile da imparare. Ti mostro i passi base. Prima il passo destro, poi sinistro, e giriamo insieme!",
+          "translation": "Of course! The monferrina dance is easy to learn. I'll show you the basic steps. First right step, then left, and we turn together!",
+          "vocabulary_learned": ["ballo", "monferrina", "facile", "imparare", "passi", "destro", "sinistro", "giriamo"],
+          "cultural_learning": ["traditional_dances", "social_customs", "community_participation"],
+          "completion_note": "You've joined the village celebration and learned traditional dance steps - welcome to the community!"
+        }
+      },
+      "vocabulary_focus": [
+        "celebration_terms", "community_roles", "traditional_activities", "social_expressions", "time_and_schedule", "participation_verbs"
+      ],
+      "cultural_learning": [
+        "religious_festivals", "community_unity", "traditional_dances", "intergenerational_participation", "village_hierarchy"
+      ],
+      "learning_objectives": [
+        "Practice formal and informal social interactions",
+        "Learn cultural celebration vocabulary",
+        "Understand community social structures",
+        "Experience traditional festival atmosphere"
+      ]
+    },
+    {
+      "scenario_id": "EMIGRATION_001",
+      "title": "La Decisione di Partire",
+      "title_english": "The Decision to Leave",
+      "category": "family_heritage",
+      "difficulty_level": "A2-B1",
+      "cultural_period": "1910",
+      "estimated_duration": "18-22 minutes",
+      "setting": {
+        "location": "Casa famiglia Lombardi, sera d'inverno",
+        "time": "Gennaio 1910, ore 20:00",
+        "season": "Inverno rigido",
+        "atmosphere": "Tense family discussion around the fireplace",
+        "description": "A cold winter evening when the Lombardi family gathers to discuss the difficult decision of emigration to America. The fire crackles as hopes and fears fill the small parlor."
+      },
+      "characters": [
+        {
+          "name": "Giuseppe Lombardi",
+          "age": "38 anni",
+          "role": "father_decision_maker",
+          "personality": "practical, worried about family future",
+          "background": "Struggling farmer considering emigration for better opportunities",
+          "speaking_style": "Serious, weighs words carefully"
+        },
+        {
+          "name": "Maria Lombardi",
+          "age": "35 anni",
+          "role": "mother_concerned",
+          "personality": "protective, torn between security and opportunity",
+          "background": "Wants what's best for children but fears leaving homeland",
+          "speaking_style": "Emotional, asks practical questions"
+        },
+        {
+          "name": "Nonna Rosa",
+          "age": "72 anni",
+          "role": "wisdom_keeper",
+          "personality": "wise, traditional, skeptical of change",
+          "background": "Elderly grandmother who represents old ways",
+          "speaking_style": "Uses proverbs, speaks from experience"
+        }
+      ],
+      "dialogue_tree": {
+        "opening": {
+          "speaker": "Giuseppe",
+          "text": "Ho ricevuto una lettera da mio cugino Antonio in America. Dice che là c'è lavoro per tutti e i bambini possono andare a scuola.",
+          "translation": "I received a letter from my cousin Antonio in America. He says there's work for everyone there and children can go to school.",
+          "responses": [
+            {
+              "choice": "Che tipo di lavoro ha trovato?",
+              "translation": "What kind of work did he find?",
+              "next": "work_opportunities"
+            },
+            {
+              "choice": "E se le cose non vanno bene là?",
+              "translation": "And if things don't go well there?",
+              "next": "risks_discussion"
+            },
+            {
+              "choice": "Quanto costa il viaggio?",
+              "translation": "How much does the journey cost?",
+              "next": "travel_costs"
+            }
+          ]
+        },
+        "work_opportunities": {
+          "speaker": "Giuseppe",
+          "text": "Antonio lavora nelle miniere di carbone in Pennsylvania. Guadagna tre volte quello che posso fare qui con la terra.",
+          "translation": "Antonio works in the coal mines in Pennsylvania. He earns three times what I can make here with the land.",
+          "vocabulary_learned": ["miniere", "carbone", "guadagna", "volte", "terra"],
+          "cultural_note": "Many Ticinese men found work in American mines due to their mountain experience.",
+          "responses": [
+            {
+              "choice": "Il lavoro nelle miniere è pericoloso?",
+              "translation": "Is mine work dangerous?",
+              "next": "mining_dangers"
+            },
+            {
+              "choice": "Possiamo portare tutta la famiglia?",
+              "translation": "Can we bring the whole family?",
+              "next": "family_emigration"
+            }
+          ]
+        },
+        "risks_discussion": {
+          "speaker": "Nonna Rosa",
+          "text": "Chi lascia la strada vecchia per la nuova, sa quello che lascia ma non sa quello che trova, come dice il proverbio.",
+          "translation": "He who leaves the old road for the new knows what he leaves but not what he finds, as the proverb says.",
+          "vocabulary_learned": ["lascia", "strada", "vecchia", "nuova", "trova", "proverbio"],
+          "cultural_learning": ["traditional_wisdom", "emigration_fears", "family_loyalty"],
+          "completion_note": "You've experienced the emotional weight of emigration decisions that shaped countless Ticinese families."
+        }
+      },
+      "vocabulary_focus": [
+        "family_decisions", "emotions", "future_planning", "work_terminology", "travel_concepts", "hopes_and_fears"
+      ],
+      "cultural_learning": [
+        "emigration_history", "family_decision_making", "traditional_vs_modern", "economic_pressures", "intergenerational_conflict"
+      ],
+      "learning_objectives": [
+        "Understand historical emigration context",
+        "Practice expressing emotions and concerns",
+        "Learn decision-making vocabulary",
+        "Experience authentic family dynamics"
+      ]
+    },
+    {
+      "scenario_id": "ARTISAN_001",
+      "title": "Il Laboratorio del Falegname",
+      "title_english": "The Carpenter's Workshop",
+      "category": "traditional_crafts",
+      "difficulty_level": "A2-B1",
+      "cultural_period": "1902",
+      "estimated_duration": "12-18 minutes",
+      "setting": {
+        "location": "Bottega di Maestro Giovanni, centro paese",
+        "time": "Mattino di mercoledì, ore 9:00",
+        "season": "Primavera",
+        "atmosphere": "Workshop filled with wood shavings and the scent of pine",
+        "description": "The carpenter's workshop where traditional furniture and farm tools are crafted using centuries-old techniques. Sunlight filters through small windows onto workbenches lined with hand tools."
+      },
+      "characters": [
+        {
+          "name": "Maestro Giovanni",
+          "age": "55 anni",
+          "role": "master_carpenter",
+          "personality": "skilled, patient teacher, proud of craft",
+          "background": "Third-generation carpenter who trained in the guild system",
+          "speaking_style": "Uses technical terms, speaks with authority about wood and tools"
+        },
+        {
+          "name": "Pietro",
+          "age": "19 anni",
+          "role": "apprentice_learner",
+          "personality": "eager, sometimes impatient, wants to learn quickly",
+          "background": "Young apprentice learning the trade",
+          "speaking_style": "Respectful but curious, asks many questions"
+        },
+        {
+          "name": "Signora Francesca",
+          "age": "42 anni",
+          "role": "customer_client",
+          "personality": "practical, knows quality craftsmanship",
+          "background": "Widow needing furniture for her home",
+          "speaking_style": "Direct, knowledgeable about household needs"
+        }
+      ],
+      "dialogue_tree": {
+        "opening": {
+          "speaker": "Maestro Giovanni",
+          "text": "Pietro, oggi imparerai a usare la pialla. È uno strumento delicato che richiede pazienza e precisione.",
+          "translation": "Pietro, today you'll learn to use the plane. It's a delicate tool that requires patience and precision.",
+          "responses": [
+            {
+              "choice": "Come si tiene la pialla correttamente?",
+              "translation": "How do you hold the plane correctly?",
+              "next": "plane_technique"
+            },
+            {
+              "choice": "Che legno usiamo oggi?",
+              "translation": "What wood are we using today?",
+              "next": "wood_selection"
+            },
+            {
+              "choice": "Perché la pialla è così importante?",
+              "translation": "Why is the plane so important?",
+              "next": "tool_importance"
+            }
+          ]
+        },
+        "plane_technique": {
+          "speaker": "Maestro Giovanni",
+          "text": "Guarda le mie mani. Una mano guida, l'altra spinge. Il movimento deve essere fluido, come accarezzare il legno. Senti come la pialla canta quando è ben regolata.",
+          "translation": "Watch my hands. One hand guides, the other pushes. The movement must be fluid, like caressing the wood. Listen how the plane sings when it's well adjusted.",
+          "vocabulary_learned": ["guida", "spinge", "movimento", "fluido", "accarezzare", "canta", "regolata"],
+          "cultural_note": "Master craftsmen described their tools in almost mystical terms, showing deep connection with their craft.",
+          "responses": [
+            {
+              "choice": "Posso provare ora?",
+              "translation": "Can I try now?",
+              "next": "first_attempt"
+            },
+            {
+              "choice": "Come si regola la pialla?",
+              "translation": "How do you adjust the plane?",
+              "next": "plane_adjustment"
+            }
+          ]
+        },
+        "first_attempt": {
+          "speaker": "Maestro Giovanni",
+          "text": "Bene, ma non premere troppo forte! Il legno ti dirà quanto pressione vuole. Ascolta i suoni che fa - ogni legno ha la sua voce.",
+          "translation": "Good, but don't press too hard! The wood will tell you how much pressure it wants. Listen to the sounds it makes - every wood has its voice.",
+          "vocabulary_learned": ["premere", "forte", "pressione", "ascolta", "suoni", "voce"],
+          "cultural_learning": ["craftsman_wisdom", "traditional_techniques", "apprenticeship_methods"],
+          "completion_note": "You've begun to understand the ancient dialogue between craftsman and material!"
+        }
+      },
+      "vocabulary_focus": [
+        "craft_tools", "woodworking_terms", "technique_descriptions", "material_properties", "instruction_language", "quality_assessment"
+      ],
+      "cultural_learning": [
+        "traditional_crafts", "master_apprentice_relationship", "guild_systems", "artisan_pride", "tool_reverence"
+      ],
+      "learning_objectives": [
+        "Learn technical craft vocabulary",
+        "Understand apprenticeship traditions",
+        "Practice instructional language",
+        "Experience artisan culture and values"
+      ]
+    },
+    {
+      "scenario_id": "MOUNTAIN_001",
+      "title": "La Transumanza",
+      "title_english": "The Alpine Pasture Migration",
+      "category": "alpine_traditions",
+      "difficulty_level": "B1-B2",
+      "cultural_period": "1895",
+      "estimated_duration": "20-25 minutes",
+      "setting": {
+        "location": "Sentiero verso l'alpe, alta montagna",
+        "time": "Alba di giugno, ore 5:30",
+        "season": "Inizio estate",
+        "atmosphere": "Misty mountain dawn as cattle are driven to high pastures",
+        "description": "The ancient ritual of transumanza begins before dawn as families drive their cattle up mountain paths to summer grazing grounds. Cowbells echo through morning mist as generations of alpine tradition continue."
+      },
+      "characters": [
+        {
+          "name": "Pastore Matteo",
+          "age": "48 anni",
+          "role": "head_shepherd",
+          "personality": "weathered, wise about mountains, traditional",
+          "background": "Experienced shepherd who knows every path and pasture",
+          "speaking_style": "Uses mountain dialect, speaks economically"
+        },
+        {
+          "name": "Giovanna",
+          "age": "26 anni",
+          "role": "daughter_helper",
+          "personality": "strong, knows mountain ways, modern thinking",
+          "background": "Helps with transumanza but questions traditional gender roles",
+          "speaking_style": "Respectful but independent minded"
+        },
+        {
+          "name": "Bambino Marco",
+          "age": "10 anni",
+          "role": "curious_child",
+          "personality": "excited, asks many questions, first transumanza",
+          "background": "City cousin experiencing mountain life",
+          "speaking_style": "Enthusiastic, amazed by everything"
+        }
+      ],
+      "dialogue_tree": {
+        "opening": {
+          "speaker": "Pastore Matteo",
+          "text": "Alzatevi! Le mucche sentono già l'erba fresca lassù. Oggi saliamo all'alpe prima che il sole scaldi troppo il sentiero.",
+          "translation": "Get up! The cows already sense the fresh grass up there. Today we go up to the alp before the sun heats the path too much.",
+          "responses": [
+            {
+              "choice": "Quanto tempo ci vuole per arrivare?",
+              "translation": "How long does it take to get there?",
+              "next": "journey_time"
+            },
+            {
+              "choice": "Perché partiamo così presto?",
+              "translation": "Why do we leave so early?",
+              "next": "early_departure_reasons"
+            },
+            {
+              "choice": "Le mucche sanno la strada?",
+              "translation": "Do the cows know the way?",
+              "next": "animal_instincts"
+            }
+          ]
+        },
+        "journey_time": {
+          "speaker": "Pastore Matteo",
+          "text": "Con calma, quattro ore. Le bestie non si forzano in montagna. Ogni passo deve essere sicuro, soprattutto sui ponti di pietra.",
+          "translation": "Taking it easy, four hours. You don't force animals in the mountains. Every step must be sure, especially on the stone bridges.",
+          "vocabulary_learned": ["calma", "bestie", "forzano", "passo", "sicuro", "ponti", "pietra"],
+          "cultural_note": "Mountain shepherds developed deep respect for animal welfare and mountain dangers.",
+          "responses": [
+            {
+              "choice": "I ponti sono pericolosi?",
+              "translation": "Are the bridges dangerous?",
+              "next": "bridge_dangers"
+            },
+            {
+              "choice": "Cosa succede se piove?",
+              "translation": "What happens if it rains?",
+              "next": "weather_concerns"
+            }
+          ]
+        },
+        "animal_instincts": {
+          "speaker": "Giovanna",
+          "text": "Oh sì! Le mucche ricordano tutto. Sanno dove trovare l'acqua migliore, quale erba è più dolce. Sono più sagge di quanto pensiamo.",
+          "translation": "Oh yes! The cows remember everything. They know where to find the best water, which grass is sweetest. They're wiser than we think.",
+          "vocabulary_learned": ["ricordano", "acqua", "migliore", "erba", "dolce", "sagge", "pensiamo"],
+          "cultural_learning": ["animal_wisdom", "mountain_knowledge", "traditional_relationships"],
+          "completion_note": "You've experienced the ancient bond between shepherds and their animals in the high Alps!"
+        }
+      },
+      "vocabulary_focus": [
+        "mountain_terminology", "animal_husbandry", "weather_conditions", "pastoral_life", "seasonal_cycles", "traditional_knowledge"
+      ],
+      "cultural_learning": [
+        "transumanza_tradition", "alpine_agriculture", "seasonal_migrations", "mountain_ecology", "pastoral_economics"
+      ],
+      "learning_objectives": [
+        "Learn alpine and pastoral vocabulary",
+        "Understand traditional mountain life",
+        "Practice descriptive nature language",
+        "Experience seasonal agricultural cycles"
+      ]
+    }
+  ],
+  "scenario_categories": {
+    "marketplace_interaction": {
+      "description": "Learn through authentic market and commerce situations",
+      "skill_focus": "transactional_language",
+      "cultural_context": "village_economy"
+    },
+    "family_traditions": {
+      "description": "Experience intergenerational knowledge transfer",
+      "skill_focus": "instructional_language",
+      "cultural_context": "domestic_life"
+    },
+    "community_events": {
+      "description": "Participate in village celebrations and gatherings",
+      "skill_focus": "social_interaction",
+      "cultural_context": "public_life"
+    },
+    "traditional_crafts": {
+      "description": "Learn through artisan workshops and apprenticeships",
+      "skill_focus": "technical_language",
+      "cultural_context": "professional_life"
+    },
+    "alpine_traditions": {
+      "description": "Experience mountain and pastoral life cycles",
+      "skill_focus": "descriptive_language",
+      "cultural_context": "rural_life"
+    },
+    "family_heritage": {
+      "description": "Explore family decision-making and emigration experiences",
+      "skill_focus": "emotional_expression",
+      "cultural_context": "family_dynamics"
+    }
+  },
+  "teaching_methodology": {
+    "approach": "Natural Method with Interactive Scenarios",
+    "principles": [
+      "Comprehensible input through authentic cultural contexts",
+      "Meaningful choice-based interactions",
+      "Progressive vocabulary building",
+      "Cultural immersion through roleplay",
+      "Contextual grammar acquisition"
+    ],
+    "assessment": {
+      "vocabulary_retention": "Track words learned per scenario",
+      "cultural_understanding": "Measure cultural context comprehension",
+      "interaction_fluency": "Evaluate choice-making confidence",
+      "scenario_completion": "Monitor engagement and completion rates"
+    }
+  }
+}

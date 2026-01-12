@@ -1,0 +1,44 @@
+===============================================
+EMAIL TEMPLATE FOR GRANDMA
+===============================================
+
+Subject: A Special Gift for You - Ticinese Language Encyclopedia
+
+---
+
+Dear Grandma,
+
+I've created something very special for you - a Ticinese Language Encyclopedia!
+
+This is a computer program that will help you explore your heritage language. It has:
+- Over 1,200 Ticinese words with pronunciations
+- 10 stories in Ticinese (you can hover your mouse over any word to see what it means!)
+- The history of the Ticinese language and culture
+- And much more!
+
+DOWNLOAD THE FILE:
+I've attached a ZIP file called "TicineseEncyclopedia_ForGrandma.zip"
+
+INSTALLATION IS EASY:
+1. Download the ZIP file from this email
+2. Right-click the ZIP file and choose "Extract All"
+3. Open the extracted folder
+4. Double-click "INSTALL.bat"
+5. Follow the simple instructions
+
+A shortcut will appear on your desktop. Just double-click it whenever you want to use the encyclopedia!
+
+IMPORTANT: You need Python installed on your computer
+- If you don't have Python, I can help you install it
+- Or download it from: https://www.python.org/downloads/
+- Make sure to check "Add Python to PATH" when installing
+
+NEED HELP?
+Call me anytime! I'm happy to walk you through the installation over the phone.
+
+Love,
+Austin
+
+P.S. There's a README.txt file in the folder with detailed instructions!
+
+===============================================

@@ -1,0 +1,94 @@
+{
+  "url": "https://accounts.google.com/v3/signin/identifier?opparams=%253F&dsh=S-1758860064%3A1761760534335051&app_domain=https%3A%2F%2Fwww.perplexity.ai&client_id=60244564555-30175ip7vg79fobh0rk1sur3pdutj9l1.apps.googleusercontent.com&code_challenge=DBdiEfmaii95EGYl45dQ5-ULxaEYQlPDzlog1ZZSlEc&code_challenge_method=S256&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAPhhkiYJ7bcEcr-wRjNUebemVIYWjt67QiimMkogv7tzM9E06cNxcfMP1mUwv9H4lfW0Ihkeh8pT8Gfl32WAW6AWLsSARHIg_OUglbKE7ApWCXkYX_1G2J_UtOtX8pBDaA6qeOWg90QGfNaoLLts-rvISaDa9oDdBxH_TKbjj9becWizjbD1Ymzn0NkKP_VUA0uHne_pE5vIIna7YWlwz4642ybfj4PWG2usMRwSLCGZd4aD97TN_xx6JjjV-ySY2-XVO2fdguGMEJFre0bCFIAxayLpQMUVLZkHgMN8lZ0bV2SmI_1ENUO_VRB09iDiENBsrPc_FXRKE_dBEQA-ecG-1vtU7aIh8nu5QwncVr9brYgnnNgptji4hrNyXVy59_kqGnY7LgqlC_gzkrXP8f2f2XqkDxCzt2XhXgPQQofn1Qkcpt6S-Rtq3P6ZdPTulX6gP4m4Zuzr-mABt6QrdvboT5u0Q%26flowName%3DGeneralOAuthFlow%26as%3DS-1758860064%253A1761760534335051%26client_id%3D60244564555-30175ip7vg79fobh0rk1sur3pdutj9l1.apps.googleusercontent.com%23&flowName=GeneralOAuthFlow&o2v=2&rart=ANgoxcc4rju2QNRlcpstwEgz1Qh2MWReMzHKWRXzWZgELWxUX8rDGqDMHLQPGqMGZKGworuo5ATXqp-kr1fSIe_2_YSO0mCm9Dv86Mum8nchc_XK2Yw4jas&redirect_uri=https%3A%2F%2Fwww.perplexity.ai%2Fapi%2Fauth%2Fcallback%2Fgoogle&response_type=code&scope=openid+email+profile&service=lso&state=wElXlrzP50A8SBMjKkpKFqbKT6rRvAgoO70ZHn8IFWM",
+  "title": "Sign in - Google Accounts",
+  "allButtons": [
+    {
+      "index": 0,
+      "text": "perplexity.ai",
+      "ariaLabel": null,
+      "class": "",
+      "id": "",
+      "visible": true
+    },
+    {
+      "index": 1,
+      "text": "Forgot email?",
+      "ariaLabel": null,
+      "class": "",
+      "id": "",
+      "visible": true
+    },
+    {
+      "index": 2,
+      "text": "",
+      "ariaLabel": "Listen and type the numbers you hear",
+      "class": "VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-Bz112c-M1Soyc VfPpkd-LgbsSe-OWXEXe-dgl2Hf ksBjEc lKxP2d LQeN7 BqKGqe eR0mzb TrZEUc lw1w4b",
+      "id": "",
+      "visible": false
+    },
+    {
+      "index": 3,
+      "text": "Next",
+      "ariaLabel": null,
+      "class": "VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-k8QpJ VfPpkd-LgbsSe-OWXEXe-dgl2Hf nCP5yc AjY5Oe DuMIQc LQeN7 BqKGqe Jskylb TrZEUc lw1w4b",
+      "id": "",
+      "visible": true
+    },
+    {
+      "index": 4,
+      "text": "Create account",
+      "ariaLabel": null,
+      "class": "VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-dgl2Hf ksBjEc lKxP2d LQeN7 BqKGqe eR0mzb TrZEUc lw1w4b",
+      "id": "",
+      "visible": true
+    }
+  ],
+  "allLinks": [],
+  "allInputs": [],
+  "allImages": [
+    {
+      "src": "",
+      "alt": "CAPTCHA image of text used to distinguish humans from robots",
+      "ariaLabel": null,
+      "class": "TrZEUc"
+    }
+  ],
+  "elementsWithTestId": [],
+  "elementsWithAriaLabel": [
+    {
+      "ariaLabel": "Email or phone",
+      "tag": "INPUT",
+      "class": "whsOnd zHQkBf"
+    },
+    {
+      "ariaLabel": "Listen and type the numbers you hear",
+      "tag": "BUTTON",
+      "class": "VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-Bz112c-M1Soyc VfPpkd-LgbsSe-OWXEXe-dgl2Hf ksBjEc lKxP2d LQeN7 BqK"
+    },
+    {
+      "ariaLabel": "Type the text you hear or see",
+      "tag": "INPUT",
+      "class": "whsOnd zHQkBf"
+    },
+    {
+      "ariaLabel": "Change language",
+      "tag": "SPAN",
+      "class": ""
+    },
+    {
+      "ariaLabel": "",
+      "tag": "SPAN",
+      "class": "VfPpkd-uusGie-fmcmS"
+    },
+    {
+      "ariaLabel": "Change language",
+      "tag": "UL",
+      "class": "VfPpkd-rymPhb r6B9Fd bwNLcf P2Hi5d VfPpkd-OJnkse"
+    }
+  ],
+  "bodyClasses": "jR8x9d nyoS7c UzCXuf EIlDfe",
+  "hasLoginButton": false,
+  "hasSignInButton": false,
+  "hasLogoutButton": false,
+  "hasSignOutButton": false
+}

@@ -1,0 +1,4060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticinese Language Encyclopedia - 1850-1915</title>
+    <style>
+        /* ========================================
+           ENTERPRISE-GRADE CSS RESET & BASE
+           ======================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* ========================================
+           DESIGN TOKENS & VARIABLES
+           ======================================== */
+        :root {
+            /* Legacy color compatibility */
+            --primary-color: #2c5f2d;
+            --secondary-color: #97203d;
+            --accent-color: #d4af37;
+
+            /* Advanced Gradient System */
+            --alpine-green-flow: linear-gradient(135deg, #2c5f2d 0%, #3d7a40 25%, #4a9150 50%, #2c5f2d 100%);
+            --swiss-heritage: linear-gradient(45deg, #97203d 0%, #b8304f 30%, #d4af37 100%);
+            --transcendent-gold: linear-gradient(135deg, #d4af37 0%, #f4c842 25%, #ffd700 50%, #d4af37 100%);
+            --surface-gradient: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+            --elevated-gradient: linear-gradient(145deg, #ffffff 0%, #f0f4f1 100%);
+            --deep-forest: linear-gradient(180deg, #1a3a1b 0%, #0d2e0e 100%);
+            --heritage-crimson: linear-gradient(135deg, #97203d 0%, #7a1a31 100%);
+
+            /* Interactive Gradients */
+            --primary-gradient: var(--alpine-green-flow);
+            --secondary-gradient: var(--swiss-heritage);
+            --accent-gradient: var(--transcendent-gold);
+
+            /* Background Gradients */
+            --bg-gradient-light: linear-gradient(135deg, #f5f5f0 0%, #e8e8e0 100%);
+            --bg-gradient-elevated: linear-gradient(145deg, #fdfdfd 0%, #f5f5f0 100%);
+
+            /* Typography Scale (Perfect Fourth - 1.333) */
+            --text-scale-ratio: 1.333;
+            --text-xs: 0.75rem;      /* 12px */
+            --text-sm: 0.875rem;     /* 14px */
+            --text-base: 1rem;       /* 16px */
+            --text-lg: 1.125rem;     /* 18px */
+            --text-xl: 1.25rem;      /* 20px */
+            --text-2xl: 1.5rem;      /* 24px */
+            --text-3xl: 1.875rem;    /* 30px */
+            --text-4xl: 2.25rem;     /* 36px */
+            --text-5xl: 3rem;        /* 48px */
+            --text-6xl: 3.75rem;     /* 60px */
+
+            /* Font Weights */
+            --font-weight-light: 300;
+            --font-weight-normal: 400;
+            --font-weight-medium: 500;
+            --font-weight-semibold: 600;
+            --font-weight-bold: 700;
+            --font-weight-extrabold: 800;
+
+            /* Spatial System (8px base unit) */
+            --space-unit: 8px;
+            --space-0: 0;
+            --space-px: 1px;
+            --space-0-5: calc(var(--space-unit) * 0.125); /* 1px */
+            --space-1: calc(var(--space-unit) * 0.25);    /* 2px */
+            --space-2: calc(var(--space-unit) * 0.5);     /* 4px */
+            --space-3: var(--space-unit);                 /* 8px */
+            --space-4: calc(var(--space-unit) * 1.5);     /* 12px */
+            --space-5: calc(var(--space-unit) * 2);       /* 16px */
+            --space-6: calc(var(--space-unit) * 2.5);     /* 20px */
+            --space-7: calc(var(--space-unit) * 3);       /* 24px */
+            --space-8: calc(var(--space-unit) * 4);       /* 32px */
+            --space-10: calc(var(--space-unit) * 5);      /* 40px */
+            --space-12: calc(var(--space-unit) * 6);      /* 48px */
+            --space-16: calc(var(--space-unit) * 8);      /* 64px */
+            --space-20: calc(var(--space-unit) * 10);     /* 80px */
+            --space-24: calc(var(--space-unit) * 12);     /* 96px */
+            --space-32: calc(var(--space-unit) * 16);     /* 128px */
+
+            /* Border Radius Scale */
+            --radius-none: 0;
+            --radius-sm: 0.25rem;    /* 4px */
+            --radius-md: 0.375rem;   /* 6px */
+            --radius-lg: 0.5rem;     /* 8px */
+            --radius-xl: 0.75rem;    /* 12px */
+            --radius-2xl: 1rem;      /* 16px */
+            --radius-3xl: 1.5rem;    /* 24px */
+            --radius-full: 9999px;
+
+            /* Shadow System */
+            --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+
+            /* Glassmorphism Shadows */
+            --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.1);
+            --shadow-glass-hover: 0 16px 64px rgba(0, 0, 0, 0.15);
+            --shadow-glass-active: 0 4px 16px rgba(0, 0, 0, 0.12);
+
+            /* Color Semantic Tokens */
+            --color-background: #ffffff;
+            --color-surface: var(--surface-gradient);
+            --color-surface-elevated: var(--elevated-gradient);
+            --color-text-primary: #1a202c;
+            --color-text-secondary: #4a5568;
+            --color-text-muted: #718096;
+            --color-border: rgba(0, 0, 0, 0.08);
+            --color-border-muted: rgba(0, 0, 0, 0.05);
+
+            /* Interactive States */
+            --color-focus-ring: rgba(66, 153, 225, 0.5);
+            --color-focus-ring-offset: #ffffff;
+
+            /* Animation Timing Functions */
+            --ease-linear: cubic-bezier(0, 0, 1, 1);
+            --ease-in: cubic-bezier(0.4, 0, 1, 1);
+            --ease-out: cubic-bezier(0, 0, 0.2, 1);
+            --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+            --ease-elastic: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+            /* Z-Index Scale */
+            --z-dropdown: 1000;
+            --z-sticky: 1020;
+            --z-fixed: 1030;
+            --z-modal-backdrop: 1040;
+            --z-modal: 1050;
+            --z-popover: 1060;
+            --z-tooltip: 1070;
+            --z-toast: 1080;
+
+            /* Breakpoints (for reference in clamp functions) */
+            --bp-xs: 320px;
+            --bp-sm: 640px;
+            --bp-md: 768px;
+            --bp-lg: 1024px;
+            --bp-xl: 1280px;
+            --bp-2xl: 1536px;
+
+            /* Legacy compatibility */
+            --bg-color: #f5f5f0;
+            --card-bg: #ffffff;
+            --text-color: var(--color-text-primary);
+            --border-color: var(--color-border);
+            --hover-color: #f0f0f0;
+        }
+
+        /* ========================================
+           TYPOGRAPHY SYSTEM
+           ======================================== */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+            background: var(--bg-gradient-light);
+            color: var(--color-text-primary);
+            line-height: 1.618; /* Golden ratio for optimal readability */
+            font-size: var(--text-base);
+            font-weight: var(--font-weight-normal);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        /* Typography Classes */
+        .text-transcendent {
+            background: var(--transcendent-gold);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: var(--font-weight-semibold);
+            font-family: 'Crimson Text', Georgia, serif;
+        }
+
+        .text-heritage {
+            font-family: 'Crimson Text', Georgia, serif;
+            font-style: italic;
+            color: var(--color-text-secondary);
+        }
+
+        .text-ticinese {
+            font-family: 'Crimson Text', Georgia, serif;
+            font-weight: var(--font-weight-semibold);
+            color: var(--primary-color);
+        }
+
+        /* ========================================
+           LAYOUT SYSTEM
+           ======================================== */
+        .container {
+            max-width: min(1400px, 100vw - var(--space-8));
+            margin: 0 auto;
+            padding-inline: var(--space-6);
+            padding-block: var(--space-5);
+        }
+
+        /* ========================================
+           HEADER COMPONENT
+           ======================================== */
+        header {
+            background: var(--deep-forest);
+            color: white;
+            padding: clamp(var(--space-8), 5vw, var(--space-16)) var(--space-6);
+            text-align: center;
+            box-shadow: var(--shadow-2xl);
+            margin-bottom: var(--space-12);
+            border-bottom: var(--space-1) solid transparent;
+            border-image: var(--swiss-heritage) 1;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--alpine-green-flow);
+            opacity: 0.9;
+            z-index: 1;
+        }
+
+        header > * {
+            position: relative;
+            z-index: 2;
+        }
+
+        header h1 {
+            font-size: clamp(var(--text-3xl), 5vw, var(--text-6xl));
+            font-weight: var(--font-weight-extrabold);
+            margin-bottom: var(--space-4);
+            text-shadow: 0 4px 8px rgba(0,0,0,0.4);
+            letter-spacing: -0.025em;
+            font-family: 'Crimson Text', Georgia, serif;
+            background: linear-gradient(45deg, #ffffff 30%, #f0f0f0 50%, #ffffff 70%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.95; }
+        }
+
+        header p {
+            font-size: clamp(var(--text-lg), 3vw, var(--text-xl));
+            opacity: 0.95;
+            font-style: italic;
+            font-family: 'Crimson Text', Georgia, serif;
+            margin-bottom: var(--space-3);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header-meta {
+            margin-top: var(--space-5);
+            font-size: var(--text-sm);
+            opacity: 0.9;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: var(--space-4);
+            font-weight: var(--font-weight-medium);
+        }
+
+        .header-meta span {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(4px);
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-full);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* ========================================
+           NAVIGATION COMPONENT
+           ======================================== */
+        .navigation {
+            background: var(--elevated-gradient);
+            backdrop-filter: blur(20px);
+            padding: var(--space-6);
+            margin-bottom: var(--space-12);
+            border-radius: var(--radius-2xl);
+            box-shadow: var(--shadow-glass);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-3);
+            justify-content: center;
+            position: sticky;
+            top: var(--space-5);
+            z-index: var(--z-sticky);
+        }
+
+        .nav-btn {
+            padding: var(--space-4) var(--space-6);
+            background: var(--primary-gradient);
+            color: white;
+            border: none;
+            border-radius: var(--radius-xl);
+            cursor: pointer;
+            font-size: var(--text-sm);
+            font-weight: var(--font-weight-medium);
+            transition: all 0.3s var(--ease-elastic);
+            font-family: inherit;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: var(--shadow-sm);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .nav-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--swiss-heritage);
+            transition: left 0.3s var(--ease-out);
+            z-index: -1;
+        }
+
+        .nav-btn:hover::before {
+            left: 0;
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: var(--shadow-glass-hover);
+            color: white;
+        }
+
+        .nav-btn:active {
+            transform: translateY(0) scale(0.98);
+            box-shadow: var(--shadow-glass-active);
+        }
+
+        .nav-btn.active {
+            background: var(--heritage-crimson);
+            font-weight: var(--font-weight-semibold);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-1px);
+        }
+
+        .nav-btn.active::before {
+            left: 0;
+            background: var(--transcendent-gold);
+        }
+
+        /* Focus states for accessibility */
+        .nav-btn:focus-visible {
+            outline: 2px solid var(--color-focus-ring);
+            outline-offset: 2px;
+        }
+
+        /* ========================================
+           SEARCH COMPONENT
+           ======================================== */
+        .search-bar {
+            background: var(--elevated-gradient);
+            backdrop-filter: blur(20px);
+            padding: var(--space-8);
+            margin-bottom: var(--space-12);
+            border-radius: var(--radius-3xl);
+            box-shadow: var(--shadow-glass);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: var(--space-5) var(--space-6);
+            font-size: var(--text-lg);
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: var(--radius-2xl);
+            font-family: inherit;
+            font-weight: var(--font-weight-medium);
+            transition: all 0.3s var(--ease-out);
+            box-shadow: var(--shadow-sm);
+            color: var(--color-text-primary);
+        }
+
+        .search-input::placeholder {
+            color: var(--color-text-muted);
+            font-style: italic;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: rgba(44, 95, 45, 0.3);
+            box-shadow: 0 0 0 3px var(--color-focus-ring), var(--shadow-md);
+            background: rgba(255, 255, 255, 0.95);
+            transform: translateY(-1px);
+        }
+
+        .search-input:hover:not(:focus) {
+            border-color: rgba(44, 95, 45, 0.2);
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .content-section {
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        .stats-bar {
+            background: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 10px 20px;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        /* ========================================
+           CARD COMPONENT SYSTEM
+           ======================================== */
+        .card {
+            background: var(--surface-gradient);
+            backdrop-filter: blur(20px);
+            padding: var(--space-8);
+            border-radius: var(--radius-2xl);
+            box-shadow: var(--shadow-glass);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-left: 4px solid transparent;
+            border-image: var(--transcendent-gold) 1;
+            transition: all 0.3s var(--ease-out);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: var(--transcendent-gold);
+            opacity: 0;
+            transition: opacity 0.3s var(--ease-out);
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: var(--shadow-glass-hover);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        .card-header {
+            border-bottom: 1px solid rgba(44, 95, 45, 0.1);
+            padding-bottom: var(--space-5);
+            margin-bottom: var(--space-5);
+            position: relative;
+        }
+
+        .card-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: var(--primary-gradient);
+            opacity: 0.2;
+        }
+
+        .word-ticinese {
+            font-size: var(--text-2xl);
+            background: var(--primary-gradient);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: var(--font-weight-bold);
+            font-family: 'Crimson Text', Georgia, serif;
+            margin-bottom: var(--space-2);
+            letter-spacing: -0.025em;
+        }
+
+        .word-english {
+            font-size: 1.2em;
+            color: var(--secondary-color);
+            font-style: italic;
+        }
+
+        .pronunciation {
+            background: #f9f9f9;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        .ipa {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .card-body {
+            font-size: 0.95em;
+        }
+
+        .field {
+            margin: 10px 0;
+        }
+
+        .field-label {
+            font-weight: bold;
+            color: #555;
+            display: inline-block;
+            min-width: 120px;
+        }
+
+        .field-value {
+            color: #333;
+        }
+
+        .example {
+            background: #f0f7f0;
+            padding: 12px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 3px solid var(--primary-color);
+        }
+
+        .example-ticinese {
+            font-style: italic;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .example-english {
+            color: #666;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 10px;
+            background: var(--accent-color);
+            color: white;
+            border-radius: 3px;
+            font-size: 0.85em;
+            margin-right: 5px;
+            margin-top: 5px;
+        }
+
+        .rule-card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .rule-header {
+            font-size: 1.5em;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .rule-description {
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        .examples-list {
+            margin: 15px 0;
+        }
+
+        .filter-bar {
+            background: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 8px 16px;
+            background: #f0f0f0;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover {
+            background: var(--hover-color);
+        }
+
+        .filter-btn.active {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+            font-style: italic;
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            border-top: 4px solid var(--secondary-color);
+        }
+
+        /* ========================================
+           RESPONSIVE DESIGN SYSTEM
+           ======================================== */
+
+        /* Reduced motion support for accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        /* High contrast mode support */
+        @media (prefers-contrast: high) {
+            .card {
+                border: 2px solid var(--color-text-primary);
+            }
+
+            .nav-btn {
+                border: 2px solid currentColor;
+            }
+        }
+
+        /* Mobile-first responsive breakpoints */
+
+        /* Extra small devices (phones, 320px and up) */
+        @media screen and (min-width: 320px) {
+            .container {
+                padding-inline: var(--space-4);
+            }
+        }
+
+        /* Small devices (landscape phones, 576px and up) */
+        @media screen and (max-width: 640px) {
+            .navigation {
+                padding: var(--space-4);
+                gap: var(--space-2);
+            }
+
+            .nav-btn {
+                padding: var(--space-3) var(--space-4);
+                font-size: var(--text-xs);
+                min-height: 44px; /* Touch target minimum */
+            }
+
+            .search-input {
+                font-size: var(--text-base);
+                padding: var(--space-4) var(--space-5);
+            }
+
+            .card {
+                padding: var(--space-5);
+                margin-bottom: var(--space-4);
+            }
+
+            .word-ticinese {
+                font-size: var(--text-xl);
+            }
+        }
+
+        /* Medium devices (tablets, 768px and down) */
+        @media screen and (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-5);
+            }
+
+            header {
+                padding: var(--space-6) var(--space-4);
+                margin-bottom: var(--space-8);
+            }
+
+            header h1 {
+                font-size: clamp(var(--text-2xl), 6vw, var(--text-4xl));
+            }
+
+            header p {
+                font-size: var(--text-base);
+            }
+
+            .stats-bar {
+                flex-direction: column;
+                gap: var(--space-4);
+            }
+
+            .stat-item {
+                min-width: 100%;
+                text-align: center;
+            }
+
+            .navigation {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-btn {
+                width: 100%;
+                max-width: 280px;
+                justify-content: center;
+            }
+
+            .story-card h3 {
+                font-size: var(--text-lg);
+            }
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media screen and (min-width: 992px) {
+            .container {
+                padding-inline: var(--space-8);
+            }
+
+            .grid {
+                grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            }
+
+            .navigation {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media screen and (min-width: 1200px) {
+            .grid {
+                grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+                gap: var(--space-8);
+            }
+
+            .card:hover {
+                transform: translateY(-12px) scale(1.03);
+            }
+        }
+
+        /* Ultra wide displays (1400px and up) */
+        @media screen and (min-width: 1400px) {
+            .container {
+                max-width: 1600px;
+            }
+
+            .grid {
+                grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            }
+        }
+
+        /* Touch device optimizations */
+        @media (hover: none) and (pointer: coarse) {
+            .nav-btn,
+            .card,
+            .story-card {
+                transform: none !important; /* Disable hover transforms on touch */
+            }
+
+            .nav-btn:active,
+            .card:active,
+            .story-card:active {
+                transform: scale(0.98);
+                transition: transform 0.1s ease-out;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            header,
+            .navigation,
+            .search-bar {
+                display: none;
+            }
+
+            .card {
+                break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid #000;
+            }
+        }
+
+        .loading {
+            text-align: center;
+            padding: 50px;
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .etymology {
+            background: #fff9e6;
+            padding: 12px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        .pronoun-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        .pronoun-table th,
+        .pronoun-table td {
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            text-align: left;
+        }
+
+        .pronoun-table th {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .pronoun-table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+
+        /* Story Filters */
+        .story-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-3);
+            margin-bottom: var(--space-6);
+            justify-content: center;
+        }
+
+        .filter-btn {
+            padding: var(--space-3) var(--space-5);
+            border: 2px solid transparent;
+            border-radius: var(--radius-lg);
+            background: var(--bg-gradient-elevated);
+            color: var(--text-color-secondary);
+            font-weight: var(--font-weight-medium);
+            font-size: var(--text-sm);
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .filter-btn:hover {
+            background: var(--primary-gradient);
+            color: white;
+            border-color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .filter-btn.active {
+            background: var(--primary-gradient);
+            color: white;
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Story Selector Grid */
+        .story-selector {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        /* Story Card Component */
+        .story-card {
+            background: var(--elevated-gradient);
+            backdrop-filter: blur(16px);
+            padding: var(--space-6);
+            border-radius: var(--radius-xl);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: var(--shadow-md);
+            cursor: pointer;
+            transition: all 0.3s var(--ease-elastic);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .story-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--swiss-heritage);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s var(--ease-out);
+        }
+
+        .story-card:hover {
+            transform: translateY(-6px) scale(1.01);
+            box-shadow: var(--shadow-glass-hover);
+            border-color: rgba(44, 95, 45, 0.3);
+        }
+
+        .story-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .story-card:active {
+            transform: translateY(-2px) scale(0.99);
+        }
+
+        .story-card h3 {
+            background: var(--primary-gradient);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: 'Crimson Text', Georgia, serif;
+            margin-bottom: var(--space-2);
+            font-size: var(--text-xl);
+            font-weight: var(--font-weight-semibold);
+        }
+
+        .story-title-english {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .story-meta {
+            display: flex;
+            gap: 15px;
+            margin: 10px 0;
+            flex-wrap: wrap;
+        }
+
+        .level-badge {
+            background: var(--accent-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+
+        .word-count {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .story-preview {
+            color: #555;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+
+        .story-features {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Heritage Story Enhancements */
+        .heritage-story {
+            border-left: 4px solid var(--accent-color);
+            position: relative;
+        }
+
+        .heritage-story::before {
+            content: '🏔️';
+            position: absolute;
+            top: var(--space-4);
+            right: var(--space-4);
+            font-size: var(--text-lg);
+            opacity: 0.7;
+        }
+
+        .heritage-badge {
+            background: var(--transcendent-gold) !important;
+            color: white !important;
+            text-transform: capitalize;
+            font-weight: var(--font-weight-semibold);
+        }
+
+        .heritage-info {
+            background: var(--bg-gradient-elevated);
+            border-radius: var(--radius-md);
+            padding: var(--space-3) var(--space-4);
+            margin: var(--space-3) 0;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .heritage-info div {
+            font-size: var(--text-xs);
+            color: var(--text-color-secondary);
+            margin: var(--space-1) 0;
+        }
+
+        .cultural-preview {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            margin-top: var(--space-4);
+            padding: var(--space-3);
+            background: rgba(44, 95, 45, 0.05);
+            border-radius: var(--radius-md);
+            border-left: 3px solid var(--primary-color);
+        }
+
+        .cultural-icon {
+            font-size: var(--text-base);
+        }
+
+        .cultural-text {
+            font-size: var(--text-xs);
+            color: var(--text-color-secondary);
+            font-style: italic;
+            line-height: 1.4;
+        }
+
+        .section-description {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        /* Interactive Story Reader */
+        #story-reader {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .story-text {
+            font-size: 1.2em;
+            line-height: 2;
+            margin: 30px 0;
+            white-space: pre-wrap;
+        }
+
+        .vocab-word {
+            cursor: help;
+            border-bottom: 2px dotted var(--accent-color);
+            position: relative;
+            padding: 2px 0;
+            transition: background-color 0.2s ease;
+        }
+
+        .vocab-word:hover {
+            background-color: rgba(212, 175, 55, 0.1);
+        }
+
+        .vocab-word:hover::after {
+            content: attr(data-english);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.9);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            white-space: nowrap;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            margin-bottom: 5px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .back-to-stories {
+            background: var(--secondary-color);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        .back-to-stories:hover {
+            background: #7a1a2f;
+        }
+
+        .vocab-list {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .vocab-list h4 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .vocab-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .vocab-item {
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        .vocab-item strong {
+            color: var(--primary-color);
+        }
+
+        /* Timeline Styles */
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding: 20px;
+            margin: 20px 0;
+            background: white;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .timeline-period {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+
+        .timeline-item h4 {
+            color: var(--primary-color);
+            margin: 10px 0;
+        }
+
+        .timeline-item p {
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .timeline-significance {
+            margin-top: 15px;
+            padding: 15px;
+            background: #f0f8f0;
+            border-left: 3px solid var(--secondary-color);
+            border-radius: 5px;
+        }
+
+        .timeline-significance strong {
+            color: var(--secondary-color);
+        }
+
+        /* Cultural Facts Grid */
+        .cultural-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .cultural-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            border-top: 4px solid var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+
+        .cultural-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .cultural-category {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            margin-bottom: 10px;
+        }
+
+        .cultural-card h4 {
+            color: var(--primary-color);
+            margin: 15px 0;
+            font-size: 1.3em;
+        }
+
+        .cultural-card p {
+            line-height: 1.8;
+            color: #555;
+            margin: 15px 0;
+        }
+
+        .cultural-vocab {
+            margin-top: 15px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        .cultural-vocab strong {
+            color: var(--secondary-color);
+        }
+
+        /* Linguistic Features */
+        .features-container {
+            margin: 30px 0;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border-left: 5px solid var(--primary-color);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .feature-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .feature-example {
+            background: #f0f8f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+        }
+
+        .feature-example strong {
+            color: var(--secondary-color);
+        }
+
+        .history-section {
+            margin: 40px 0;
+        }
+
+        .history-section h3 {
+            color: var(--primary-color);
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+
+        /* Interactive Scenarios Styling */
+        .scenario-filters {
+            display: flex;
+            gap: var(--space-3);
+            margin-bottom: var(--space-8);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .scenario-filters .filter-btn {
+            background: var(--primary-gradient);
+            color: white;
+            border: none;
+            padding: var(--space-3) var(--space-5);
+            border-radius: var(--radius-lg);
+            font-size: var(--text-sm);
+            font-weight: var(--font-weight-medium);
+            cursor: pointer;
+            transition: all 0.3s var(--ease-out);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .scenario-filters .filter-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .scenario-filters .filter-btn.active {
+            background: var(--accent-gradient);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .scenario-card {
+            background: var(--surface-gradient);
+            border-radius: var(--radius-xl);
+            padding: var(--space-6);
+            margin-bottom: var(--space-6);
+            border: 1px solid rgba(44, 95, 45, 0.1);
+            cursor: pointer;
+            transition: all 0.3s var(--ease-out);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .scenario-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--primary-gradient);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s var(--ease-out);
+        }
+
+        .scenario-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(44, 95, 45, 0.2);
+        }
+
+        .scenario-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .scenario-title {
+            font-size: var(--text-xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--primary-color);
+            margin-bottom: var(--space-2);
+            font-family: 'Crimson Text', Georgia, serif;
+        }
+
+        .scenario-title-english {
+            font-size: var(--text-base);
+            color: var(--color-text-secondary);
+            margin-bottom: var(--space-4);
+            font-style: italic;
+        }
+
+        .scenario-meta {
+            display: flex;
+            gap: var(--space-3);
+            margin-bottom: var(--space-4);
+            flex-wrap: wrap;
+        }
+
+        .difficulty-badge {
+            background: var(--primary-gradient);
+            color: white;
+            padding: var(--space-1) var(--space-3);
+            border-radius: var(--radius-full);
+            font-size: var(--text-xs);
+            font-weight: var(--font-weight-medium);
+        }
+
+        .duration-badge {
+            background: var(--secondary-gradient);
+            color: white;
+            padding: var(--space-1) var(--space-3);
+            border-radius: var(--radius-full);
+            font-size: var(--text-xs);
+            font-weight: var(--font-weight-medium);
+        }
+
+        .category-badge {
+            background: var(--accent-gradient);
+            color: white;
+            padding: var(--space-1) var(--space-3);
+            border-radius: var(--radius-full);
+            font-size: var(--text-xs);
+            font-weight: var(--font-weight-medium);
+            text-transform: capitalize;
+        }
+
+        .scenario-setting-info {
+            background: var(--bg-gradient-elevated);
+            border-radius: var(--radius-md);
+            padding: var(--space-4);
+            margin: var(--space-4) 0;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .scenario-setting-info h4 {
+            color: var(--primary-color);
+            margin-bottom: var(--space-2);
+            font-size: var(--text-sm);
+            font-weight: var(--font-weight-semibold);
+        }
+
+        .scenario-setting-detail {
+            font-size: var(--text-xs);
+            color: var(--color-text-secondary);
+            margin: var(--space-1) 0;
+        }
+
+        /* Scenario Interface Styling */
+        .scenario-interface {
+            background: var(--surface-gradient);
+            border-radius: var(--radius-xl);
+            padding: var(--space-8);
+            margin-top: var(--space-6);
+            border: 2px solid var(--primary-color);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .scenario-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: var(--space-6);
+            padding-bottom: var(--space-4);
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .scenario-header .scenario-title {
+            font-size: var(--text-2xl);
+            margin: 0;
+        }
+
+        .close-scenario-btn {
+            background: var(--heritage-crimson);
+            color: white;
+            border: none;
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            font-weight: var(--font-weight-medium);
+            transition: all 0.3s var(--ease-out);
+        }
+
+        .close-scenario-btn:hover {
+            background: var(--secondary-color);
+            transform: translateY(-1px);
+        }
+
+        .scenario-setting {
+            background: var(--deep-forest);
+            color: white;
+            padding: var(--space-6);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--space-6);
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .dialogue-container {
+            margin-bottom: var(--space-6);
+        }
+
+        .dialogue-message {
+            background: var(--elevated-gradient);
+            border-radius: var(--radius-lg);
+            padding: var(--space-5);
+            margin-bottom: var(--space-4);
+            border-left: 4px solid var(--accent-color);
+            position: relative;
+            animation: fadeInUp 0.5s var(--ease-out);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .dialogue-speaker {
+            font-weight: var(--font-weight-bold);
+            color: var(--primary-color);
+            margin-bottom: var(--space-2);
+            font-family: 'Crimson Text', Georgia, serif;
+        }
+
+        .dialogue-text {
+            font-size: var(--text-lg);
+            margin-bottom: var(--space-3);
+            line-height: 1.6;
+            color: var(--color-text-primary);
+        }
+
+        .dialogue-translation {
+            font-size: var(--text-sm);
+            color: var(--color-text-secondary);
+            font-style: italic;
+            border-top: 1px solid rgba(44, 95, 45, 0.2);
+            padding-top: var(--space-2);
+        }
+
+        .response-choices {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-3);
+            margin-bottom: var(--space-6);
+        }
+
+        .response-choice {
+            background: var(--primary-gradient);
+            color: white;
+            border: none;
+            padding: var(--space-4) var(--space-5);
+            border-radius: var(--radius-lg);
+            cursor: pointer;
+            text-align: left;
+            font-size: var(--text-base);
+            line-height: 1.4;
+            transition: all 0.3s var(--ease-out);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .response-choice:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            background: var(--accent-gradient);
+        }
+
+        .response-choice-translation {
+            font-size: var(--text-sm);
+            opacity: 0.8;
+            font-style: italic;
+            margin-top: var(--space-1);
+        }
+
+        .vocabulary-learned, .cultural-notes {
+            background: var(--bg-gradient-elevated);
+            border-radius: var(--radius-lg);
+            padding: var(--space-5);
+            margin-bottom: var(--space-4);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .vocabulary-learned h4, .cultural-notes h4 {
+            color: var(--primary-color);
+            margin-bottom: var(--space-3);
+            font-family: 'Crimson Text', Georgia, serif;
+        }
+
+        .vocab-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-2);
+        }
+
+        .vocab-item {
+            background: var(--accent-gradient);
+            color: white;
+            padding: var(--space-1) var(--space-3);
+            border-radius: var(--radius-full);
+            font-size: var(--text-xs);
+            font-weight: var(--font-weight-medium);
+        }
+
+        .scenario-progress {
+            margin-top: var(--space-6);
+        }
+
+        .progress-bar {
+            background: rgba(44, 95, 45, 0.2);
+            height: 8px;
+            border-radius: var(--radius-full);
+            overflow: hidden;
+            margin-bottom: var(--space-2);
+        }
+
+        .progress-fill {
+            background: var(--accent-gradient);
+            height: 100%;
+            border-radius: var(--radius-full);
+            transition: width 0.3s var(--ease-out);
+        }
+
+        .progress-text {
+            font-size: var(--text-sm);
+            color: var(--color-text-secondary);
+            text-align: center;
+        }
+
+        /* Traditional Recipes Styling */
+        .recipe-filters {
+            display: flex;
+            gap: var(--space-3);
+            margin-bottom: var(--space-8);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .recipe-filters .filter-btn {
+            background: var(--primary-gradient);
+            color: white;
+            border: none;
+            padding: var(--space-3) var(--space-5);
+            border-radius: var(--radius-lg);
+            font-size: var(--text-sm);
+            font-weight: var(--font-weight-medium);
+            cursor: pointer;
+            transition: all 0.3s var(--ease-out);
+        }
+
+        .recipe-filters .filter-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .recipe-filters .filter-btn.active {
+            background: var(--accent-gradient);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .recipe-card {
+            background: var(--surface-gradient);
+            border-radius: var(--radius-xl);
+            padding: var(--space-6);
+            margin-bottom: var(--space-6);
+            border: 1px solid rgba(44, 95, 45, 0.1);
+            cursor: pointer;
+            transition: all 0.3s var(--ease-out);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .recipe-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--heritage-crimson);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s var(--ease-out);
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(151, 32, 61, 0.3);
+        }
+
+        .recipe-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .recipe-name {
+            font-size: var(--text-xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--primary-color);
+            margin-bottom: var(--space-2);
+            font-family: 'Crimson Text', Georgia, serif;
+        }
+
+        .recipe-name-english {
+            font-size: var(--text-base);
+            color: var(--color-text-secondary);
+            margin-bottom: var(--space-4);
+            font-style: italic;
+        }
+
+        .recipe-card-meta {
+            display: flex;
+            gap: var(--space-3);
+            margin-bottom: var(--space-4);
+            flex-wrap: wrap;
+        }
+
+        .recipe-difficulty-badge {
+            background: var(--primary-gradient);
+            color: white;
+            padding: var(--space-1) var(--space-3);
+            border-radius: var(--radius-full);
+            font-size: var(--text-xs);
+            font-weight: var(--font-weight-medium);
+        }
+
+        .recipe-category-badge {
+            background: var(--accent-gradient);
+            color: white;
+            padding: var(--space-1) var(--space-3);
+            border-radius: var(--radius-full);
+            font-size: var(--text-xs);
+            font-weight: var(--font-weight-medium);
+            text-transform: capitalize;
+        }
+
+        .recipe-time-badge {
+            background: var(--secondary-gradient);
+            color: white;
+            padding: var(--space-1) var(--space-3);
+            border-radius: var(--radius-full);
+            font-size: var(--text-xs);
+            font-weight: var(--font-weight-medium);
+        }
+
+        .recipe-cultural-snippet {
+            background: var(--bg-gradient-elevated);
+            border-radius: var(--radius-md);
+            padding: var(--space-4);
+            margin: var(--space-4) 0;
+            border-left: 4px solid var(--accent-color);
+            font-style: italic;
+        }
+
+        .recipe-features {
+            display: flex;
+            gap: var(--space-4);
+            margin-top: var(--space-4);
+            font-size: var(--text-xs);
+            color: var(--color-text-secondary);
+        }
+
+        /* Recipe Viewer Interface */
+        .recipe-interface {
+            background: var(--surface-gradient);
+            border-radius: var(--radius-xl);
+            padding: var(--space-8);
+            margin-top: var(--space-6);
+            border: 2px solid var(--secondary-color);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .recipe-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: var(--space-6);
+            padding-bottom: var(--space-4);
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .recipe-main-info .recipe-title {
+            font-size: var(--text-2xl);
+            margin: 0 0 var(--space-2) 0;
+            font-family: 'Crimson Text', Georgia, serif;
+        }
+
+        .recipe-title-english {
+            font-size: var(--text-lg);
+            color: var(--color-text-secondary);
+            font-style: italic;
+            margin-bottom: var(--space-3);
+        }
+
+        .close-recipe-btn {
+            background: var(--heritage-crimson);
+            color: white;
+            border: none;
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            font-weight: var(--font-weight-medium);
+            transition: all 0.3s var(--ease-out);
+        }
+
+        .close-recipe-btn:hover {
+            background: var(--secondary-color);
+            transform: translateY(-1px);
+        }
+
+        .recipe-cultural-context {
+            background: var(--deep-forest);
+            color: white;
+            padding: var(--space-6);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--space-6);
+            line-height: 1.6;
+        }
+
+        .recipe-content-tabs {
+            display: flex;
+            gap: var(--space-2);
+            margin-bottom: var(--space-6);
+            border-bottom: 2px solid rgba(44, 95, 45, 0.2);
+        }
+
+        .recipe-tab {
+            background: none;
+            border: none;
+            padding: var(--space-4) var(--space-5);
+            cursor: pointer;
+            font-size: var(--text-base);
+            font-weight: var(--font-weight-medium);
+            color: var(--color-text-secondary);
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s var(--ease-out);
+        }
+
+        .recipe-tab:hover {
+            color: var(--primary-color);
+            background: rgba(44, 95, 45, 0.1);
+        }
+
+        .recipe-tab.active {
+            color: var(--primary-color);
+            border-bottom-color: var(--accent-color);
+            background: rgba(212, 175, 55, 0.1);
+        }
+
+        .tab-panel {
+            display: none;
+            animation: fadeInUp 0.4s var(--ease-out);
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        .ingredient-list {
+            display: grid;
+            gap: var(--space-4);
+            margin-bottom: var(--space-6);
+        }
+
+        .ingredient-item {
+            background: var(--elevated-gradient);
+            border-radius: var(--radius-lg);
+            padding: var(--space-4);
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .ingredient-name {
+            font-weight: var(--font-weight-bold);
+            color: var(--primary-color);
+            margin-bottom: var(--space-1);
+            font-family: 'Crimson Text', Georgia, serif;
+        }
+
+        .ingredient-english {
+            font-size: var(--text-sm);
+            color: var(--color-text-secondary);
+            font-style: italic;
+            margin-bottom: var(--space-2);
+        }
+
+        .ingredient-amount {
+            background: var(--accent-gradient);
+            color: white;
+            padding: var(--space-1) var(--space-2);
+            border-radius: var(--radius-sm);
+            font-size: var(--text-xs);
+            display: inline-block;
+            margin-bottom: var(--space-2);
+        }
+
+        .ingredient-cultural-note {
+            font-size: var(--text-xs);
+            color: var(--color-text-secondary);
+            line-height: 1.4;
+        }
+
+        .instruction-list {
+            counter-reset: step-counter;
+        }
+
+        .instruction-step {
+            background: var(--elevated-gradient);
+            border-radius: var(--radius-lg);
+            padding: var(--space-5);
+            margin-bottom: var(--space-4);
+            border-left: 4px solid var(--primary-color);
+            counter-increment: step-counter;
+            position: relative;
+        }
+
+        .instruction-step::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: var(--space-4);
+            top: var(--space-4);
+            background: var(--primary-gradient);
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--text-xs);
+            font-weight: var(--font-weight-bold);
+        }
+
+        .instruction-text {
+            margin-left: 40px;
+            margin-bottom: var(--space-3);
+        }
+
+        .instruction-ticinese {
+            font-size: var(--text-base);
+            color: var(--color-text-primary);
+            margin-bottom: var(--space-2);
+            font-weight: var(--font-weight-medium);
+        }
+
+        .instruction-english {
+            font-size: var(--text-sm);
+            color: var(--color-text-secondary);
+            font-style: italic;
+            margin-bottom: var(--space-3);
+        }
+
+        .instruction-cultural-note {
+            background: rgba(212, 175, 55, 0.1);
+            padding: var(--space-3);
+            border-radius: var(--radius-md);
+            font-size: var(--text-sm);
+            margin-bottom: var(--space-2);
+        }
+
+        .instruction-technique {
+            background: rgba(44, 95, 45, 0.1);
+            padding: var(--space-3);
+            border-radius: var(--radius-md);
+            font-size: var(--text-sm);
+            font-style: italic;
+        }
+
+        .vocabulary-section {
+            display: grid;
+            gap: var(--space-4);
+            margin-bottom: var(--space-6);
+        }
+
+        .vocab-category {
+            background: var(--elevated-gradient);
+            border-radius: var(--radius-lg);
+            padding: var(--space-5);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .vocab-category h5 {
+            color: var(--primary-color);
+            margin-bottom: var(--space-3);
+            font-family: 'Crimson Text', Georgia, serif;
+        }
+
+        .vocab-words {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-2);
+        }
+
+        .vocab-word {
+            background: var(--accent-gradient);
+            color: white;
+            padding: var(--space-1) var(--space-3);
+            border-radius: var(--radius-full);
+            font-size: var(--text-xs);
+            font-weight: var(--font-weight-medium);
+            cursor: pointer;
+            transition: all 0.3s var(--ease-out);
+        }
+
+        .vocab-word:hover {
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .family-story-content {
+            background: var(--elevated-gradient);
+            border-radius: var(--radius-lg);
+            padding: var(--space-6);
+            border-left: 4px solid var(--heritage-crimson);
+            font-style: italic;
+            line-height: 1.6;
+            color: var(--color-text-primary);
+            text-align: justify;
+        }
+
+        .comprehension-questions {
+            display: grid;
+            gap: var(--space-4);
+        }
+
+        .comprehension-question {
+            background: var(--elevated-gradient);
+            border-radius: var(--radius-lg);
+            padding: var(--space-4);
+            border: 1px solid rgba(44, 95, 45, 0.2);
+            cursor: pointer;
+            transition: all 0.3s var(--ease-out);
+        }
+
+        .comprehension-question:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-1px);
+        }
+
+        .question-ticinese {
+            font-weight: var(--font-weight-medium);
+            color: var(--primary-color);
+            margin-bottom: var(--space-2);
+        }
+
+        .question-english {
+            font-size: var(--text-sm);
+            color: var(--color-text-secondary);
+            font-style: italic;
+            margin-bottom: var(--space-2);
+        }
+
+        .question-answer {
+            background: rgba(212, 175, 55, 0.1);
+            padding: var(--space-3);
+            border-radius: var(--radius-md);
+            font-size: var(--text-sm);
+            display: none;
+        }
+
+        .question-answer.revealed {
+            display: block;
+            animation: fadeInUp 0.3s var(--ease-out);
+        }
+
+        .recipe-progress {
+            background: var(--bg-gradient-elevated);
+            border-radius: var(--radius-lg);
+            padding: var(--space-5);
+            margin-top: var(--space-6);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            text-align: center;
+        }
+
+        .recipe-progress h4 {
+            color: var(--primary-color);
+            margin-bottom: var(--space-3);
+            font-family: 'Crimson Text', Georgia, serif;
+        }
+
+        .vocabulary-learned-count, .cultural-insights {
+            background: var(--accent-gradient);
+            color: white;
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-lg);
+            font-weight: var(--font-weight-medium);
+            margin: var(--space-2);
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🇨🇭 Ticinese Language Encyclopedia 🇮🇹</h1>
+        <p>Western Lombard Alpine Dialect - Heritage Language of Swiss-Italian Emigrants</p>
+        <div class="header-meta">
+            <strong>Time Period:</strong> 1850-1915 | <strong>Region:</strong> Canton Ticino & Northern Lombardy
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-number" id="vocab-count">19</div>
+                <div class="stat-label">Vocabulary Words</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">28</div>
+                <div class="stat-label">Pronouns</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">18</div>
+                <div class="stat-label">Grammar Rules</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">65+</div>
+                <div class="stat-label">Total Entries</div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button class="nav-btn active" onclick="showSection('overview')">Overview</button>
+            <button class="nav-btn" onclick="showSection('vocabulary')">Vocabulary</button>
+            <button class="nav-btn" onclick="showSection('pronouns')">Pronouns</button>
+            <button class="nav-btn" onclick="showSection('grammar')">Grammar Rules</button>
+            <button class="nav-btn" onclick="showSection('story')">Sample Story</button>
+            <button class="nav-btn" onclick="showSection('stories')">📖 Stories (A1)</button>
+            <button class="nav-btn" onclick="showSection('scenarios')">🎭 Interactive Scenarios</button>
+            <button class="nav-btn" onclick="showSection('recipes')">👩‍🍳 Traditional Recipes</button>
+            <button class="nav-btn" onclick="showSection('history')">🏛️ History & Culture</button>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" class="search-input" id="search-input" placeholder="Search for words, meanings, or grammar rules...">
+        </div>
+
+        <!-- Overview Section -->
+        <div id="overview" class="content-section active">
+            <div class="card">
+                <h2 style="color: var(--primary-color); margin-bottom: 20px;">About This Database</h2>
+                <p style="margin-bottom: 15px;">
+                    This encyclopedia preserves the <strong>Ticinese dialect</strong> as spoken by Swiss-Italian families
+                    who emigrated from Canton Ticino and Northern Lombardy to the United States during 1890-1915.
+                </p>
+                <p style="margin-bottom: 15px;">
+                    <strong>Language Classification:</strong><br>
+                    Indo-European → Romance → Gallo-Italic → Lombard → Western Lombard → Alpine Lombard → Ticinese
+                </p>
+                <p style="margin-bottom: 15px;">
+                    <strong>ISO 639-3 Code:</strong> lmo (Lombard)
+                </p>
+                <p style="margin-bottom: 15px;">
+                    <strong>Key Features:</strong>
+                </p>
+                <ul style="margin-left: 20px; margin-bottom: 15px;">
+                    <li>Four-conjugation verb system preserved from Latin</li>
+                    <li>Mandatory subject clitics for 2nd and 3rd person</li>
+                    <li>Characteristic ö vowel (söna, nöff)</li>
+                    <li>Regional negation particles (minga, miga)</li>
+                    <li>Archaic features from 1850-1915 period</li>
+                </ul>
+                <p style="margin-bottom: 15px;">
+                    <strong>Research Method:</strong> Multi-agent Claude + Perplexity Pro collaboration workflow
+                </p>
+                <p>
+                    <strong>Created:</strong> November 4, 2025 | <strong>Version:</strong> 1.0
+                </p>
+            </div>
+        </div>
+
+        <!-- Vocabulary Section -->
+        <div id="vocabulary" class="content-section">
+            <div class="filter-bar">
+                <button class="filter-btn active" onclick="filterVocab('all')">All Words</button>
+                <button class="filter-btn" onclick="filterVocab('family')">Family</button>
+                <button class="filter-btn" onclick="filterVocab('animals')">Animals</button>
+                <button class="filter-btn" onclick="filterVocab('actions')">Actions</button>
+                <button class="filter-btn" onclick="filterVocab('food')">Food</button>
+            </div>
+            <div class="grid" id="vocabulary-grid">
+                <div class="loading">Loading vocabulary...</div>
+            </div>
+        </div>
+
+        <!-- Pronouns Section -->
+        <div id="pronouns" class="content-section">
+            <div class="filter-bar">
+                <button class="filter-btn active" onclick="filterPronouns('all')">All Pronouns</button>
+                <button class="filter-btn" onclick="filterPronouns('personal')">Personal</button>
+                <button class="filter-btn" onclick="filterPronouns('possessive')">Possessive</button>
+                <button class="filter-btn" onclick="filterPronouns('demonstrative')">Demonstrative</button>
+                <button class="filter-btn" onclick="filterPronouns('interrogative')">Interrogative</button>
+            </div>
+            <div class="grid" id="pronouns-grid">
+                <div class="loading">Loading pronouns...</div>
+            </div>
+        </div>
+
+        <!-- Grammar Section -->
+        <div id="grammar" class="content-section">
+            <div id="grammar-content">
+                <div class="loading">Loading grammar rules...</div>
+            </div>
+        </div>
+
+        <!-- Story Section -->
+        <div id="story" class="content-section">
+            <div class="card">
+                <h2 style="color: var(--primary-color); margin-bottom: 20px;">La Nona e l'Órca</h2>
+                <p style="margin-bottom: 15px; font-style: italic;">The Grandmother and the Orka</p>
+
+                <div style="margin: 20px 0;">
+                    <div class="example">
+                        <div class="example-ticinese">La nonna va a la murà.</div>
+                        <div class="example-english">The grandmother goes to the wall.</div>
+                    </div>
+
+                    <div class="example">
+                        <div class="example-ticinese">La murà l'è vècia e grìsa.</div>
+                        <div class="example-english">The wall is old and gray.</div>
+                    </div>
+
+                    <div class="example">
+                        <div class="example-ticinese">La nonna la porta un can e on gat.</div>
+                        <div class="example-english">The grandmother carries a dog and a cat.</div>
+                    </div>
+
+                    <div class="example">
+                        <div class="example-ticinese">El can el baila, el gat el söna.</div>
+                        <div class="example-english">The dog dances, the cat plays.</div>
+                    </div>
+
+                    <div class="example">
+                        <div class="example-ticinese">La nonna la dìs, "Bòn dì, amìs."</div>
+                        <div class="example-english">The grandmother says, "Good day, friends."</div>
+                    </div>
+
+                    <div class="example">
+                        <div class="example-ticinese">El can el ris, el gat el miorla.</div>
+                        <div class="example-english">The dog laughs, the cat meows.</div>
+                    </div>
+
+                    <div class="example">
+                        <div class="example-ticinese">La nonna la magna pan e formai.</div>
+                        <div class="example-english">The grandmother eats bread and cheese.</div>
+                    </div>
+
+                    <div class="example">
+                        <div class="example-ticinese">La nonna la beve vin e aqua.</div>
+                        <div class="example-english">The grandmother drinks wine and water.</div>
+                    </div>
+
+                    <div class="example">
+                        <div class="example-ticinese">La nonna la canta e la balla.</div>
+                        <div class="example-english">The grandmother sings and dances.</div>
+                    </div>
+
+                    <div class="example">
+                        <div class="example-ticinese">La nonna la dorm in sul curtiil.</div>
+                        <div class="example-english">The grandmother sleeps in the courtyard.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- STORIES SECTION (Enhanced with Heritage Narratives) -->
+        <div id="stories" class="content-section">
+            <h2>📖 Ticinese Stories & Heritage</h2>
+            <p class="section-description">Interactive stories combining comprehensible input methodology with cultural heritage preservation. Experience family narratives, emigration journeys, and traditional village life!</p>
+
+            <!-- Story Category Filters -->
+            <div class="story-filters">
+                <button class="filter-btn active" onclick="filterStories('all')" data-category="all">All Stories</button>
+                <button class="filter-btn" onclick="filterStories('beginner')" data-category="beginner">📚 Beginner (A1)</button>
+                <button class="filter-btn" onclick="filterStories('family_heritage')" data-category="family_heritage">🏔️ Family Heritage</button>
+                <button class="filter-btn" onclick="filterStories('emigration_journey')" data-category="emigration_journey">🚂 Emigration Journeys</button>
+            </div>
+
+            <div class="story-selector" id="story-list">
+                <!-- Stories will be loaded here dynamically -->
+            </div>
+
+            <div id="story-reader" style="display:none;">
+                <!-- Individual story will be displayed here -->
+            </div>
+        </div>
+
+        <!-- INTERACTIVE SCENARIOS SECTION -->
+        <div id="scenarios" class="content-section">
+            <h2>🎭 Interactive Cultural Scenarios</h2>
+            <p class="section-description">Immerse yourself in authentic Ticinese village life through interactive dialogues and cultural experiences. Practice real conversations while learning about traditional customs and daily life from 1850-1915.</p>
+
+            <!-- Scenario Category Filters -->
+            <div class="scenario-filters">
+                <button class="filter-btn active" onclick="filterScenarios('all')" data-category="all">All Scenarios</button>
+                <button class="filter-btn" onclick="filterScenarios('marketplace_interaction')" data-category="marketplace_interaction">🏪 Market</button>
+                <button class="filter-btn" onclick="filterScenarios('family_traditions')" data-category="family_traditions">👨‍👩‍👧‍👦 Family</button>
+                <button class="filter-btn" onclick="filterScenarios('community_events')" data-category="community_events">🎉 Community</button>
+                <button class="filter-btn" onclick="filterScenarios('traditional_crafts')" data-category="traditional_crafts">🔨 Crafts</button>
+                <button class="filter-btn" onclick="filterScenarios('alpine_traditions')" data-category="alpine_traditions">🏔️ Alpine</button>
+            </div>
+
+            <div class="scenario-selector" id="scenario-list">
+                <!-- Scenarios will be loaded here dynamically -->
+            </div>
+
+            <!-- Scenario Player -->
+            <div id="scenario-player" style="display:none;">
+                <div class="scenario-interface">
+                    <div class="scenario-header">
+                        <div class="scenario-title" id="current-scenario-title"></div>
+                        <div class="scenario-meta" id="current-scenario-meta"></div>
+                        <button class="close-scenario-btn" onclick="closeScenario()">✕ Close</button>
+                    </div>
+
+                    <div class="scenario-setting" id="scenario-setting">
+                        <!-- Setting description will be displayed here -->
+                    </div>
+
+                    <div class="dialogue-container" id="dialogue-container">
+                        <!-- Dialogue will be displayed here -->
+                    </div>
+
+                    <div class="response-choices" id="response-choices">
+                        <!-- Response choices will be displayed here -->
+                    </div>
+
+                    <div class="vocabulary-learned" id="vocabulary-learned" style="display:none;">
+                        <h4>📚 Vocabulary Learned</h4>
+                        <div class="vocab-list" id="vocab-list"></div>
+                    </div>
+
+                    <div class="cultural-notes" id="cultural-notes" style="display:none;">
+                        <h4>🏛️ Cultural Context</h4>
+                        <div class="cultural-content" id="cultural-content"></div>
+                    </div>
+
+                    <div class="scenario-progress" id="scenario-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+                        </div>
+                        <div class="progress-text" id="progress-text">Starting scenario...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TRADITIONAL RECIPES SECTION -->
+        <div id="recipes" class="content-section">
+            <h2>👩‍🍳 Traditional Ticinese Recipes</h2>
+            <p class="section-description">Learn Ticinese through authentic family recipes passed down through generations. Master cooking vocabulary while experiencing the cultural heritage of alpine cuisine from 1850-1915!</p>
+
+            <!-- Recipe Category Filters -->
+            <div class="recipe-filters">
+                <button class="filter-btn active" onclick="filterRecipes('all')" data-category="all">All Recipes</button>
+                <button class="filter-btn" onclick="filterRecipes('everyday_dishes')" data-category="everyday_dishes">🍽️ Everyday</button>
+                <button class="filter-btn" onclick="filterRecipes('festival_foods')" data-category="festival_foods">🎉 Festival</button>
+                <button class="filter-btn" onclick="filterRecipes('preservation_techniques')" data-category="preservation_techniques">🏺 Preservation</button>
+            </div>
+
+            <div class="recipe-selector" id="recipe-list">
+                <!-- Recipes will be loaded here dynamically -->
+            </div>
+
+            <!-- Recipe Viewer -->
+            <div id="recipe-viewer" style="display:none;">
+                <div class="recipe-interface">
+                    <div class="recipe-header">
+                        <div class="recipe-main-info">
+                            <div class="recipe-title" id="current-recipe-title"></div>
+                            <div class="recipe-title-english" id="current-recipe-title-english"></div>
+                            <div class="recipe-meta" id="current-recipe-meta"></div>
+                        </div>
+                        <button class="close-recipe-btn" onclick="closeRecipe()">✕ Close Recipe</button>
+                    </div>
+
+                    <div class="recipe-cultural-context" id="recipe-cultural-context">
+                        <!-- Cultural significance will be displayed here -->
+                    </div>
+
+                    <div class="recipe-content-tabs">
+                        <button class="recipe-tab active" onclick="showRecipeTab('ingredients')">🛒 Ingredients</button>
+                        <button class="recipe-tab" onclick="showRecipeTab('instructions')">📋 Instructions</button>
+                        <button class="recipe-tab" onclick="showRecipeTab('story')">📚 Family Story</button>
+                        <button class="recipe-tab" onclick="showRecipeTab('vocabulary')">💬 Vocabulary</button>
+                    </div>
+
+                    <div class="recipe-tab-content">
+                        <div id="recipe-ingredients" class="tab-panel active">
+                            <!-- Ingredients will be displayed here -->
+                        </div>
+
+                        <div id="recipe-instructions" class="tab-panel">
+                            <!-- Instructions will be displayed here -->
+                        </div>
+
+                        <div id="recipe-story" class="tab-panel">
+                            <!-- Family story will be displayed here -->
+                        </div>
+
+                        <div id="recipe-vocabulary" class="tab-panel">
+                            <!-- Vocabulary learning will be displayed here -->
+                        </div>
+                    </div>
+
+                    <div class="recipe-comprehension" id="recipe-comprehension">
+                        <h4>🤔 Understanding Questions</h4>
+                        <div class="comprehension-questions" id="comprehension-questions">
+                            <!-- Questions will be displayed here -->
+                        </div>
+                    </div>
+
+                    <div class="recipe-progress" id="recipe-progress">
+                        <h4>📚 Your Learning Progress</h4>
+                        <div class="vocabulary-learned-count" id="vocab-learned-count">Vocabulary learned: 0 words</div>
+                        <div class="cultural-insights" id="cultural-insights">Cultural insights gained: 0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- HISTORY & CULTURE SECTION -->
+        <div id="history" class="content-section">
+            <h2>🏛️ Language History & Cultural Facts</h2>
+            <p class="section-description">Discover the rich history and cultural context of the Ticinese dialect from 1000 CE to present.</p>
+
+            <!-- Timeline -->
+            <div class="history-section">
+                <h3>📅 Historical Timeline</h3>
+                <div id="timeline-container" class="timeline">
+                    <!-- Timeline will be loaded here dynamically -->
+                </div>
+            </div>
+
+            <!-- Cultural Facts -->
+            <div class="history-section">
+                <h3>🎭 Cultural Facts & Traditions</h3>
+                <div id="cultural-facts-grid" class="cultural-grid">
+                    <!-- Cultural facts will be loaded here dynamically -->
+                </div>
+            </div>
+
+            <!-- Linguistic Features -->
+            <div class="history-section">
+                <h3>🔤 Unique Linguistic Features</h3>
+                <div id="linguistic-features" class="features-container">
+                    <!-- Linguistic features will be loaded here dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>Ticinese Language Database</strong> - Preserving Swiss-Italian Heritage</p>
+        <p style="margin-top: 10px;">Created with Multi-Agent Claude + Perplexity Pro Research | Version 1.0 - November 2025</p>
+    </footer>
+
+    <script>
+        let vocabularyData = [];
+        let pronounsData = [];
+        let grammarData = [];
+        let storiesData = [];
+        let scenariosData = [];
+        let recipesData = [];
+        let historyCultureData = {};
+        let currentStory = null;
+        let currentVocabFilter = 'all';
+        let currentScenario = null;
+        let currentScenarioFilter = 'all';
+        let currentDialogueNode = null;
+        let scenarioVocabLearned = [];
+        let scenarioProgress = 0;
+        let currentRecipe = null;
+        let currentRecipeFilter = 'all';
+        let currentRecipeTab = 'ingredients';
+        let recipeVocabLearned = [];
+        let culturalInsightsGained = 0;
+        let currentPronounFilter = 'all';
+
+        // Load all database files
+        async function loadDatabases() {
+            try {
+                // Load vocabulary (expanded version with 1,269 words)
+                const vocabResponse = await fetch('database/vocabulary_expanded.json');
+                const vocabJson = await vocabResponse.json();
+                vocabularyData = vocabJson.vocabulary;
+
+                // Load pronouns
+                const pronounsResponse = await fetch('database/pronouns.json');
+                const pronounsJson = await pronounsResponse.json();
+                pronounsData = pronounsJson.pronouns;
+
+                // Load grammar
+                const grammarResponse = await fetch('database/grammar_rules.json');
+                const grammarJson = await grammarResponse.json();
+                grammarData = grammarJson.grammar_rules;
+
+                // Load stories
+                const storiesResponse = await fetch('database/stories.json');
+                const storiesJson = await storiesResponse.json();
+                storiesData = storiesJson.stories;
+
+                // Load scenarios
+                const scenariosResponse = await fetch('database/scenarios.json');
+                const scenariosJson = await scenariosResponse.json();
+                scenariosData = scenariosJson.scenarios;
+
+                // Load recipes
+                const recipesResponse = await fetch('database/recipes.json');
+                const recipesJson = await recipesResponse.json();
+                recipesData = recipesJson.recipes;
+
+                // Load history & culture
+                const historyResponse = await fetch('database/history_culture.json');
+                historyCultureData = await historyResponse.json();
+
+                // Display data
+                displayVocabulary();
+                displayPronouns();
+                displayGrammar();
+                displayStoryList();
+                displayScenarioList();
+                displayRecipeList();
+                displayHistoryCulture();
+
+                // Update stats
+                document.getElementById('vocab-count').textContent = vocabularyData.length;
+            } catch (error) {
+                console.error('Error loading databases:', error);
+                document.getElementById('vocabulary-grid').innerHTML =
+                    '<div class="no-results">Error loading database files. Please ensure all JSON files are in the database folder.</div>';
+            }
+        }
+
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Remove active class from all nav buttons
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show selected section
+            document.getElementById(sectionId).classList.add('active');
+
+            // Add active class to clicked button
+            event.target.classList.add('active');
+
+            // Initialize section-specific data if needed
+            if (sectionId === 'scenarios') {
+                displayScenarioList();
+            } else if (sectionId === 'recipes') {
+                displayRecipeList();
+            }
+        }
+
+        function displayVocabulary() {
+            const grid = document.getElementById('vocabulary-grid');
+
+            let filteredData = vocabularyData;
+            if (currentVocabFilter !== 'all') {
+                filteredData = vocabularyData.filter(word => word.category === currentVocabFilter);
+            }
+
+            // Apply search filter
+            const searchTerm = document.getElementById('search-input').value.toLowerCase();
+            if (searchTerm) {
+                filteredData = filteredData.filter(word =>
+                    word.ticinese.toLowerCase().includes(searchTerm) ||
+                    word.english.toLowerCase().includes(searchTerm) ||
+                    word.italian_standard.toLowerCase().includes(searchTerm)
+                );
+            }
+
+            if (filteredData.length === 0) {
+                grid.innerHTML = '<div class="no-results">No words found matching your criteria.</div>';
+                return;
+            }
+
+            grid.innerHTML = filteredData.map(word => `
+                <div class="card">
+                    <div class="card-header">
+                        <div class="word-ticinese" data-word-id="${word.word_id}">${word.ticinese}</div>
+                        <div class="word-english">${word.english}</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="pronunciation">
+                            <strong>Pronunciation:</strong> ${word.pronunciation_simple}<br>
+                            <strong>IPA:</strong> <span class="ipa">/${word.pronunciation_ipa}/</span>
+                        </div>
+
+                        <div class="field">
+                            <span class="field-label">Italian:</span>
+                            <span class="field-value">${word.italian_standard}</span>
+                        </div>
+
+                        <div class="field">
+                            <span class="field-label">Part of Speech:</span>
+                            <span class="tag">${word.part_of_speech}</span>
+                            ${word.gender !== 'n/a' ? `<span class="tag">${word.gender}</span>` : ''}
+                        </div>
+
+                        ${word.example_sentence ? `
+                            <div class="example">
+                                <div class="example-ticinese">${word.example_sentence}</div>
+                                <div class="example-english">${word.example_translation}</div>
+                            </div>
+                        ` : ''}
+
+                        ${word.etymology_latin ? `
+                            <div class="etymology">
+                                <strong>Etymology:</strong> From Latin <em>${word.etymology_latin}</em><br>
+                                ${word.etymology_notes}
+                            </div>
+                        ` : ''}
+
+                        ${word.regional_variants && word.regional_variants.length > 0 ? `
+                            <div class="field">
+                                <span class="field-label">Variants:</span>
+                                ${word.regional_variants.join(', ')}
+                            </div>
+                        ` : ''}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function displayPronouns() {
+            const grid = document.getElementById('pronouns-grid');
+
+            let filteredData = pronounsData;
+            if (currentPronounFilter !== 'all') {
+                filteredData = pronounsData.filter(p => p.type === currentPronounFilter);
+            }
+
+            // Apply search filter
+            const searchTerm = document.getElementById('search-input').value.toLowerCase();
+            if (searchTerm) {
+                filteredData = filteredData.filter(p =>
+                    p.form.toLowerCase().includes(searchTerm) ||
+                    p.english_equivalent.toLowerCase().includes(searchTerm)
+                );
+            }
+
+            if (filteredData.length === 0) {
+                grid.innerHTML = '<div class="no-results">No pronouns found matching your criteria.</div>';
+                return;
+            }
+
+            grid.innerHTML = filteredData.map(pronoun => `
+                <div class="card">
+                    <div class="card-header">
+                        <div class="word-ticinese">${pronoun.form}</div>
+                        <div class="word-english">${pronoun.english_equivalent}</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="pronunciation">
+                            <strong>IPA:</strong> <span class="ipa">/${pronoun.pronunciation_ipa}/</span>
+                        </div>
+
+                        <div class="field">
+                            <span class="tag">${pronoun.type}</span>
+                            ${pronoun.subtype ? `<span class="tag">${pronoun.subtype}</span>` : ''}
+                            ${pronoun.person !== 'all' && pronoun.person !== 'n/a' ? `<span class="tag">${pronoun.person} person</span>` : ''}
+                            ${pronoun.number !== 'both' ? `<span class="tag">${pronoun.number}</span>` : ''}
+                        </div>
+
+                        <div class="field">
+                            <span class="field-label">Usage:</span>
+                            <span class="field-value">${pronoun.usage_notes}</span>
+                        </div>
+
+                        ${pronoun.examples && pronoun.examples.length > 0 ? `
+                            <div style="margin-top: 15px;">
+                                <strong>Examples:</strong>
+                                ${pronoun.examples.map(ex => `
+                                    <div class="example">
+                                        <div class="example-ticinese">${ex}</div>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        ` : ''}
+
+                        ${pronoun.weak_clitic_required ? `
+                            <div class="field" style="margin-top: 10px;">
+                                <span class="field-label">Weak Clitic:</span>
+                                <span class="field-value">${pronoun.weak_clitic_form} (required)</span>
+                            </div>
+                        ` : ''}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function displayGrammar() {
+            const container = document.getElementById('grammar-content');
+
+            let filteredData = grammarData;
+
+            // Apply search filter
+            const searchTerm = document.getElementById('search-input').value.toLowerCase();
+            if (searchTerm) {
+                filteredData = filteredData.filter(rule =>
+                    rule.rule_name.toLowerCase().includes(searchTerm) ||
+                    rule.description.toLowerCase().includes(searchTerm) ||
+                    rule.category.toLowerCase().includes(searchTerm)
+                );
+            }
+
+            if (filteredData.length === 0) {
+                container.innerHTML = '<div class="no-results">No grammar rules found matching your search.</div>';
+                return;
+            }
+
+            container.innerHTML = filteredData.map(rule => `
+                <div class="rule-card">
+                    <div class="rule-header">${rule.rule_name}</div>
+                    <div>
+                        <span class="tag">${rule.category}</span>
+                        <span class="tag">${rule.subcategory}</span>
+                    </div>
+                    <div class="rule-description">${rule.description}</div>
+
+                    ${rule.examples_ticinese && rule.examples_ticinese.length > 0 ? `
+                        <div class="examples-list">
+                            <strong>Examples:</strong>
+                            ${rule.examples_ticinese.map((ex, i) => `
+                                <div class="example">
+                                    <div class="example-ticinese">${ex}</div>
+                                    <div class="example-english">${rule.examples_english[i]}</div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    ` : ''}
+
+                    ${rule.exceptions ? `
+                        <div class="field" style="margin-top: 15px;">
+                            <span class="field-label">Exceptions:</span>
+                            <span class="field-value">${rule.exceptions}</span>
+                        </div>
+                    ` : ''}
+
+                    ${rule.comparison_italian ? `
+                        <div class="etymology" style="margin-top: 15px;">
+                            <strong>Compared to Italian:</strong> ${rule.comparison_italian}
+                        </div>
+                    ` : ''}
+                </div>
+            `).join('');
+        }
+
+        function filterVocab(category) {
+            currentVocabFilter = category;
+
+            // Update active button
+            document.querySelectorAll('#vocabulary .filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            displayVocabulary();
+        }
+
+        function filterPronouns(type) {
+            currentPronounFilter = type;
+
+            // Update active button
+            document.querySelectorAll('#pronouns .filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            displayPronouns();
+        }
+
+        // Story filtering
+        let currentStoryFilter = 'all';
+
+        function filterStories(category) {
+            currentStoryFilter = category;
+
+            // Update filter button states
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector(`[data-category="${category}"]`).classList.add('active');
+
+            // Re-display stories with filter
+            displayStoryList();
+        }
+
+        // Display story list with enhanced heritage story support
+        function displayStoryList() {
+            const storyList = document.getElementById('story-list');
+
+            // Filter stories based on current filter
+            let filteredStories = storiesData;
+            if (currentStoryFilter !== 'all') {
+                if (currentStoryFilter === 'beginner') {
+                    filteredStories = storiesData.filter(story =>
+                        !story.category || story.level === 'A1'
+                    );
+                } else {
+                    filteredStories = storiesData.filter(story =>
+                        story.category === currentStoryFilter
+                    );
+                }
+            }
+
+            storyList.innerHTML = filteredStories.map(story => {
+                const isHeritageStory = story.category === 'family_heritage' || story.category === 'emigration_journey';
+
+                return `
+                    <div class="story-card ${isHeritageStory ? 'heritage-story' : ''}" onclick="openStory('${story.story_id}')">
+                        <h3>${story.title}</h3>
+                        <p class="story-title-english">${story.title_english}</p>
+
+                        <div class="story-meta">
+                            <span class="level-badge">${story.level}</span>
+                            <span class="word-count">${story.word_count} words</span>
+                            ${isHeritageStory ? `<span class="heritage-badge">${story.category.replace('_', ' ')}</span>` : ''}
+                        </div>
+
+                        ${isHeritageStory ? `
+                            <div class="heritage-info">
+                                <div class="cultural-period">📅 ${story.cultural_period}</div>
+                                <div class="location">📍 ${story.location}</div>
+                                ${story.characters ? `<div class="characters">👥 ${story.characters.join(', ')}</div>` : ''}
+                            </div>
+                        ` : ''}
+
+                        <p class="story-preview">${story.text.substring(0, 100)}...</p>
+
+                        <div class="story-features">
+                            <span>📚 ${story.vocabulary_focus.length} vocab words</span>
+                            <span>❓ ${story.comprehension_questions.length} questions</span>
+                            ${story.continuation_story ? '<span>📖 Part of series</span>' : ''}
+                        </div>
+
+                        ${story.cultural_notes ? `
+                            <div class="cultural-preview">
+                                <span class="cultural-icon">🏔️</span>
+                                <span class="cultural-text">${story.cultural_notes.substring(0, 80)}...</span>
+                            </div>
+                        ` : ''}
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Open individual story with interactive vocabulary
+        function openStory(storyId) {
+            const story = storiesData.find(s => s.story_id === storyId);
+            if (!story) return;
+
+            currentStory = story;
+
+            // Make text interactive
+            let interactiveText = story.text;
+            story.vocabulary_focus.forEach(word => {
+                const regex = new RegExp(`\\b${word.ticinese}\\b`, 'gi');
+                interactiveText = interactiveText.replace(regex,
+                    `<span class="vocab-word" data-english="${word.english}">${word.ticinese}</span>`
+                );
+            });
+
+            const reader = document.getElementById('story-reader');
+            reader.innerHTML = `
+                <button class="back-to-stories" onclick="closeStory()">← Back to Stories</button>
+
+                <h2>${story.title}</h2>
+                <p style="font-style:italic; color:#666; font-size:1.2em;">${story.title_english}</p>
+
+                <div style="margin:20px 0;">
+                    <span class="level-badge">${story.level}</span>
+                    <span style="margin-left:15px; color:#666;">${story.word_count} words | ${story.vocabulary_focus.length} vocabulary items</span>
+                </div>
+
+                <div class="story-text">${interactiveText}</div>
+
+                <div style="background:#f0f8f0; padding:20px; border-radius:8px; margin:20px 0;">
+                    <h4>📖 Translation</h4>
+                    <p style="line-height:1.8; white-space:pre-wrap;">${story.translation}</p>
+                </div>
+
+                <div class="vocab-list">
+                    <h4>📚 Vocabulary Focus (Hover over highlighted words in the story above!)</h4>
+                    <div class="vocab-grid">
+                        ${story.vocabulary_focus.map(v => `
+                            <div class="vocab-item">
+                                <strong>${v.ticinese}</strong> - ${v.english}
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+
+                <div style="background:#fff9e6; padding:20px; border-radius:8px; margin:20px 0;">
+                    <h4>🎭 Cultural Note</h4>
+                    <p style="line-height:1.8;">${story.cultural_notes}</p>
+                </div>
+
+                <div style="background:#f0f0f0; padding:20px; border-radius:8px;">
+                    <h4>❓ Comprehension Questions</h4>
+                    <ol style="line-height:2;">
+                        ${story.comprehension_questions.map(q => `<li>${q}</li>`).join('')}
+                    </ol>
+                </div>
+            `;
+
+            document.getElementById('story-list').style.display = 'none';
+            reader.style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        function closeStory() {
+            document.getElementById('story-list').style.display = 'grid';
+            document.getElementById('story-reader').style.display = 'none';
+        }
+
+        // ========================================
+        // INTERACTIVE SCENARIOS FUNCTIONALITY
+        // ========================================
+
+        // Filter scenarios by category
+        function filterScenarios(category) {
+            currentScenarioFilter = category;
+
+            // Update active filter button
+            document.querySelectorAll('.scenario-filters .filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector(`[data-category="${category}"]`).classList.add('active');
+
+            // Re-display scenarios with filter
+            displayScenarioList();
+        }
+
+        // Display scenario list with filtering support
+        function displayScenarioList() {
+            const scenarioList = document.getElementById('scenario-list');
+
+            // Filter scenarios based on current filter
+            let filteredScenarios = scenariosData;
+            if (currentScenarioFilter !== 'all') {
+                filteredScenarios = scenariosData.filter(scenario =>
+                    scenario.category === currentScenarioFilter
+                );
+            }
+
+            scenarioList.innerHTML = filteredScenarios.map(scenario => {
+                return `
+                    <div class="scenario-card" onclick="openScenario('${scenario.scenario_id}')">
+                        <div class="scenario-title">${scenario.title}</div>
+                        <div class="scenario-title-english">${scenario.title_english}</div>
+
+                        <div class="scenario-meta">
+                            <span class="difficulty-badge">${scenario.difficulty_level}</span>
+                            <span class="duration-badge">${scenario.estimated_duration}</span>
+                            <span class="category-badge">${scenario.category.replace(/_/g, ' ')}</span>
+                        </div>
+
+                        <div class="scenario-setting-info">
+                            <h4>🎭 Setting</h4>
+                            <div class="scenario-setting-detail">📍 ${scenario.setting.location}</div>
+                            <div class="scenario-setting-detail">🕐 ${scenario.setting.time}</div>
+                            <div class="scenario-setting-detail">🌸 ${scenario.setting.season}</div>
+                        </div>
+
+                        <div class="scenario-preview">
+                            <p>${scenario.setting.description.substring(0, 120)}...</p>
+                        </div>
+
+                        <div class="scenario-features">
+                            <span>👥 ${scenario.characters.length} characters</span>
+                            <span>📚 ${scenario.vocabulary_focus.length} vocab areas</span>
+                            <span>🏛️ Cultural immersion</span>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Open individual scenario with interactive dialogue
+        function openScenario(scenarioId) {
+            const scenario = scenariosData.find(s => s.scenario_id === scenarioId);
+            if (!scenario) return;
+
+            currentScenario = scenario;
+            currentDialogueNode = 'opening';
+            scenarioVocabLearned = [];
+            scenarioProgress = 0;
+
+            // Show scenario player and hide scenario list
+            document.getElementById('scenario-list').style.display = 'none';
+            document.getElementById('scenario-player').style.display = 'block';
+
+            // Setup scenario header
+            document.getElementById('current-scenario-title').textContent = scenario.title;
+            document.getElementById('current-scenario-meta').innerHTML = `
+                <span class="difficulty-badge">${scenario.difficulty_level}</span>
+                <span class="duration-badge">${scenario.estimated_duration}</span>
+                <span class="category-badge">${scenario.category.replace(/_/g, ' ')}</span>
+            `;
+
+            // Setup scenario setting
+            document.getElementById('scenario-setting').innerHTML = `
+                <strong>📍 ${scenario.setting.location}</strong><br>
+                <strong>🕐 ${scenario.setting.time}, ${scenario.setting.season}</strong><br><br>
+                ${scenario.setting.description}
+            `;
+
+            // Start the scenario at opening dialogue
+            displayDialogueNode('opening');
+
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+
+        // Display current dialogue node
+        function displayDialogueNode(nodeId) {
+            const scenario = currentScenario;
+            const node = scenario.dialogue_tree[nodeId];
+
+            if (!node) {
+                console.log('Dialogue node not found:', nodeId);
+                return;
+            }
+
+            // Find speaker details
+            const speaker = scenario.characters.find(char =>
+                char.name === node.speaker ||
+                char.name.includes(node.speaker.split(' ')[0])
+            );
+
+            // Display dialogue message
+            const dialogueContainer = document.getElementById('dialogue-container');
+
+            const dialogueMessage = document.createElement('div');
+            dialogueMessage.className = 'dialogue-message';
+            dialogueMessage.innerHTML = `
+                <div class="dialogue-speaker">${node.speaker}</div>
+                <div class="dialogue-text">${node.text}</div>
+                <div class="dialogue-translation">${node.translation}</div>
+            `;
+
+            // Clear previous dialogue and add new
+            dialogueContainer.innerHTML = '';
+            dialogueContainer.appendChild(dialogueMessage);
+
+            // Handle vocabulary learning if present
+            if (node.vocabulary_learned) {
+                scenarioVocabLearned.push(...node.vocabulary_learned);
+                updateVocabularyDisplay();
+            }
+
+            // Handle cultural learning if present
+            if (node.cultural_note) {
+                updateCulturalNotes(node.cultural_note);
+            }
+
+            // Display response choices or completion
+            if (node.responses && node.responses.length > 0) {
+                displayResponseChoices(node.responses);
+                updateProgress(50); // Mid-scenario
+            } else if (node.completion_note) {
+                // Scenario completed
+                displayCompletion(node.completion_note);
+                updateProgress(100);
+            } else {
+                // Continue with next node if no responses
+                updateProgress(80);
+            }
+        }
+
+        // Display response choices for user interaction
+        function displayResponseChoices(responses) {
+            const choicesContainer = document.getElementById('response-choices');
+
+            choicesContainer.innerHTML = responses.map((response, index) => `
+                <button class="response-choice" onclick="selectResponse('${response.next}')">
+                    <div>${response.choice}</div>
+                    <div class="response-choice-translation">${response.translation}</div>
+                </button>
+            `).join('');
+        }
+
+        // Handle user response selection
+        function selectResponse(nextNodeId) {
+            currentDialogueNode = nextNodeId;
+
+            if (nextNodeId) {
+                // Continue to next dialogue node
+                setTimeout(() => {
+                    displayDialogueNode(nextNodeId);
+                }, 300);
+            } else {
+                // Invalid next node, should not happen
+                console.log('Invalid next node:', nextNodeId);
+            }
+        }
+
+        // Display scenario completion
+        function displayCompletion(completionNote) {
+            const choicesContainer = document.getElementById('response-choices');
+
+            choicesContainer.innerHTML = `
+                <div class="completion-message">
+                    <h3>🎉 Scenario Complete!</h3>
+                    <p>${completionNote}</p>
+                    <button class="response-choice" onclick="closeScenario()">
+                        Return to Scenarios
+                    </button>
+                </div>
+            `;
+        }
+
+        // Update vocabulary learned display
+        function updateVocabularyDisplay() {
+            const vocabContainer = document.getElementById('vocabulary-learned');
+            const vocabList = document.getElementById('vocab-list');
+
+            if (scenarioVocabLearned.length > 0) {
+                vocabContainer.style.display = 'block';
+
+                // Remove duplicates
+                const uniqueVocab = [...new Set(scenarioVocabLearned)];
+
+                vocabList.innerHTML = uniqueVocab.map(word =>
+                    `<span class="vocab-item">${word}</span>`
+                ).join('');
+            }
+        }
+
+        // Update cultural notes display
+        function updateCulturalNotes(note) {
+            const culturalContainer = document.getElementById('cultural-notes');
+            const culturalContent = document.getElementById('cultural-content');
+
+            culturalContainer.style.display = 'block';
+            culturalContent.innerHTML = note;
+        }
+
+        // Update scenario progress
+        function updateProgress(percentage) {
+            scenarioProgress = percentage;
+
+            const progressFill = document.getElementById('progress-fill');
+            const progressText = document.getElementById('progress-text');
+
+            progressFill.style.width = percentage + '%';
+
+            if (percentage === 100) {
+                progressText.textContent = 'Scenario completed!';
+            } else if (percentage >= 80) {
+                progressText.textContent = 'Almost finished...';
+            } else if (percentage >= 50) {
+                progressText.textContent = 'Making great progress!';
+            } else {
+                progressText.textContent = 'Getting started...';
+            }
+        }
+
+        // Close scenario and return to list
+        function closeScenario() {
+            document.getElementById('scenario-list').style.display = 'grid';
+            document.getElementById('scenario-player').style.display = 'none';
+
+            // Reset scenario state
+            currentScenario = null;
+            currentDialogueNode = null;
+            scenarioVocabLearned = [];
+            scenarioProgress = 0;
+
+            // Hide learning panels
+            document.getElementById('vocabulary-learned').style.display = 'none';
+            document.getElementById('cultural-notes').style.display = 'none';
+        }
+
+        // ========================================
+        // TRADITIONAL RECIPES FUNCTIONALITY
+        // ========================================
+
+        // Filter recipes by category
+        function filterRecipes(category) {
+            currentRecipeFilter = category;
+
+            // Update active filter button
+            document.querySelectorAll('.recipe-filters .filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector(`[data-category="${category}"]`).classList.add('active');
+
+            // Re-display recipes with filter
+            displayRecipeList();
+        }
+
+        // Display recipe list with filtering support
+        function displayRecipeList() {
+            const recipeList = document.getElementById('recipe-list');
+
+            // Filter recipes based on current filter
+            let filteredRecipes = recipesData;
+            if (currentRecipeFilter !== 'all') {
+                filteredRecipes = recipesData.filter(recipe =>
+                    recipe.category === currentRecipeFilter
+                );
+            }
+
+            recipeList.innerHTML = filteredRecipes.map(recipe => {
+                return `
+                    <div class="recipe-card" onclick="openRecipe('${recipe.recipe_id}')">
+                        <div class="recipe-name">${recipe.ticinese_name}</div>
+                        <div class="recipe-name-english">${recipe.english_name}</div>
+
+                        <div class="recipe-card-meta">
+                            <span class="recipe-difficulty-badge">${recipe.difficulty_level}</span>
+                            <span class="recipe-category-badge">${recipe.category.replace(/_/g, ' ')}</span>
+                            <span class="recipe-time-badge">${recipe.preparation_time} + ${recipe.cooking_time}</span>
+                        </div>
+
+                        <div class="recipe-cultural-snippet">
+                            <strong>📍 ${recipe.region}</strong> • <strong>⏰ ${recipe.historical_period}</strong><br>
+                            ${recipe.cultural_significance.substring(0, 80)}...
+                        </div>
+
+                        <div class="recipe-features">
+                            <span>🛒 ${recipe.ingredients.length} ingredients</span>
+                            <span>📋 ${recipe.instructions.length} steps</span>
+                            <span>🏛️ Cultural heritage</span>
+                            <span>📚 ${Object.keys(recipe.vocabulary_learning).length} vocab themes</span>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Open individual recipe with interactive learning
+        function openRecipe(recipeId) {
+            const recipe = recipesData.find(r => r.recipe_id === recipeId);
+            if (!recipe) return;
+
+            currentRecipe = recipe;
+            currentRecipeTab = 'ingredients';
+            recipeVocabLearned = [];
+            culturalInsightsGained = 0;
+
+            // Show recipe viewer and hide recipe list
+            document.getElementById('recipe-list').style.display = 'none';
+            document.getElementById('recipe-viewer').style.display = 'block';
+
+            // Setup recipe header
+            document.getElementById('current-recipe-title').textContent = recipe.ticinese_name;
+            document.getElementById('current-recipe-title-english').textContent = recipe.english_name;
+            document.getElementById('current-recipe-meta').innerHTML = `
+                <span class="recipe-difficulty-badge">${recipe.difficulty_level}</span>
+                <span class="recipe-category-badge">${recipe.category.replace(/_/g, ' ')}</span>
+                <span class="recipe-time-badge">Prep: ${recipe.preparation_time}</span>
+                <span class="recipe-time-badge">Cook: ${recipe.cooking_time}</span>
+                <span class="recipe-time-badge">Serves: ${recipe.serves}</span>
+            `;
+
+            // Setup cultural context
+            document.getElementById('recipe-cultural-context').innerHTML = `
+                <strong>🏛️ Cultural Significance:</strong> ${recipe.cultural_significance}<br>
+                <strong>📍 Region:</strong> ${recipe.region} • <strong>⏰ Period:</strong> ${recipe.historical_period}
+            `;
+
+            // Load initial tab (ingredients)
+            showRecipeTab('ingredients');
+
+            // Setup comprehension questions
+            setupComprehensionQuestions();
+
+            // Update progress tracking
+            updateRecipeProgress();
+
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+
+        // Show specific recipe tab
+        function showRecipeTab(tabName) {
+            currentRecipeTab = tabName;
+
+            // Update tab buttons
+            document.querySelectorAll('.recipe-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelector(`[onclick="showRecipeTab('${tabName}')"]`).classList.add('active');
+
+            // Update tab content
+            document.querySelectorAll('.tab-panel').forEach(panel => {
+                panel.classList.remove('active');
+            });
+            document.getElementById(`recipe-${tabName}`).classList.add('active');
+
+            // Load tab content based on current recipe
+            loadRecipeTabContent(tabName);
+        }
+
+        // Load content for specific recipe tab
+        function loadRecipeTabContent(tabName) {
+            const recipe = currentRecipe;
+
+            switch (tabName) {
+                case 'ingredients':
+                    loadIngredientsTab(recipe);
+                    break;
+                case 'instructions':
+                    loadInstructionsTab(recipe);
+                    break;
+                case 'story':
+                    loadStoryTab(recipe);
+                    break;
+                case 'vocabulary':
+                    loadVocabularyTab(recipe);
+                    break;
+            }
+        }
+
+        // Load ingredients tab
+        function loadIngredientsTab(recipe) {
+            const container = document.getElementById('recipe-ingredients');
+
+            let kitchenToolsHTML = '';
+            if (recipe.kitchen_tools || recipe.preservation_tools) {
+                const tools = recipe.kitchen_tools || recipe.preservation_tools;
+                kitchenToolsHTML = `
+                    <h4 style="color: var(--primary-color); margin: var(--space-6) 0 var(--space-4) 0;">🔧 Kitchen Tools</h4>
+                    <div class="ingredient-list">
+                        ${tools.map(tool => `
+                            <div class="ingredient-item">
+                                <div class="ingredient-name">${tool.ticinese}</div>
+                                <div class="ingredient-english">${tool.english}</div>
+                                <div class="ingredient-cultural-note">${tool.cultural_note}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            }
+
+            container.innerHTML = `
+                <h4 style="color: var(--primary-color); margin-bottom: var(--space-4);">🛒 Ingredients</h4>
+                <div class="ingredient-list">
+                    ${recipe.ingredients.map(ingredient => `
+                        <div class="ingredient-item" onclick="learnVocabulary('${ingredient.ticinese}')">
+                            <div class="ingredient-name">${ingredient.ticinese}</div>
+                            <div class="ingredient-english">${ingredient.english}</div>
+                            <div class="ingredient-amount">${ingredient.amount}</div>
+                            <div class="ingredient-cultural-note">${ingredient.cultural_note}</div>
+                        </div>
+                    `).join('')}
+                </div>
+                ${kitchenToolsHTML}
+            `;
+        }
+
+        // Load instructions tab
+        function loadInstructionsTab(recipe) {
+            const container = document.getElementById('recipe-instructions');
+
+            container.innerHTML = `
+                <h4 style="color: var(--primary-color); margin-bottom: var(--space-4);">📋 Cooking Instructions</h4>
+                <div class="instruction-list">
+                    ${recipe.instructions.map(instruction => `
+                        <div class="instruction-step">
+                            <div class="instruction-text">
+                                <div class="instruction-ticinese">${instruction.ticinese}</div>
+                                <div class="instruction-english">${instruction.english}</div>
+                                <div class="instruction-cultural-note">
+                                    <strong>🏛️ Cultural Note:</strong> ${instruction.cultural_note}
+                                </div>
+                                <div class="instruction-technique">
+                                    <strong>💡 Technique Tip:</strong> ${instruction.technique_tip}
+                                </div>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        // Load family story tab
+        function loadStoryTab(recipe) {
+            const container = document.getElementById('recipe-story');
+
+            container.innerHTML = `
+                <h4 style="color: var(--primary-color); margin-bottom: var(--space-4);">📚 Family Heritage Story</h4>
+                <div class="family-story-content">
+                    ${recipe.family_story}
+                </div>
+                <div style="margin-top: var(--space-6);">
+                    <h5 style="color: var(--primary-color); margin-bottom: var(--space-3);">🎯 Learning Objectives</h5>
+                    <ul style="list-style-type: none; padding: 0;">
+                        ${recipe.learning_objectives.map(objective => `
+                            <li style="margin-bottom: var(--space-2); padding-left: var(--space-4); position: relative;">
+                                <span style="position: absolute; left: 0;">✓</span>
+                                ${objective}
+                            </li>
+                        `).join('')}
+                    </ul>
+                </div>
+            `;
+        }
+
+        // Load vocabulary tab
+        function loadVocabularyTab(recipe) {
+            const container = document.getElementById('recipe-vocabulary');
+
+            container.innerHTML = `
+                <h4 style="color: var(--primary-color); margin-bottom: var(--space-4);">💬 Vocabulary Learning</h4>
+                <div class="vocabulary-section">
+                    ${Object.entries(recipe.vocabulary_learning).map(([category, words]) => `
+                        <div class="vocab-category">
+                            <h5>${category.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}</h5>
+                            <div class="vocab-words">
+                                ${words.map(word => `
+                                    <span class="vocab-word" onclick="learnVocabulary('${word}')">${word}</span>
+                                `).join('')}
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        // Setup comprehension questions
+        function setupComprehensionQuestions() {
+            const container = document.getElementById('comprehension-questions');
+            const recipe = currentRecipe;
+
+            container.innerHTML = recipe.comprehension_questions.map((question, index) => `
+                <div class="comprehension-question" onclick="revealAnswer(${index})">
+                    <div class="question-ticinese">${question.ticinese}</div>
+                    <div class="question-english">${question.english}</div>
+                    <div class="question-answer" id="answer-${index}">
+                        <strong>Answer:</strong> ${question.answer}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Reveal comprehension question answer
+        function revealAnswer(questionIndex) {
+            const answerElement = document.getElementById(`answer-${questionIndex}`);
+            answerElement.classList.add('revealed');
+
+            // Track cultural insight gained
+            culturalInsightsGained++;
+            updateRecipeProgress();
+        }
+
+        // Learn vocabulary word (track progress)
+        function learnVocabulary(word) {
+            if (!recipeVocabLearned.includes(word)) {
+                recipeVocabLearned.push(word);
+                updateRecipeProgress();
+
+                // Visual feedback
+                event.target.style.transform = 'scale(1.1)';
+                setTimeout(() => {
+                    event.target.style.transform = '';
+                }, 200);
+            }
+        }
+
+        // Update recipe learning progress
+        function updateRecipeProgress() {
+            document.getElementById('vocab-learned-count').textContent =
+                `Vocabulary learned: ${recipeVocabLearned.length} words`;
+            document.getElementById('cultural-insights').textContent =
+                `Cultural insights gained: ${culturalInsightsGained}`;
+        }
+
+        // Close recipe and return to list
+        function closeRecipe() {
+            document.getElementById('recipe-list').style.display = 'grid';
+            document.getElementById('recipe-viewer').style.display = 'none';
+
+            // Reset recipe state
+            currentRecipe = null;
+            currentRecipeTab = 'ingredients';
+            recipeVocabLearned = [];
+            culturalInsightsGained = 0;
+        }
+
+        // Display History & Culture
+        function displayHistoryCulture() {
+            // Timeline
+            const timeline = document.getElementById('timeline-container');
+            timeline.innerHTML = historyCultureData.timeline.map(period => `
+                <div class="timeline-item">
+                    <span class="timeline-period">${period.period}</span>
+                    <h4>${period.title}</h4>
+                    <p>${period.description}</p>
+                    <div class="timeline-significance">
+                        <strong>Significance:</strong> ${period.significance}
+                    </div>
+                </div>
+            `).join('');
+
+            // Cultural Facts
+            const culturalGrid = document.getElementById('cultural-facts-grid');
+            culturalGrid.innerHTML = historyCultureData.cultural_facts.map(fact => `
+                <div class="cultural-card">
+                    <span class="cultural-category">${fact.category}</span>
+                    <h4>${fact.title}</h4>
+                    <p>${fact.description}</p>
+                    ${fact.vocabulary ? `
+                        <div class="cultural-vocab">
+                            <strong>Vocabulary:</strong><br>
+                            ${fact.vocabulary.join(', ')}
+                        </div>
+                    ` : ''}
+                </div>
+            `).join('');
+
+            // Linguistic Features
+            const features = document.getElementById('linguistic-features');
+            features.innerHTML = historyCultureData.linguistic_features.map(feature => `
+                <div class="feature-card">
+                    <h4>${feature.feature}</h4>
+                    <p>${feature.description}</p>
+                    <div class="feature-example">
+                        <strong>Ticinese:</strong> ${feature.example_ticinese}<br>
+                        <strong>English:</strong> ${feature.example_english}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Search functionality
+        document.getElementById('search-input').addEventListener('input', () => {
+            displayVocabulary();
+            displayPronouns();
+            displayGrammar();
+        });
+
+        // Load databases on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            loadDatabases().then(() => {
+                initializeEnhancedLearning();
+                console.log('🎓 Enhanced learning system initialized successfully!');
+            });
+        });
+        // ========================================
+        // EDUCATIONAL ENHANCEMENT SYSTEM
+        // ========================================
+
+        /**
+         * Spaced Repetition Learning Engine
+         * Implements modified Leitner algorithm for vocabulary retention
+         */
+        class SpacedRepetitionEngine {
+            constructor() {
+                this.storageKey = 'ticinese_learning_progress';
+                this.userProgress = this.loadProgress();
+                this.reviewSchedule = new Map();
+                this.learningStats = this.loadStats();
+            }
+
+            loadProgress() {
+                try {
+                    return JSON.parse(localStorage.getItem(this.storageKey) || '{}');
+                } catch (error) {
+                    console.warn('Failed to load learning progress:', error);
+                    return {};
+                }
+            }
+
+            loadStats() {
+                try {
+                    return JSON.parse(localStorage.getItem('ticinese_stats') || '{"totalReviews": 0, "correctAnswers": 0, "streak": 0, "lastReviewDate": null}');
+                } catch (error) {
+                    return {"totalReviews": 0, "correctAnswers": 0, "streak": 0, "lastReviewDate": null};
+                }
+            }
+
+            scheduleReview(wordId, performance) {
+                // Modified Leitner intervals (in days)
+                const intervals = [1, 3, 7, 14, 30, 90, 180, 365];
+                const currentLevel = this.userProgress[wordId]?.level || 0;
+
+                // Adjust level based on performance (0-1 scale)
+                let nextLevel;
+                if (performance >= 0.8) {
+                    nextLevel = Math.min(currentLevel + 1, intervals.length - 1);
+                } else if (performance >= 0.6) {
+                    nextLevel = currentLevel; // Stay at same level
+                } else {
+                    nextLevel = Math.max(0, currentLevel - 1); // Drop one level
+                }
+
+                const intervalDays = intervals[nextLevel];
+                const nextReview = new Date();
+                nextReview.setDate(nextReview.getDate() + intervalDays);
+
+                this.userProgress[wordId] = {
+                    level: nextLevel,
+                    nextReview: nextReview.toISOString(),
+                    lastSeen: new Date().toISOString(),
+                    performance: performance,
+                    reviewCount: (this.userProgress[wordId]?.reviewCount || 0) + 1,
+                    averagePerformance: this.calculateAveragePerformance(wordId, performance)
+                };
+
+                this.updateStats(performance >= 0.7);
+                this.saveProgress();
+            }
+
+            calculateAveragePerformance(wordId, newPerformance) {
+                const existing = this.userProgress[wordId];
+                if (!existing) return newPerformance;
+
+                const reviewCount = existing.reviewCount || 1;
+                const currentAvg = existing.averagePerformance || newPerformance;
+                return (currentAvg * reviewCount + newPerformance) / (reviewCount + 1);
+            }
+
+            updateStats(isCorrect) {
+                this.learningStats.totalReviews++;
+                if (isCorrect) {
+                    this.learningStats.correctAnswers++;
+                    this.learningStats.streak++;
+                } else {
+                    this.learningStats.streak = 0;
+                }
+                this.learningStats.lastReviewDate = new Date().toISOString();
+                localStorage.setItem('ticinese_stats', JSON.stringify(this.learningStats));
+            }
+
+            getWordsForReview(limit = 20) {
+                const now = new Date();
+                const dueWords = [];
+
+                for (const [wordId, progress] of Object.entries(this.userProgress)) {
+                    const reviewDate = new Date(progress.nextReview);
+                    if (reviewDate <= now) {
+                        dueWords.push({
+                            wordId,
+                            ...progress,
+                            daysOverdue: Math.floor((now - reviewDate) / (1000 * 60 * 60 * 24))
+                        });
+                    }
+                }
+
+                // Sort by overdue days (most overdue first), then by level (easier first)
+                dueWords.sort((a, b) => {
+                    if (a.daysOverdue !== b.daysOverdue) {
+                        return b.daysOverdue - a.daysOverdue;
+                    }
+                    return a.level - b.level;
+                });
+
+                return dueWords.slice(0, limit);
+            }
+
+            getWordProgress(wordId) {
+                return this.userProgress[wordId] || null;
+            }
+
+            saveProgress() {
+                localStorage.setItem(this.storageKey, JSON.stringify(this.userProgress));
+            }
+
+            getOverallStats() {
+                const totalWords = Object.keys(this.userProgress).length;
+                const masteredWords = Object.values(this.userProgress).filter(p => p.level >= 5).length;
+                const accuracy = this.learningStats.totalReviews > 0
+                    ? (this.learningStats.correctAnswers / this.learningStats.totalReviews) * 100
+                    : 0;
+
+                return {
+                    totalStudied: totalWords,
+                    mastered: masteredWords,
+                    accuracy: accuracy.toFixed(1),
+                    streak: this.learningStats.streak,
+                    totalReviews: this.learningStats.totalReviews
+                };
+            }
+        }
+
+        /**
+         * Learning Path Engine
+         * Manages progressive skill-based learning sequences
+         */
+        class LearningPathEngine {
+            constructor() {
+                this.pathData = {
+                    heritage_beginner: {
+                        name: "Heritage Learner - Beginner",
+                        description: "Perfect for family members learning their ancestral language",
+                        modules: [
+                            { id: 'family_vocab', name: 'Family & Relationships', requiredWords: 50 },
+                            { id: 'basic_greetings', name: 'Greetings & Politeness', requiredWords: 30 },
+                            { id: 'home_life', name: 'Home & Daily Life', requiredWords: 80 },
+                            { id: 'cultural_stories', name: 'Cultural Stories', requiredWords: 100 }
+                        ],
+                        estimatedHours: 40
+                    },
+                    academic_study: {
+                        name: "Academic Study Track",
+                        description: "Comprehensive linguistic analysis for serious learners",
+                        modules: [
+                            { id: 'linguistic_features', name: 'Phonological Features', requiredWords: 100 },
+                            { id: 'grammar_patterns', name: 'Morphological Patterns', requiredWords: 150 },
+                            { id: 'historical_context', name: 'Historical Development', requiredWords: 200 },
+                            { id: 'comparative_analysis', name: 'Comparative Romance', requiredWords: 250 }
+                        ],
+                        estimatedHours: 80
+                    },
+                    cultural_immersion: {
+                        name: "Cultural Immersion",
+                        description: "Learn through cultural context and traditions",
+                        modules: [
+                            { id: 'alpine_life', name: 'Alpine Village Life', requiredWords: 75 },
+                            { id: 'emigrant_stories', name: 'Emigrant Experiences', requiredWords: 100 },
+                            { id: 'traditions', name: 'Festivals & Traditions', requiredWords: 60 },
+                            { id: 'recipes_crafts', name: 'Recipes & Traditional Crafts', requiredWords: 90 }
+                        ],
+                        estimatedHours: 60
+                    }
+                };
+                this.userPath = localStorage.getItem('ticinese_learning_path') || null;
+                this.completedModules = JSON.parse(localStorage.getItem('ticinese_completed_modules') || '[]');
+            }
+
+            selectPath(pathId) {
+                if (!this.pathData[pathId]) {
+                    throw new Error(`Invalid learning path: ${pathId}`);
+                }
+                this.userPath = pathId;
+                localStorage.setItem('ticinese_learning_path', pathId);
+                return this.pathData[pathId];
+            }
+
+            getCurrentPath() {
+                return this.userPath ? this.pathData[this.userPath] : null;
+            }
+
+            getNextModule(spacedRepEngine) {
+                const currentPath = this.getCurrentPath();
+                if (!currentPath) return null;
+
+                const stats = spacedRepEngine.getOverallStats();
+
+                for (const module of currentPath.modules) {
+                    if (!this.completedModules.includes(module.id)) {
+                        return {
+                            ...module,
+                            progress: Math.min((stats.totalStudied / module.requiredWords) * 100, 100),
+                            canStart: stats.totalStudied >= Math.floor(module.requiredWords * 0.8)
+                        };
+                    }
+                }
+
+                return null; // All modules completed
+            }
+
+            completeModule(moduleId) {
+                if (!this.completedModules.includes(moduleId)) {
+                    this.completedModules.push(moduleId);
+                    localStorage.setItem('ticinese_completed_modules', JSON.stringify(this.completedModules));
+                }
+            }
+
+            getPathProgress() {
+                const currentPath = this.getCurrentPath();
+                if (!currentPath) return null;
+
+                const totalModules = currentPath.modules.length;
+                const completedCount = this.completedModules.length;
+
+                return {
+                    pathName: currentPath.name,
+                    completed: completedCount,
+                    total: totalModules,
+                    percentage: Math.round((completedCount / totalModules) * 100)
+                };
+            }
+        }
+
+        /**
+         * Assessment Engine
+         * Handles comprehensive testing and evaluation
+         */
+        class AssessmentEngine {
+            constructor() {
+                this.assessmentHistory = JSON.parse(localStorage.getItem('ticinese_assessments') || '[]');
+            }
+
+            generateVocabularyQuiz(vocabularyData, spacedRepEngine, count = 10) {
+                // Prioritize words that need review
+                const wordsForReview = spacedRepEngine.getWordsForReview(count * 2);
+                const reviewWordIds = wordsForReview.map(w => w.wordId);
+
+                let quizWords = vocabularyData.filter(word => reviewWordIds.includes(word.word_id));
+
+                // Fill remaining slots with random words
+                if (quizWords.length < count) {
+                    const remainingWords = vocabularyData.filter(word => !reviewWordIds.includes(word.word_id));
+                    const shuffled = remainingWords.sort(() => 0.5 - Math.random());
+                    quizWords = quizWords.concat(shuffled.slice(0, count - quizWords.length));
+                }
+
+                return quizWords.slice(0, count).map(word => ({
+                    wordId: word.word_id,
+                    question: word.ticinese,
+                    correctAnswer: word.english,
+                    options: this.generateMultipleChoice(word.english, vocabularyData),
+                    pronunciation: word.pronunciation_simple,
+                    type: 'vocabulary'
+                }));
+            }
+
+            generateMultipleChoice(correctAnswer, vocabularyData) {
+                const wrongAnswers = vocabularyData
+                    .filter(word => word.english !== correctAnswer)
+                    .map(word => word.english)
+                    .sort(() => 0.5 - Math.random())
+                    .slice(0, 3);
+
+                const allOptions = [correctAnswer, ...wrongAnswers];
+                return allOptions.sort(() => 0.5 - Math.random());
+            }
+
+            scoreAssessment(answers, quiz) {
+                let correct = 0;
+                const results = [];
+
+                for (let i = 0; i < quiz.length; i++) {
+                    const isCorrect = answers[i] === quiz[i].correctAnswer;
+                    if (isCorrect) correct++;
+
+                    results.push({
+                        wordId: quiz[i].wordId,
+                        question: quiz[i].question,
+                        userAnswer: answers[i],
+                        correctAnswer: quiz[i].correctAnswer,
+                        isCorrect: isCorrect
+                    });
+                }
+
+                const score = {
+                    correct: correct,
+                    total: quiz.length,
+                    percentage: Math.round((correct / quiz.length) * 100),
+                    timestamp: new Date().toISOString(),
+                    results: results
+                };
+
+                this.assessmentHistory.push(score);
+                localStorage.setItem('ticinese_assessments', JSON.stringify(this.assessmentHistory));
+
+                return score;
+            }
+
+            getAssessmentHistory() {
+                return this.assessmentHistory;
+            }
+
+            getProgressTrends() {
+                if (this.assessmentHistory.length < 2) return null;
+
+                const recent5 = this.assessmentHistory.slice(-5);
+                const avgRecent = recent5.reduce((sum, test) => sum + test.percentage, 0) / recent5.length;
+
+                const previous5 = this.assessmentHistory.slice(-10, -5);
+                const avgPrevious = previous5.length > 0
+                    ? previous5.reduce((sum, test) => sum + test.percentage, 0) / previous5.length
+                    : avgRecent;
+
+                return {
+                    recentAverage: Math.round(avgRecent),
+                    trend: avgRecent > avgPrevious ? 'improving' : avgRecent < avgPrevious ? 'declining' : 'stable',
+                    trendChange: Math.round(Math.abs(avgRecent - avgPrevious))
+                };
+            }
+        }
+
+        // Initialize learning engines
+        const spacedRepetitionEngine = new SpacedRepetitionEngine();
+        const learningPathEngine = new LearningPathEngine();
+        const assessmentEngine = new AssessmentEngine();
+
+        /**
+         * Enhanced Vocabulary Card Interaction
+         * Adds learning tracking to vocabulary cards
+         */
+        function enhanceVocabularyCards() {
+            const cards = document.querySelectorAll('.card');
+
+            cards.forEach(card => {
+                const wordElement = card.querySelector('.word-ticinese');
+                if (!wordElement) return;
+
+                const wordId = wordElement.dataset.wordId;
+                if (!wordId) return;
+
+                // Add progress indicator
+                const progress = spacedRepetitionEngine.getWordProgress(wordId);
+                if (progress) {
+                    const progressBar = document.createElement('div');
+                    progressBar.className = 'learning-progress';
+                    progressBar.style.cssText = `
+                        width: 100%;
+                        height: 3px;
+                        background: rgba(44, 95, 45, 0.1);
+                        border-radius: 2px;
+                        margin-top: 8px;
+                        overflow: hidden;
+                    `;
+
+                    const progressFill = document.createElement('div');
+                    progressFill.style.cssText = `
+                        width: ${Math.min(progress.level * 14.3, 100)}%;
+                        height: 100%;
+                        background: var(--transcendent-gold);
+                        transition: width 0.3s ease;
+                    `;
+
+                    progressBar.appendChild(progressFill);
+                    card.appendChild(progressBar);
+
+                    // Add mastery badge for advanced words
+                    if (progress.level >= 5) {
+                        const masteryBadge = document.createElement('div');
+                        masteryBadge.textContent = '🌟';
+                        masteryBadge.style.cssText = `
+                            position: absolute;
+                            top: 8px;
+                            right: 8px;
+                            font-size: 16px;
+                            opacity: 0.8;
+                        `;
+                        card.style.position = 'relative';
+                        card.appendChild(masteryBadge);
+                    }
+                }
+
+                // Add click interaction for learning
+                card.addEventListener('click', () => {
+                    // Simple self-assessment
+                    const knew = confirm(`Did you know "${wordElement.textContent}" means "${card.querySelector('.word-english')?.textContent || 'this word'}"?`);
+                    const performance = knew ? 0.9 : 0.3;
+
+                    spacedRepetitionEngine.scheduleReview(wordId, performance);
+                    enhanceVocabularyCards(); // Refresh to show updated progress
+                });
+            });
+        }
+
+        /**
+         * Learning Dashboard
+         * Shows progress and statistics
+         */
+        function createLearningDashboard() {
+            const stats = spacedRepetitionEngine.getOverallStats();
+            const pathProgress = learningPathEngine.getPathProgress();
+            const trends = assessmentEngine.getProgressTrends();
+
+            // Create dashboard element
+            const dashboard = document.createElement('div');
+            dashboard.className = 'learning-dashboard';
+            dashboard.style.cssText = `
+                background: var(--elevated-gradient);
+                backdrop-filter: blur(20px);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                border-radius: var(--radius-2xl);
+                padding: var(--space-6);
+                margin-bottom: var(--space-8);
+                box-shadow: var(--shadow-glass);
+            `;
+
+            dashboard.innerHTML = `
+                <h3 style="background: var(--transcendent-gold); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-family: 'Crimson Text', serif; margin-bottom: var(--space-4);">
+                    📚 Your Learning Journey
+                </h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: var(--space-4); margin-bottom: var(--space-5);">
+                    <div style="text-align: center;">
+                        <div style="font-size: var(--text-2xl); font-weight: var(--font-weight-bold); color: var(--primary-color);">${stats.totalStudied}</div>
+                        <div style="font-size: var(--text-sm); color: var(--color-text-secondary);">Words Studied</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: var(--text-2xl); font-weight: var(--font-weight-bold); color: var(--accent-color);">${stats.mastered}</div>
+                        <div style="font-size: var(--text-sm); color: var(--color-text-secondary);">Mastered</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: var(--text-2xl); font-weight: var(--font-weight-bold); color: var(--secondary-color);">${stats.accuracy}%</div>
+                        <div style="font-size: var(--text-sm); color: var(--color-text-secondary);">Accuracy</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: var(--text-2xl); font-weight: var(--font-weight-bold); color: var(--primary-color);">🔥${stats.streak}</div>
+                        <div style="font-size: var(--text-sm); color: var(--color-text-secondary);">Day Streak</div>
+                    </div>
+                </div>
+                ${pathProgress ? `
+                    <div style="margin-bottom: var(--space-4);">
+                        <div style="font-weight: var(--font-weight-medium); margin-bottom: var(--space-2);">
+                            Path: ${pathProgress.pathName} (${pathProgress.percentage}% complete)
+                        </div>
+                        <div style="width: 100%; height: 6px; background: rgba(44, 95, 45, 0.1); border-radius: 3px; overflow: hidden;">
+                            <div style="width: ${pathProgress.percentage}%; height: 100%; background: var(--primary-gradient); transition: width 0.5s ease;"></div>
+                        </div>
+                    </div>
+                ` : ''}
+            `;
+
+            return dashboard;
+        }
+
+        /**
+         * Initialize Enhanced Learning Features
+         */
+        function initializeEnhancedLearning() {
+            // Add learning dashboard to overview section
+            const overviewSection = document.getElementById('overview');
+            if (overviewSection) {
+                const dashboard = createLearningDashboard();
+                overviewSection.insertBefore(dashboard, overviewSection.firstChild);
+            }
+
+            // Enhance vocabulary cards when they're displayed
+            const originalDisplayVocabulary = displayVocabulary;
+            displayVocabulary = function() {
+                originalDisplayVocabulary();
+                setTimeout(enhanceVocabularyCards, 100); // Allow DOM to update
+            };
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+{
+  "agent_type": "research",
+  "name": "Research Agent",
+  "description": "Conducts comprehensive research using Perplexity Pro to gather well-sourced information, best practices, and technical insights",
+  "capabilities": [
+    "Deep research on technical topics",
+    "Source citation and verification",
+    "Best practices discovery",
+    "Technology comparison and evaluation",
+    "Security vulnerability research",
+    "Performance optimization research",
+    "Framework and library documentation",
+    "Real-world case studies and examples"
+  ],
+  "integration": {
+    "tool": "perplexity_bridge.py",
+    "modes": ["auto", "research", "copilot", "focus"],
+    "caching": {
+      "enabled": true,
+      "duration_hours": 1
+    },
+    "session": {
+      "duration_hours": 23,
+      "auto_refresh": true
+    }
+  },
+  "use_cases": [
+    {
+      "scenario": "Architecture decisions",
+      "query_template": "Latest {technology} architecture patterns and best practices for {use_case}",
+      "example": "Latest Node.js architecture patterns and best practices for e-commerce platforms"
+    },
+    {
+      "scenario": "Technology selection",
+      "query_template": "{option_a} vs {option_b} for {use_case} - comparison, trade-offs, and recommendations",
+      "example": "PostgreSQL vs MongoDB for high-traffic web applications - comparison, trade-offs, and recommendations"
+    },
+    {
+      "scenario": "Security research",
+      "query_template": "{vulnerability_type} mitigation strategies for {technology} applications",
+      "example": "SQL injection mitigation strategies for Node.js applications"
+    },
+    {
+      "scenario": "Performance optimization",
+      "query_template": "{technology} performance optimization techniques and benchmarks for {aspect}",
+      "example": "React performance optimization techniques and benchmarks for large component trees"
+    },
+    {
+      "scenario": "Debugging assistance",
+      "query_template": "{error_message} troubleshooting and solutions in {technology}",
+      "example": "ECONNREFUSED troubleshooting and solutions in Node.js production environments"
+    }
+  ],
+  "output_format": {
+    "answer": "Comprehensive answer with context",
+    "sources": [
+      {
+        "url": "Source URL",
+        "title": "Source title"
+      }
+    ],
+    "related_questions": [
+      "Follow-up questions for deeper exploration"
+    ],
+    "confidence": "High/Medium/Low based on source quality",
+    "timestamp": "ISO 8601 timestamp"
+  },
+  "best_practices": [
+    "Always cite sources for claims and recommendations",
+    "Prefer recent sources (2023-2024) for rapidly evolving technologies",
+    "Cross-reference multiple authoritative sources",
+    "Include trade-offs and limitations in recommendations",
+    "Provide concrete examples and code snippets when available",
+    "Link to official documentation when applicable"
+  ],
+  "coordination": {
+    "works_with": [
+      "architect",
+      "frontend",
+      "backend",
+      "database",
+      "devops",
+      "testing"
+    ],
+    "triggers": [
+      "Technology selection decisions needed",
+      "Best practices required for implementation",
+      "Debugging complex or unfamiliar issues",
+      "Performance optimization strategies needed",
+      "Security concerns to investigate",
+      "Framework or library updates to evaluate"
+    ]
+  }
+}

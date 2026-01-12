@@ -1,0 +1,222 @@
+{
+  "integration_version": "1.0.0",
+  "name": "Claude Code Max - Multimodal Research Integration",
+  "description": "Combines multiagent orchestration with Perplexity research for dynamic, well-sourced development workflows",
+
+  "perplexity": {
+    "enabled": true,
+    "bridge_script": ".claude/perplexity_bridge.py",
+    "session_dir": ".claude/sessions",
+    "cache_duration_hours": 1,
+    "session_duration_hours": 23,
+    "modes": {
+      "auto": "Automatic mode selection",
+      "research": "Deep research with comprehensive sources (Pro Search)",
+      "copilot": "Interactive research mode",
+      "focus": "Focused search on specific domains",
+      "normal": "Standard search mode"
+    },
+    "default_mode": "research",
+    "timeout_seconds": 60
+  },
+
+  "agents": {
+    "orchestrator": {
+      "config": ".claude/agents/orchestrator_agent.json",
+      "model": "claude-sonnet-4-5",
+      "priority": "critical",
+      "cost_weight": 0.1,
+      "description": "Strategic planning and coordination"
+    },
+    "research": {
+      "config": ".claude/agents/research_agent.json",
+      "model": "claude-haiku-3-5",
+      "priority": "high",
+      "cost_weight": 0.15,
+      "description": "Perplexity-powered research and information gathering"
+    },
+    "architect": {
+      "config": ".claude/agents/architect_agent.json",
+      "model": "claude-sonnet-4-5",
+      "priority": "critical",
+      "cost_weight": 0.1,
+      "description": "System architecture and design decisions"
+    },
+    "frontend": {
+      "config": ".claude/agents/frontend_agent.json",
+      "model": "claude-sonnet-4-5",
+      "priority": "high",
+      "cost_weight": 0.2,
+      "description": "Frontend development and UI implementation"
+    },
+    "backend": {
+      "config": ".claude/agents/backend_agent.json",
+      "model": "claude-sonnet-4-5",
+      "priority": "high",
+      "cost_weight": 0.2,
+      "description": "Backend API and business logic"
+    },
+    "database": {
+      "config": ".claude/agents/database_agent.json",
+      "model": "claude-sonnet-4-5",
+      "priority": "high",
+      "cost_weight": 0.1,
+      "description": "Database design and optimization"
+    },
+    "devops": {
+      "config": ".claude/agents/devops_agent.json",
+      "model": "claude-sonnet-4-5",
+      "priority": "medium",
+      "cost_weight": 0.1,
+      "description": "CI/CD, infrastructure, and deployment"
+    },
+    "testing": {
+      "config": ".claude/agents/testing_agent.json",
+      "model": "claude-sonnet-4-5",
+      "priority": "high",
+      "cost_weight": 0.15,
+      "description": "Testing, QA, and quality assurance"
+    }
+  },
+
+  "slash_commands": {
+    "research": {
+      "file": ".claude/commands/research.md",
+      "agent": "research",
+      "description": "Execute Perplexity research queries",
+      "usage": "/research [query]",
+      "research_required": true
+    },
+    "smart-plan": {
+      "file": ".claude/commands/smart-plan.md",
+      "agent": "orchestrator",
+      "description": "Create research-backed project plans",
+      "usage": "/smart-plan",
+      "research_required": true
+    },
+    "smart-debug": {
+      "file": ".claude/commands/smart-debug.md",
+      "agent": "orchestrator",
+      "description": "Research-powered debugging",
+      "usage": "/smart-debug",
+      "research_required": true
+    },
+    "smart-optimize": {
+      "file": ".claude/commands/smart-optimize.md",
+      "agent": "orchestrator",
+      "description": "Research-backed performance optimization",
+      "usage": "/smart-optimize",
+      "research_required": true
+    }
+  },
+
+  "workflows": {
+    "standard_5_phase": {
+      "name": "Standard 5-Phase Development",
+      "phases": 5,
+      "research_integration": true,
+      "parallel_phases": [2, 5],
+      "quality_gates": true,
+      "estimated_efficiency": "4x faster than single-agent"
+    },
+    "rapid_prototype": {
+      "name": "Rapid Prototyping (2-Phase)",
+      "phases": 2,
+      "research_integration": true,
+      "parallel_phases": [1],
+      "quality_gates": false,
+      "estimated_efficiency": "3x faster"
+    },
+    "security_focused": {
+      "name": "Security-Focused Development",
+      "phases": 6,
+      "research_integration": true,
+      "parallel_phases": [2],
+      "quality_gates": true,
+      "additional_phases": ["Security Audit"],
+      "estimated_efficiency": "3.5x faster"
+    }
+  },
+
+  "optimization": {
+    "cost_reduction_target": "40-60%",
+    "performance_improvement": "90.2% vs single-agent",
+    "parallel_execution": true,
+    "prompt_caching": true,
+    "query_caching": true,
+    "token_optimization": true,
+    "strategic_model_selection": {
+      "complex_reasoning": "claude-sonnet-4-5",
+      "implementation": "claude-sonnet-4-5",
+      "research_extraction": "claude-haiku-3-5",
+      "routine_tasks": "claude-haiku-3-5"
+    }
+  },
+
+  "memory": {
+    "short_term": {
+      "type": "conversation_context",
+      "retention": "session",
+      "description": "Current conversation and active code generation"
+    },
+    "working_memory": {
+      "type": "shared_state",
+      "storage": ".claude/sessions/working_memory.json",
+      "retention": "24_hours",
+      "description": "Inter-agent communication and task coordination"
+    },
+    "long_term": {
+      "type": "vector_database",
+      "storage": ".claude/memory/vector_store",
+      "retention": "permanent",
+      "description": "Code patterns, ADRs, and organizational standards"
+    }
+  },
+
+  "quality_metrics": {
+    "test_coverage_minimum": 80,
+    "security_standard": "OWASP Top 10 compliance",
+    "accessibility_standard": "WCAG 2.1 AA",
+    "performance_budgets": {
+      "page_load_max_ms": 3000,
+      "api_response_max_ms": 500,
+      "database_query_max_ms": 100
+    },
+    "code_quality": {
+      "linting": true,
+      "formatting": true,
+      "type_checking": true,
+      "code_review": true
+    }
+  },
+
+  "logging": {
+    "level": "INFO",
+    "file": ".claude/perplexity_bridge.log",
+    "rotation": "daily",
+    "retention_days": 7,
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  },
+
+  "git_ignore": [
+    ".claude/sessions/*.json",
+    ".claude/perplexity_bridge.log",
+    ".claude/memory/vector_store/*",
+    ".venv/"
+  ],
+
+  "required_dependencies": {
+    "python": ">=3.8",
+    "packages": [
+      "playwright>=1.40.0",
+      "aiohttp>=3.9.0"
+    ],
+    "playwright_browsers": ["chromium"]
+  },
+
+  "setup": {
+    "initialization_script": ".claude/setup.sh",
+    "test_command": "python .claude/perplexity_bridge.py --check-auth",
+    "documentation": ".claude/README.md"
+  }
+}

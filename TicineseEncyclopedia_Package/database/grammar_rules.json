@@ -1,0 +1,425 @@
+{
+  "database_info": {
+    "name": "Ticinese Grammar Rules Database",
+    "language": "Ticinese (Western Lombard Alpine Dialect)",
+    "time_period": "1850-1915",
+    "region": "Canton Ticino, Switzerland and Northern Lombardy, Italy",
+    "iso_code": "lmo",
+    "classification": "Indo-European → Romance → Gallo-Italic → Lombard → Western Lombard → Alpine Lombard → Ticinese",
+    "version": "1.0",
+    "last_updated": "2025-11-04",
+    "sources": "Perplexity Pro Research, Academic linguistic databases, Historical texts"
+  },
+  "grammar_rules": [
+    {
+      "rule_id": "GRAM_001",
+      "category": "syntax",
+      "subcategory": "subject_pronouns",
+      "rule_name": "Mandatory subject clitics for 2nd and 3rd person",
+      "description": "Ticinese employs a dual pronoun system with mandatory weak pronouns (clitics) for second and third person singular and third person plural. Pattern: (Strong Subject) + Weak Subject + Verb",
+      "examples_ticinese": [
+        "Ti te magni",
+        "Lù el magna",
+        "Lee la magna",
+        "Lor i magnen"
+      ],
+      "examples_english": [
+        "You eat",
+        "He eats",
+        "She eats",
+        "They eat"
+      ],
+      "exceptions": "First person singular and plural, and second person plural do not require weak pronouns: 'Mi magni' (I eat), 'Num magnòm' (we eat)",
+      "comparison_italian": "Italian doesn't use doubled pronouns: 'Lui mangia' not *'Lui el mangia'",
+      "time_period": "1200-present (core feature)",
+      "source": "Perplexity Research - Core Western Lombard grammatical feature"
+    },
+    {
+      "rule_id": "GRAM_002",
+      "category": "syntax",
+      "subcategory": "word_order",
+      "rule_name": "Subject-Verb-Object with mandatory clitics",
+      "description": "Basic word order follows SVO pattern with mandatory subject clitics. Full pattern: (Strong Subject) + Weak Subject + Predicate + Direct Object + Other Complements",
+      "examples_ticinese": [
+        "Lù el canta una canzun bela",
+        "La nonna la magna pan e formai",
+        "El can el baila"
+      ],
+      "examples_english": [
+        "He sings a beautiful song",
+        "The grandmother eats bread and cheese",
+        "The dog dances"
+      ],
+      "exceptions": "In questions, inversion may occur in archaic forms",
+      "comparison_italian": "Similar SVO order but without mandatory clitics",
+      "time_period": "1200-present",
+      "source": "Perplexity Research"
+    },
+    {
+      "rule_id": "GRAM_003",
+      "category": "syntax",
+      "subcategory": "pronominal_particles",
+      "rule_name": "Strict ordering of multiple pronominal particles",
+      "description": "When multiple pronominal particles co-occur, strict ordering applies: Weak Subject + Indirect Object Particle + Direct Object Particle + Verb",
+      "examples_ticinese": [
+        "Lù el ghe m'ha imprestad un liber",
+        "Ti te me l'hee dad"
+      ],
+      "examples_english": [
+        "He lent me a book",
+        "You gave it to me"
+      ],
+      "exceptions": "None - this order is invariable",
+      "comparison_italian": "Italian has similar but slightly different ordering rules",
+      "time_period": "1200-present",
+      "source": "Perplexity Research - Wikibooks citations"
+    },
+    {
+      "rule_id": "GRAM_004",
+      "category": "morphology",
+      "subcategory": "verb_conjugation",
+      "rule_name": "Four-conjugation verb system preserved from Latin",
+      "description": "Ticinese preserves the Latin four-conjugation system with regular verbs conjugated according to infinitive endings: -à (first), -é (second), -er (third), -ì (fourth)",
+      "examples_ticinese": [
+        "parlà (1st): mi parli, ti parlet, lù parla, num parlom",
+        "vedé (2nd): mi védi, ti védet, lù véd, num védom",
+        "scrívere (3rd): same endings as 2nd",
+        "sentí (4th): mi sénti, ti séntet, lù sént, num séntom"
+      ],
+      "examples_english": [
+        "speak: I speak, you speak, he speaks, we speak",
+        "see: I see, you see, he sees, we see",
+        "write: (same pattern as see)",
+        "hear: I hear, you hear, he hears, we hear"
+      ],
+      "exceptions": "Several irregular verbs: fà, andà, dà, stà, savé, volé, podé",
+      "comparison_italian": "Italian has three main conjugations (-are, -ere, -ire)",
+      "time_period": "1200-present (preserved archaic feature)",
+      "source": "Perplexity Research - Verbix citations"
+    },
+    {
+      "rule_id": "GRAM_005",
+      "category": "morphology",
+      "subcategory": "articles",
+      "rule_name": "Definite articles with gender and regional variation",
+      "description": "Definite articles display gender and number agreement with regional variation. Masculine: el/ol/al (before consonants), l' (before vowels). Feminine: la (before consonants), l' (before vowels). Plural: i/le (regional variation)",
+      "examples_ticinese": [
+        "el gat (the cat - masculine)",
+        "la gata (the cat - feminine)",
+        "i gat (the cats)",
+        "l'amic (the friend - before vowel)",
+        "l'aqua (the water - before vowel)"
+      ],
+      "examples_english": [
+        "the cat (masculine)",
+        "the cat (feminine)",
+        "the cats",
+        "the friend",
+        "the water"
+      ],
+      "exceptions": "Article form varies by subregion within Ticino",
+      "comparison_italian": "Italian uses il/lo/la/i/gli/le with similar but distinct distribution",
+      "time_period": "1200-present",
+      "source": "Perplexity Research - Wikibooks"
+    },
+    {
+      "rule_id": "GRAM_006",
+      "category": "morphology",
+      "subcategory": "articles",
+      "rule_name": "Indefinite articles and partitives",
+      "description": "Indefinite articles: on (masculine), ona (feminine) meaning 'a/an'. Partitive articles use di/de + definite article for 'some': del pàn (some bread)",
+      "examples_ticinese": [
+        "on can (a dog)",
+        "ona cà (a house)",
+        "del pàn (some bread)",
+        "dela carn (some meat)"
+      ],
+      "examples_english": [
+        "a dog",
+        "a house",
+        "some bread",
+        "some meat"
+      ],
+      "exceptions": "None standard",
+      "comparison_italian": "Italian uses un/una and del/della similarly",
+      "time_period": "1200-present",
+      "source": "Perplexity Research"
+    },
+    {
+      "rule_id": "GRAM_007",
+      "category": "morphology",
+      "subcategory": "tense_formation",
+      "rule_name": "Past and future tense formation patterns",
+      "description": "Imperfect tense adds -avi/-évi/-ivi suffixes. Future tense employs -aroo/-aree/-arà/-arèmm/-arii/-arann patterns. Both show regular conjugation within verb classes.",
+      "examples_ticinese": [
+        "Imperfect: mi parlavi, ti parlavet",
+        "Future: mi parlaroo, ti parlaree, lù parlarà"
+      ],
+      "examples_english": [
+        "Imperfect: I was speaking, you were speaking",
+        "Future: I will speak, you will speak, he will speak"
+      ],
+      "exceptions": "Irregular verbs have suppletive forms",
+      "comparison_italian": "Italian has similar but distinct tense endings",
+      "time_period": "1200-present",
+      "source": "Perplexity Research - Verbix"
+    },
+    {
+      "rule_id": "GRAM_008",
+      "category": "syntax",
+      "subcategory": "negation",
+      "rule_name": "Standard negation with minga/miga/menga/mea",
+      "description": "Negation particles vary regionally. Simple tenses: negation after verb. Compound tenses: negation between auxiliary and participle. Infinitive: negation before infinitive.",
+      "examples_ticinese": [
+        "Lù el canta minga (He doesn't sing)",
+        "Lù l'ha minga cantad (He hasn't sung)",
+        "Per minga cantà (For not singing)"
+      ],
+      "examples_english": [
+        "He doesn't sing",
+        "He hasn't sung",
+        "For not singing"
+      ],
+      "exceptions": "Conservative dialects use postposed nò: 'Lù el canta nò'",
+      "comparison_italian": "Italian uses 'non' before verb: 'non canta'",
+      "time_period": "1200-present (minga consistent in western areas 1850-1915)",
+      "source": "Perplexity Research - Wikibooks"
+    },
+    {
+      "rule_id": "GRAM_009",
+      "category": "syntax",
+      "subcategory": "negation",
+      "rule_name": "Double negation for emphasis",
+      "description": "Double negation is grammatically emphatic and absolute. Combines negative particles with negative indefinites.",
+      "examples_ticinese": [
+        "Mi no vedi pu nagot (I don't see anything anymore)",
+        "No l'hoo mai vedud (I've never seen it - archaic 1850-1915)"
+      ],
+      "examples_english": [
+        "I don't see anything anymore",
+        "I've never seen it"
+      ],
+      "exceptions": "None - double negation intensifies rather than cancels",
+      "comparison_italian": "Italian also uses double negation: 'non vedo niente'",
+      "time_period": "1200-present",
+      "source": "Perplexity Research - air.unimi citations"
+    },
+    {
+      "rule_id": "GRAM_010",
+      "category": "syntax",
+      "subcategory": "interrogatives",
+      "rule_name": "Yes/No questions with rising intonation",
+      "description": "Modern form maintains SVO order with rising intonation. Archaic 1850s form employed verb-pronoun inversion.",
+      "examples_ticinese": [
+        "Modern: Lù l'è grand? (Is he great?)",
+        "Archaic: Lù e'l grand? (Is he great?)"
+      ],
+      "examples_english": [
+        "Is he great?",
+        "Is he great?"
+      ],
+      "exceptions": "Inversion more common in formal or archaic texts",
+      "comparison_italian": "Italian uses similar intonation or 'è vero che...'",
+      "time_period": "Modern form: 1900-present, Archaic: 1200-1900",
+      "source": "Perplexity Research - Wikibooks"
+    },
+    {
+      "rule_id": "GRAM_011",
+      "category": "syntax",
+      "subcategory": "interrogatives",
+      "rule_name": "Content questions with fronted interrogative pronouns",
+      "description": "Interrogative pronouns (chi, cossa, quanta, indove, quandè, comè) introduce content questions with fronting to sentence-initial position.",
+      "examples_ticinese": [
+        "Chi te amet? (Who do you love?)",
+        "Cossa te see dree a fa? (What are you doing?)",
+        "Quanta carn te hee mangiad? (How much meat did you eat?)",
+        "Indove te seet? (Where are you?)",
+        "Quandè te faree quella roba chì? (When will you do that?)",
+        "Comè che t'hee fad? (How did you do it?)"
+      ],
+      "examples_english": [
+        "Who do you love?",
+        "What are you doing?",
+        "How much meat did you eat?",
+        "Where are you?",
+        "When will you do that?",
+        "How did you do it?"
+      ],
+      "exceptions": "None standard",
+      "comparison_italian": "Italian has similar wh-fronting: 'Chi ami?', 'Cosa fai?'",
+      "time_period": "1200-present",
+      "source": "Perplexity Research"
+    },
+    {
+      "rule_id": "GRAM_012",
+      "category": "morphology",
+      "subcategory": "prepositions",
+      "rule_name": "Preposition contraction with definite articles",
+      "description": "Common prepositions contract regularly with definite articles. Patterns: de + el = del, a + el = al, in + el = nel",
+      "examples_ticinese": [
+        "in cà (at home)",
+        "de Milan (from Milan)",
+        "del pàn (of the bread)",
+        "al mercad (to the market)",
+        "nel bosch (in the forest)",
+        "sù la tàula (on the table)",
+        "sot el pont (under the bridge)",
+        "cun un amic (with a friend)",
+        "per la strad (through the street)"
+      ],
+      "examples_english": [
+        "at home",
+        "from Milan",
+        "of the bread",
+        "to the market",
+        "in the forest",
+        "on the table",
+        "under the bridge",
+        "with a friend",
+        "through the street"
+      ],
+      "exceptions": "Some prepositions don't contract: cun, per",
+      "comparison_italian": "Italian has similar contractions: del, al, nel, etc.",
+      "time_period": "1200-present",
+      "source": "Perplexity Research - alpilink citations"
+    },
+    {
+      "rule_id": "GRAM_013",
+      "category": "morphology",
+      "subcategory": "pronouns",
+      "rule_name": "Direct and indirect object pronoun placement",
+      "description": "Direct object pronouns employ both proclitic (before verb) and enclitic (after verb) forms. Proclitic: me, te, el/l'/la, i. Enclitic: -m, -t, -l/-la, -i. Indirect object pronouns predominantly use 'ghe' across persons.",
+      "examples_ticinese": [
+        "El me ved (He sees me)",
+        "Vardàm! (Look at me!)",
+        "Ghe disi (I tell him/her)",
+        "El ghe l'ha dad (He gave it to him/her)"
+      ],
+      "examples_english": [
+        "He sees me",
+        "Look at me!",
+        "I tell him/her",
+        "He gave it to him/her"
+      ],
+      "exceptions": "Enclitic forms attach to imperatives and infinitives",
+      "comparison_italian": "Italian has similar proclitic/enclitic distribution",
+      "time_period": "1200-present",
+      "source": "Perplexity Research - Wikipedia"
+    },
+    {
+      "rule_id": "GRAM_014",
+      "category": "morphology",
+      "subcategory": "pronouns",
+      "rule_name": "Possessive pronouns with and without articles",
+      "description": "Archaic (1850-1915) rustic forms omit definite article before possessives: 'mé pader' (my father). Modern forms include article: 'el mé pader'. Forms: mé/mia (my), to/toa (your), so/soa (his/her), nòst/nòsta (our), vòst/vòsta (your pl), so/soa (their)",
+      "examples_ticinese": [
+        "Archaic: mé pader (my father)",
+        "Modern: el mé pader (my father)",
+        "mia mama (my mother)",
+        "to fradel (your brother)",
+        "nòsta cà (our house)"
+      ],
+      "examples_english": [
+        "my father (archaic)",
+        "my father (modern)",
+        "my mother",
+        "your brother",
+        "our house"
+      ],
+      "exceptions": "Article usage varies by register and period",
+      "comparison_italian": "Italian always uses article: 'il mio padre'",
+      "time_period": "Archaic without article: 1200-1900, Modern with article: 1850-present",
+      "source": "Perplexity Research - Wikipedia"
+    },
+    {
+      "rule_id": "GRAM_015",
+      "category": "morphology",
+      "subcategory": "pronouns",
+      "rule_name": "Demonstrative pronouns near and far",
+      "description": "Demonstrative pronouns distinguish proximity. Near speaker: chel/chell (this). Far from speaker: quel/quell (that). Both show gender and number agreement.",
+      "examples_ticinese": [
+        "chel liber (this book)",
+        "quel oman (that man)",
+        "chella dona (this woman)",
+        "quella roba (that thing)"
+      ],
+      "examples_english": [
+        "this book",
+        "that man",
+        "this woman",
+        "that thing"
+      ],
+      "exceptions": "Regional variations in forms",
+      "comparison_italian": "Italian uses questo/quello similarly",
+      "time_period": "1200-present",
+      "source": "Perplexity Research"
+    },
+    {
+      "rule_id": "GRAM_016",
+      "category": "syntax",
+      "subcategory": "impersonal_constructions",
+      "rule_name": "Universal weak pronoun 'a' for existential statements",
+      "description": "Universal weak pronoun 'a' functions for existential and impersonal statements. Common pattern: a gh'era (there was), a gh'è (there is)",
+      "examples_ticinese": [
+        "A gh'era on temporal de foeura (There was a storm outside)",
+        "A gh'è del pàn (There is some bread)",
+        "A piöf (It's raining)"
+      ],
+      "examples_english": [
+        "There was a storm outside",
+        "There is some bread",
+        "It's raining"
+      ],
+      "exceptions": "None - 'a' is obligatory in these constructions",
+      "comparison_italian": "Italian uses 'c'è/c'era' without pronoun subject",
+      "time_period": "1200-present",
+      "source": "Perplexity Research - Wikibooks"
+    },
+    {
+      "rule_id": "GRAM_017",
+      "category": "morphology",
+      "subcategory": "participles",
+      "rule_name": "Past participle gender-number agreement",
+      "description": "Historical Ticinese (1850-1915) shows consistent past participle gender-number agreement with subject, especially in compound tenses with auxiliary verb.",
+      "examples_ticinese": [
+        "La duna l'è vegnuda (The woman has come - feminine)",
+        "El oman l'è vegnud (The man has come - masculine)",
+        "I donn hin vegnude (The women have come - fem. pl.)",
+        "I omen hin vegnud (The men have come - masc. pl.)"
+      ],
+      "examples_english": [
+        "The woman has come",
+        "The man has come",
+        "The women have come",
+        "The men have come"
+      ],
+      "exceptions": "Agreement weakened in modern usage",
+      "comparison_Italian": "Italian maintains agreement with 'essere' auxiliary",
+      "time_period": "Strong agreement: 1200-1915, Weakening: 1900-present",
+      "source": "Perplexity Research - Wikibooks"
+    },
+    {
+      "rule_id": "GRAM_018",
+      "category": "orthography",
+      "subcategory": "doubled_consonants",
+      "rule_name": "Doubled consonants in stressed forms (archaic)",
+      "description": "Historical Ticinese texts (1850-1915) display doubled consonants in stressed verbal forms, especially with auxiliary 'have'.",
+      "examples_ticinese": [
+        "L'hoo (I have - archaic)",
+        "L'ho (I have - modern)",
+        "T'hee (You have - archaic)",
+        "T'he (You have - modern)"
+      ],
+      "examples_english": [
+        "I have (archaic)",
+        "I have (modern)",
+        "You have (archaic)",
+        "You have (modern)"
+      ],
+      "exceptions": "Modern orthography tends toward single consonants",
+      "comparison_italian": "Italian doesn't double in these contexts: 'ho'",
+      "time_period": "Common: 1200-1915, Declining: 1900-present",
+      "source": "Perplexity Research - Wikibooks"
+    }
+  ]
+}

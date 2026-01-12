@@ -1,0 +1,13 @@
+{
+  "textareas": [],
+  "inputs": [],
+  "contentEditables": [
+    {
+      "index": 0,
+      "tag": "DIV",
+      "class": "overflow-auto max-h-[45vh] lg:max-h-[40vh] sm:max-h-[25vh] outline-none font-sans resize-none caret-",
+      "ariaLabel": null,
+      "visible": true
+    }
+  ]
+}

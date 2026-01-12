@@ -1,0 +1,34 @@
+{
+  "-899341381042781301": {
+    "query": "Blueprint for building an open source AI model that plays simple UI video games like Pacman - architecture, training approaches, and implementation",
+    "result": {
+      "success": true,
+      "query": "Blueprint for building an open source AI model that plays simple UI video games like Pacman - architecture, training approaches, and implementation",
+      "mode": "research",
+      "answer": "AnswerVideosSources",
+      "sources": [
+        {
+          "url": "https://github.com/jasonwu0731/AI-Pacman",
+          "title": "GitHubThe Pacman Projects by the University of California, Berkeley. - GitHub"
+        },
+        {
+          "url": "https://betterprogramming.pub/pac-man-ai-cpp-a-software-framework-c44b2e2d293",
+          "title": "Better ProgrammingPac-Man AI CPP \u2014 A Software Framework - Better Programming"
+        },
+        {
+          "url": "https://dev.to/aws-builders/how-i-built-classic-pac-man-game-using-amazonq-cli-4bfi",
+          "title": "DEV CommunityHow I built Classic Pac-Man game using AmazonQ CLI"
+        },
+        {
+          "url": "https://developer.nvidia.com/blog/pac-man-recreated-with-ai-by-nvidia-researchers/",
+          "title": "NVIDIA Technical BlogPAC-MAN Recreated with AI by NVIDIA Researchers"
+        }
+      ],
+      "related_questions": [
+        "Can I BUILD PACMAN in 12 MINUTES with AI? (Spoiler: Not ..."
+      ],
+      "timestamp": "2025-10-29T14:20:35.183291"
+    },
+    "timestamp": "2025-10-29T14:20:35.183345"
+  }
+}

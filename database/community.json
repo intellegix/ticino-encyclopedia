@@ -1,0 +1,362 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2026-01-12",
+    "description": "Community engagement features for heritage sharing and collaborative learning",
+    "learning_methodology": "Social learning through cultural exchange and community participation",
+    "privacy_note": "All user data stored locally in browser LocalStorage - no server transmission"
+  },
+  "community_features": {
+    "heritage_sharing": {
+      "feature_id": "heritage_sharing",
+      "title": "Family Heritage Sharing",
+      "description": "Share your family's Ticinese heritage stories, photos, and memories with the learning community",
+      "data_structure": {
+        "contribution_id": "unique_identifier",
+        "contributor_name": "user_display_name",
+        "contribution_type": "story | photo | recipe | dialect_variant | cultural_practice",
+        "title": "contribution_title",
+        "content": "main_content_text",
+        "location": "geographic_origin",
+        "time_period": "historical_period",
+        "family_connection": "relationship_to_contributor",
+        "verification_status": "community_reviewed | expert_verified | pending",
+        "cultural_value": "high | medium | low",
+        "vocabulary_contributions": ["new_words_or_phrases"],
+        "timestamp": "creation_date",
+        "tags": ["relevant_keywords"]
+      },
+      "contribution_guidelines": [
+        "Share authentic family memories and traditions",
+        "Include geographic and temporal context when possible",
+        "Respect family privacy - avoid sharing sensitive personal information",
+        "Contribute vocabulary variations and dialect differences",
+        "Add cultural context to help other learners understand traditions"
+      ],
+      "learning_benefits": [
+        "Discover regional variations in language and culture",
+        "Connect with shared heritage experiences",
+        "Learn from authentic cultural transmission",
+        "Build vocabulary through real family contexts",
+        "Understand historical migration patterns"
+      ]
+    },
+    "cultural_knowledge_exchange": {
+      "feature_id": "cultural_knowledge_exchange",
+      "title": "Cultural Knowledge Exchange",
+      "description": "Exchange knowledge about traditional practices, customs, and regional variations",
+      "exchange_categories": [
+        {
+          "category": "traditional_practices",
+          "title": "Traditional Practices",
+          "description": "Share knowledge about traditional crafts, seasonal customs, and cultural practices",
+          "examples": ["cheese making", "wine cultivation", "festival traditions", "folk medicine"]
+        },
+        {
+          "category": "regional_variations",
+          "title": "Regional Variations",
+          "description": "Document linguistic and cultural differences across Ticino's valleys and communities",
+          "examples": ["dialect variations", "local customs", "regional foods", "valley-specific traditions"]
+        },
+        {
+          "category": "historical_memory",
+          "title": "Historical Memory",
+          "description": "Preserve historical events and community memories from family oral traditions",
+          "examples": ["emigration stories", "local history", "family legends", "community changes"]
+        },
+        {
+          "category": "language_learning",
+          "title": "Language Learning Tips",
+          "description": "Share effective methods for learning and remembering Ticinese vocabulary and grammar",
+          "examples": ["memory techniques", "pronunciation tips", "grammar explanations", "learning resources"]
+        }
+      ],
+      "contribution_structure": {
+        "knowledge_id": "unique_identifier",
+        "category": "exchange_category",
+        "title": "knowledge_title",
+        "description": "detailed_explanation",
+        "contributor": "user_name",
+        "region": "geographic_relevance",
+        "sources": ["family_oral_tradition", "local_knowledge", "historical_documents"],
+        "verification_level": "family_tradition | community_knowledge | documented_source",
+        "related_vocabulary": ["associated_ticinese_words"],
+        "cultural_context": "background_information",
+        "learning_value": "educational_significance",
+        "tags": ["searchable_keywords"],
+        "timestamp": "contribution_date"
+      }
+    },
+    "learning_community": {
+      "feature_id": "learning_community",
+      "title": "Learning Community",
+      "description": "Connect with other learners to practice, share progress, and motivate each other",
+      "community_activities": [
+        {
+          "activity": "progress_sharing",
+          "title": "Progress Sharing",
+          "description": "Share your learning milestones and celebrate achievements with the community",
+          "features": ["milestone_badges", "vocabulary_goals", "story_completion", "scenario_mastery"]
+        },
+        {
+          "activity": "group_challenges",
+          "title": "Group Challenges",
+          "description": "Participate in community-wide learning challenges and friendly competitions",
+          "challenge_types": ["vocabulary_sprint", "story_comprehension", "cultural_trivia", "pronunciation_practice"]
+        },
+        {
+          "activity": "heritage_trips",
+          "title": "Heritage Trip Planning",
+          "description": "Organize and plan visits to ancestral villages and cultural sites in Ticino",
+          "planning_features": ["village_guides", "family_research", "cultural_sites", "local_contacts"]
+        },
+        {
+          "activity": "practice_partnerships",
+          "title": "Language Practice Partners",
+          "description": "Find conversation partners for practicing Ticinese in a supportive environment",
+          "matching_criteria": ["skill_level", "heritage_connection", "learning_goals", "availability"]
+        }
+      ],
+      "user_profiles": {
+        "profile_structure": {
+          "user_id": "unique_identifier",
+          "display_name": "chosen_username",
+          "heritage_connection": "family_origin_story",
+          "learning_goals": ["vocabulary_mastery", "cultural_understanding", "family_connection"],
+          "current_level": "beginner | intermediate | advanced",
+          "preferred_topics": ["stories", "recipes", "scenarios", "history"],
+          "contribution_count": "number_of_community_contributions",
+          "achievement_badges": ["earned_learning_badges"],
+          "learning_streak": "days_of_continuous_activity",
+          "favorite_regions": ["valle_maggia", "sottoceneri", "mendrisiotto"],
+          "family_stories_shared": "number_of_heritage_contributions"
+        }
+      }
+    }
+  },
+  "achievement_system": {
+    "learning_badges": [
+      {
+        "badge_id": "heritage_storyteller",
+        "name": "Heritage Storyteller",
+        "description": "Shared 3 family heritage stories with the community",
+        "icon": "📚",
+        "requirements": ["share_3_heritage_stories"],
+        "cultural_significance": "Preserves family oral traditions for future generations"
+      },
+      {
+        "badge_id": "vocabulary_master",
+        "name": "Vocabulary Master",
+        "description": "Learned 100 Ticinese words through stories, scenarios, and recipes",
+        "icon": "📖",
+        "requirements": ["learn_100_vocabulary_words"],
+        "cultural_significance": "Demonstrates commitment to language preservation"
+      },
+      {
+        "badge_id": "cultural_explorer",
+        "name": "Cultural Explorer",
+        "description": "Completed 5 interactive scenarios across different cultural contexts",
+        "icon": "🗺️",
+        "requirements": ["complete_5_scenarios"],
+        "cultural_significance": "Shows deep engagement with traditional Ticinese life"
+      },
+      {
+        "badge_id": "master_chef",
+        "name": "Traditional Chef",
+        "description": "Learned 3 complete traditional recipes with cultural context",
+        "icon": "👩‍🍳",
+        "requirements": ["learn_3_complete_recipes"],
+        "cultural_significance": "Preserves culinary heritage and family traditions"
+      },
+      {
+        "badge_id": "community_contributor",
+        "name": "Community Contributor",
+        "description": "Made 10 valuable contributions to the cultural knowledge exchange",
+        "icon": "🤝",
+        "requirements": ["make_10_knowledge_contributions"],
+        "cultural_significance": "Actively builds and strengthens the learning community"
+      },
+      {
+        "badge_id": "heritage_navigator",
+        "name": "Heritage Navigator",
+        "description": "Completed learning activities from all major Ticino regions",
+        "icon": "🧭",
+        "requirements": ["activities_from_all_regions"],
+        "cultural_significance": "Demonstrates comprehensive understanding of regional diversity"
+      },
+      {
+        "badge_id": "family_historian",
+        "name": "Family Historian",
+        "description": "Documented complete family emigration story with cultural context",
+        "icon": "📜",
+        "requirements": ["document_complete_family_story"],
+        "cultural_significance": "Preserves important historical and personal narratives"
+      },
+      {
+        "badge_id": "linguistic_detective",
+        "name": "Linguistic Detective",
+        "description": "Identified and documented 5 regional dialect variations",
+        "icon": "🕵️",
+        "requirements": ["document_5_dialect_variations"],
+        "cultural_significance": "Contributes to preservation of linguistic diversity"
+      }
+    ],
+    "progress_milestones": [
+      {
+        "milestone": "first_week",
+        "title": "Benvenuto alla Famiglia!",
+        "description": "Welcome to the family! Completed your first week of learning",
+        "icon": "🌟"
+      },
+      {
+        "milestone": "heritage_story_completed",
+        "title": "Storia di Famiglia",
+        "description": "Completed your first heritage story",
+        "icon": "📖"
+      },
+      {
+        "milestone": "scenario_mastered",
+        "title": "Conversazione Autentica",
+        "description": "Successfully completed your first interactive scenario",
+        "icon": "💬"
+      },
+      {
+        "milestone": "recipe_learned",
+        "title": "Cuoco Tradizionale",
+        "description": "Mastered your first traditional recipe",
+        "icon": "🍽️"
+      },
+      {
+        "milestone": "community_connection",
+        "title": "Membro della Comunità",
+        "description": "Made your first contribution to the community",
+        "icon": "🤝"
+      }
+    ]
+  },
+  "content_moderation": {
+    "community_guidelines": [
+      "Respect cultural authenticity and accuracy",
+      "Share only family stories you have permission to share",
+      "Maintain appropriate language and respectful tone",
+      "Verify information when possible through family sources",
+      "Respect privacy - avoid sharing sensitive personal details",
+      "Celebrate diversity in regional traditions and customs",
+      "Help newcomers feel welcome in the learning community",
+      "Report any inappropriate or inaccurate content"
+    ],
+    "verification_process": {
+      "self_verification": "Contributors verify their own family connections and sources",
+      "community_review": "Community members can flag content for review",
+      "expert_validation": "Cultural experts provide input on historical accuracy",
+      "source_documentation": "Encourage documentation of sources and family connections"
+    }
+  },
+  "local_storage_structure": {
+    "user_profile": {
+      "key": "ticino_user_profile",
+      "structure": {
+        "username": "user_chosen_name",
+        "heritage_region": "family_origin_area",
+        "learning_preferences": "preferred_content_types",
+        "progress_data": "learning_statistics",
+        "achievement_data": "earned_badges_and_milestones",
+        "privacy_settings": "sharing_preferences"
+      }
+    },
+    "contributions": {
+      "key": "ticino_user_contributions",
+      "structure": {
+        "heritage_stories": "array_of_shared_stories",
+        "cultural_knowledge": "array_of_knowledge_contributions",
+        "vocabulary_additions": "array_of_vocabulary_contributions",
+        "regional_variations": "array_of_dialect_variations"
+      }
+    },
+    "learning_progress": {
+      "key": "ticino_learning_progress",
+      "structure": {
+        "vocabulary_learned": "array_of_mastered_words",
+        "stories_completed": "array_of_finished_stories",
+        "scenarios_completed": "array_of_finished_scenarios",
+        "recipes_learned": "array_of_mastered_recipes",
+        "cultural_insights": "number_of_insights_gained",
+        "learning_streak": "consecutive_days_active",
+        "session_history": "array_of_learning_sessions"
+      }
+    },
+    "community_data": {
+      "key": "ticino_community_shared",
+      "structure": {
+        "shared_stories": "exportable_heritage_stories",
+        "knowledge_exchange": "exportable_cultural_knowledge",
+        "dialect_contributions": "exportable_language_variations",
+        "learning_tips": "exportable_study_methods"
+      }
+    }
+  },
+  "export_import_features": {
+    "data_portability": {
+      "export_options": [
+        "Personal learning data (JSON format)",
+        "Heritage story collection (JSON + text)",
+        "Vocabulary learning progress (CSV format)",
+        "Community contributions (JSON format)",
+        "Complete profile backup (ZIP archive)"
+      ],
+      "import_options": [
+        "Restore from backup",
+        "Import heritage stories from file",
+        "Load vocabulary lists",
+        "Merge community contributions"
+      ]
+    },
+    "sharing_formats": [
+      {
+        "format": "heritage_story_card",
+        "description": "Beautiful formatted story for social sharing",
+        "includes": ["story_text", "cultural_context", "family_photos", "vocabulary_highlights"]
+      },
+      {
+        "format": "learning_progress_summary",
+        "description": "Achievement summary for sharing progress",
+        "includes": ["badges_earned", "vocabulary_count", "stories_completed", "cultural_insights"]
+      },
+      {
+        "format": "cultural_knowledge_article",
+        "description": "Formatted knowledge contribution for external sharing",
+        "includes": ["knowledge_content", "sources", "regional_context", "vocabulary_connections"]
+      }
+    ]
+  },
+  "implementation_guidelines": {
+    "privacy_first_approach": [
+      "All data stored locally in browser",
+      "No automatic transmission to external servers",
+      "User controls all data sharing and export",
+      "Optional anonymized usage statistics only",
+      "Clear data deletion options available"
+    ],
+    "cultural_sensitivity": [
+      "Respect for family privacy and cultural authenticity",
+      "Acknowledgment of source families and communities",
+      "Celebration of regional diversity within Ticino culture",
+      "Inclusive approach welcoming learners of all heritage connections",
+      "Recognition of both historical and contemporary cultural evolution"
+    ],
+    "educational_effectiveness": [
+      "Social learning enhances vocabulary retention",
+      "Cultural context improves comprehension and engagement",
+      "Community connections motivate continued learning",
+      "Heritage stories provide emotional connection to language",
+      "Collaborative features build supportive learning environment"
+    ],
+    "technical_requirements": [
+      "LocalStorage for data persistence",
+      "JSON format for data structure",
+      "Responsive design for mobile and desktop access",
+      "Progressive enhancement for offline capability",
+      "Export/import functionality for data portability"
+    ]
+  }
+}
